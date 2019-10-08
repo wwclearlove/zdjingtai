@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet"  th:href="@{/css/header.css}">
+    <link rel="stylesheet"  th:href="@{/css/font-awesome.css}">
+    <link rel="stylesheet"  th:href="@{/css/contactUs.css}">
+    <link rel="stylesheet"  th:href="@{/css/index.css}">
+    <title th:replace="${title}">公共</title>
+</head>
+<body>
+<div id="header" th:fragment="menu">
+    <div class="header title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 logo">
+                    <img src="../static/imgs/logo.png" th:src="@{/imgs/logo.png}" alt="" class="logo_icon">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6  col-lg-offset-6 col-md-offset-6 col-sm-offset-4 language">
+                    <strong>
+                        <a href="#" class="chinese">中文版</a> |
+                        <a href="#" class="deutsch">Deutsch</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="left-flyout-nav" class="layout-left-flyout">
+        <div class="cbFlyNav-wrap">
+            <nav class="the-nav nav-collapse clearfix">
+                <ul class="nav pull-left nav-flyout">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">新闻活动</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">中德科技合作<i class="icon-cbmore"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">科研合作</a></li>
+                            <li><a href="#">科技支撑平台（中德研究院所）</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">中德教育合作<i class="icon-cbmore"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">留学服务</a></li>
+                            <li><a href="#">游学访问</a></li>
+                            <li><a href="#">中德学校合作</a></li>
+                            <li><a href="#">中德学院</a></li>
+                            <li><a href="#">双元制大学</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">中德企业合作<i class="icon-cbmore"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">企业考察</a></li>
+                            <li><a href="#">投资咨询</a></li>
+                            <li><a href="#">技术对接</a></li>
+                            <li><a href="#">成果转化</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">语言中心<i class="icon-cbmore"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">商务德语课程</a></li>
+                            <li><a href="#">青少年德语课程</a></li>
+                            <li><a href="#">留德欧标课程</a></li>
+                            <li><a href="#">翻译服务</a></li>
+                            <li><a href="#">趣味德国</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);">关于我们<i class="icon-cbmore"></i></a>
+                        <ul class="subnav">
+                            <li><a href="#">组织架构</a></li>
+                            <li><a href="#">发展历程</a></li>
+                            <li><a href="#">发展目标</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="layout-right-content">
+        <header class="the-header">
+            <div class="navbar container" style="padding-left: 4%">
+
+                <a class="btn-navbar btn-navbar-navtoggle btn-flyout-trigger" style="z-index: 1024" href="javascript: void(0)">
+                    <span class="icon-bar btn-flyout-trigger"></span>
+                    <span class="icon-bar btn-flyout-trigger"></span>
+                    <span class="icon-bar btn-flyout-trigger"></span>
+                </a>
+
+                <nav class="the-nav nav-collapse clearfix" style="float: left">
+                    <ul class="nav nav-pill pull-left">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" style="color: #FF7C00;font-weight: bolder;">首页</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">新闻活动</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">中德科技合作<b class="caret"></b></a>
+                            <ul class="subnav">
+                                <li><a href="#">科研合作</a></li>
+                                <li><a href="#">科技支撑平台（中德研究院所）</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">中德教育合作<b class="caret"></b></a>
+                            <ul class="subnav">
+                                <li><a href="#">留学服务</a></li>
+                                <li><a href="#">游学访问</a></li>
+                                <li><a href="#">中德学校合作</a></li>
+                                <li><a href="#">中德学院</a></li>
+                                <li><a href="#">双元制大学</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">中德企业合作<b class="caret"></b></a>
+                            <ul class="subnav">
+                                <li><a href="#">企业考察</a></li>
+                                <li><a href="#">投资咨询</a></li>
+                                <li><a href="#">技术对接</a></li>
+                                <li><a href="#">成果转化</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">语言中心<b class="caret"></b></a>
+                            <ul class="subnav">
+                                <li><a href="#">商务德语课程</a></li>
+                                <li><a href="#">青少年德语课程</a></li>
+                                <li><a href="#">留德欧标课程</a></li>
+                                <li><a href="#">翻译服务</a></li>
+                                <li><a href="#">趣味德语</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);">关于我们<b class="caret"></b></a>
+                            <ul class="subnav">
+                                <li><a href="#">组织架构</a></li>
+                                <li><a href="#">发展历程</a></li>
+                                <li><a href="#">发展目标</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="search">
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control search_input" placeholder="请输入关键词">
+                        <span class="input-group-btn">
+        				<button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+      				</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </header>
+    </div>
+</div>
+<footer th:fragment="footer">
+    <div class="contactUs" style="padding-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" align="center">
+                    <h3 class="contactUs_h3">联系我们</h3>
+                    <span>开放时间  周一至周五 9:00-17:00</span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contactUsDiv">
+                    <a href="#" class="contactUsDiv_a">
+                        <div class="contactUsDivSon">
+                            <div class="contactUsDivSon_icon">
+                                <br>
+                                <i class="fa fa-map-marker contactUsDivSon_icon_i"></i>
+                            </div>
+                            <div class="contactUsDivSon_info">
+                                <br>
+                                <h4>公司地址</h4>
+                                <p>四川省乐山市高新区高新孵化园A区</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contactUsDiv">
+                    <a href="#" class="contactUsDiv_a">
+                        <div class="contactUsDivSon">
+                            <div class="contactUsDivSon_icon">
+                                <br>
+                                <i class="fa fa-phone contactUsDivSon_icon_i"></i>
+                            </div>
+                            <div class="contactUsDivSon_info">
+                                <br>
+                                <h4>联系方式</h4>
+                                <p>18728871721</p>
+                                <p>0833-2595989</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 contactUsDiv">
+                    <a href="#" class="contactUsDiv_a">
+                        <div class="contactUsDivSon">
+                            <div class="contactUsDivSon_icon">
+                                <br>
+                                <i class="fa fa-envelope-o contactUsDivSon_icon_i"></i>
+                            </div>
+                            <div class="contactUsDivSon_info">
+                                <br>
+                                <h4>邮箱</h4>
+                                <p>lszdkc@163.com</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 footer">
+                    <p>© 2010-2019中德科技股份有限公司 | 版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<th:block th:fragment="script">
+    <script type="text/javascript" th:src="@{/js/jquery-3.2.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+    <script type="text/javascript"  th:src="@{/js/jquery.cbFlyout.js}"></script>
+    <script type="text/javascript" th:src="@{/js/header.js}"></script>
+</th:block>
+</body>
+</html>
