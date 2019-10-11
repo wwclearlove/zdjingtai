@@ -457,7 +457,7 @@ body {
 
 	.search i.fa, .header .nav-bar li {
 		height: 56px;
-		line-height: 46px;
+		line-height: 56px;
 	}
 
 	.header {
@@ -500,7 +500,7 @@ body {
 
 	.search i.fa, .header .nav-bar li {
 		height: 56px;
-		line-height: 46px;
+		line-height: 56px;
 	}
 
 	.m-btn {
@@ -592,6 +592,10 @@ em{
 ul.sub-menu {
 	padding-left: 0;
 }
+.li-cate-1:hover{
+	color: white;
+	background: linear-gradient(#54C4F7,#1E89DF);
+}
 
 @media (max-width: 1200px) {
 	.language {
@@ -607,7 +611,10 @@ ul.sub-menu {
 	em{
 		display: block;
 	}
-
+	.li-cate-1:hover{
+		color: white;
+		background: #00000000;
+	}
 }
 
 @media (max-width: 560px) {
@@ -630,12 +637,6 @@ ul.sub-menu {
 		line-height: 50px;
 	}
 }
-
-.li-cate-1:hover{
-	color: white;
-	background: linear-gradient(#54C4F7,#1E89DF);
-}
-
 
 .scroll_header{
 	opacity: 0.8;
