@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="fragments :: head(~{::title})">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
-    <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/header.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/index/index.css">
-    <script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
-    <script type="text/javascript" src="../static/js/header.js"></script>
+    <title>中心概况</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
+    <script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../static/js/header.js"></script>
 </head>
-<body>
+<body style="background-color: #c7c5c4;">
 
 <div id="title">
     <!--languageSearch-->
-    <div class="languageSearch" style="opacity: 0.9">
+    <div class="languageSearch">
         <!--Language-->
         <div class="language">
             <a href="#" class="chinese">中文版</a> |
@@ -34,13 +33,13 @@
             </form>
         </div>
     </div>
-    <header class="header" id="header" style="opacity: 0.9">
+    <header class="header" id="header">
         <div class="h-fix">
             <div class="containers">
                 <!--LoGo-->
                 <div class="logo">
                     <a href="#" title="中德科技">
-                        <img src="../static/imgs/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
+                        <img src="../../static/imgs/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
                     </a>
                 </div>
                 <!--BarsIcon-->
@@ -50,8 +49,8 @@
                 <!--Nav-->
                 <nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
                     <ul class="nav">
-                        <li class="li-cate-1 active">
-                            <a href="./index.html">首页</a>
+                        <li class="li-cate-1">
+                            <a href="../index.html">首页</a>
                         </li>
                         <li class="li-cate-1">
                             <a href="#">新闻活动</a>
@@ -124,14 +123,14 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="li-cate-1">
+                        <li class="li-cate-1 active">
                             <a href="#">关于我们</a>
                             <ul class="sub-menu">
                                 <li>
-                                    <a href="./aboutUs/centeroverview.html">中心概况</a>
+                                    <a href="./centeroverview.html">中心概况</a>
                                 </li>
                                 <li>
-                                    <a href="./aboutUs/organization.html">组织架构</a>
+                                    <a href="./organization.html">组织架构</a>
                                 </li>
                                 <li>
                                     <a href="#">发展历程</a>
@@ -140,7 +139,7 @@
                                     <a href="#">发展目标</a>
                                 </li>
                                 <li>
-                                    <a href="./aboutUs/contactUs.html">联系我们</a>
+                                    <a href="./contactUs.html">联系我们</a>
                                 </li>
                             </ul>
                         </li>
@@ -153,89 +152,52 @@
     <div id="mask"></div>
 </div>
 
-<!--banner-->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="../static/imgs/index/banner1.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner2.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+<div>
+    <img width="100%" src="../../static/imgs/aboutUs/centeroverview/background-zhongxing.png"/>
 </div>
-<div class="container-fluid">
-    <div class="row" style="padding: 30px">
 
-    </div>
-    <div class="row erji">
-            <h3 class=" col-md-12  col-xs-12">新闻活动</h3>
-    </div>
-    <div class="row" style="height: 200px">
-           <p style="color: red;text-align: center;line-height: 150px;font-size: 2em;border: 1px darkblue solid">缺资料</p>
-    </div>
+<div class="container-fluid" >
     <div class="row">
-       <div class="col-md-3  col-xs-6 erji">
-           <div class="row">
-               <h3 class=" col-md-12  col-xs-12">中德科技合作</h3>
-           </div>
-           <div class="row" style="height: 200px">
-               <p style="color: red;text-align: center;line-height: 150px;font-size: 2em;border: 1px darkblue solid">缺资料</p>
-           </div>
-       </div>
-       <div class="col-md-3  col-xs-6 erji">
-           <div class="row">
-               <h3 class=" col-md-12  col-xs-12">中德教育合作</h3>
-           </div>
-           <div class="row" style="height: 200px">
-               <p style="color: red;text-align: center;line-height: 150px;font-size: 2em;border: 1px darkblue solid">缺资料</p>
-           </div>
-       </div>
-       <div class="col-md-3  col-xs-6 erji">
-           <div class="row">
-               <h3 class=" col-md-12  col-xs-12">中德企业合作</h3>
-           </div>
-           <div class="row" style="height: 200px">
-               <p style="color: red;text-align: center;line-height: 150px;font-size: 2em;border: 1px darkblue solid">缺资料</p>
-           </div>
-       </div>
-       <div class="col-md-3  col-xs-6 erji">
-           <div class="row">
-               <h3 class=" col-md-12  col-xs-12">语言中心</h3>
-           </div>
-           <div class="row" style="height: 200px">
-               <p style="color: red;text-align: center;line-height: 150px;font-size: 2em;border: 1px darkblue solid">缺资料</p>
-           </div>
-       </div>
+        <!--文字-->
+        <div class="col-lg-6 col-xs-12 col-lg-offset-2">
+            <div style="margin-top: 30px;margin-bottom: 40px;">
+                <img class="center-block" src="../../static/imgs/aboutUs/centeroverview/leshan-font.png" height="30" width="100%"/>
+            </div>
+            <p style="line-height: 50px;font-size: 1em">
+                &nbsp;&nbsp;四川(乐山)中德科技促进中心成立于2016年，是由乐山高新区与西南交大峨眉校区及德国夹斯特法利亚(Ostfalia) 应用科学大学三方共同打造的科技教育文化交流平台。
+                &nbsp;&nbsp;我们有德国平台、高校平台，语言中心，科技中心及文化交流中心五个部门
+                &nbsp;&nbsp;旨在以德国“工业4.0” 对接“中国制造2025”为主统，利用三方各自拥有及协同的优势资源，开展相关技术研发、科技和德语（语言）培训、成果转化和咨询服务等科技教育合作活动，为乐山市和德国经济转型升级和社会发展提供技术和人才支撑，促进中德科技、教育、文化、经济合作。
+                四川(乐山)中德科技促进中心成立于2016年，是由乐山高新区与西南交大峨眉校区及德国夹斯特法利亚(Ostfalia) 应用科学大学三方共同打造的科技教育文化交流平台。
+                我们有德国平台、高校平台，语言中心，科技中心及文化交流中心五个部门
+                旨在以德国“工业4.0” 对接“中国制造2025”为主统，利用三方各自拥有及协同的优势资源，开展相关技术研发、科技和德语（语言）培训、成果转化和咨询服务等科技教育合作活动，为乐山市和德国经济转型升级和社会发展提供技术和人才支撑，促进中德科技、教育、文化、经济合作。
+            </p>
+        </div>
+        <!--标签-->
+        <div class="col-lg-2 col-xs-12 col-lg-offset-1" style="margin-top: 90px;margin-bottom: 30px" align="center">
+
+            <div style="font-size: 1em;margin-top: 20px">
+                <img src="../../static/imgs/aboutUs/centeroverview/组织架构.png" height="45" width="206"/>
+            </div>
+            <div style="font-size: 1em;margin-top: 20px">
+                <img src="../../static/imgs/aboutUs/centeroverview/团队力量.png" height="45" width="206"/>
+            </div>
+            <div style="font-size: 1em;margin-top: 20px">
+                <img src="../../static/imgs/aboutUs/centeroverview/发展历程.png" height="45" width="206"/></div>
+            <div style="font-size: 1em;margin-top: 20px">
+                <img src="../../static/imgs/aboutUs/centeroverview/发展目标.png" height="45" width="206"/>
+            </div>
+
+        </div>
     </div>
+
+
+    <div class="row">
+        <img class="img-responsive center-block" src="../../static/imgs/aboutUs/centeroverview/dishangfang.png">
+    </div>
+
+    <p class="h4" style="text-align: center"><b>-第三方签约仪式-</b></p>
+
+
 </div>
 
 <footer>
@@ -245,9 +207,7 @@
     </div>
 </footer>
 
-<footer th:replace="fragments :: footer" >
-</footer>
-<th:block th:replace="fragments :: script">
-</th:block>
+<script src="../../static/js/bootstrap.js"></script>
+<script src="../../static/js/jquery-3.2.1.min.js"></script>
 </body>
 </html>

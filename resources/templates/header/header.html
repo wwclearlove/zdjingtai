@@ -9,14 +9,30 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="../../static/js/main.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 </head>
 <body>
 <div id="title">
+	<!--languageSearch-->
+	<div class="languageSearch">
+		<!--Language-->
+		<div class="language">
+			<a href="#" class="chinese">中文版</a> |
+			<a href="#" class="deutsch">Deutsch</a>
+		</div>
+		<!--Search-->
+		<div class="searchDiv">
+			<form action="">
+				<input type="text" class="search_input" placeholder="请输入搜索词">
+				<a href="#" class="search_a">
+					<i class="fa fa-search"></i>
+				</a>
+			</form>
+		</div>
+	</div>
 	<header class="header" id="header">
 		<div class="h-fix">
-			<div class="container">
+			<div class="containers">
 				<!--LoGo-->
 				<div class="logo">
 					<a href="#" title="中德科技">
@@ -26,24 +42,6 @@
 				<!--BarsIcon-->
 				<div id="m-btn" class="m-btn">
 					<i class="fa fa-bars"></i>
-				</div>
-				<!--Search-->
-				<div class="search">
-					<i class="s-btn off fa fa-search searchicon"></i>
-					<div class="s-form">
-						<i class="arrow fa fa-caret-up"></i>
-						<form name="search" method="post" class="sform" action="#">
-							<input class="sinput" name="q" type="text" placeholder="请输入搜索词"/>
-							<button>
-								<i class="fa fa-search"></i>
-							</button>
-						</form>
-					</div>
-				</div>
-				<!--Language-->
-				<div class="language">
-					<a href="#" class="chinese">中文版</a> |
-					<a href="#" class="deutsch">Deutsch</a>
 				</div>
 				<!--Nav-->
 				<nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
