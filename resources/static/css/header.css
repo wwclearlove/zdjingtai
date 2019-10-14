@@ -26,7 +26,7 @@ html {
 
 .header {
 	display: block;
-	height: 60px;
+	height: 90px;
 	position: relative;
 	left: 0;
 	-webkit-transition: all .3s ease;
@@ -38,7 +38,7 @@ html {
 .header .logo {
 	float: left;
 	overflow: hidden;
-	height: 60px;
+	height: 90px;
 }
 
 .header .logo h1, .header .logo div {
@@ -71,8 +71,8 @@ html {
 
 .header .nav-bar li {
 	display: inline-block;
-	height: 60px;
-	line-height: 60px;
+	height: 90px;
+	line-height: 90px;
 	position: relative;
 	vertical-align: top;
 }
@@ -97,7 +97,7 @@ html {
 	left: 0;
 	right: 0;
 	z-index: 1025;
-	margin: 50px auto;
+	margin: 70px auto;
 	transition: all 500ms ease;
 	-webkit-mask-image: linear-gradient(-75deg, rgba(58, 128, 244, 0.24) 50%, #1E89DF 50%, rgba(0, 0, 0, 1) 70%);
 	-webkit-mask-size: 200%;
@@ -132,7 +132,8 @@ html {
 .header .nav-bar li.active > a {
 	color: white;
 	font-weight: bolder;
-	background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);
+	/*background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);*/
+	background-color: #1E89DF;
 }
 
 /*二级高亮*/
@@ -145,7 +146,8 @@ html {
 	z-index: 888;
 	min-width: 220px;
 	position: absolute;
-	background: #082a63;
+	background: #1E89DF;
+	/*background: linear-gradient(to right, #1E89DF, #54C4F7);*/
 	visibility: hidden;
 	transform: translateX(-50%);
 	-webkit-transition: all .3s ease;
@@ -173,7 +175,8 @@ html {
 
 /*二级导航变色*/
 .header .nav-bar ul li > ul li.on a:hover {
-	background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);
+	/*background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);*/
+	background-color: #1E89DF;
 }
 
 /*二级导航显示与透明度*/
@@ -191,7 +194,7 @@ html {
 	padding: 0 15px;
 	height: 100%;
 	display: none;
-	line-height: 60px;
+	line-height: 90px;
 	cursor: pointer;
 }
 
@@ -352,7 +355,8 @@ em {
 	height: 40px;
 	position: fixed;
 	z-index: 1025;
-	background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);
+	/*background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);*/
+	background-color: #1E89DF;
 }
 
 .languageSearch .language {
@@ -406,7 +410,7 @@ em {
 }
 
 #title {
-	height: 100px;
+	height: 130px;
 }
 
 /*----------- Responsive -----------*/
@@ -434,7 +438,7 @@ em {
 	}
 
 	.header, .header .logo {
-		height: 60px;
+		height: 90px;
 		display: inline-block;
 		margin: 0 auto;
 		font-size: 0;
@@ -500,7 +504,8 @@ em {
 	/*导航鼠标背景*/
 	.li-cate-1:hover {
 		color: white;
-		background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);
+		/*background: linear-gradient(to right, #1E89DF, #54C4F7, #1E89DF);*/
+		background-color: #1E89DF;
 	}
 
 	/*导航鼠标背景*/

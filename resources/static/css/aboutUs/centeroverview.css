@@ -1,19 +1,30 @@
-.centeroverview_img{
+.centeroverview_img {
 	width: 100%;
 }
-.centeroverviewDiv{
+
+.centeroverviewDiv {
 	padding: 50px 15px;
 }
-.centeroverviewDiv_p{
+
+.centeroverviewDiv_title {
+	width: 100%;
+	text-align: center;
+}
+
+.centeroverviewDiv_p {
 	font-size: 1em;
 	text-align: left;
 	line-height: 50px;
 }
-.centeroverviewDivSon div{
+
+.centeroverviewDivSon div {
 	font-size: 1em;
-	margin-top: 20px;
+	margin: 20px 0;
+	text-align: center;
+
 }
-.centeroverviewDivSon div img{
+
+.centeroverviewDivSon div img {
 	height: 45px;
 	width: 206px;
 }

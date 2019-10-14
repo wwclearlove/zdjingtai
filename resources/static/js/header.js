@@ -76,7 +76,7 @@ $(document).ready(function () {
 	$(window).scroll(function () {
 		var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop).toFixed(0);
 		var clientWidth = document.body.clientWidth;
-		if (scrollTop > 100 && clientWidth > 1024) {
+		if (scrollTop > 130 && clientWidth > 1024) {
 			$(".languageSearch").css("opacity","0.8");
 			$(".header").css("opacity","0.8");
 		} else {
