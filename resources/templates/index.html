@@ -7,12 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/font-awesome.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/header.css" type="text/css"/>
-    <link rel="stylesheet" href="../static/css/index/index.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="../static/css/index/index.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/index/publish.min.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/index/clientlibs.min.css">
     <script type="text/javascript" src="../static/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../static/js/bootstrap.js"></script>
     <script type="text/javascript" src="../static/js/header.js"></script>
+    <script type="text/javascript" src="../static/js/common.min.js"></script>
+    <script type="text/javascript" src="../static/js/publish.min.js"></script>
+    <script type="text/javascript" src="../static/js/clientlibs.min.js"></script>
 </head>
 <body>
 
@@ -54,7 +59,18 @@
                             <a href="./index.html">首页</a>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">新闻活动</a>
+                            <a href="./newsactivity/news.html">新闻活动</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">新闻活动中心</a>
+                                </li>
+                                <li>
+                                    <a href="#">新闻列表</a>
+                                </li>
+                                <li>
+                                    <a href="#">文章列表</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="li-cate-1">
                             <a href="#">中德科技合作</a>
@@ -125,11 +141,8 @@
                             </ul>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">关于我们</a>
+                            <a href="./aboutUs/centeroverview.html">关于我们</a>
                             <ul class="sub-menu">
-                                <li>
-                                    <a href="./aboutUs/centeroverview.html">中心概况</a>
-                                </li>
                                 <li>
                                     <a href="./aboutUs/organization.html">组织架构</a>
                                 </li>
@@ -153,130 +166,222 @@
     <div id="mask"></div>
 </div>
 
-<!--banner-->
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    </ol>
-
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="../static/imgs/index/banner1.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner2.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-        <div class="item">
-            <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
-            <div class="carousel-caption">
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<!--新闻-->
 <section>
-<div class="container">
-    <div class="row" style="padding: 30px">
+    <!--banner-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
 
-    </div>
-    <div class="row ">
-            <p class=" col-md-2   col-xs-5 ziti" style="">新闻活动</p>
-    </div>
-    <div class="row" style="height: 200px">
-            <div class="row">
-                <div class="col-md-8 col-xs-12 bgimg"  >
-                        <h3  style="color: white;font-size: 2em;margin-top: 230px;margin-bottom: 30px">博大精深 同心致远
-                        </h3>
-                    <p  style="color: white;font-size:1em;margin-bottom: 30px">西门子的解决方案正在支持中国转型升级。西门子将电气化、
-                        自动化、数字化的力量融入各行各业，以前所未见的高度、速度、精度和深度，
-                        让关键所在，逐一实现。有一种力量，正在支持我们前行，源于博大精深，同心致远。</p>
-                </div>
-                <div class="col-md-4 col-xs-12" >
-                    <img src="../static/imgs/index/new2.jpg" width="500px" alt="" />
-                    <p  style="font-size: 2em;margin-left: 8px">
-                        打造新能源汽车“世界名片”
-                    </p>
-                    <p  style="font-size:0.7em;width:500px;margin-left: 10px">
-                        应用西门子软硬件一体的数字化企业解决方案，以及专用于汽车行业的Si-car标准。
-                        帮助北汽新能源在青岛打造了北汽集团首个实现新能源汽车量产的生产基地。成就标杆性的
-                        新能源汽车数字化工厂...
-                    </p>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="../static/imgs/index/banner1.png" alt="..." width="100%">
+                <div class="carousel-caption">
+
                 </div>
             </div>
-        <div class="row">
-            <div class="col-md-4 col-xs-12" >
-                <img src="../static/imgs/index/new3.jpg" width="350px" alt="" />
-                <p  style="font-size: 2em;margin-left: 8px">
-                    木屋与歌声
-                </p>
-                <p  style="font-size:0.7em;width:500px;margin-left: 10px">
-                    西门子助力传统村落推进电气安全改造
-                </p>
+            <div class="item">
+                <img src="../static/imgs/index/banner2.png" alt="..." width="100%">
+                <div class="carousel-caption">
+
+                </div>
             </div>
-            <div class="col-md-4 col-xs-12" >
-                <img src="../static/imgs/index/new4.jpg" width="350px" alt="" />
-                <p  style="font-size: 2em;margin-left: 8px">
-                    用智能制造“撩动”航天飞船的“神经”
-                </p>
-                <p  style="font-size:0.7em;width:500px;margin-left: 10px">
-                    航天电器携手西门子、航天云网共同打造精密电子元器件行 <br/>
-                    业全球首个基于工业互联网平台，具有云制造能力的智能制造样板间。
-                </p>
+            <div class="item">
+                <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
+                <div class="carousel-caption">
+
+                </div>
             </div>
-            <div class="col-md-4 col-xs-12" >
-                <img src="../static/imgs/index/new5.jpg" width="350px" alt="" />
-                <p  style="font-size: 2em;margin-left: 8px">
-                    来自中国的西伯利亚掘金者
-                </p>
-                <p  style="font-size:0.7em;width:500px;margin-left: 10px">
-                    西门子助力太原重工股份有限公司采掘俄罗斯最大露天金矿。
-                </p>
+            <div class="item">
+                <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="../static/imgs/index/banner3.png" alt="..." width="100%">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--新闻-->
+    <div class="container-fluid" style="background-color: #dddddd;padding: 60px 0;">
+        <div class="topicnews__base" data-component="topicnews">
+            <div class="topicnews__header">
+                <h2 class="topicnews__headline font--bold">热点新闻</h2>
+                <a href="#" class="topicnews__link">
+                    <span class="glyphicon-menu-right glyphicon">
+                        <span>
+                            更多
+                        </span>
+                  </span>
+                </a>
+            </div>
+            <div class="slider topicnews__slider">
+                <div class="newsteaser__base newsteaser--large">
+                    <div class="newsteaser__wrapper">
+                        <a href="#">
+                            <div class="newsteaser__imageBlock newsteaser__imageBlock--large">
+                                <div class="image-wrapper">
+                                    <div class="responsiveMedia__wrapper">
+                                        <picture>
+                                            <img src="../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyloaded">
+                                        </picture>
+                                    </div>
+                                    <div class="newsteaser__image--overlay"></div>
+                                </div>
+                            </div>
+                            <div class="newsteaser__text">
+                                <div class="newsteaser__textContent">
+                                    <div class="newsteaser__textInput">
+                                        <h3 class="newsteaser__header">德国平台</h3>
+                                        <div class="newsteaser__info">
+                                            德方开展有利于中德合作的各种活动，以及人才飞地。
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsteaser__base newsteaser--small">
+                    <div class="newsteaser__wrapper">
+                        <a href="#">
+                            <div class="newsteaser__imageBlock">
+                                <div class="image-wrapper">
+                                    <div class="responsiveMedia__wrapper">
+                                        <picture>
+                                            <img src="../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+                                        </picture>
+                                    </div>
+                                    <div class="newsteaser__image--overlay"></div>
+                                </div>
+                            </div>
+                            <div class="newsteaser__text">
+                                <div class="newsteaser__textContent">
+                                    <div class="newsteaser__textInput">
+                                        <h3 class="newsteaser__header">语言中心</h3>
+                                        <div class="newsteaser__info">
+                                            负责对学校师生及乐山地区中，有意向中德合作人员德语培训和留学服务。
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsteaser__base newsteaser--small">
+                    <div class="newsteaser__wrapper">
+                        <a href="#" class="#">
+                            <div class="newsteaser__imageBlock ">
+                                <div class="image-wrapper">
+                                    <div class="responsiveMedia__wrapper">
+                                        <picture>
+                                            <img src="../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+                                        </picture>
+                                    </div>
+                                    <div class="newsteaser__image--overlay"></div>
+                                </div>
+                            </div>
+                            <div class="newsteaser__text">
+                                <div class="newsteaser__textContent">
+                                    <div class="newsteaser__textInput">
+                                        <h3 class="newsteaser__header">高校平台</h3>
+                                        <div class="newsteaser__info">
+                                            负责推动川内高校与德国高校的合作，批量培养国际化人才。
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsteaser__base newsteaser--small">
+                    <div class="newsteaser__wrapper">
+                        <a href="#">
+                            <div class="newsteaser__imageBlock ">
+                                <div class="image-wrapper">
+                                    <div class="responsiveMedia__wrapper">
+                                        <picture>
+                                            <img src="../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+                                        </picture>
+                                    </div>
+                                    <div class="newsteaser__image--overlay"></div>
+                                </div>
+                            </div>
+                            <div class="newsteaser__text">
+                                <div class="newsteaser__textContent">
+                                    <div class="newsteaser__textInput">
+                                        <h3 class="newsteaser__header">科技中心</h3>
+                                        <div class="newsteaser__info">
+                                            负责企业相关中德合作，主要由机电工程应用研究所承担。
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="newsteaser__base newsteaser--small">
+                    <div class="newsteaser__wrapper">
+                        <a href="#">
+                            <div class="newsteaser__imageBlock ">
+                                <div class="image-wrapper">
+                                    <div class="responsiveMedia__wrapper">
+                                        <picture>
+                                            <img src="../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+                                        </picture>
+                                    </div>
+                                    <div class="newsteaser__image--overlay"></div>
+                                </div>
+                            </div>
+                            <div class="newsteaser__text">
+                                <div class="newsteaser__textContent">
+                                    <div class="newsteaser__textInput">
+                                        <h3 class="newsteaser__header">文化交流</h3>
+                                        <div class="newsteaser__info">
+                                            负责推动中德之间文化交流合作。
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
+
 <footer>
-    <div class="footer" style="color: #999999;font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
-        <p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
-        <p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
+    <div class="footer" style="font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
+        <p style="color: #999999;margin: 0;">京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
+        <p style="color: #999999;margin: 0;">Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
     </div>
 </footer>
 
-<footer th:replace="fragments :: footer" >
+<footer th:replace="fragments :: footer">
 </footer>
 <th:block th:replace="fragments :: script">
 </th:block>
