@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
     <link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
     <link rel="stylesheet" href="../../static/css/aboutUs/contactUs.css">
-    <script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
     <script type="text/javascript" src="../../static/js/header.js"></script>
+    <script type="text/javascript" src="../../static/js/createMaps.js"></script>
+    <script type="text/javascript" src="../../static/js/maps.js"></script>
 </head>
 <body>
 
@@ -154,157 +156,121 @@
 </div>
 
 <section>
-    <!--背景图-->
+    <!-- 背景图 -->
     <div class="container-fluid">
         <div class="row">
             <img src="../../static/imgs/aboutUs/contactUs/about.png" class="img-responsive" width="100%" alt=""/>
         </div>
     </div>
-
-    <!-- 当前页面位子 -->
-    <!--<div class="container">
-        <div class="row">
-            <img src="../../static/imgs/aboutUs/contactUs/position.png"> 当前位置&gt;&gt;联系我们-公司概况
+    <!-- 当前页面位置 -->
+    <div class="container locationDiv">
+        <div class="row location">
+            <img src="../../static/imgs/aboutUs/contactUs/position.png">
+            <span>当前位置&gt;&gt;联系我们-公司概况</span>
         </div>
-    </div>-->
+    </div>
+    <!-- 促进中心 -->
+    <div class="container centerDiv">
+        <div class="row">
+            <div class="titleFle">
+                <div class="fleItem">
+                    <span class="leftFont">M</span>
+                </div>
+                <div class="fleItem chinaese_english">
+                    <span class="chinaese">中德科技促进中心</span>
+                    <span class="english">China and deutsche technology center</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 联系我们 -->
+    <div class="container" style="margin-top: 50px;padding: 0;">
+        <form action="javascript:void(0);" method="get" id="contactForm">
+            <div class="form-row" id="contact_us">
+                <div class="col-md-6" id="message">
+                    <fieldset>
+                        <legend><i class="fa fa-envelope"></i> 联系我们</legend>
+                    </fieldset>
+                    <div class="form-group has-feedback">
+						<label for="from_name">姓名</label>
+						<input class="form-control" type="text" name="from_name" required="" placeholder="请输入姓名" id="from_name" tabindex="-1">
+					</div>
+                    <div class="form-group has-feedback">
+						<label for="from_email">邮箱</label>
+						<input class="form-control" type="email" name="from_email" required="" placeholder="请输入邮箱" id="from_email">
+					</div>
+					<div class="form-group has-feedback">
+						<label for="from_phone">电话</label>
+						<input class="form-control" type="text" name="from_phone" placeholder="请输入电话号码" id="from_phone">
+					</div>
+                    <div class="form-group">
+						<label for="comments">评论</label>
+						<textarea class="form-control" rows="5" name="Comments" placeholder="在这里输入评论" id="comments"></textarea></div>
+                    <div class="form-group">
+						<button class="btn btn-primary btn-block" type="submit">
+							发送&nbsp;&nbsp;<i class="fa fa-chevron-circle-right" style="color: white;"></i>
+						</button>
+					</div>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-row">
+                        <div class="col-md-6 col-sm-6">
+                            <fieldset>
+                                <legend><i class="fa fa-envelope"></i> 联系我们</legend>
+                            </fieldset>
+                            <div><span><strong>联系方式</strong></span></div>
+                            <div><span>18728871721</span></div>
+                            <div><span>0833-2595989</span></div>
+                            <div><span>lszdkc@163.com</span></div>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <fieldset>
+                                <legend><i class="fa fa-map-marker"></i> 我们的地址</legend>
+                            </fieldset>
+                            <div><span><strong>办公室</strong></span></div>
+                            <div><span>乐山市高新区高新孵化园A区9楼901</span></div>
+							<div><span><strong>开放时间</strong></span></div>
+                            <div><span>周一至周五 9:00-17:00</span></div>
+							<hr>
+						</div>
+						<div class="col-sm-12" style="padding-bottom: 20px;">
+							<fieldset>
+								<legend><i class="fa fa-location-arrow"></i> 关注我们</legend>
+							</fieldset>
+							<div class="form-row" style="padding: 0;">
+								<div class="col-sm-6">
+									<div><span><strong>更多资讯请关注乐山中德科技促进中心二维码</strong></span></div>
+								</div>
+							</div>
+							<div class="form-row" style="padding: 0;">
+								<div class="col-sm-6">
+									<div>
+										<a href="javascript:void (0)" title="微信公众号">
+											<img src="../../static/imgs/aboutUs/contactUs/erweuim.png" class="img-responsive" alt="微信公众号">
+										</a>
+									</div>
+								</div>
+							</div>
+							<hr>
+						</div>
+                    </div>
+                </div>
+				<div class="col-md-12">
+					<fieldset style="display: block;">
+						<legend style="display: block;"><i class="fa fa-location-arrow"></i>  找到我们</legend>
+					</fieldset>
+					<div class="row">
+						<div class="col-md-12" id="maps">
+							<div id="container"></div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </form>
+    </div>
 </section>
-
-<div class="c-position">
-    <div class="container content">
-        <img src="../../static/imgs/aboutUs/contactUs/position.png"> 当前位置&gt;&gt;联系我们-公司概况
-    </div>
-</div>
-
-
-<!-- 简介 -->
-<div class="c-survey">
-    <div class="container">
-        <!-- 标题 -->
-        <div class="titleFle">
-            <div class="fleItem">
-                <span class="leftFont">M</span>
-            </div>
-            <div class="fleItem">
-                <span class="chinaese">中德科技促进中心</span>
-                <span class="english">China and deutsche technology center</span>
-            </div>
-        </div>
-        <!-- 我们是谁 -->
-        <div class="row how">
-            <div class="col-md-7 word">
-                <div class="title">
-                    <h1>我们是谁？</h1>
-                    <span>懂您所需、做您所想</span>
-                </div>
-                <div class="content">
-                   中德科技促进中心（缺资料）
-                </div>
-            </div>
-            <div class="col-md-5 pic">
-                <img src="../../static/imgs/aboutUs/contactUs/about.png" class="img-responsive">
-            </div>
-        </div>
-        <!-- 我们能做什么 -->
-        <div class="row can">
-            <div class="col-md-7 word">
-                <div class="title">
-                    <h1>我们能做什么？</h1>
-                    <span>我们提供的产品</span>
-                </div>
-                <div class="content">
-                    我们秉承“诚恳、高效、价值、创新”的企业文化。
-                    怀着对马赛克艺术的执着，以极强的创造力和敬业精神,以及强大的团队，
-                    为您提供多样的、颜色搭配丰富的马赛克组合，
-                    务求以更专业更优质的服务态度为您打造一个不一样的富丽堂皇的空间效果！
-                    (缺资料)
-                </div>
-            </div>
-            <div class="col-md-5 pic">
-                <img src="../../static/imgs/aboutUs/contactUs/about.png" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- 联系我们 -->
-<div class="c-contactUs">
-    <div class="container">
-        <!-- 标题 -->
-        <div class="titleFle">
-            <div class="fleItem">
-                <span class="leftFont">C</span>
-            </div>
-            <div class="fleItem">
-                <span class="chinaese">联系我们</span>
-                <span class="english">ontact us</span>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 contact">
-                <ul>
-                    <li>
-                        <img src="../../static/imgs/aboutUs/contactUs/phone.png">
-                        <div class="info">
-                            <span>全国免费咨询热线</span>
-                            <span>18728871721</span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="../../static/imgs/aboutUs/contactUs/fax.png">
-                        <div class="info">
-                            <span>座机</span>
-                            <span>0833-2595989</span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="../../static/imgs/aboutUs/contactUs/e-mail.png">
-                        <div class="info">
-                            <span>邮箱</span>
-                            <span>1lszdkc@163.com</span>
-                        </div>
-                    </li>
-
-                    <li>
-                        <img src="../../static/imgs/aboutUs/contactUs/address.png">
-                        <div class="info">
-                            <span>地址</span>
-                            <span> 四川省乐山市高新区高新孵化园A区</span>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="../../static/imgs/aboutUs/contactUs/date.png">
-                        <div class="info">
-                            <span>开放时间</span>
-                            <span>周一至周五 9:00-17:00</span>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="col-sm-6 message">
-                <form>
-                    <ul>
-                        <li>你好.欢迎您给我们提出问题</li>
-                        <li>
-                            <span>姓名 </span>
-                            <p><input type="text" name="name"></p>
-                        </li>
-                        <li>
-                            <span>邮箱 </span>
-                            <p><input type="text" name="email"></p>
-                        </li>
-                        <li>
-                            <span>信息 </span>
-                            <p><textarea name="message"></textarea></p>
-                        </li>
-                        <li>
-                            <input type="button" class="messageBtn" value="提交留言">
-                        </li>
-                    </ul>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <footer>
     <div class="footer" style="color: #999999;font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
