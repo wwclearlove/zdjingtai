@@ -1,317 +1,465 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>新闻活动</title>
-    <link href="../../static/css/newsactivity/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/css/font-awesome.css">
-    <link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
-    <script type="text/javascript" src="../../static/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
-    <script type="text/javascript" src="../../static/js/header.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>新闻活动</title>
+	<link rel="stylesheet" href="../../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../../static/css/font-awesome.css">
+	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
+	<link rel="stylesheet" href="../../static/css/newsactivity/style.css">
+	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../static/js/header.js"></script>
 </head>
 <body>
 
-<!--头条-->
-<div class=" wrap clearfix overflow pt30">
-    <p><img src="../../static/imgs/newsactivity/index_r5_c3.jpg" class="fl"></p>
-    <dl class="pb15  overflow cl mt10 ">
-        <dt><a href="https://www.17sucai.com/preview/669084/2019-01-21/zhibohenan/index.html#" class=" f30 lanse">塞尔维亚各界期待习近平主席到访</a>
-        </dt>
-        <dd class="hs l-30 f18">国家主席习近平将对塞尔维亚进行国事访问。塞尔维亚各界热切期待习近平主席的到访。</dd>
-    </dl>
+<div id="title">
+	<!--languageSearch-->
+	<div class="languageSearch" style="opacity: 0.9">
+		<!--Language-->
+		<div class="language">
+			<a href="#" class="chinese">中文版</a> |
+			<a href="#" class="deutsch">Deutsch</a>
+		</div>
+		<!--Search-->
+		<div class="searchDiv">
+			<form action="">
+				<input type="text" class="search_input" placeholder="请输入搜索词">
+				<a href="#" class="search_a">
+					<i class="fa fa-search"></i>
+				</a>
+			</form>
+		</div>
+	</div>
+	<header class="header" id="header" style="opacity: 0.9">
+		<div class="h-fix">
+			<div class="containers">
+				<!--LoGo-->
+				<div class="logo">
+					<a href="#" title="中德科技">
+						<img src="../../static/imgs/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
+					</a>
+				</div>
+				<!--BarsIcon-->
+				<div id="m-btn" class="m-btn">
+					<i class="fa fa-bars"></i>
+				</div>
+				<!--Nav-->
+				<nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
+					<ul class="nav">
+						<li class="li-cate-1 active">
+							<a href="../index.html">首页</a>
+						</li>
+						<li class="li-cate-1">
+							<a href="./news.html">新闻活动</a>
+						</li>
+						<li class="li-cate-1">
+							<a href="#">中德科技合作</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">科研合作</a>
+								</li>
+								<li>
+									<a href="#">科技支撑平台</a>
+								</li>
+							</ul>
+						</li>
+						<li class="li-cate-1">
+							<a href="#">中德教育合作</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">留学服务</a>
+								</li>
+								<li>
+									<a href="#">游学访问</a>
+								</li>
+								<li>
+									<a href="#">中德学校合作</a>
+								</li>
+								<li>
+									<a href="#">中德学院</a>
+								</li>
+								<li>
+									<a href="#">双元制大学</a>
+								</li>
+							</ul>
+						</li>
+						<li class="li-cate-1">
+							<a href="#">中德企业合作</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">企业考察</a>
+								</li>
+								<li>
+									<a href="#">投资咨询</a>
+								</li>
+								<li>
+									<a href="#">技术对接</a>
+								</li>
+								<li>
+									<a href="#">成果转化</a>
+								</li>
+							</ul>
+						</li>
+						<li class="li-cate-1">
+							<a href="#">语言中心</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="#">商务德语课程</a>
+								</li>
+								<li>
+									<a href="#">青少年德语课程</a>
+								</li>
+								<li>
+									<a href="#">留德欧标课程</a>
+								</li>
+								<li>
+									<a href="#">翻译服务</a>
+								</li>
+								<li>
+									<a href="#">趣味德国</a>
+								</li>
+							</ul>
+						</li>
+						<li class="li-cate-1">
+							<a href="#">关于我们</a>
+							<ul class="sub-menu">
+								<li>
+									<a href="../aboutUs/centeroverview.html">中心概况</a>
+								</li>
+								<li>
+									<a href="../aboutUs/organization.html">组织架构</a>
+								</li>
+								<li>
+									<a href="#">发展历程</a>
+								</li>
+								<li>
+									<a href="#">发展目标</a>
+								</li>
+								<li>
+									<a href="../aboutUs/contactUs.html">联系我们</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--Mask-->
+	<div id="mask"></div>
 </div>
-<!--头条-->
-<!--新闻部分-->
-<div class="wrap pt40 overflow">
-    <div class="w705 overflow fl">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            </ol>
 
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="../../static/imgs/newsactivity/01.jpg" alt="..." width="100%">
-                    <div class="carousel-caption">
-                      <p style="font-size: 2em">红三代叶明子太庙办盛典 白色羽毛装高贵动人</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="../../static/imgs/newsactivity/02.jpg" alt="..." width="100%">
-                    <div class="carousel-caption">
-                      <p style="font-size: 2em">佟大为登封面表情搞怪 成熟男人也是天真男孩</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="../../static/imgs/newsactivity/03.jpg" alt="..." width="100%">
-                    <div class="carousel-caption">
-                     <p style="font-size: 2em">21岁出柜超模巴厘自曝搞笑</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="../../static/imgs/newsactivity/04.jpg" alt="..." width="100%">
-                    <div class="carousel-caption">
-                       <p style="font-size: 2em">金喜善出道21年 皮肤白皙越长越"嫩"!</p>
-                    </div>
-                </div>
-            </div>
+<section style="padding: 50px 0;">
+	<!--头条-->
+	<div class=" wrap clearfix overflow pt30">
+		<p><img src="../../static/imgs/newsactivity/index_r5_c3.jpg" class="fl"></p>
+		<dl class="pb15  overflow cl mt10 ">
+			<dt><a href="https://www.17sucai.com/preview/669084/2019-01-21/zhibohenan/index.html#" class=" f30 lanse">塞尔维亚各界期待习近平主席到访</a>
+			</dt>
+			<dd class="hs l-30 f18">国家主席习近平将对塞尔维亚进行国事访问。塞尔维亚各界热切期待习近平主席的到访。</dd>
+		</dl>
+	</div>
+	<!--头条-->
+	<!--新闻部分-->
+	<div class="wrap pt40 overflow">
+		<div class="w705 overflow fl">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				</ol>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <div class="w470 overflow fr">
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="../../static/imgs/newsactivity/01.jpg" alt="..." width="100%">
+						<div class="carousel-caption">
+							<p style="font-size: 2em">红三代叶明子太庙办盛典 白色羽毛装高贵动人</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/02.jpg" alt="..." width="100%">
+						<div class="carousel-caption">
+							<p style="font-size: 2em">佟大为登封面表情搞怪 成熟男人也是天真男孩</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/03.jpg" alt="..." width="100%">
+						<div class="carousel-caption">
+							<p style="font-size: 2em">21岁出柜超模巴厘自曝搞笑</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/04.jpg" alt="..." width="100%">
+						<div class="carousel-caption">
+							<p style="font-size: 2em">金喜善出道21年 皮肤白皙越长越"嫩"!</p>
+						</div>
+					</div>
+				</div>
 
-        <dl class="pb20 boder-bb overflow cl mt10 ">
-            <dt><a href="" class="f20 ">新宝马X1长轴版
-                领衔车展重磅SUV</a></dt>
-            <dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
-        </dl>
-        <dl class="pb20 boder-bb overflow cl mt10 ">
-            <dt><a href="" class="f20">新宝马X1长轴版
-                领衔车展重磅SUV</a></dt>
-            <dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
-        </dl>
-        <dl class="pb20 boder-bb overflow cl mt10 ">
-            <dt><a href="" class="f20">新宝马X1长轴版
-                领衔车展重磅SUV</a></dt>
-            <dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
-        </dl>
-        <dl class="pb20 boder-bb overflow cl mt10 ">
-            <dt><a href="" class="f20">新宝马X1长轴版
-                领衔车展重磅SUV</a></dt>
-            <dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
-        </dl>
-        <ul class="clearfix w100 overflow pt15">
-            <li>
-                <a href="">新宝马X1长轴版
-                    领衔车展重磅SUV</a>
-            </li>
-            <li>
-                <a href="">带你吃喝玩乐逛车展V</a>
-            </li>
-            <li>
-                <a href="">新宝马X1长轴版
-                    领衔车展重磅SUV</a>
-            </li>
-            <li>
-                <a href="">带你吃喝玩乐逛车展V</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!--ad-->
-<div class="wrap overflow pt15">
-    <img src="../../static/imgs/newsactivity/index_r1_c3.jpg">
-</div>
-<!--ad-->
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<div class="w470 overflow fr">
 
-<!--社会实时-->
-<div class="wrap overflow  clearfix pt20">
-    <a href="">
-        <img src="../../static/imgs/newsactivity/index_r17_c4.jpg" class="fl"></a>
-</div>
-<div class="wrap overflow  clearfix pt30">
-    <!--1-->
-    <div class="w362 fl overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">时政</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
-    <!--1-->
-    <div class="w362 fr overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">财经</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
-    <!--1-->
-    <div class="w362 fr overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">食品</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
-</div>
-<div class="wrap overflow  clearfix pt30">
+			<dl class="pb20 boder-bb overflow cl mt10 ">
+				<dt><a href="" class="f20 ">新宝马X1长轴版
+					领衔车展重磅SUV</a></dt>
+				<dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
+			</dl>
+			<dl class="pb20 boder-bb overflow cl mt10 ">
+				<dt><a href="" class="f20">新宝马X1长轴版
+					领衔车展重磅SUV</a></dt>
+				<dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
+			</dl>
+			<dl class="pb20 boder-bb overflow cl mt10 ">
+				<dt><a href="" class="f20">新宝马X1长轴版
+					领衔车展重磅SUV</a></dt>
+				<dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
+			</dl>
+			<dl class="pb20 boder-bb overflow cl mt10 ">
+				<dt><a href="" class="f20">新宝马X1长轴版
+					领衔车展重磅SUV</a></dt>
+				<dd class="hs l-30">带你吃喝玩乐逛车展|上市新车早知"到"|路虎将推出揽胜轿跑版</dd>
+			</dl>
+			<ul class="clearfix w100 overflow pt15">
+				<li>
+					<a href="">新宝马X1长轴版
+						领衔车展重磅SUV</a>
+				</li>
+				<li>
+					<a href="">带你吃喝玩乐逛车展V</a>
+				</li>
+				<li>
+					<a href="">新宝马X1长轴版
+						领衔车展重磅SUV</a>
+				</li>
+				<li>
+					<a href="">带你吃喝玩乐逛车展V</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--ad-->
+	<div class="wrap overflow pt15">
+		<img src="../../static/imgs/newsactivity/index_r1_c3.jpg">
+	</div>
+	<!--ad-->
 
-    <!--1-->
-    <div class="w362 fl overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">法制</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
-    <!--1-->
-    <div class="w362 fr overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">科技</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
+	<!--社会实时-->
+	<div class="wrap overflow  clearfix pt20">
+		<a href="">
+			<img src="../../static/imgs/newsactivity/index_r17_c4.jpg" class="fl"></a>
+	</div>
+	<div class="wrap overflow  clearfix pt30">
+		<!--1-->
+		<div class="w362 fl overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">时政</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
+		<!--1-->
+		<div class="w362 fr overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">财经</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
+		<!--1-->
+		<div class="w362 fr overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">食品</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
+	</div>
+	<div class="wrap overflow  clearfix pt30">
 
-    <div class="w362 fr overflow">
-        <div class="w362_top overflow">
-            <p class="fl"><a href=""
-                             class="lanse f18 pl10">爱心</a></p>
-            <span class="fr pr15"><a href=""
-                                     class=" f12 pl10">更多 +</a></span>
-        </div>
-        <div class="w100_r1 overflow clearfix pt15 w100">
-            <ol>
-                <a href="">
-                    <img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
-                    <span>科比中小型</span>
-                </a>
-            </ol>
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-        <div class="w100_u clearfix overflow pt5">
-            <ul>
-                <li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
-                <li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
-            </ul>
-        </div>
-    </div>
-    <!--1-->
+		<!--1-->
+		<div class="w362 fl overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">法制</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
+		<!--1-->
+		<div class="w362 fr overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">科技</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
+
+		<div class="w362 fr overflow">
+			<div class="w362_top overflow">
+				<p class="fl"><a href=""
+								 class="lanse f18 pl10">爱心</a></p>
+				<span class="fr pr15"><a href=""
+										 class=" f12 pl10">更多 +</a></span>
+			</div>
+			<div class="w100_r1 overflow clearfix pt15 w100">
+				<ol>
+					<a href="">
+						<img src="../../static/imgs/newsactivity/fTXg-fxtmwep2901044.jpg">
+						<span>科比中小型</span>
+					</a>
+				</ol>
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+			<div class="w100_u clearfix overflow pt5">
+				<ul>
+					<li><a href="">足协杯-鲁能负申花 亚冠路尽</a></li>
+					<li><a href="">上港输富力出局 仅剩一救冠路尽</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--1-->
 
 
-</div>
+	</div>
+</section>
+
+<footer>
+	<div class="footer" style="font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
+		<p style="color: #999999;">京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
+		<p style="color: #999999;">Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
+	</div>
+</footer>
 
 </body>
 </html>
+
