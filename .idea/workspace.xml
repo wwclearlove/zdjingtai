@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1c11fd6-6ef3-45e5-bbd5-55d388f36153" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/static/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/static/imgs/aboutUs/centeroverview/jgtorganization_img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/css/aboutUs/centeroverview.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/css/aboutUs/centeroverview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/css/aboutUs/organization.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/css/aboutUs/organization.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/css/newsactivity/news_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/css/newsactivity/news_list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/css/newsactivity/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/css/newsactivity/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/imgs/aboutUs/centeroverview/organization-img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/js/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/js/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/static/js/news_list/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/static/js/news_list/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/aboutUs/centeroverview.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/aboutUs/centeroverview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/aboutUs/contactUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/aboutUs/contactUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/aboutUs/organization.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/aboutUs/organization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/china_education/liuxue.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/china_education/liuxue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/china_education/youxue.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/china_education/youxue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/footer/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/newsactivity/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/newsactivity/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/newsactivity/news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/newsactivity/news_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/scientificcooperation/scientific-cooperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/scientificcooperation/scientific-cooperation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/templates/scientificcooperation/technology-platform.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/templates/scientificcooperation/technology-platform.html" afterDir="false" />
-    </list>
+    <list default="true" id="b1c11fd6-6ef3-45e5-bbd5-55d388f36153" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +12,7 @@
     <session id="133950939">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -177,7 +152,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="420" />
     <option name="width" value="981" />
     <option name="height" value="1092" />
@@ -209,49 +184,7 @@
               <item name="zd" type="b2602c69:ProjectViewProjectNode" />
               <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="aboutUs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="china_education" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="newsactivity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zdjingtai" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="scientificcooperation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,15 +233,15 @@
       <updated>1571056757125</updated>
       <workItem from="1571056760105" duration="739000" />
       <workItem from="1571101021224" duration="31555000" />
-      <workItem from="1571147790779" duration="1671000" />
+      <workItem from="1571147790779" duration="2802000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39099000" />
+    <option name="totallyTimeSpent" value="40230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23421264" />
       <window_info id="Structure" order="1" weight="0.25" />
