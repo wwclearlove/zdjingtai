@@ -1,0 +1,34 @@
+#footer {
+	padding: 10px;
+	background-color: #2C2C2C;
+}
+
+.footerDiv01 {
+	padding: 20px 0;
+	color: #999999;
+	text-align: center;
+}
+
+.footerDiv01 i,
+.footerDiv01 p,
+.footerDiv01 span{
+	color: #999999;
+	line-height: 2em;
+}
+.footerDiv01 strong{
+	font-size: 1.6em;
+}
+.footerDiv01 i{
+	margin-right: 10px;
+}
+.footer {
+	font-size: 1rem;
+	padding: 15px;
+	text-align: center;
+}
+
+.footerDiv01_hr{
+	width: 100%;
+	height: 1px;
+	background-color: #999999;
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../static/css/bootstrap.css">
     <link rel="stylesheet" href="../../static/css/font-awesome.css">
     <link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="../../static/css/aboutUs/centeroverview.css" type="text/css"/>
     <script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
@@ -18,11 +19,15 @@
 
 <div id="title">
     <!--languageSearch-->
-    <div class="languageSearch" style="opacity: 0.9">
+    <div class="languageSearch">
         <!--Language-->
         <div class="language">
             <a href="#" class="chinese">中文版</a> |
             <a href="#" class="deutsch">Deutsch</a>
+        </div>
+        <!--time-->
+        <div class="time">
+            <p id="times"></p>
         </div>
         <!--Search-->
         <div class="searchDiv">
@@ -34,13 +39,13 @@
             </form>
         </div>
     </div>
-    <header class="header" id="header" style="opacity: 0.9">
+    <header class="header" id="header">
         <div class="h-fix">
             <div class="containers">
                 <!--LoGo-->
                 <div class="logo">
                     <a href="#" title="中德科技">
-                        <img src="../../static/imgs/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
+                        <img src="http://106.52.3.235/zdkj/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
                     </a>
                 </div>
                 <!--BarsIcon-->
@@ -51,24 +56,13 @@
                 <nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
                     <ul class="nav">
                         <li class="li-cate-1">
-                            <a href="../index.html">首页</a>
+                            <a href="../index.html" class="li-cate_a">首页</a>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">新闻活动</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="../newsactivity/news.html">新闻活动中心</a>
-                                </li>
-                                <li>
-                                    <a href="../newsactivity/news.html">新闻列表</a>
-                                </li>
-                                <li>
-                                    <a href="../newsactivity/news_list.html">文章列表</a>
-                                </li>
-                            </ul>
+                            <a href="../newsactivity/news.html" class="li-cate_a">新闻活动</a>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">中德科技合作</a>
+                            <a href="#" class="li-cate_a">中德科技合作</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="../scientificcooperation/scientific-cooperation.html">科研合作</a>
@@ -79,7 +73,7 @@
                             </ul>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">中德教育合作</a>
+                            <a href="#" class="li-cate_a">中德教育合作</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="../china_education/liuxue.html">留学服务</a>
@@ -99,7 +93,7 @@
                             </ul>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">中德企业合作</a>
+                            <a href="#" class="li-cate_a">中德企业合作</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="#">企业考察</a>
@@ -116,7 +110,7 @@
                             </ul>
                         </li>
                         <li class="li-cate-1">
-                            <a href="#">语言中心</a>
+                            <a href="#" class="li-cate_a">语言中心</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="#">商务德语课程</a>
@@ -136,7 +130,7 @@
                             </ul>
                         </li>
                         <li class="li-cate-1 active">
-                            <a href="../aboutUs/centeroverview.html">关于我们</a>
+                            <a href="../aboutUs/centeroverview.html" class="li-cate_a">关于我们</a>
                             <ul class="sub-menu">
                                 <li>
                                     <a href="../aboutUs/organization.html">组织架构</a>
@@ -195,7 +189,7 @@
             <div class="col-lg-2 col-xs-12 centeroverviewDivSon">
                 <br><br>
                 <div>
-                    <a href="#">
+                    <a href="./organization.html">
                         <img src="../../static/imgs/aboutUs/centeroverview/组织架构.png" alt="组织架构"/>
                     </a>
                 </div>
@@ -221,10 +215,28 @@
     </div>
 </section>
 
-<footer>
-    <div class="footer" style="font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
-        <p style="color: #999999;">京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
-        <p style="color: #999999;">Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footerDiv01">
+                <div><span><strong><i class="fa fa-phone"></i>联系方式</strong></span></div>
+                <div><span>手机：18728871721</span></div>
+                <div><span>座机：0833-2595989</span></div>
+                <div><span>邮箱：lszdkc@163.com</span></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 footerDiv01">
+                <div><span><strong><i class="fa fa-map-marker"></i>地址</strong></span></div>
+                <div><span>四川省乐山市高新区高新孵化园A区9楼901</span></div>
+                <div><span>开放时间：周一至周五 9:00-17:00</span></div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="footerDiv01_hr"></div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerDiv01">
+                <p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
+                <p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
+            </div>
+        </div>
     </div>
 </footer>
 

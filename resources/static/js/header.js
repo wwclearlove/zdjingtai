@@ -72,18 +72,47 @@ $(document).ready(function () {
 			$("body").removeClass("open");
 		});
 	});
-	/*滚动事件导航变化*/
-	$(window).scroll(function () {
-		var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop).toFixed(0);
+	/*导航*/
+	var opacity = 0.9;
+	var opacitys = 1;
+	var clientWidth = document.body.clientWidth;
+	/*$(window).scroll(function () {
+		// var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop).toFixed(0);
 		var clientWidth = document.body.clientWidth;
-		if (scrollTop > 130 && clientWidth > 1024) {
-			$(".languageSearch").css("opacity","0.8");
-			$(".header").css("opacity","0.8");
+		if (clientWidth > 1024) {
+			$(".languageSearch").css("opacity", opacity);
+			$(".header").css("opacity", opacity);
 		} else {
-			$(".languageSearch").css("opacity","1");
-			$(".header").css("opacity","1");
+			$(".languageSearch").css("opacity", opacitys);
+			$(".header").css("opacity", opacitys);
+		}
+	});*/
+	$("#title").mouseover(function () {
+		if (clientWidth > 1024) {
+			$(".languageSearch").css("opacity", opacitys);
+			$(".header").css("opacity", opacitys);
 		}
 	});
+	$("#title").mouseout(function () {
+		if (clientWidth > 1024) {
+			$(".languageSearch").css("opacity", opacity);
+			$(".header").css("opacity", opacity);
+		}
+	});
+	/*var liCate = $(".li-cate-1");
+	for (var i = 0; i < liCate.length; i++) {
+		liCate[i].index = i;
+		liCate.eq(i).mouseover(function () {
+			$(".li-cate_a").eq(this.index).css("color", "#ffffff")
+		});
+		liCate.eq(i).mouseout(function () {
+			$(".li-cate_a").eq(this.index).css("color", "#333333")
+		});
+	}*/
+	/*时间*/
+	setInterval(function () {
+		$("#times").html(new Date().toLocaleString());
+	}, 1000);
 });
 
 
