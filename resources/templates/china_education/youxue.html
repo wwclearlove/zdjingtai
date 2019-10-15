@@ -13,153 +13,293 @@
     <script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
     <script type="text/javascript" src="../../static/js/header.js"></script>
-    <script type="text/javascript" src="../../static/js/createMaps.js"></script>
-    <script type="text/javascript" src="../../static/js/maps.js"></script>
 </head>
 <body>
-<!--背景-->
+
+<div id="title">
+    <!--languageSearch-->
+    <div class="languageSearch" style="opacity: 0.9">
+        <!--Language-->
+        <div class="language">
+            <a href="#" class="chinese">中文版</a> |
+            <a href="#" class="deutsch">Deutsch</a>
+        </div>
+        <!--Search-->
+        <div class="searchDiv">
+            <form action="">
+                <input type="text" class="search_input" placeholder="请输入搜索词">
+                <a href="#" class="search_a">
+                    <i class="fa fa-search"></i>
+                </a>
+            </form>
+        </div>
+    </div>
+    <header class="header" id="header" style="opacity: 0.9">
+        <div class="h-fix">
+            <div class="containers">
+                <!--LoGo-->
+                <div class="logo">
+                    <a href="#" title="中德科技">
+                        <img src="../../static/imgs/logo.jpg" alt="中德科技" title="中德科技" class="logo_icon"/>
+                    </a>
+                </div>
+                <!--BarsIcon-->
+                <div id="m-btn" class="m-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <!--Nav-->
+                <nav class="nav-bar" id="nav-box" data-type="index" data-infoid="">
+                    <ul class="nav">
+                        <li class="li-cate-1">
+                            <a href="../index.html">首页</a>
+                        </li>
+                        <li class="li-cate-1">
+                            <a href="#">新闻活动</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../newsactivity/news.html">新闻活动中心</a>
+                                </li>
+                                <li>
+                                    <a href="../newsactivity/news.html">新闻列表</a>
+                                </li>
+                                <li>
+                                    <a href="../newsactivity/news_list.html">文章列表</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-cate-1">
+                            <a href="#">中德科技合作</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../scientificcooperation/scientific-cooperation.html">科研合作</a>
+                                </li>
+                                <li>
+                                    <a href="../scientificcooperation/technology-platform.html">科技支撑平台</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-cate-1 active">
+                            <a href="#">中德教育合作</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../china_education/liuxue.html">留学服务</a>
+                                </li>
+                                <li>
+                                    <a href="../china_education/youxue.html">游学访问</a>
+                                </li>
+                                <li>
+                                    <a href="#">中德学校合作</a>
+                                </li>
+                                <li>
+                                    <a href="#">中德学院</a>
+                                </li>
+                                <li>
+                                    <a href="#">双元制大学</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-cate-1">
+                            <a href="#">中德企业合作</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">企业考察</a>
+                                </li>
+                                <li>
+                                    <a href="#">投资咨询</a>
+                                </li>
+                                <li>
+                                    <a href="#">技术对接</a>
+                                </li>
+                                <li>
+                                    <a href="#">成果转化</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-cate-1">
+                            <a href="#">语言中心</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">商务德语课程</a>
+                                </li>
+                                <li>
+                                    <a href="#">青少年德语课程</a>
+                                </li>
+                                <li>
+                                    <a href="#">留德欧标课程</a>
+                                </li>
+                                <li>
+                                    <a href="#">翻译服务</a>
+                                </li>
+                                <li>
+                                    <a href="#">趣味德国</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li-cate-1">
+                            <a href="../aboutUs/centeroverview.html">关于我们</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../aboutUs/organization.html">组织架构</a>
+                                </li>
+                                <li>
+                                    <a href="#">发展历程</a>
+                                </li>
+                                <li>
+                                    <a href="#">发展目标</a>
+                                </li>
+                                <li>
+                                    <a href="../aboutUs/contactUs.html">联系我们</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Mask-->
+    <div id="mask"></div>
+</div>
+
 <section>
-    <!-- 背景图 -->
+    <!--背景-->
     <div class="container-fluid">
         <div class="row url">
             <img src="../../static/imgs/china_education/s2_youxue.png" class="img-responsive" width="100%" alt=""/>
         </div>
     </div>
-
-</section>
-
-<section class="container">
-    <div class="page-header" style="text-align: center;color: #005578">
-        <h1>游学</h1>
-        <hr/>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-6 ">
-            <img src="../../static/imgs/china_education/s2_1.jpg" style="padding: 0;width: 100%;margin-bottom: 30px"
-                 alt=""/>
+    <!--内容-->
+    <div class="container" style="padding: 40px 0;">
+        <div class="page-header" style="text-align: center;color: #005578">
+            <h1>游学</h1>
+            <hr/>
         </div>
-        <div class="col-xs-12 col-md-6 ">
-            <p class="s2"> 随着科技的发展与进步，全世界拉近了距离。在如今快速便利的交通环境下，游学自然而然地兴起。
-                所谓游学，即为游与学，这里的游即是游玩，旅游之意，学则为学习，参学之意。游学游学，
-                即为边游边学，在游玩中学习，在学习中游玩。游学不仅仅能开阔视野，培养独立自主的能力，还能够收获独一无二的感动和体验。
+        <div class="row">
+            <div class="col-xs-12 col-md-6 ">
+                <img src="../../static/imgs/china_education/s2_1.jpg" style="padding: 0;width: 100%;margin-bottom: 30px"
+                     alt=""/>
+            </div>
+            <div class="col-xs-12 col-md-6 ">
+                <p class="s2"> 随着科技的发展与进步，全世界拉近了距离。在如今快速便利的交通环境下，游学自然而然地兴起。
+                    所谓游学，即为游与学，这里的游即是游玩，旅游之意，学则为学习，参学之意。游学游学，
+                    即为边游边学，在游玩中学习，在学习中游玩。游学不仅仅能开阔视野，培养独立自主的能力，还能够收获独一无二的感动和体验。
 
-            </p>
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="page-header" style="text-align: center;color: #005578">
-        <h2>学生游学</h2>
-        <hr/>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-            <img src="../../static/imgs/china_education/s2_b2youxue.jpeg" style="padding: 0;height:50%;width: 100%;margin-bottom: 30px"
-                 alt=""/>
-            <p class="s1">
-                学生游学主要面向于学生，前往学校或是科研机构进行访问与交流，在游玩的同时学习西方独特的思考模式和培养独立自主的能力等。
-            </p>
+        <div class="page-header" style="text-align: center;color: #005578">
+            <h2>学生游学</h2>
+            <hr/>
         </div>
-        <div class="col-xs-12 col-md-6">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <img src="../../static/imgs/china_education/s2_b2youxue.jpeg" style="padding: 0;height:50%;width: 100%;margin-bottom: 30px"
+                     alt=""/>
+                <p class="s1">
+                    学生游学主要面向于学生，前往学校或是科研机构进行访问与交流，在游玩的同时学习西方独特的思考模式和培养独立自主的能力等。
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
 
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="../../static/imgs/china_education/s2_b1.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            学生游学图片1
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../../static/imgs/china_education/s2_b1.jpg" alt="..." >
+                            <div class="carousel-caption">
+                                学生游学图片1
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="../../static/imgs/china_education/s2_b2.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            学生游学图片2
+                        <div class="item">
+                            <img src="../../static/imgs/china_education/s2_b2.jpg" alt="..." >
+                            <div class="carousel-caption">
+                                学生游学图片2
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="../../static/imgs/china_education/s2_b3.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            学生游学图片3
+                        <div class="item">
+                            <img src="../../static/imgs/china_education/s2_b3.jpg" alt="..." >
+                            <div class="carousel-caption">
+                                学生游学图片3
+                            </div>
                         </div>
+
                     </div>
 
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
+            </div>
+        </div>
+        <div class="page-header" style="text-align: center;color: #005578">
+            <h2>企业游学</h2>
+            <hr/>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+                    </ol>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../../static/imgs/china_education/s2_1.jpg" alt="..." >
+                            <div class="carousel-caption">
+                                企业游学图片1
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../../static/imgs/china_education/s2_b2youxue.jpeg" alt="..." >
+                            <div class="carousel-caption">
+                                企业游学图片2
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="../../static/imgs/china_education/s2_byouxue.jpg" width="100%" alt="..." >
+                            <div class="carousel-caption">
+                                企业游学图片3
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <img src="../../static/imgs/china_education/s2_byouxue.jpg" style="padding: 0;height:50%;width: 100%;margin-bottom: 30px"
+                     alt=""/>
+                <p class="s1">
+                    企业游学主要面向于企业。企业组织企业管理层或是企业员工前往其他国家，在旅游的同时学习并交流企业文化和管理模式等。
+                </p>
             </div>
         </div>
     </div>
-    <div class="page-header" style="text-align: center;color: #005578">
-        <h2>企业游学</h2>
-        <hr/>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-6">
-            <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="../../static/imgs/china_education/s2_1.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            企业游学图片1
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="../../static/imgs/china_education/s2_b2youxue.jpeg" alt="..." >
-                        <div class="carousel-caption">
-                            企业游学图片2
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="../../static/imgs/china_education/s2_byouxue.jpg" width="100%" alt="..." >
-                        <div class="carousel-caption">
-                            企业游学图片3
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-            <img src="../../static/imgs/china_education/s2_byouxue.jpg" style="padding: 0;height:50%;width: 100%;margin-bottom: 30px"
-                 alt=""/>
-            <p class="s1">
-                企业游学主要面向于企业。企业组织企业管理层或是企业员工前往其他国家，在旅游的同时学习并交流企业文化和管理模式等。
-            </p>
-        </div>
-    </div>
 </section>
-
 
 <footer>
-    <div class="footer"
-         style="color: #999999;font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
+    <div class="footer" style="color: #999999;font-size: 1rem;padding: 15px;text-align: center;background-color: #2C2C2C;">
         <p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
 
         <p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>

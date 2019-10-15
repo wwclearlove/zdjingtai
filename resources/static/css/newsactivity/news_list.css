@@ -1,16 +1,11 @@
 /* 公共样式表css */
-ul {
+.module-banner ul {
 	margin: 0;
 	padding: 0;
 }
 
-li {
+.module-banner ul li {
 	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: #08acee;
 }
 
 .clearfix::after {
@@ -120,7 +115,8 @@ a {
 	height: 490px;
 	background: #fff;
 	padding: 0 40px;
-	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	position: relative;
 }
 
@@ -178,6 +174,12 @@ a {
 }
 .module-tab-title_DivSon02_title{
 	color: #157BBB;
+	display: block;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
 }
 .module-tab-title_DivSon02_time{
 	color: #999999;
@@ -185,5 +187,15 @@ a {
 }
 .module-tab-title_DivSon02_info{
 	color: #333333;
+	display: block;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
 }
-
+.module-tab-box-ma_Divs{
+	width: 100%;
+	padding: 20px 0;
+	text-align: right;
+}

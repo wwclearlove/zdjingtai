@@ -3,7 +3,7 @@
 .log2 img{ float:right}
 .navbar-brand{
 		    padding: 20px 15px;
-		    height: auto; 
+		    height: auto;
 		}
 		nav.navbar.bootsnav{
 		    border: none;
@@ -15,9 +15,9 @@
 		nav.navbar.bootsnav ul.nav > li > a{
 		    color: #474747;
 		    text-transform: uppercase;
-		    padding: 20px 45px; 
+		    padding: 20px 45px;
 		}
-		
+
 		nav.navbar.bootsnav ul.nav > li a:hover{
 		    background: #F8B71B; color:#fff
 		}
@@ -28,10 +28,7 @@
 		    position: absolute;
 		    bottom: 0;
 		    left: 0;
-		    transition: all 0.5s ease 0s; 
-		}
-		.nav > li:hover:after{
-		    width: 100%;color:#fff
+		    transition: all 0.5s ease 0s;
 		}
 		nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
 		    content: "+";
@@ -55,10 +52,10 @@
 		    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 		    border: none;
 		}
-		
-		
-	.nav_bg{ width:100%; background:#0887e7; text-align:center; margin:auto; display:none }	
-	
+
+
+	.nav_bg{ width:100%; background:#0887e7; text-align:center; margin:auto; display:none }
+
 /*-----index_viedonewsandabout---*/
 .pro_top{ padding-top:30px; overflow:hidden}
 .pro_top img{ text-align:center; margin:auto; display:block}
@@ -208,13 +205,13 @@
 .pro_rightt dl a{ overflow:hidden; display:block; color:#333;text-align:center; margin:auto; font-size:14px; }
 .pro_rightt dl dt{  overflow:hidden; text-align:center; margin:auto;  overflow:hidden;  position:relative; background:#F1F1F1; ;}
 .pro_rightt dl dt img{ text-align:center; margin:auto; display:block; padding:10% ; width:230px; height:180px  }
-.pro_rightt dl dd{ line-height:30px; height:30px; overflow:hidden; padding-top:5px;} 
+.pro_rightt dl dd{ line-height:30px; height:30px; overflow:hidden; padding-top:5px;}
 
 
 .row3{ margin-left:-15px;}
 .row4{ margin-right:-15px;}
 .copy_bg{  padding:20px 0px; overflow:hidden; color:#fff; line-height:20px; font-size:14px; text-align:center; background:#0887e7 }
-.copy_bg a{color:#8c8c8c;}	
+.copy_bg a{color:#8c8c8c;}
 .pest_about h5{ text-align:center; font-size:26px; color:#333}
 .pest_about p{ text-align:left; line-height:24px; color:#666; font-size:14px; padding-top:15px;}
 .pest_about p img{ text-align:center; margin:auto; width:100%;}
@@ -417,24 +414,24 @@
 .pro_show_pest1 dl dd  > a{ color:#333}
 
 @media only screen and (max-width:1199px){
-		    
-			
+
+
 .pro_left{text-align:center; margin:auto; width:100%; margin-bottom:20px}
 	.pro_left dl{ text-align:center; margin:auto}
 	.pro_left dd{list-style-type: none; border:1px solid #E3E3E3; font-size:14px; height:44px; line-height:44px; text-align:center; padding-left:0px; margin-bottom:0px;  overflow:hidden; float:left;  width:33.3%;}
     .pro_left dd i{ display:none; float:none}
     .pro_left dd a{ color:#333; text-align:center; }
-	
-	
+
+
 	.xq_r{ display:none}
-	
+
 	.pro_right dl img{ width:218px; height:202px}
 	.pro_right dl a:hover dt div ol{ border:2px solid #fff; margin:4% 3% 2% 3%  ; padding:23%}
     .pro_rightt dl dt img{ width:198px; height:150px}
 
 		}
 
-		
+
 @media (max-width:992px){
 	.pnone{ display:none}
 	.log1 img{  display:block; text-align:center; margin:auto;width:100%; padding-top:10px;}
@@ -459,15 +456,15 @@
     margin-top: 20px;
     margin-left: 1%;
 }
-}		
-		
+}
+
 		@media only screen and (max-width:1024px){
 		    nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after,
 		    nav.navbar.bootsnav ul.nav > li.dropdown.on > a.dropdown-toggle:after{ content: " "; }
 		    .dropdown-menu.multi-dropdown{ left: 0 !important; }
 		    nav.navbar.bootsnav ul.nav > li:hover{ color:#fff }
 		    nav.navbar.bootsnav ul.nav > li > a{ margin: 0; }
-			
+
 .pro_left{text-align:center; margin:auto; width:100%}
 	.pro_left dl{ text-align:center; margin:auto}
 	.pro_left dd{list-style-type: none; border:1px solid #E3E3E3; font-size:14px; height:44px; line-height:44px; text-align:center; padding-left:0px; margin-bottom:0px;  overflow:hidden; float:left;  width:33.3%;}
@@ -492,7 +489,7 @@
 	.wx img{ float:none; text-align:center; margin:auto; display:block}
 .cbp-hrmenu{ display:none}
 .nav_bg{display: block}
-	
+
 .links_show{ padding-top:15px; padding-bottom:15px; width:90%; text-align:center; margin:auto}
 .pro_left1 dl{ width:100%;  overflow:hidden; margin-top:20px;}
 .pro_right1{ border-left:none;   overflow:hidden;  }
@@ -504,7 +501,7 @@
 
 	.zaij_right{ width:100%; background:#F8F8F8; overflow:hidden; float:none; padding:30px 0; margin-bottom:30px}
 
-	
+
 .qx_bot dd img{ width:100% }
 .qx_bot dd { width:100%; float:none}
 .swipslider {
@@ -515,7 +512,7 @@
       -ms-user-select: none;
           user-select: none; width:100%; overflow:hidden; height:100% }
 
-	
+
 	.nav_bgg{ width:100%; border-bottom:5px #0B70DA solid; border-top:1px solid #E9E9E9; margin-top:1em; display:block; height:55px; overflow:hidden;padding:10px 0 }
 	.nav_bgg dd{ width:14.1%; float:left; font-size:16px; line-height:33px; text-align:center; border-right:1px solid #e9e9e9}
 	.nav_bgg dd:last-child{border-right:none}
@@ -620,7 +617,7 @@
 .ys_bg1_top{ padding-top:20px; overflow:hidden; text-align:center; margin:auto}
 .rm img{ width:150px; height:122px}
 	.nav_bg{ display:block}
-	
+
 .pro_right dl a:hover dt div ol{ border:2px solid #fff; margin:10px; padding:20px}
 .pro_right dl a:hover dt div h1{  color:#fff; font-size:18px; text-align: center; overflow:hidden; width:100% }
 .pro_right dl a:hover dt div  span{ width:80px; height:25px; line-height:25px; color:#fff; text-align:center; display:block; background:#0887e7; border-radius:4px; margin:auto; font-size:14px;}
