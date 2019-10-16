@@ -7,22 +7,21 @@
         font-size: 0.8em;
         color: #414cd5;
         text-align: center;
-
-    }
-    th{
-
-        font-size: 1em;
     }
     td{
-        color: #005578;
+        color: #003750;
         font-size: 0.8em;
     }
-
+    th{
+        text-align: center;
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 750px){
     th{
         font-size: 1.7em;
+        text-align: center;
     }
     td{
         color: #003750;
@@ -36,7 +35,7 @@
         text-align: center;
         font-size: 1.7em;
         color: #414cd5;
-        margin-top: 130px;
+
     }
 
 
