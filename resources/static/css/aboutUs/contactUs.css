@@ -9,37 +9,13 @@
 	font-weight: bolder;
 }
 
-/*促进中心*/
 .centerDiv {
-	padding: 20px 0;
+	padding: 40px 0;
 }
 
-.titleFle {
-	display: flex;
-	display: -webkit-flex;
-	justify-content: center;
-	-webkit-justify-content: center;
-}
-
-.titleFle span {
-	display: block;
-}
-
-.titleFle .leftFont {
-	font-size: 80px;
-}
-
-.titleFle .chinaese {
-	font-size: 40px;
-}
-
-.titleFle .english {
-	font-size: 20px;
-	margin-top: -5px;
-}
-
-.titleFle .chinaese_english {
-	margin-top: 10px;
+.centerDiv div img {
+	width: 240px;
+	height: 80px;
 }
 
 /*联系我们--地图*/
@@ -60,23 +36,6 @@
 	/*当前页面位置*/
 	.locationDiv {
 		display: none;
-	}
-
-	/*促进中心*/
-	.titleFle .leftFont {
-		font-size: 45px;
-	}
-
-	.titleFle .chinaese {
-		font-size: 24px;
-	}
-
-	.titleFle .english {
-		font-size: 12px;
-	}
-
-	.titleFle .chinaese_english {
-		margin-top: 5px;
 	}
 }
 

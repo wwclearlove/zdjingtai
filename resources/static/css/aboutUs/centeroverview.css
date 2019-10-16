@@ -12,24 +12,26 @@
 }
 
 .centeroverviewDiv_p {
-	font-size: 1em;
+	font-size: 1.2em;
 	text-align: left;
-	line-height: 50px;
+	text-indent: 2em;
+	line-height: 2.5em;
+	letter-spacing: 1px;
 }
 
-.centeroverviewDivSon div {
-	font-size: 1em;
-	margin: 20px 0;
+.centeroverviewDivSon {
+	padding: 40px 0;
 	text-align: left;
 }
 
 .centeroverviewDivSon div img {
 	height: 45px;
 	width: 206px;
+	margin-top: 20px;
 }
 
 @media (max-width: 1024px) {
-	.centeroverviewDivSon div {
+	.centeroverviewDivSon {
 		text-align: center;
 	}
 }
