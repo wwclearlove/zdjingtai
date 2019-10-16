@@ -11,22 +11,216 @@
     <link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
     <link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
     <link rel="stylesheet" href="../../static/css/languagecenter/style.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/index.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/publish.min.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/clientlibs.min.css">
     <script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
     <script type="text/javascript" src="../../static/js/header.js"></script>
+
 </head>
 <body>
 
 
 
 <section>
-    <!-- 背景图 -->
-    <div class="container-fluid" style="margin-bottom: 50px">
-        <div class="row url">
-            <img src="../../static/imgs/index/banner1.png" class="img-responsive" width="100%" alt=""/>
-        </div>
-    </div>
+    <!-- banner-->
+    <div class="container-fluid" >
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
 
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="../../static/imgs/index/banner1.png" alt="..." width="100%">
+					<div class="carousel-caption">
+
+					</div>
+				</div>
+				<div class="item">
+					<img src="../../static/imgs/index/banner2.png" alt="..." width="100%">
+					<div class="carousel-caption">
+
+					</div>
+				</div>
+				<div class="item">
+					<img src="../../static/imgs/index/banner3.png" alt="..." width="100%">
+					<div class="carousel-caption">
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+    </div>
+<!--热点-->
+	<div class="container-fluid" style="background-color: #dddddd;padding: 60px 0;">
+		<div class="topicnews__base" data-component="topicnews">
+			<div class="topicnews__header">
+				<h2 class="topicnews__headline font--bold">语言中心</h2>
+				<a href="#" class="topicnews__link">
+                    <span class="glyphicon-menu-right glyphicon">
+                        <span>
+                            更多
+                        </span>
+                  </span>
+				</a>
+			</div>
+			<div class="slider topicnews__slider">
+				<div class="newsteaser__base newsteaser--large">
+					<div class="newsteaser__wrapper">
+						<a href="#">
+							<div class="newsteaser__imageBlock newsteaser__imageBlock--large">
+								<div class="image-wrapper">
+									<div class="responsiveMedia__wrapper">
+										<picture>
+											<img src="../../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyloaded">
+										</picture>
+									</div>
+									<div class="newsteaser__image--overlay"></div>
+								</div>
+							</div>
+							<div class="newsteaser__text">
+								<div class="newsteaser__textContent">
+									<div class="newsteaser__textInput">
+										<h3 class="newsteaser__header">商务德国语课程</h3>
+										<div class="newsteaser__info">
+											本课程主要面向中国企业和有意于德国或是外企工作的高端人才。
+											本中心教授除德语语法外，还会在学习中穿插涉及专业、职场礼仪等知识。
+										</div>
+									</div>
+								</div>
+								<span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="newsteaser__base newsteaser--small">
+					<div class="newsteaser__wrapper">
+						<a href="#">
+							<div class="newsteaser__imageBlock">
+								<div class="image-wrapper">
+									<div class="responsiveMedia__wrapper">
+										<picture>
+											<img src="../../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+										</picture>
+									</div>
+									<div class="newsteaser__image--overlay"></div>
+								</div>
+							</div>
+							<div class="newsteaser__text">
+								<div class="newsteaser__textContent">
+									<div class="newsteaser__textInput">
+										<h3 class="newsteaser__header">青少年德育课程</h3>
+										<div class="newsteaser__info">
+											本中心青少年德语课程是面向11-18岁的青少年，开设的基于欧洲标准德语等级A1、
+											A2小班教学，上课时间灵活多变，根据孩子的空闲时间而决定
+										</div>
+									</div>
+								</div>
+								<span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="newsteaser__base newsteaser--small">
+					<div class="newsteaser__wrapper">
+						<a href="#" class="#">
+							<div class="newsteaser__imageBlock ">
+								<div class="image-wrapper">
+									<div class="responsiveMedia__wrapper">
+										<picture>
+											<img src="../../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+										</picture>
+									</div>
+									<div class="newsteaser__image--overlay"></div>
+								</div>
+							</div>
+							<div class="newsteaser__text">
+								<div class="newsteaser__textContent">
+									<div class="newsteaser__textInput">
+										<h3 class="newsteaser__header">留德欧标课程</h3>
+										<div class="newsteaser__info">
+											本课程专门为有意留学德国的青年所开设。在学习德语语法的同时，本中心将穿插德国文化、
+											科技等知识。本中心所用教材为新求精德语强化教程。
+										</div>
+									</div>
+								</div>
+								<span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="newsteaser__base newsteaser--small">
+					<div class="newsteaser__wrapper">
+						<a href="#">
+							<div class="newsteaser__imageBlock ">
+								<div class="image-wrapper">
+									<div class="responsiveMedia__wrapper">
+										<picture>
+											<img src="../../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+										</picture>
+									</div>
+									<div class="newsteaser__image--overlay"></div>
+								</div>
+							</div>
+							<div class="newsteaser__text">
+								<div class="newsteaser__textContent">
+									<div class="newsteaser__textInput">
+										<h3 class="newsteaser__header">翻译服务</h3>
+										<div class="newsteaser__info">
+											笔译和口译两大主题
+										</div>
+									</div>
+								</div>
+								<span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="newsteaser__base newsteaser--small">
+					<div class="newsteaser__wrapper">
+						<a href="#">
+							<div class="newsteaser__imageBlock ">
+								<div class="image-wrapper">
+									<div class="responsiveMedia__wrapper">
+										<picture>
+											<img src="../../static/imgs/index/we.jpg" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+										</picture>
+									</div>
+									<div class="newsteaser__image--overlay"></div>
+								</div>
+							</div>
+							<div class="newsteaser__text">
+								<div class="newsteaser__textContent">
+									<div class="newsteaser__textInput">
+										<h3 class="newsteaser__header">趣味德国</h3>
+										<div class="newsteaser__info">
+											德语时间，德语数字，德语与英语关系，德语等级等等
+										</div>
+									</div>
+								</div>
+								<span class="newsteaser__arrow glyphicon-menu-right glyphicon"></span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <footer id="footer">
