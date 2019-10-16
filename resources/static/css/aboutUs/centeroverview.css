@@ -20,11 +20,16 @@
 .centeroverviewDivSon div {
 	font-size: 1em;
 	margin: 20px 0;
-	text-align: center;
-
+	text-align: left;
 }
 
 .centeroverviewDivSon div img {
 	height: 45px;
 	width: 206px;
+}
+
+@media (max-width: 1024px) {
+	.centeroverviewDivSon div {
+		text-align: center;
+	}
 }

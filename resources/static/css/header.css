@@ -80,7 +80,7 @@ html {
 .header .nav-bar li a {
 	display: inline-block;
 	padding: 0 15px;
-	color: #333;
+	color: #333333;
 	font-size: 16px;
 	position: relative;
 	z-index: 1024;
@@ -182,7 +182,7 @@ html {
 /*二级导航显示与透明度*/
 .header .nav-bar ul li.on > ul {
 	visibility: visible;
-	opacity: 0.9;
+	opacity: 1;
 }
 
 /*The mobile terminal*/
@@ -413,6 +413,19 @@ em {
 	height: 130px;
 }
 
+.time {
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+
+#times {
+	margin-top: 0;
+	color: white;
+	line-height: 40px;
+}
+
 /*----------- Responsive -----------*/
 @media only screen and (max-width: 1024px) {
 	body {
@@ -446,6 +459,10 @@ em {
 
 	.languageSearch .searchDiv {
 		margin-right: 20px;
+	}
+
+	.time{
+		display: none;
 	}
 
 	.nav-bar {
@@ -484,6 +501,7 @@ em {
 		color: white;
 		background: #00000000;
 	}
+
 	/*导航鼠标背景*/
 	.li-cate-1:hover {
 		color: white;
@@ -501,6 +519,7 @@ em {
 	.containers {
 		width: 92%;
 	}
+
 	/*导航鼠标背景*/
 	.li-cate-1:hover {
 		color: white;
