@@ -6,6 +6,8 @@
     .s1 {
         font-size: 0.3em;
         margin-left: 30px;
+        text-align: center;
+    color: #005578;
     }
     .carousel-caption{
         font-size: 0.8em;
@@ -17,12 +19,15 @@
 
 @media (min-width: 750px){
     .s2{
-        font-size: 1.3em;
+        font-size: 1.1em;
         color: #005578;
+        text-align: center;
     }
     .s1 {
         font-size: 2em;
         margin-left: 20px;
+        text-align: center;
+        color: #005578;
     }
     .carousel-caption{
         font-size: 1.3em;
