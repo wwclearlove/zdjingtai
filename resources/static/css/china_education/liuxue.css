@@ -27,14 +27,14 @@
     background-image: url("../../imgs/china_education/herd.png");
 }
 .liu_p{
-    font-size: 2em;
+    font-size: 2.5em;
     color: #d867c2;
     height: 50px;
     margin-bottom: 30px;
     margin-top: 30px;
     text-align: center;
 }
-.ba tr{
+a tr{
     background-color: #d0fdf3;
 }
 @media (max-width: 750px) {
