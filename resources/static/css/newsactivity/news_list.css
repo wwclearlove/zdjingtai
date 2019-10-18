@@ -102,6 +102,7 @@
 .module-banner-tab-list-box {
 	float: right;
 	width: 900px;
+	min-height: 490px;
 	background: #fff;
 	padding: 0 40px;
 	/*overflow-y: scroll;

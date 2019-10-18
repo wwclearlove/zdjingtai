@@ -76,17 +76,6 @@ $(document).ready(function () {
 	var opacity = 0.9;
 	var opacitys = 1;
 	var clientWidth = document.body.clientWidth;
-	/*$(window).scroll(function () {
-		// var scrollTop = (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop).toFixed(0);
-		var clientWidth = document.body.clientWidth;
-		if (clientWidth > 1024) {
-			$(".languageSearch").css("opacity", opacity);
-			$(".header").css("opacity", opacity);
-		} else {
-			$(".languageSearch").css("opacity", opacitys);
-			$(".header").css("opacity", opacitys);
-		}
-	});*/
 	$("#title").mouseover(function () {
 		if (clientWidth > 1024) {
 			$(".languageSearch").css("opacity", opacitys);
@@ -99,16 +88,16 @@ $(document).ready(function () {
 			$(".header").css("opacity", opacity);
 		}
 	});
-	/*var liCate = $(".li-cate-1");
+	var liCate = $(".li-cate-1");
 	for (var i = 0; i < liCate.length; i++) {
 		liCate[i].index = i;
 		liCate.eq(i).mouseover(function () {
-			$(".li-cate_a").eq(this.index).css("color", "#ffffff")
+			$(".li-cate_a").eq(this.index).css({"color": "#ffffff", "background-color": "#1E89DF"});
 		});
 		liCate.eq(i).mouseout(function () {
-			$(".li-cate_a").eq(this.index).css("color", "#333333")
+			$(".li-cate_a").eq(this.index).css({"color": "#333333", "background-color": "#ffffff"});
 		});
-	}*/
+	}
 	/*时间*/
 	setInterval(function () {
 		$("#times").html(new Date().toLocaleString());
