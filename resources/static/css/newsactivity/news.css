@@ -65,13 +65,22 @@
     text-decoration: none;
 }
 
+.new_list_info_h4{
+    letter-spacing: 1px;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
 .new_list_info_p1{
     line-height: 1.5em;
     letter-spacing: 1px;
     margin: 10px 0;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 4;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
 }
