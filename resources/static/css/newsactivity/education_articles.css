@@ -1,0 +1,25 @@
+.education_articles{
+	letter-spacing: 1px;
+}
+.education_articles .education_articles_title {
+	padding: 30px 0;
+	text-align: center;
+}
+.education_articles .education_articles_title h3 {
+	font-weight: bold;
+}
+.education_articles .education_articles_title p {
+	color: #888888;
+}
+.education_articles .education_articles_info{
+	padding-bottom: 50px;
+}
+.education_articles .education_articles_info p{
+	color: #333333;
+	line-height: 2em;
+	font-size: 1.4em;
+	text-indent: 2em;
+}
+.education_articles .education_articles_info img{
+	padding: 20px 0;
+}

@@ -42,8 +42,10 @@ h2.heading{
 	padding: 28px 0 25px;
 }
 .our-services-text h4 {
-	color: #222222;
-	font-size: 1.8em;
+	font-family: "Stencil Std";
+	width: 100%;
+	color: #C4D70D;
+	font-size: 2em;
 	font-weight: 700;
 	letter-spacing: 1px;
 	margin-bottom: 8px;
@@ -51,21 +53,30 @@ h2.heading{
 	position: relative;
 	text-transform: uppercase;
 }
+.our-services-text h4 .price{
+	color: #F2AF2D;
+	float: right;
+	padding-right: 10px;
+}
+.our-services-text h4>.price>.unit{
+	color: #333333;
+	font-size: 0.5em;
+}
 .position-image img {
 	position: absolute;
 	top: 16%;
-	left: 0%;
-	bottom: 0%;
+	left: 0;
+	bottom: 0;
 	width: 20%;
 	z-index: -1;
 }
 .our-services-text h4::before {
-	background: #3369e7 none repeat scroll 0 0;
+	background: #C4D70D none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
-	height: 1px;
+	height: 2px;
 	position: absolute;
-	width: 40px;
+	width: 210px;
 }
 .our-services-wrapper:hover .services-inner {
 	background: #fff none repeat scroll 0 0;
@@ -76,10 +87,10 @@ h2.heading{
 	margin-bottom: 0;
 }
 .services p {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	font-weight: 400;
-	line-height: 26px;
-	color: #666;
+	color: #333333;
+	line-height: 2em;
 }
 .services  {
 	position: relative;

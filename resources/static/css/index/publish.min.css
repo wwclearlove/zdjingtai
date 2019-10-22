@@ -168,7 +168,6 @@ a.icon-arrow-right-small:before{font-size:12px;top:-2px}
 .dark-bg a:hover span.icon,.dark-bg a:active span.icon,.dark-bg a:focus span.icon{border-color:transparent}
 .dark-bg a:disabled{color:#9bafbe}
 .dark-bg a:visited{color:#becdd7}
-ul,ol{margin:0 0 20px;padding:0}
 ul{list-style:none}
 .dark-bg p{color:#fff}
 .bright-stone-bg{background-color:#555f69}

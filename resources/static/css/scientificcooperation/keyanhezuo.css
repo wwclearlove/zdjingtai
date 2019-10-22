@@ -5,13 +5,15 @@
 .keyanhezuo_Div_font {
 	text-align: center;
 }
-
+.keyanhezuo_Div_font img{
+	width: 280px;
+}
 .keyanhezuo_DivSon {
 	padding: 30px 15px;
 }
 
 .keyanhezuo_DivSon p {
-	color: #165ddf;
+	color: #333333;
 	font-size: 1.3em;
 	text-indent: 2em;
 	line-height: 2em;
@@ -19,11 +21,12 @@
 }
 
 .keyanhezuo_DivSon h4 {
+	font-size: 1.1em;
 	letter-spacing: 2px;
 }
 
 .keyanhezuo_DivSon_div {
-	width: 60px;
+	width: 50px;
 	height: 5px;
 	background-color: #154fdf;
 }

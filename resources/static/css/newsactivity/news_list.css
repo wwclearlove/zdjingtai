@@ -102,6 +102,7 @@
 .module-banner-tab-list-box {
 	float: right;
 	width: 900px;
+	min-height: 490px;
 	background: #fff;
 	padding: 0 40px;
 	/*overflow-y: scroll;
@@ -164,6 +165,7 @@
 }
 
 .module-tab-title_DivSon02_title {
+	height: 20px;
 	color: #157BBB;
 	display: block;
 	overflow: hidden;
@@ -179,6 +181,7 @@
 }
 
 .module-tab-title_DivSon02_info {
+	height: 38px;
 	color: #333333;
 	display: block;
 	overflow: hidden;
@@ -196,4 +199,63 @@
 
 .module-tab-box-ma li:hover {
 	background-color: #f6f6f6;
+}
+
+@media (max-width: 1180px) {
+	.module-banner-tab-list {
+		float: left;
+	}
+	.module-banner-box {
+		width: 100%;
+	}
+	.module-banner-tab-list-box {
+		width: 100%;
+	}
+	.module-tab-box-ma {
+		width: 100%;
+	}
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on span {
+		line-height: 70px;
+	}
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on {
+		height: 70px;
+	}
+
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on span {
+		line-height: 70px;
+	}
+
+	.module-banner-tab .module-banner-tab-list .module-tab-nav .on:hover {
+		height: 70px;
+	}
+	.module-banner-tab-list {
+		float: left;
+		width: 100%;
+	}
+	.module-tab-nav>li{
+		float: left;
+	}
+	.module-tab-nav{
+		display: flex;
+	}
+	.module-tab-nav li{
+		flex: 1;
+	}
+}
+
+@media (max-width: 560px) {
+
+	.module-banner-tab-list-box{
+		padding: 0 10px;
+	}
+
+	.module-tab-title_DivSon01 {
+		width: 40%;
+	}
+
+	.module-tab-title_DivSon02 {
+		width: 60%;
+	}
 }

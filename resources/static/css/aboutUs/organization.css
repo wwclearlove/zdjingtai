@@ -1,13 +1,41 @@
-.organizationDiv .organizationDivSon01 div img{
-	margin-top: 40px;
+.organizationDiv{
+	padding: 20px 20px;
 }
-.organizationDivSon01_img{
-	width: 70%;
+
+.organizationDiv01 {
+	font-weight: bolder;
+	text-align: center;
+	font-family: "楷体";
 }
-.organizationDivSon02 .organizationDivSon02_div {
-	font-size: 1em;
-	padding: 20px;
+
+.organizationDiv03 div {
+	margin: 20px 0;
 }
-.organizationDivSon02 .organizationDivSon02_div div {
-	margin-top: 20px;
+
+.organizationDiv03 div p {
+	margin: 0;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+}
+
+.organizationDiv01,
+.organizationDiv02,
+.organizationDiv03{
+	padding: 40px 0;
+}
+
+@media (min-width: 1025px) {
+	.organizationDiv03 div p:hover {
+		color: white;
+		cursor: pointer;
+		padding-left: 15px;
+		background-color: #1E89DF;
+	}
+}
+@media (max-width: 1024px) {
+	.organizationDiv01 h2{
+		font-size: 1.6em;
+	}
 }
