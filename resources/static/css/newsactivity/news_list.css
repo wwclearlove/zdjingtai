@@ -211,7 +211,6 @@
 	background-color: #f6f6f6;
 }
 
-<<<<<<< HEAD
 @media (min-width: 1600px) {
 	.module-banner-box {
 		width: 80%;
@@ -234,32 +233,23 @@
 	.module-tab-box-ma {
 		width: 100%;
 	}
+}
 
-=======
 @media (max-width: 1180px) {
 	.module-banner-tab-list {
 		float: left;
 	}
+
 	.module-banner-box {
 		width: 100%;
 	}
+
 	.module-banner-tab-list-box {
 		width: 100%;
 	}
+
 	.module-tab-box-ma {
 		width: 100%;
-	}
->>>>>>> 9336a890a653f4c5d2af2c6f95f7aa81f8ec180a
-	.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
-	.module-banner-tab .module-banner-tab-list .module-tab-nav .on span {
-		line-height: 70px;
-	}
-<<<<<<< HEAD
-
-=======
->>>>>>> 9336a890a653f4c5d2af2c6f95f7aa81f8ec180a
-	.module-banner-tab .module-banner-tab-list .module-tab-nav .on {
-		height: 70px;
 	}
 
 	.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
@@ -270,15 +260,11 @@
 	.module-banner-tab .module-banner-tab-list .module-tab-nav .on:hover {
 		height: 70px;
 	}
-<<<<<<< HEAD
 
-=======
->>>>>>> 9336a890a653f4c5d2af2c6f95f7aa81f8ec180a
 	.module-banner-tab-list {
 		float: left;
 		width: 100%;
 	}
-<<<<<<< HEAD
 
 	.module-tab-nav > li {
 		float: left;
@@ -289,26 +275,12 @@
 	}
 
 	.module-tab-nav li {
-=======
-	.module-tab-nav>li{
-		float: left;
-	}
-	.module-tab-nav{
-		display: flex;
-	}
-	.module-tab-nav li{
->>>>>>> 9336a890a653f4c5d2af2c6f95f7aa81f8ec180a
 		flex: 1;
 	}
 }
 
 @media (max-width: 560px) {
-
-<<<<<<< HEAD
 	.module-banner-tab-list-box {
-=======
-	.module-banner-tab-list-box{
->>>>>>> 9336a890a653f4c5d2af2c6f95f7aa81f8ec180a
 		padding: 0 10px;
 	}
 

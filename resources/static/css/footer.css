@@ -10,8 +10,8 @@
 }
 
 #myFooter .myFooter_div .myFooter_div_logo{
-	width: 170px;
-	height: 50px;
+	width: 160px;
+	height: 46px;
 	margin-top: 20px;
 }
 
@@ -30,13 +30,23 @@
 #myFooter .myFooter_div p,
 #myFooter .myFooter_divs p {
 	color: #ccc;
-	font-size: 1em;
+	font-size: 1.1em;
 	line-height: 2em;
 }
 
+#myFooter .myFooter_divs p a{
+	color: #ccc;
+}
+
+#myFooter .myFooter_divs p:hover,
+#myFooter .myFooter_divs p a:hover{
+	color: white;
+	cursor: pointer;
+}
+
 #myFooter .myFooter_div .weixingongzhonghao {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 
 #myFooter .footer-copyright {
@@ -57,8 +67,6 @@
 		text-align: center;
 	}
 	#myFooter .myFooter_div .myFooter_div_logo{
-		width: 50%;
-		height: 100%;
 		margin-top: 0;
 	}
 }
