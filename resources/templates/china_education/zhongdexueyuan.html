@@ -10,52 +10,12 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
+	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
-	<style type="text/css">
-		.zhongdexueyuanDiv01{
-			padding: 50px 15px;
-		}
-		.zhongdexueyuanDiv01 h1{
-			font-weight: bolder;
-			letter-spacing: 2px;
-			font-family: "楷体";
-			color: #333333;
-		}
-		.zhongdexueyuanDiv01 h1 i,
-		.zhongdexueyuanDiv01 h1 span{
-			color: #0cb1f6;
-		}
-		.zhongdexueyuanDiv02{
-			padding-bottom: 50px;
-		}
-		.zhongdexueyuanDiv02 p{
-			font-size: 1.3em;
-			line-height: 2em;
-			text-indent: 2em;
-			letter-spacing: 2px;
-		}
-		.zhongdexueyuanDiv02 ul li{
-			color: white;
-			font-size: 1.3em;
-			line-height: 2em;
-			text-indent: 2em;
-			letter-spacing: 2px;
-			background-color: #0cb1f6;
-			margin-top: 40px;
-			padding: 15px;
-			border-radius: 10px;
-			transition: all 0.3s;
-		}
-		.zhongdexueyuanDiv02 ul li:hover{
-			margin-left: -30px;
-			cursor: pointer;
-			background-color: #072948;
-			-moz-box-shadow: 10px 10px 5px #999999;
-			box-shadow: 10px 10px 5px #999999;
-		}
-	</style>
+	<script type="text/javascript" src="../../static/js/news_list/jquery.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.SuperSlide.2.1.1.js"></script>
 </head>
 <body>
 
@@ -199,6 +159,7 @@
 </div>
 
 <section>
+	<!--banner-->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -241,65 +202,97 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 zhongdexueyuanDiv01">
-				<h1><i class="fa fa-location-arrow"></i>学院<span>目标</span></h1>
-			</div>
-			<div class="col-md-12 zhongdexueyuanDiv02">
-				<ul>
-					<li>
-						中德学院是采用汉德双语教学的学院，以国际合作的视野，优良的师资和现代化的教学环境，
-						培养出我国既懂外语又掌握专业知识的年轻后备力量。
-					</li>
-					<li>学院中方教授多数拥有德国博士学位，或具有多年留德经历和德语基础。</li>
-					<li>外方教授多为德国大学的知名教授。</li>
-					<li>具备本科学历的中国学生可以在这里完成双语硕士课程，可同时获得双语硕士文凭。</li>
-					<li>学院的教学计划将借鉴德国模式，贴合实践，贴近企业需求。</li>
-					<li>中德学院为中德两国培养既有专业知识又熟悉两国文化的精英人才。</li>
-					<li>多数学生也将有机会获得奖学金赴德国高校进行专业学习，或是进入著名跨国企业参加实习或撰写硕士论文。</li>
-					<li>本中心致力于这些双语教学出来的毕业生步入中德两国顶尖企业，成为中德两国的栋梁之材。</li>
-				</ul>
+	<!--content-->
+	<div class="module-banner" style="background-color: #e2e2e2">
+		<div class="module-banner-box">
+			<div class="module-banner-tab clearfix">
+				<div class="module-banner-tab-list hd">
+					<div class="news_list_Div">
+						<h3>中德学院</h3>
+						<span>News</span>
+					</div>
+					<ul class="module-tab-nav">
+						<li class="on">
+							<i class="fa fa-location-arrow"></i>
+							<span>item1</span>
+						</li>
+						<li class="">
+							<i class="fa fa-location-arrow"></i>
+							<span>item2</span>
+						</li>
+						<li class="">
+							<i class="fa fa-location-arrow"></i>
+							<span>item3</span>
+						</li>
+						<li class="">
+							<i class="fa fa-location-arrow"></i>
+							<span>item4</span>
+						</li>
+					</ul>
+				</div>
+				<div class="module-banner-tab-list-box bd">
+					<ul class="module-tab-box-ma" style="display: block;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">item1</h3>
+						</div>
+						<h3>item1</h3>
+					</ul>
+					<ul class="module-tab-box-ma" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/jiaoyu.png" alt="">item2</h3>
+						</div>
+						<h3>item2</h3>
+					</ul>
+					<ul class="module-tab-box-ma" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">item3</h3>
+						</div>
+						<h3>item3</h3>
+					</ul>
+					<ul class="module-tab-box-ma" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/yuyan.png" alt="">item4</h3>
+						</div>
+						<h3>item4</h3>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(function () {
+			$('.module-banner-tab').slide({trigger: "click", delayTime: 1000});
+		});
+	</script>
 
 </section>
 
 <footer id="myFooter">
 	<div class="container-fluid">
 		<div class="row text-center">
-			<div class="col-12 col-sm-6 col-md-3 myFooter_div">
-				<a href="javascript:void (0)" class="myFooter_logo" title="中德研究所">
-					<img src="../../static/imgs/footer/zhongdeyanjsuo.jpg" alt="">
+			<div class="col-lg-1 col-lg-offset-1 col-md-2 col-sm-6 col-md-3 myFooter_div">
+				<a href="javascript:void (0)" class="myFooter_logo" title="中德科技">
+					<img class="center-block myFooter_div_logo" src="../../static/imgs/footer/logo.png" alt="">
 				</a>
 			</div>
-			<div class="col-12 col-sm-6 col-md-3 myFooter_divs">
+			<div class="col-lg-2 col-lg-offset-1 col-md-4 col-sm-6 col-md-3 myFooter_divs">
 				<h5><i class="fa fa-phone"></i>联系方式</h5>
-				<ul>
-					<li><a href="javascript:void (0)">手机：18728871721</a></li>
-					<li><a href="javascript:void (0)">座机：0833-2595989<br/></a></li>
-					<li><a href="javascript:void (0)">邮箱：lszdkc@163.com</a></li>
-				</ul>
+				<p>手机：18728871721</p>
+				<p>座机：0833-2595989</p>
+				<p>邮箱：lszdkc@163.com</p>
 			</div>
-			<div class="col-12 col-sm-6 col-md-3 myFooter_divs">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-md-3 myFooter_divs">
 				<h5><i class="fa fa-map-marker"></i>地址</h5>
-				<ul>
-					<li><a href="javascript:void (0)">四川省乐山市高新区高新孵化园A区9楼901</a></li>
-					<li><a href="javascript:void (0)">开放时间：周一至周五 9:00-17:00<br/></a></li>
-				</ul>
+				<p>四川省乐山市高新区高新孵化园A区9楼901</p>
+				<p>开放时间：周一至周五 9:00-17:00</p>
 			</div>
-			<div class="col-12 col-sm-6 col-md-3 myFooter_div">
-				<a href="javascript:void (0)" class="myFooter_weixin" title="微信公众号">
-					<img src="../../static/imgs/footer/weixingongzhonghao.jpg" alt="">
-					<br><br>
-					<p style="color: white;">微信公众号</p>
-				</a>
+			<div class="col-lg-2 col-md-2 col-sm-6 col-md-3 myFooter_div">
+				<img class="center-block weixingongzhonghao" src="../../static/imgs/footer/weixingongzhonghao.jpg" alt="">
+				<p>微信公众号</p>
 			</div>
 		</div>
 		<div class="row footer-copyright">
-			<div class="col">
+			<div class="col-md-12">
 				<p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
 				<p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
 			</div>

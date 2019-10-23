@@ -2,7 +2,7 @@
 	width: 100%;
 }
 
-.centeroverviewDivSon01{
+.centeroverviewDivSon01 {
 	margin-top: 50px;
 	padding: 15px;
 	background-color: white;
@@ -11,6 +11,10 @@
 .centeroverviewDiv_title {
 	width: 100%;
 	text-indent: 2em;
+}
+
+.centeroverviewDiv_title img {
+	width: 100px;
 }
 
 .centeroverviewDiv_p {
@@ -26,22 +30,25 @@
 	text-align: left;
 }
 
-.centeroverviewDivSon02>div>a>img {
+.centeroverviewDivSon02 > div > a > img {
 	height: 45px;
 	width: 206px;
 	margin-top: 50px;
 	margin-left: 30px;
 }
-.centeroverviewDivqinayue{
+
+.centeroverviewDivqinayue {
 	padding: 50px 0;
 	text-align: center;
 }
+
 @media (max-width: 991px) {
 	.centeroverviewDivSon02 {
 		text-align: center;
 		padding-top: 0;
 	}
-	.centeroverviewDivSon02>div>a>img {
+
+	.centeroverviewDivSon02 > div > a > img {
 		margin-top: 20px;
 		margin-left: 0;
 	}

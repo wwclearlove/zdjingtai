@@ -5,17 +5,19 @@
 .organizationDiv01 {
 	font-weight: bolder;
 	text-align: center;
-	font-family: "楷体";
+}
+.organizationDiv01 img {
+	width: 50%;
 }
 
 .organizationDiv03 div {
-	margin: 20px 0;
+	margin: 15px 0;
 }
 
 .organizationDiv03 div p {
 	margin: 0;
 	padding: 15px 30px;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	letter-spacing: 1px;
 	transition: all 0.3s;
 }

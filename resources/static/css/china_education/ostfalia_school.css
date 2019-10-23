@@ -1,0 +1,150 @@
+/*ostfalia_school*/
+/*school_title*/
+.ostfalia_school_background_img{
+	background-image: url("../../imgs/china_education/beijingshan.png");
+	background-size: 100% 100%;
+}
+.school_title {
+	padding: 50px 0;
+	position: relative;
+}
+
+.school_title .school_title_img {
+	position: absolute;
+}
+
+.school_title p {
+	font-size: 1.4em;
+	color: #722828;
+	margin-top: 4%;
+	margin-left: 13%;
+}
+
+/*school_info_yuanxiaojieshao*/
+.school_info_yuanxiaojieshao .school_info_yuanxiaojieshao_title {
+	width: 160px;
+	color: white;
+	padding: 6px 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: #EEBB55;
+	text-shadow: 5px 5px 5px #000000;
+}
+
+.school_info_yuanxiaojieshao .school_info_yuanxiaojieshao_jieshao {
+	color: #999999;
+	font-size: 1em;
+}
+
+.school_info_yuanxiaojieshao .school_info_yuanxiaojieshao_info {
+	line-height: 2em;
+	text-indent: 2em;
+	color: #333333;
+	font-size: 1.2em;
+	padding: 20px 0;
+	letter-spacing: 1px;
+}
+
+.school_info_zhaoshengxijie .school_info_zhaoshengxijie_title {
+	width: 160px;
+	color: white;
+	padding: 6px 0;
+	font-size: 1.5em;
+	margin-top: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: #62978D;
+	text-shadow: 5px 5px 5px #000000;
+}
+
+.school_info_zhaoshengxijie .school_info_yuanxiaojieshao_table,
+.school_info_tiaojian .school_info_tiaojian_table,
+.school_info_feiyong .school_info_feiyong_table {
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.school_info_tiaojian,
+.school_info_feiyong {
+	width: 100%;
+}
+
+.school_info_tiaojian .school_info_tiaojian_title {
+	width: 260px;
+	color: white;
+	padding: 6px 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 30px;
+	border-radius: 30px;
+	background-color: #697CB7;
+	text-shadow: 5px 5px 5px #000000;
+}
+
+.school_info_feiyong .school_info_feiyong_title {
+	width: 160px;
+	color: white;
+	padding: 6px 0;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: #9778B5;
+	text-shadow: 5px 5px 5px #000000;
+}
+
+.school_info_img img {
+	margin-top: 27%;
+}
+
+.school_info_liucheng {
+	padding: 50px 0;
+}
+
+.school_info_liucheng_title {
+	width: 100%;
+	color: #16A4F6;
+	letter-spacing: 2px;
+	padding-bottom: 30px;
+	text-align: center;
+	text-shadow: 5px 5px 5px #999999;
+}
+
+.school_info_liucheng_div {
+	padding: 10px 0;
+	width: 100%;
+	border: 2px solid #16A4F6;
+}
+
+.school_info_liucheng_div ul {
+	width: 100%;
+	display: flex;
+	margin: 5px;
+}
+
+.school_info_liucheng_div ul li {
+	flex: 1;
+	margin: 0;
+	font-size: 1.3em;
+	font-weight: bolder;
+	color: #333333;
+	list-style: none;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+@media (max-width: 750px) {
+	.school_title p {
+		font-size: 1em;
+	}
+
+	.school_info_img img {
+		margin-top: 5%;
+	}
+}

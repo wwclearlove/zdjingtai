@@ -1,78 +1,92 @@
-.ye_div{
-    border: 1px solid yellow;
-    font-size: 2em;
-    color: #fdfdfe;
-    font-weight: bolder;
-    background-color: #fac96d;
-    border-radius: 50px;
-    text-align: center;
-}
-.lv_div{
-    border: 1px solid yellow;
-    font-size: 2em;
-    color: #fdfdfe;
-    font-weight: bolder;
-    background-color: #629692;
-    border-radius: 50px;
-    text-align: center;
+.liuxues {
+	padding: 50px 0;
 }
 
-.red_p{
-    font-size: 2em;
-    color: #722828;
-    height: 50px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    padding-bottom: 60px;
-    background-image: url("../../imgs/china_education/herd.png");
-}
-.liu_p{
-    font-size: 2.5em;
-    color: #d867c2;
-    height: 50px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    text-align: center;
-}
-a tr{
-    background-color: #d0fdf3;
-}
-@media (max-width: 750px) {
-    .mt_1{
-        text-align: center;
-        margin-left: 90px;
-    }
-    .mt_2{
-        margin-top: 10px;
-    }
-    .right ul li{
-        float: left;
-        display: inline-block;
-        margin-left: 20px;
-    }
-}
-@media (min-width: 750px){
-    .mt_2{
-        margin-top: 100px;
-    }
-    .right ul li{
-        float: left;
-        display: inline-block;
-        margin-left: 50px;
-    }
-}
-.right{
-    border:3px solid #08bffe;
-    font-weight: bolder;
-    background-color: #f4fcfe;
-    text-align: center;
+.liuxue_list{
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.right ul li span{
- line-height:40px;
-    font-size:1.8em;
+.liuxue_list-a,
+.liuxue_list {
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s;
+	border-radius: 5px;
+	background-color: #0cb1f6;
+}
+.liuxue_list-a:hover,
+.liuxue_list:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #072948;
+	-moz-box-shadow: 10px 10px 5px #999999;
+	box-shadow: 10px 10px 5px #999999;
 }
 
-.right ul li img{
-     vertical-align: middle;
+.liuxue_list-a:focus{
+	color: white;
+}
+
+.liuxueDiv01,
+.liuxueDiv02 {
+	padding: 30px;
+	letter-spacing: 2px;
+}
+
+.liuxueDiv01{
+	text-align: center;
+}
+
+.liuxueDiv02 p {
+	font-size: 1.3em;
+	text-indent: 2em;
+	line-height: 2em;
+}
+.liuxues .sec-title {
+	text-align: center;
+}
+
+.liuxues .sec-title h1 {
+	color: #333333;
+	letter-spacing: 2px;
+}
+
+.liuxues .border-shape {
+	background: #ddd;
+	display: block;
+	height: 1px;
+	left: 0;
+	margin: 20px auto;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 350px;
+}
+
+.liuxues .border-shape::before {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 3px;
+	width: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.liuxues .border-shape::after {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 6px;
+	width: 70px;
+	margin: 0 auto;
 }

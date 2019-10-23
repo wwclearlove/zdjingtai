@@ -1,9 +1,5 @@
-.tops{
-	margin-top: 30px;
-}
-
 .what-we-do-crousel-sec {
-	padding: 50px 0;
+	padding: 60px 0;
 	background: white;
 	letter-spacing: 2px;
 }
@@ -12,8 +8,8 @@
 	text-align: center;
 }
 
-.what-we-do-crousel-sec .sec-title h1{
-	color: #555555;
+.what-we-do-crousel-sec .sec-title h1 {
+	color: #333333;
 }
 
 .what-we-do-crousel-sec .border-shape {
@@ -55,93 +51,63 @@
 	margin: 0 auto;
 }
 
-
-/*what-we-do-single-inner*/
-.what-we-do-single-inner {
-	padding: 20px 20px;
-	margin-bottom: 20px;
-	position: relative;
-	z-index: 2;
-	background: #072948;
-	border-radius: 10px;
-	overflow: hidden;
-	height: 330px;
+.what-we-do-crousel-sec div .item {
+	padding: 20px;
+	margin-top: 50px;
+	color: #333;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.what-we-do-single-inner::before {
-	position: absolute;
-	z-index: -1;
-	content: "";
+.what-we-do-crousel-sec div .item img {
 	width: 100%;
-	height: 100%;
-	background: #0cb1f6;
-	top: 0;
-	left: 0;
-	transition: all 0.4s ease 0s;
 }
 
-.what-we-do-single-inner:hover:before {
-	height: 0%;
-	transition: all 0.4s ease 0s;
+.what-we-do-crousel-sec div .item h3 {
+	color: #333333;
 }
 
-.what-we-do-single-inner:hover {
-	border-color: #0cb1f6;
-	color: #fff;
-}
-
-.what-we-do-single-inner:hover .what-we-do-inner-desc h2 span {
-	color: #fff;
-}
-
-.what-we-do-single-inner:hover .what-we-do-inner-desc h2 a {
-	color: #0cb1f6;
-	text-decoration: none;
-}
-
-.what-we-do-single-inner:hover .what-we-do-button {
-	color: #fff;
-	background: #0cb1f6;
-	transition: all 0.5s ease-out;
-	text-decoration: none;
-}
-
-.what-we-do-inner-img {
-	margin-bottom: 30px;
-}
-
-.what-we-do-inner-img img {
-	/*height: 100px;*/
-}
-
-.what-we-do-inner-desc{
-	text-align: center;
-}
-
-.what-we-do-inner-desc h2 a {
-	font-size: 20px;
-	text-transform: capitalize;
-}
-
-.what-we-do-inner-desc h2 span {
-	color: white;
-	position: relative;
-	z-index: 2;
-	margin-right: 4px;
-}
-
-.what-we-do-button {
-	color: #0cb1f6;
+.what-we-do-crousel-sec .what-we-do-button {
+	color: #999999;
 	font-size: 14px;
 	width: 50px;
 	height: 50px;
+	float: right;
+	transition: all 0.3s;
 	display: inline-block;
-	background: #f9f9f9;
+	background: #f8f8f8;
 	border-radius: 100%;
 	text-align: center;
 	line-height: 58px;
 }
 
-.what-we-do-button i {
+.what-we-do-crousel-sec .what-we-do-button i {
 	font-size: 26px;
+}
+
+.what-we-do-crousel-sec div .item:hover {
+	cursor: pointer;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+}
+
+.what-we-do-crousel-sec div .item:hover h3 {
+	font-weight: bolder;
+	color: #0cb1f6;
+}
+
+.what-we-do-crousel-sec div .item:hover .what-we-do-button {
+	color: white;
+	background-color: #0cb1f6;
+}
+
+@media (max-width: 767px) {
+	.what-we-do-crousel-sec {
+		padding: 30px 0;
+	}
+
+	.what-we-do-crousel-sec div .item {
+		padding: 10px;
+		margin: 10px;
+	}
 }

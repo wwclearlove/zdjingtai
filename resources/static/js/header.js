@@ -88,16 +88,7 @@ $(document).ready(function () {
 			$(".header").css("opacity", opacity);
 		}
 	});
-	var liCate = $(".li-cate-1");
-	for (var i = 0; i < liCate.length; i++) {
-		liCate[i].index = i;
-		liCate.eq(i).mouseover(function () {
-			$(".li-cate_a").eq(this.index).css({"color": "#ffffff", "background-color": "#1E89DF"});
-		});
-		liCate.eq(i).mouseout(function () {
-			$(".li-cate_a").eq(this.index).css({"color": "#333333", "background-color": "#ffffff"});
-		});
-	}
+	$(".li-cate_a").eq(5).css("width","146px");
 	/*时间*/
 	setInterval(function () {
 		$("#times").html(new Date().toLocaleString());

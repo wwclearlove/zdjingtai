@@ -82,7 +82,7 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
-	background: #dddddd;
+	background: white;
 	padding: 5px 0;
 	margin: 0 0 0 	-27px;
 	position: absolute;
@@ -130,8 +130,8 @@ a:hover,a:focus{color:#74777b;text-decoration: none;}
 	padding: 15px;
 	margin: 0;
 	font-size: 1em;
-	color: #656565;
-	background: #fff;
+	color: #333333;
+	background: #ededed;
 	border-radius: 0 0 6px 6px;
 }
 .main-timeline .timeline:nth-child(2n+2) .timeline-content{

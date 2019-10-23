@@ -1,6 +1,8 @@
 @charset "utf-8";
 /*==========css reset==========*/
 html {
+	font-family: Arial, '宋体', 'Microsoft YaHei', SimHei;
+	font: 14px/0.8em Arial, '宋体', 'Microsoft YaHei', SimHei;
 	font-size: 100%;
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
@@ -87,6 +89,17 @@ html {
 	text-align: center;
 }
 
+/*默认active*/
+.nav > .active {
+	color: white;
+	background-color: #1E89DF;
+}
+
+.nav > .active > .li-cate_a {
+	color: white;
+	font-weight: bolder;
+}
+
 /*导航下的线动画*/
 .header .nav-bar li.active:before, .header .nav-bar li[class*="li-cate-"]:before {
 	position: absolute;
@@ -130,12 +143,12 @@ html {
 
 /*二级高亮*/
 .header .nav-bar ul li > ul {
-	top: 100%;
+	top: 120%;
 	left: 0;
 	opacity: 0;
 	width: 100%;
 	z-index: 888;
-	min-width: 180px;
+	/*min-width: 180px;*/
 	position: absolute;
 	background: #1E89DF;
 	visibility: hidden;
@@ -157,7 +170,7 @@ html {
 
 .header .nav-bar ul li > ul li a {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	height: 50px;
 	line-height: 50px;
 	font-size: 16px;
@@ -169,6 +182,7 @@ html {
 .header .nav-bar ul li.on > ul {
 	visibility: visible;
 	opacity: 1;
+	top: 100%;
 }
 
 /*The mobile terminal*/
@@ -446,7 +460,7 @@ em {
 		margin-right: 20px;
 	}
 
-	.time{
+	.time {
 		display: none;
 	}
 
@@ -510,11 +524,19 @@ em {
 	}
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1025px) {
 	.containers {
 		width: 92%;
 	}
-	.li-cate-1>ul>li:hover{
+
+	.li-cate-1 > ul > li:hover {
+		font-weight: bolder;
 		background-color: #1c6ddf;
+	}
+
+	.li-cate-1:hover .li-cate_a {
+		color: white;
+		font-weight: bolder;
+		background-color: #1E89DF;
 	}
 }
