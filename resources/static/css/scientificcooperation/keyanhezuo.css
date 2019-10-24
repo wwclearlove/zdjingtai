@@ -32,31 +32,53 @@
 	background-color: #154fdf;
 }
 
-/*@media (max-width: 750px) {
-	.bkurl{
-		background-image: url("../../imgs/cooperative_enterprise/zhengwen.png");
-		width: 100%;
-		padding:30px 0px 260px 0px;
-		background-size: 100% 100%;
-	}
+/*investment_advisory*/
+.investment_advisory{
+	padding: 50px 0;
+}
+.investment_advisory .sec-title {
+	text-align: center;
 }
 
-@media (min-width: 750px){
-	.bkurl{
-		background-image: url("../../imgs/cooperative_enterprise/zhengwen.png");
-		width: 100%;
-		padding:260px 0px 260px 0px;
-		background-size: 100% 100%;
-	}
-}
-.r1 div{
-	padding:30px;
-}
-.r1 h5{
-	text-align: center;
+.investment_advisory .sec-title h1 {
 	color: #333333;
-	font-size: 0.8em;
-	text-indent: 2em;
-	line-height: 2em;
-	letter-spacing: 2px;
-}*/
+}
+
+.investment_advisory .border-shape {
+	background: #ddd;
+	display: block;
+	height: 1px;
+	left: 0;
+	margin: 20px auto;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 350px;
+}
+
+.investment_advisory .border-shape::before {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 3px;
+	width: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.investment_advisory .border-shape::after {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 6px;
+	width: 70px;
+	margin: 0 auto;
+}
