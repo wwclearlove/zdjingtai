@@ -1,8 +1,6 @@
 @charset "utf-8";
 /*==========css reset==========*/
 html {
-	font-family: Arial, '宋体', 'Microsoft YaHei', SimHei;
-	font: 14px/0.8em Arial, '宋体', 'Microsoft YaHei', SimHei;
 	font-size: 100%;
 	overflow-y: scroll;
 	-webkit-text-size-adjust: 100%;
@@ -49,7 +47,7 @@ html {
 }
 
 .header .logo a {
-	min-width: 250px;
+	min-width: 260px;
 	height: 100%;
 	display: block;
 	position: relative;
@@ -539,4 +537,15 @@ em {
 		font-weight: bolder;
 		background-color: #1E89DF;
 	}
+}
+
+
+/*公共背景色*/
+.backgroundColor {
+	background-color: #DDDDDD;
+}
+
+/*公共标题*/
+.commonality_title {
+	
 }
