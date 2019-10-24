@@ -1,0 +1,105 @@
+/*zhongdexueyuan_div*/
+.zhongdexueyuan_div{
+	padding: 50px 15px;
+}
+.zhongdexueyuan_div .sec-title {
+	text-align: center;
+}
+
+.zhongdexueyuan_div .sec-title h1 {
+	color: #333333;
+}
+
+.zhongdexueyuan_div .border-shape {
+	background: #ddd;
+	display: block;
+	height: 1px;
+	left: 0;
+	margin: 20px auto;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 300px;
+}
+
+.zhongdexueyuan_div .border-shape::before {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 3px;
+	width: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.zhongdexueyuan_div .border-shape::after {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 6px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+
+/*zhongdexueyuan_info*/
+.zhongdexueyuan_info{
+	width: 100%;
+	padding-bottom: 50px;
+	margin-bottom: 100px;
+	background-image: url("../../imgs/china_education/bg-counter.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.zhongdexueyuanDiv01{
+	padding: 50px 15px;
+}
+.zhongdexueyuanDiv01 h1{
+	font-weight: bolder;
+	letter-spacing: 2px;
+	font-family: "楷体";
+	color: #333333;
+}
+.zhongdexueyuanDiv01 h1 i,
+.zhongdexueyuanDiv01 h1 span{
+	color: #0cb1f6;
+}
+.zhongdexueyuanDiv02{
+	padding-bottom: 50px;
+}
+.zhongdexueyuanDiv02 p{
+	font-size: 1.3em;
+	line-height: 2em;
+	text-indent: 2em;
+	letter-spacing: 2px;
+}
+.zhongdexueyuanDiv02 ul li{
+	color: white;
+	font-size: 1.3em;
+	line-height: 2em;
+	text-indent: 2em;
+	letter-spacing: 2px;
+	background-color: #0cb1f6;
+	margin-top: 40px;
+	padding: 30px 15px;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+.zhongdexueyuanDiv02 ul li:hover{
+	margin-left: -30px;
+	cursor: pointer;
+	background-color: #072948;
+	/*-moz-box-shadow: 10px 10px 5px #999999;
+	box-shadow: 10px 10px 5px #999999;*/
+}

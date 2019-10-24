@@ -1,0 +1,141 @@
+/*interesGermany_div*/
+.interesGermany_div {
+	padding: 50px 15px;
+}
+
+.interesGermany_div .sec-title {
+	text-align: center;
+}
+
+.interesGermany_div .sec-title h1 {
+	color: #333333;
+}
+
+.interesGermany_div .border-shape {
+	background: #ddd;
+	display: block;
+	height: 1px;
+	left: 0;
+	margin: 20px auto;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 260px;
+}
+
+.interesGermany_div .border-shape::before {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	top: 3px;
+	width: 90px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.interesGermany_div .border-shape::after {
+	background: #ddd none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 6px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+/*interesGermany*/
+.interesGermany {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 150px;
+	background-image: url("../../imgs/china_education/page-title.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.interesGermany_list{
+	padding: 50px 0;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 1px 1px 2px 2px #0cb1f6;
+}
+
+.interesGermany_list ul {
+	 margin: 0;
+	 padding: 0;
+	 width: 100%;
+ }
+
+.interesGermany_list .module-tab-title {
+	width: 100%;
+	height: 130px;
+	padding: 0 40px;
+	border-bottom: 1px dashed #d6d6d6;
+}
+
+.interesGermany_list ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.interesGermany_list ul li {
+	padding-top: 20px;
+	list-style: none;
+}
+
+.interesGermany_list ul li:hover {
+	background-color: #f8f8f8;
+}
+
+.interesGermany_list ul li a:focus {
+	text-decoration: none;
+}
+
+.module-tab-title_DivSon {
+	width: 100%;
+}
+
+.module-tab-title_DivSon_title {
+	height: 20px;
+	color: #157BBB;
+	display: block;
+	font-weight: bolder;
+	overflow: hidden;
+	letter-spacing: 1px;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.module-tab-title_DivSon_time {
+	color: #999999;
+	padding-bottom: 10px;
+	font-size: 0.8em;
+}
+
+.module-tab-title_DivSon_info {
+	height: 38px;
+	color: #333333;
+	display: block;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.module-tab-box-ma_Divs{
+	float: right;
+	padding: 40px;
+}
