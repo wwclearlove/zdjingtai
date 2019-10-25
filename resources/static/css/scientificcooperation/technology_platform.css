@@ -1,6 +1,5 @@
 .what-we-do-crousel-sec {
 	padding: 60px 0;
-	background: #0cb1f6;
 	letter-spacing: 2px;
 }
 
@@ -8,12 +7,8 @@
 	text-align: center;
 }
 
-.what-we-do-crousel-sec .sec-title h1 {
-	color: #fff;
-}
-
 .what-we-do-crousel-sec .border-shape {
-	background: #ddd;
+	background: #a8a8a8;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -25,7 +20,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #a8a8a8 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -38,7 +33,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #a8a8a8 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

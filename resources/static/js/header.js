@@ -89,6 +89,8 @@ $(document).ready(function () {
 		}
 	});
 	$(".li-cate_a").eq(5).css("width","146px");
+	/*公共背景色*/
+	$("body").css("background-color","#DDDDDD");
 	/*时间*/
 	setInterval(function () {
 		$("#times").html(new Date().toLocaleString());

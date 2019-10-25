@@ -5,7 +5,6 @@
 .centeroverviewDivSon01 {
 	margin-top: 50px;
 	padding: 15px;
-	background-color: white;
 }
 
 .centeroverviewDiv_title {
@@ -30,6 +29,10 @@
 	text-align: left;
 }
 
+.centeroverviewDivSon02 > div > a{
+	text-decoration: none;
+}
+
 .centeroverviewDivSon02 > div > a > img {
 	height: 45px;
 	width: 206px;
@@ -42,13 +45,44 @@
 	text-align: center;
 }
 
+/*lxwm*/
+.lxwm{
+	font-size: 1.3em;
+	font-weight: bolder;
+	height: 45px;
+	width: 206px;
+	padding: 0 28px;
+	line-height: 45px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: -20px;
+	border: 2px solid #bdbdbd;
+	background: linear-gradient(#D7DCED ,#929292);
+}
+.lxwm i,
+.lxwm span{
+	line-height: 45px;
+}
+.lxwm i{
+	color: #4C3717;
+	float: left;
+}
+.lxwm span{
+	color: #041B33;
+	float: right;
+}
+
 @media (max-width: 991px) {
 	.centeroverviewDivSon02 {
 		text-align: center;
 		padding-top: 0;
 	}
 
-	.centeroverviewDivSon02 > div > a > img {
+	.centeroverviewDivSon02 > div > a > img{
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.lxwm{
 		margin-top: 20px;
 		margin-left: 0;
 	}

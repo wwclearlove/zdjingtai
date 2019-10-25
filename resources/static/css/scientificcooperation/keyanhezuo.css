@@ -3,11 +3,10 @@
 }
 
 .keyanhezuo_Div_font {
+	padding-bottom: 50px;
 	text-align: center;
 }
-.keyanhezuo_Div_font img{
-	width: 280px;
-}
+
 .keyanhezuo_DivSon {
 	padding: 30px 15px;
 }

@@ -11,7 +11,7 @@
 }
 
 .zhongdexueyuan_div .border-shape {
-	background: #ddd;
+	background: #acacac;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -23,7 +23,7 @@
 }
 
 .zhongdexueyuan_div .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #acacac none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -36,7 +36,7 @@
 }
 
 .zhongdexueyuan_div .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #acacac none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

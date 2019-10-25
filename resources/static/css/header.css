@@ -539,13 +539,45 @@ em {
 	}
 }
 
+/*公共标题字体*/
+/*.commonality_title {
+	letter-spacing: 5px;
+	color: hsl(184, 80%, 25%);
+	text-shadow: 0 0 1px currentColor,
+	-1px -1px 1px hsl(184, 80%, 50%),
+	0 -1px 1px hsl(184, 80%, 55%),
+	1px -1px 1px hsl(184, 80%, 50%),
+	1px 1px 1px hsl(184, 80%, 10%),
+	0 1px 1px hsl(184, 80%, 10%),
+	-1px 1px 1px hsl(184, 80%, 10%),
+	-1px -1px 1px hsl(184, 80%, 15%),
+	-1px -1px 1px hsl(184, 80%, 15%),
+	0 -2px 1px hsl(184, 80%, 15%),
+	1px -1px 1px hsl(184, 80%, 15%),
+	1px -1px 1px hsl(184, 80%, 15%),
+	1px -1px 1px hsl(184, 80%, 15%),
+	1px 0 1px hsl(184, 80%, 15%),
+	1px 1px 1px hsl(184, 80%, 15%),
+	-1px 0 1px hsl(184, 80%, 15%),
+	-1px -1px 1px hsl(184, 80%, 15%),
+	-1px 1px 1px hsl(184, 80%, 15%),
+	1px 1px 1px hsl(184, 80%, 5%),
+	1px 1px 1px hsl(184, 80%, 5%),
+	0 1px 1px hsl(184, 80%, 5%),
+	-1px 1px 1px hsl(184, 80%, 5%),
+	-1px 1px 1px hsl(184, 80%, 5%);
+}*/
 
-/*公共背景色*/
-.backgroundColor {
-	background-color: #DDDDDD;
+.commonality_title{
+	font-size: 3.3em;
+	text-align: center;
+	letter-spacing: 5px;
+	font-weight: normal;
+	font-family: cursive;
+	color: rgba(40, 80, 120, .9);
+	text-shadow: -1px -1px 1px #0e2550, 0 -1px 1px #0e2550,
+	1px -1px 1px #0e2550, 1px 0 1px #0e2550, 1px 1px 1px #0e2550,
+	0 1px 1px #0e2550, -1px 1px 1px #0e2550, -1px 0 1px #0e2550, 0 0 4px #0e2550;
 }
 
-/*公共标题*/
-.commonality_title {
 
-}

@@ -1,6 +1,5 @@
 .what-we-do-crousel-sec {
 	padding: 60px 0;
-	background: white;
 	letter-spacing: 2px;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape {
-	background: #ddd;
+	background: #b2b2b2;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -25,7 +24,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #b2b2b2 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -38,7 +37,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #b2b2b2 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

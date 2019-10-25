@@ -1,14 +1,4 @@
 /*当前页面位置*/
-.location {
-	padding: 20px 0;
-	text-align: right;
-}
-
-.location span {
-	color: #666666;
-	font-weight: bolder;
-}
-
 .centerDiv {
 	padding: 40px 0;
 }
@@ -32,11 +22,26 @@
 	height: 500px;
 }
 
+/*developtargetDiv*/
+.developtargetDiv{
+	padding: 50px;
+	text-align: left;
+}
+.developtargetDiv h3{
+	color: #444444;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	margin-top: 10%;
+}
+.developtargetDiv img{
+	border-radius: 50%;
+}
 @media (max-width: 1024px) {
-	/*当前页面位置*/
-	.locationDiv {
-		display: none;
+	.developtargetDiv{
+		padding: 20px;
+		text-align: center;
+	}
+	.developtargetDiv h3{
+		margin-top: 5%;
 	}
 }
-
-
