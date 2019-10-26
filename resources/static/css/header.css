@@ -580,4 +580,22 @@ em {
 	0 1px 1px #0e2550, -1px 1px 1px #0e2550, -1px 0 1px #0e2550, 0 0 4px #0e2550;
 }
 
+@media (max-width: 768px) {
+	.commonality_title{
+		font-size: 2.8em;
+	}
+}
+
+@media (max-width: 480px) {
+	.commonality_title{
+		font-size: 1.6em;
+	}
+}
+
+
+/*公共文字字体*/
+body,section,h1,h2,h3,h4,h5,h6,p,span,b,ul,li,a,table,th,hr,td,div{
+	font-family: Arial, Helvetica, sans-serif, "宋体";
+}
+
 

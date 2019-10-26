@@ -15,6 +15,70 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<style type="text/css">
+		.liuxues{
+			padding: 60px;
+		}
+
+		.liuxues .sec-title {
+			text-align: center;
+		}
+
+		.liuxues .sec-title h1 {
+			color: #333333;
+			letter-spacing: 2px;
+		}
+
+		.liuxues .border-shape {
+			background: #bbbbbb;
+			display: block;
+			height: 1px;
+			left: 0;
+			margin: 20px auto;
+			position: relative;
+			right: 0;
+			top: 0;
+			width: 300px;
+		}
+
+		.liuxues .border-shape::before {
+			background: #bbbbbb none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			top: 3px;
+			width: 90px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		.liuxues .border-shape::after {
+			background: #bbbbbb none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			top: 6px;
+			width: 70px;
+			margin: 0 auto;
+		}
+		.liuxue_list .liuxue_list-a{
+			color: #333333;
+			text-decoration: none;
+		}
+		.liuxueDiv02 p{
+			font-weight: bolder;
+			font-size: 1.3em;
+			line-height: 2em;
+			text-indent: 2em;
+			letter-spacing: 2px;
+		}
+	</style>
 </head>
 <body>
 
@@ -63,9 +127,9 @@
 	<!--content-->
 	<div class="container liuxues">
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12" style="padding-bottom: 50px">
 				<div class="sec-title">
-					<h1>企业考察项目</h1>
+					<h1 class="commonality_title">企业考察项目</h1>
 					<div class="border-shape"></div>
 				</div>
 			</div>
@@ -73,7 +137,7 @@
 				<a href="./investment_text/invertment_text_one.html" class="liuxue_list-a">
 					<div class="col-md-6 liuxueDiv01">
 						<img class="img-responsive center-block" src="../../static/imgs/invertment_text/invertment_text6.jpg" alt="">
-						<h3>
+						<h3 style="font-weight: bolder">
 							德国模式--民营中小企业的学习典范
 						</h3>
 					</div>

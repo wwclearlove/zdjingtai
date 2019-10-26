@@ -16,7 +16,7 @@
 	position: relative;
 	right: 0;
 	top: 0;
-	width: 350px;
+	width: 300px;
 }
 
 .what-we-do-crousel-sec .border-shape::before {
@@ -52,15 +52,30 @@
 	color: #333;
 	border-radius: 5px;
 	background-color: white;
+	max-height: 300px;
 }
 
 .what-we-do-crousel-sec div .item img {
-	/*height: 100px;*/
-	width: 100%;
+	width: 50%;
 }
 
 .what-we-do-crousel-sec div .item h3 {
+	text-align: center;
+}
 
+.what-we-do-crousel-sec div .item p {
+	color: #333333;
+	line-height: 2em;
+	letter-spacing: 1px;
+	text-indent: 2em;
+	font-size: 1.4em;
+	display: block;
+	max-height: 200px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
 }
 
 .what-we-do-crousel-sec .what-we-do-button {

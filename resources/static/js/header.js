@@ -88,9 +88,19 @@ $(document).ready(function () {
 			$(".header").css("opacity", opacity);
 		}
 	});
-	$(".li-cate_a").eq(5).css("width","146px");
+	$(".li-cate_a").eq(5).css("width", "146px");
 	/*公共背景色*/
-	$("body").css("background-color","#DDDDDD");
+	$("body").css("background-color", "#e6e6e6");
+	/*页面头部高亮*/
+	var liCateA = $(".li-cate_a");
+	//var active = 0;
+	for (var i = 0; i < liCateA.length; i++) {
+		liCateA[i].index = i;
+		liCateA.eq(i).click(function () {
+			$.cookie('active', this.index, {path: '/'});
+		});
+	}
+	$(".li-cate-1").eq($.cookie('active')).addClass("active");
 	/*时间*/
 	setInterval(function () {
 		$("#times").html(new Date().toLocaleString());
