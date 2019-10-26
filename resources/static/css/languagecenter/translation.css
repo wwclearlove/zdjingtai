@@ -7,12 +7,9 @@
 	text-align: center;
 }
 
-.translations .sec-title h1 {
-	color: #333333;
-}
 
 .translations .border-shape {
-	background: #ddd;
+	background: #c0c0c0;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -24,7 +21,7 @@
 }
 
 .translations .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #c0c0c0 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -37,7 +34,7 @@
 }
 
 .translations .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #c0c0c0 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

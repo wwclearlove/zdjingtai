@@ -12,47 +12,116 @@
 	<link rel="stylesheet" href="../../static/css/footer.css"/>
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
-	<script type="text/javascript" src="../../static/js/news_list/jquery.js"></script>
-	<script type="text/javascript" src="../../static/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="../../static/js/newsList.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 </head>
 <body>
 
 <section>
+	<!--banner-->
+	<div class="news_list_Div_banners">
+		<div class="container news_list_Div_banner">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="../../static/imgs/newsactivity/banner1.png" alt="">
+						<div class="carousel-caption">
+							<p>
+								2017年5月16日下午，由西南交大峨眉校区负责人带队，
+								与到访的德国奥斯特法利亚应用科学大学代表团共赴峨眉山市拜访交流，
+								共商合作事宜，峨眉山市委、市政府对此次三方会谈高度重视。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/banner2.jpg" alt="">
+						<div class="carousel-caption">
+							<p>
+								2018年3月26日，德国奥斯特法利亚应用科学大学（Ostfalia）刘晓波（Xiaobo Liu-Henke）
+								教授到西南交大峨眉校区对2018届毕业生赴德攻读硕士研究生进行了选拨录取工作
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/banner3.png" alt="">
+						<div class="carousel-caption">
+							2018年3月30日，由四川大学、德国华人教授学会主办的第十届中德教授论坛在四川大学举行
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/banner4.jpg" alt="">
+						<div class="carousel-caption">
+							<p>
+								2019年1月11日上午，四川（乐山）中德科技促进中心交大工作组、机电工程应用研究所与
+								四川博睿特外国语学校曾校长一行六人在西南交大峨眉校区进行了座谈
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="../../static/imgs/newsactivity/banner5.png" alt="">
+						<div class="carousel-caption">
+							<p>
+								2016年10月19日，在唐阳教授的多方协调下，邀请了德国奥斯特法利亚应用科学大学校长Rosemarie
+								Karger莅临乐山，与乐山高新区和西南交大峨
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bannerDiv">
+				<a class="carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a style="right: 0;left: auto;" class="carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
 	<!--新闻文章列表-->
 	<div class="module-banner" style="background-color: #e2e2e2">
 		<div class="module-banner-box">
 			<div class="module-banner-tab clearfix">
 				<div class="module-banner-tab-list hd">
-					<ul class="module-tab-nav">
-						<li class="on summary" style="height: 140px;padding: 32px;color: white;background-color: #157BBB;text-align: left;">
-							<h3>新闻动态</h3>
-							<p>News</p>
-						</li>
-						<li class="">
-							<i class="fa fa-location-arrow"></i>
-							<span>科技合作</span>
-						</li>
-						<li class="">
-							<i class="fa fa-location-arrow"></i>
-							<span>教育合作</span>
-						</li>
-						<li class="">
-							<i class="fa fa-location-arrow"></i>
-							<span>企业合作</span>
-						</li>
-						<li class="">
-							<i class="fa fa-location-arrow"></i>
-							<span>语言中心</span>
-						</li>
-					</ul>
+					<div class="news_list_Div">
+						<h3>新闻动态</h3>
+						<span>News</span>
+					</div>
+					<div class="news_list_Div_lable">
+						<label>
+							<select id="selectChooseType">
+								<option style="display: none" value="0">请选择活动类型</option>
+								<option value="1">科技合作</option>
+								<option value="2">教育合作</option>
+								<option value="3">企业合作</option>
+								<option value="4">语言中心</option>
+							</select>
+						</label>
+						<label>
+							<select id="selectChooseTime">
+								<option style="display: none" value="0">请选择活动时间</option>
+								<option value="1">降序</option>
+								<option value="2">升序</option>
+							</select>
+						</label>
+					</div>
 				</div>
 				<div class="module-banner-tab-list-box bd">
 					<ul class="module-tab-box-ma" style="display: block;">
 						<div class="module-tab-box-ma_Div">
-							<h3>新闻动态</h3>
+							<h3>活动</h3>
 						</div>
 						<li>
 							<div class="module-tab-title">
@@ -79,7 +148,8 @@
 											 src="../../static/imgs/newsactivity/technology02.png" alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
-										<h4 class="module-tab-title_DivSon02_title">【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
+										<h4 class="module-tab-title_DivSon02_title">
+											【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
 										<p class="module-tab-title_DivSon02_time">时间：2018-12-04 19:52:59 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
@@ -281,29 +351,8 @@
 								</a>
 							</div>
 						</li>
-						<div class="module-tab-box-ma_Divs">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
 					</ul>
-					<ul class="module-tab-box-ma" style="display: block;">
+					<ul class="module-tab-box-ma module_ul1" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">科技合作</h3>
 						</div>
@@ -332,7 +381,8 @@
 											 src="../../static/imgs/newsactivity/technology02.png" alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
-										<h4 class="module-tab-title_DivSon02_title">【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
+										<h4 class="module-tab-title_DivSon02_title">
+											【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
 										<p class="module-tab-title_DivSon02_time">时间：2018-12-04 19:52:59 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
@@ -367,29 +417,8 @@
 								</a>
 							</div>
 						</li>
-						<div class="module-tab-box-ma_Divs">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
 					</ul>
-					<ul class="module-tab-box-ma" style="display: none;">
+					<ul class="module-tab-box-ma module_ul2" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/jiaoyu.png" alt="">教育合作</h3>
 						</div>
@@ -540,56 +569,14 @@
 								</a>
 							</div>
 						</li>
-						<div class="module-tab-box-ma_Divs">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
 					</ul>
-					<ul class="module-tab-box-ma" style="display: none;">
+					<ul class="module-tab-box-ma module_ul3" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">企业合作</h3>
 						</div>
 						<h3>暂无</h3>
-						<div class="module-tab-box-ma_Divs">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
 					</ul>
-					<ul class="module-tab-box-ma" style="display: none;">
+					<ul class="module-tab-box-ma module_ul4" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/yuyan.png" alt="">语言中心</h3>
 						</div>
@@ -613,37 +600,38 @@
 								</a>
 							</div>
 						</li>
-						<div class="module-tab-box-ma_Divs">
-							<nav aria-label="Page navigation">
-								<ul class="pagination">
-									<li>
-										<a href="#" aria-label="Previous">
-											<span aria-hidden="true">&laquo;</span>
-										</a>
-									</li>
-									<li class="active"><a href="#">1</a></li>
-									<li><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">4</a></li>
-									<li><a href="#">5</a></li>
-									<li>
-										<a href="#" aria-label="Next">
-											<span aria-hidden="true">&raquo;</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(function () {
-			$('.module-banner-tab').slide({trigger: "click", delayTime: 1000});
-		});
-	</script>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="module-tab-box-ma_Divs">
+					<nav aria-label="Page navigation">
+						<ul class="pagination pagination-lg">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
