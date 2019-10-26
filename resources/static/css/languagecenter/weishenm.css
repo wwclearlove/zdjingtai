@@ -1,3 +1,5 @@
+
+
 .blue{
     margin-top: 40px;
     border: 2px solid #4498e6;
@@ -13,11 +15,11 @@
     margin-top: 40px;
     border: 2px dashed rgb(62, 62, 62);
     color: rgb(62, 62, 62);
-    padding: 20px 20px 20px 50px;
-
+    /*padding: 20px 20px 20px 50px;*/
+    padding: 50px 20px;
     font-size: 1.1em;
-    height: 150px;
-    width:500px;
+    /*height: 150px;*/
+    /*width:500px;*/
 }
 
 .hei2{
@@ -32,13 +34,18 @@
     height: 220px;
 }
 .hei3{
-
-    text-align: center;
-    margin-top: 40px;
+    /*text-align: center;*/
+    text-align:right;
+    margin: 40px 0;
     border: 2px dashed rgb(62, 62, 62);
     color: rgb(62, 62, 62);
-    padding: 20px 20px 20px 50px;
-
+    padding: 20px 13%;
     font-size: 1.1em;
+    /*width: 100%*/
+}
 
+@media (max-width: 560px) {
+    .hei3{
+        padding: 20px 15px;
+    }
 }
