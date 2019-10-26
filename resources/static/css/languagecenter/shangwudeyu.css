@@ -5,7 +5,6 @@
     color: #333333;
     line-height: 2em;
 }
-
 .our-services-text {
     padding-right: 10px;
 }
@@ -43,12 +42,12 @@
     z-index: -1;
 }
 .our-services-text h4::before {
-    background: #d7d653 none repeat scroll 0 0;
+    background: #C4D70D none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
     position: absolute;
-    width: 90px;
+    width: 210px;
 }
 .our-services-wrapper:hover .services-inner {
     background: #fff none repeat scroll 0 0;
@@ -64,3 +63,4 @@
     color: #333333;
     line-height: 2em;
 }
+
