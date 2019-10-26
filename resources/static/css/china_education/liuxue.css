@@ -3,17 +3,8 @@
 	padding-top: 50px;
 }
 
-.liuxue_title .sec-title {
-	text-align: center;
-}
-
-.liuxue_title .sec-title h1 {
-	color: #333333;
-	letter-spacing: 2px;
-}
-
 .liuxue_title .border-shape {
-	background: #ddd;
+	background: #c6c6c6;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -25,7 +16,7 @@
 }
 
 .liuxue_title .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #c6c6c6 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -38,7 +29,7 @@
 }
 
 .liuxue_title .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #c6c6c6 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

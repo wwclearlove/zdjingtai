@@ -13,7 +13,7 @@ document.writeln("		</div>");
 document.writeln("		<!--Search-->");
 document.writeln("		<div class=\'searchDiv\'>");
 document.writeln("			<form action=\'\'>");
-document.writeln("				<input type=\'text\' class=\'search_input\' placeholder=\'请输入搜索词\'>");
+document.writeln("				<input type=\'text\' class=\'search_input\' placeholder=\'请输入关键词\'>");
 document.writeln("				<a href=\'#\' class=\'search_a\'>");
 document.writeln("					<i class=\'fa fa-search\'></i>");
 document.writeln("				</a>");

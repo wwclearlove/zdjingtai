@@ -74,5 +74,6 @@ $(document).ready(function () {
 		$("#selectChooseType").val('0');
 		$("#selectChooseTime").val('0');
 		$(".module-tab-box-ma").eq(0).show();
+		num = 0;
 	})
 });

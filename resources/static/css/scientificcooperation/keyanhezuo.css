@@ -33,14 +33,10 @@
 
 /*investment_advisory*/
 .investment_advisory{
-	padding: 50px 0;
+	padding-top: 50px;
 }
 .investment_advisory .sec-title {
 	text-align: center;
-}
-
-.investment_advisory .sec-title h1 {
-	color: #333333;
 }
 
 .investment_advisory .border-shape {
