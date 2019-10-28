@@ -11,84 +11,115 @@
 	<link rel="stylesheet" href="../../static/css/header.css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css"/>
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
+	<link rel="stylesheet" href="./helloweba_daterangerpicker/css/daterangepicker.css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/newsList.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<script src="./helloweba_daterangerpicker/js/moment.min.js"></script>
+	<script src="./helloweba_daterangerpicker/js/jquery.daterangepicker.js"></script>
 </head>
 <body>
 
 <section>
 	<!--banner-->
-	<div class="news_list_Div_banners">
-		<div class="container news_list_Div_banner">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="../../static/imgs/newsactivity/banner1.png" alt="">
-						<div class="carousel-caption">
-							<p>
-								2017年5月16日下午，由西南交大峨眉校区负责人带队，
-								与到访的德国奥斯特法利亚应用科学大学代表团共赴峨眉山市拜访交流，
-								共商合作事宜，峨眉山市委、市政府对此次三方会谈高度重视。
-							</p>
-						</div>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		</ol>
+
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<a href="../cooperative_enterprise/enterprise_inspection.html">
+					<img style="float: left;"
+						 src="../../static/imgs/newsactivity/technology_articles/technology_articles02/technology_articles0201.png"
+						 alt="" width="50%">
+					<img src="../../static/imgs/newsactivity/technology_articles/technology_articles02/technology_articles0202.png"
+						 alt="" width="50%">
+					<div class="carousel-caption">
+						2018年12月4日，四川（乐山）中德科技促进中心主要发起人之一、
+						德国Ostfalia应用科学大学刘晓波教授来西南交大峨眉校区做讲座并指导dSPACE实验室建设。
 					</div>
-					<div class="item">
-						<img src="../../static/imgs/newsactivity/banner2.jpg" alt="">
-						<div class="carousel-caption">
-							<p>
-								2018年3月26日，德国奥斯特法利亚应用科学大学（Ostfalia）刘晓波（Xiaobo Liu-Henke）
-								教授到西南交大峨眉校区对2018届毕业生赴德攻读硕士研究生进行了选拨录取工作
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img src="../../static/imgs/newsactivity/banner3.png" alt="">
-						<div class="carousel-caption">
-							2018年3月30日，由四川大学、德国华人教授学会主办的第十届中德教授论坛在四川大学举行
-						</div>
-					</div>
-					<div class="item">
-						<img src="../../static/imgs/newsactivity/banner4.jpg" alt="">
-						<div class="carousel-caption">
-							<p>
-								2019年1月11日上午，四川（乐山）中德科技促进中心交大工作组、机电工程应用研究所与
-								四川博睿特外国语学校曾校长一行六人在西南交大峨眉校区进行了座谈
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img src="../../static/imgs/newsactivity/banner5.png" alt="">
-						<div class="carousel-caption">
-							<p>
-								2016年10月19日，在唐阳教授的多方协调下，邀请了德国奥斯特法利亚应用科学大学校长Rosemarie
-								Karger莅临乐山，与乐山高新区和西南交大峨
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bannerDiv">
-				<a class="carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
 				</a>
-				<a style="right: 0;left: auto;" class="carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
+			</div>
+			<div class="item">
+				<a href="./technology_articles/technology_articles01.html">
+					<img style="float: left;"
+						 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/technology_articles0102.png"
+						 alt="" width="50%">
+					<img src="../../static/imgs/newsactivity/technology_articles/technology_articles01/technology_articles0103.png"
+						 alt="" width="50%">
+					<div class="carousel-caption">
+						<p>
+							2018年8月下旬，四川（乐山）中德科技促进中心交大工作组对交大峨眉校区2018级迎
+							新工作提前进行具体部署，决定通过持续开展“校区与德国大学合作展板宣传”...
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="./education_articles/education_articles07.html">
+					<img style="float: left;"
+						 src="../../static/imgs/newsactivity/education_articles/education_articles07/education_articles0702.png"
+						 alt="" width="50%">
+					<img src="../../static/imgs/newsactivity/education_articles/education_articles07/education_articles0703.png"
+						 alt="" width="50%">
+					<div class="carousel-caption">
+						<p>
+							2019年1月11日上午，四川（乐山）中德科技促进中心交大工作组、
+							机电工程应用研究所与四川博睿特外国语学校曾校长一行六人在西南交大峨眉校区进行了座谈...
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="./education_articles/education_articles06.html">
+					<img style="float: left;"
+						 src="../../static/imgs/newsactivity/education_articles/education_articles06/education_articles0604.png"
+						 alt="" width="50%">
+					<img src="../../static/imgs/newsactivity/education_articles/education_articles06/education_articles0606.png"
+						 alt="" width="50%">
+					<div class="carousel-caption">
+						<p>
+							2018年9月20日下午，由西南交大人事处、教务处、科发院、工会峨眉相应单位主办，
+							西南交大机械工程学院、四川（乐山）中德科技促进中心承办的迎新“中德合作讲座”在校区内顺利举行。
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="./education_articles/education_articles04.html">
+					<img style="float: left;"
+						 src="../../static/imgs/newsactivity/education_articles/education_articles04/education_articles0401.png"
+						 alt="" width="50%">
+					<img src="../../static/imgs/newsactivity/education_articles/education_articles04/education_articles0402.png"
+						 alt="" width="50%">
+					<div class="carousel-caption">
+						<p>
+							2018年3月26日，德国奥斯特法利亚应用科学大学（Ostfalia）刘晓波
+							（Xiaobo Liu-Henke）教授到西南交大峨眉校区对2018届毕业生赴德攻读硕士研究生
+							进行了选拨录取工作。
+						</p>
+					</div>
 				</a>
 			</div>
 		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 	<!--新闻文章列表-->
 	<div class="module-banner">
@@ -117,6 +148,21 @@
 							</select>
 						</label>
 					</div>
+
+
+					<!--<div class="form-group" style="width: 100%;">
+						<label style="width: 100%;" for="date-range1" class="control-label">请选择日期范围</label>
+						<div style="width: 100%;">
+							<input style="width: 100%;" type="text" class="form-control" id="date-range1" placeholder="">
+						</div>
+					</div>-->
+					<div style="width: 100%;" class="form-group">
+						<label style="width: 100%;" for="date-range2" class="control-label">请选择单个日期</label>
+						<div style="width: 100%;">
+							<input style="width: 100%;" type="text" class="form-control" id="date-range2" value="2019-10-28">
+						</div>
+					</div>
+
 				</div>
 				<div class="module-banner-tab-list-box bd">
 					<ul class="module-tab-box-ma" style="display: block;">
@@ -128,7 +174,7 @@
 								<a href="./technology_articles/technology_articles03.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【科技】 车辆数字实验室第10批招新报名及分组情况公示</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-12-14 20:00:38 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-14</span> 20:00:38 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											本学期10月中旬，车辆数字实验室在2018级新生中进行了招新宣讲，并接受学生报名。11初，
@@ -150,7 +196,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">
 											【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-12-04 19:52:59 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-04</span> 19:52:59 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年12月4日，四川（乐山）中德科技促进中心主要发起人之一、
@@ -172,7 +218,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【科技】 中德科促在交大峨眉校区顺利开展2018年秋季迎新工作</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-03 11:30:57 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-03</span> 11:30:57 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年8月下旬，四川（乐山）中德科技促进中心交大工作组对交大峨眉校区2018级迎
@@ -194,7 +240,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											四川博睿特外国语学校与研究所交流“青少年创新培养体系建设</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2019-10-09 10:13:17 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2019-10-09</span> 10:13:17 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2019年1月11日上午，四川（乐山）中德科技促进中心交大工作组、
@@ -215,7 +261,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 中德科促在交大峨眉校区开展新学期中德合作讲座</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-25 20:28:47 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-25</span> 20:28:47 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月20日下午，由西南交大人事处、教务处、科发院、工会峨眉相应单位主办，
@@ -236,7 +282,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 我中心参加四川大学第十届中德教授论坛</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-31 10:30:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-31</span> 10:30:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年3月30日，由四川大学、德国华人教授学会主办的第十届中德教授论坛在四川大学举行。
@@ -258,7 +304,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">教育合作 2018春季西南交大峨眉校区留德招生活动</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-28 09:04:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-28</span> 09:04:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年3月26日，德国奥斯特法利亚应用科学大学（Ostfalia）刘晓波
@@ -279,7 +325,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 唐阳教授访问德国比勒费尔德应用科学大学</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-31 10:30:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-31</span> 10:30:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2017年6月29~30日，应比勒菲尔德应用科学大学Kottin教授邀请，
@@ -300,7 +346,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											峨眉校区、德国奥斯特法利亚应用科学大学共赴峨眉山市交流访问</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2017-05-17 21:31:03 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2017-05-17</span> 21:31:03 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											 2017年5月16日下午，由西南交大峨眉校区负责人带队，与到访的德国奥斯特法利亚应用科学
@@ -320,7 +366,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											乐山高新区与西南交大峨眉校区及德国奥斯特法利亚应用科学大学签订三方合作协议</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2016-10-20 21:14:13 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2016-10-20</span> 21:14:13 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2016年10月19日，在唐阳教授的多方协调下，邀请了德国奥斯特法利亚应用科学大学校长
@@ -340,7 +386,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】中德科促在交大峨眉校区开展新学期第1期德语角活动</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-11 14:46:05 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> 14:46:05 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月6日下午，四川（乐山）中德科技促进中心交大工作组在校区内顺利开展新学期第一期德语角活动。
@@ -361,7 +407,7 @@
 								<a href="./technology_articles/technology_articles03.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【科技】 车辆数字实验室第10批招新报名及分组情况公示</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-12-14 20:00:38 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-14</span> 20:00:38 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											本学期10月中旬，车辆数字实验室在2018级新生中进行了招新宣讲，并接受学生报名。11初，
@@ -383,7 +429,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">
 											【科技】Ostfalia刘晓波教授在峨讲座并指导dSPACE实验室建设</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-12-04 19:52:59 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-04</span> 19:52:59 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年12月4日，四川（乐山）中德科技促进中心主要发起人之一、
@@ -405,7 +451,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【科技】 中德科促在交大峨眉校区顺利开展2018年秋季迎新工作</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-03 11:30:57 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-03</span> 11:30:57 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年8月下旬，四川（乐山）中德科技促进中心交大工作组对交大峨眉校区2018级迎
@@ -432,7 +478,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											四川博睿特外国语学校与研究所交流“青少年创新培养体系建设</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2019-10-09 10:13:17 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2019-10-09</span> 10:13:17 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2019年1月11日上午，四川（乐山）中德科技促进中心交大工作组、
@@ -453,7 +499,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 中德科促在交大峨眉校区开展新学期中德合作讲座</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-25 20:28:47 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-25</span> 20:28:47 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月20日下午，由西南交大人事处、教务处、科发院、工会峨眉相应单位主办，
@@ -474,7 +520,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 我中心参加四川大学第十届中德教授论坛</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-31 10:30:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-31</span> 10:30:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年3月30日，由四川大学、德国华人教授学会主办的第十届中德教授论坛在四川大学举行。
@@ -496,7 +542,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">教育合作 2018春季西南交大峨眉校区留德招生活动</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-28 09:04:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-28</span> 09:04:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年3月26日，德国奥斯特法利亚应用科学大学（Ostfalia）刘晓波
@@ -517,7 +563,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】 唐阳教授访问德国比勒费尔德应用科学大学</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-03-31 10:30:58 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-03-31</span> 10:30:58 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2017年6月29~30日，应比勒菲尔德应用科学大学Kottin教授邀请，
@@ -538,7 +584,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											峨眉校区、德国奥斯特法利亚应用科学大学共赴峨眉山市交流访问</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2017-05-17 21:31:03 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2017-05-17</span> 21:31:03 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											 2017年5月16日下午，由西南交大峨眉校区负责人带队，与到访的德国奥斯特法利亚应用科学
@@ -558,7 +604,7 @@
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【教育】
 											乐山高新区与西南交大峨眉校区及德国奥斯特法利亚应用科学大学签订三方合作协议</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2016-10-20 21:14:13 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2016-10-20</span> 21:14:13 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2016年10月19日，在唐阳教授的多方协调下，邀请了德国奥斯特法利亚应用科学大学校长
@@ -589,7 +635,7 @@
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】中德科促在交大峨眉校区开展新学期第1期德语角活动</h4>
-										<p class="module-tab-title_DivSon02_time">时间：2018-09-11 14:46:05 &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> 14:46:05 &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月6日下午，四川（乐山）中德科技促进中心交大工作组在校区内顺利开展新学期第一期德语角活动。

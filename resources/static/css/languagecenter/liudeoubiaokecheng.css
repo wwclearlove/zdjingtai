@@ -1,17 +1,21 @@
 /*liudeoubiaokecheng_Div01*/
-.liudeoubiaokecheng_Div01{
+.liudeoubiaokecheng_Div01 {
 	color: white;
 	letter-spacing: 2px;
 	padding: 50px 15px;
 	background-color: #7F7F7F;
 }
 
+.liudeoubiaokecheng_Div01 p {
+	font-size: 1.5em;
+}
+
 /*liudeoubiaokecheng_Div02*/
-.liudeoubiaokecheng_Div02{
+.liudeoubiaokecheng_Div02 {
 	padding: 50px 0;
 }
 
-h2.heading{
+h2.heading {
 	letter-spacing: 2px;
 	padding-bottom: 30px;
 }
@@ -19,28 +23,34 @@ h2.heading{
 .mb-60 {
 	margin-bottom: 60px;
 }
+
 .services-inner {
 	border: 2px solid #3369e7;
 	margin-left: 35px;
 	transition: .3s;
 	background: #fff
 }
+
 .our-services-img {
 	float: left;
 	margin-left: -36px;
 	margin-right: 22px;
 	margin-top: 28px;
 }
+
 .our-services-img img {
 	width: 68px;
 }
+
 .our-services-text {
 	padding-right: 10px;
 }
+
 .our-services-text {
 	overflow: hidden;
 	padding: 28px 0 25px;
 }
+
 .our-services-text h4 {
 	font-family: "Stencil Std";
 	width: 100%;
@@ -53,15 +63,18 @@ h2.heading{
 	position: relative;
 	text-transform: uppercase;
 }
-.our-services-text h4 .price{
+
+.our-services-text h4 .price {
 	color: #F2AF2D;
 	float: right;
 	padding-right: 10px;
 }
-.our-services-text h4>.price>.unit{
+
+.our-services-text h4 > .price > .unit {
 	color: #333333;
 	font-size: 0.5em;
 }
+
 .position-image img {
 	position: absolute;
 	top: 16%;
@@ -70,6 +83,7 @@ h2.heading{
 	width: 20%;
 	z-index: -1;
 }
+
 .our-services-text h4::before {
 	background: #C4D70D none repeat scroll 0 0;
 	bottom: 0;
@@ -78,39 +92,59 @@ h2.heading{
 	position: absolute;
 	width: 210px;
 }
+
 .our-services-wrapper:hover .services-inner {
 	background: #fff none repeat scroll 0 0;
 	border: 2px solid transparent;
 	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
+
 .our-services-text p {
 	margin-bottom: 0;
 }
+
 .services p {
 	font-size: 1.3em;
 	font-weight: 400;
 	color: #333333;
 	line-height: 2em;
 }
-.services  {
+
+.services {
 	position: relative;
 	z-index: 2;
 }
 
-
-
 /*liudeoubiaokecheng_Div03*/
-.liudeoubiaokecheng_Div03{
+.liudeoubiaokecheng_Div03 {
 	padding: 50px 15px;
 	color: white;
 	letter-spacing: 2px;
 	background-color: #3369e7;
 }
 
-.liudeoubiaokecheng_Div04{
+.liudeoubiaokecheng_Div04 {
 	padding: 50px 15px;
 	color: white;
 	letter-spacing: 2px;
 	margin: 100px 0;
 	background-color: #7F7F7F;
+}
+
+.tuangoujia {
+	text-align: right;
+	font-size: 1.3em;
+	padding-right: 10px;
+}
+
+.our-services-text {
+	position: relative;
+}
+
+.our-services-text .book {
+	padding: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 22%;
 }

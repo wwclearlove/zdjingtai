@@ -315,7 +315,7 @@ h5{font-size:1rem;font-family:inherit;line-height:1.375;margin-top:-0.3125em;mar
 @media(min-width:1025px){h5{max-width:75%}
 }
 p{font-size:1rem;font-family:inherit;line-height:1.5;margin-top:-0.3125em;margin-bottom:-0.1875em}
-h1,h2,h3,h4,h5,p,ul,ol{color:#2d373c;overflow-wrap:break-word;word-wrap:break-word}
+h1,h2,h3,h4,h5,ul,ol{color:#2d373c;overflow-wrap:break-word;word-wrap:break-word}
 h1.dark-bg,h2.dark-bg,h3.dark-bg,h4.dark-bg,h5.dark-bg,p.dark-bg,ul.dark-bg,ol.dark-bg{color:#fff}
 a{color:#2387aa;text-decoration:none}
 a:hover,a:focus,a:active{color:#005578;text-decoration:none}

@@ -14,13 +14,33 @@
 	<link type="text/css" rel="stylesheet" href="../static/css/index/index.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/publish.min.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/clientlibs.min.css">
-	<script type="text/javascript" src="../static/js/common.min.js"></script>
 	<script type="text/javascript" src="../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../static/js/common.min.js"></script>
 	<script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../static/js/header.js"></script>
 	<script type="text/javascript" src="../static/js/publish.min.js"></script>
 	<script type="text/javascript" src="../static/js/clientlibs.min.js"></script>
+	<style type="text/css">
+		.carousel-caption {
+			bottom: 10%;
+		}
+
+		.carousel-caption p {
+			color: white;
+			font-size: 2em;
+		}
+
+		@media (max-width: 560px) {
+			.carousel-caption {
+				bottom: 5%;
+			}
+
+			.carousel-caption p {
+				font-size: 1em;
+			}
+		}
+	</style>
 </head>
 <body>
 
@@ -29,7 +49,7 @@
 	<div class="languageSearch">
 		<!--Language-->
 		<div class="language">
-			<a href="#" class="chinese">中文版</a> |
+			<a href="./index.html" class="chinese">中文版</a> |
 			<a href="#" class="deutsch">Deutsch</a>
 		</div>
 		<!--time-->
@@ -92,13 +112,15 @@
 									<a href="./china_education/youxue.html" class="subdirectories02">游学访问</a>
 								</li>
 								<li>
-									<a href="./china_education/zhongdexuexiaohezuo.html" class="subdirectories02">教育合作资源</a>
+									<a href="./china_education/zhongdexuexiaohezuo.html"
+									   class="subdirectories02">教育合作资源</a>
 								</li>
 								<li>
 									<a href="./china_education/zhongdexueyuan.html" class="subdirectories02">中德学院</a>
 								</li>
 								<li>
-									<a href="./china_education/shuangyuanzhiidaxue.html" class="subdirectories02">双元制大学</a>
+									<a href="./china_education/shuangyuanzhiidaxue.html"
+									   class="subdirectories02">双元制大学</a>
 								</li>
 							</ul>
 						</li>
@@ -107,13 +129,16 @@
 							   class="li-cate_a">中德企业合作</a>
 							<ul class="sub-menu">
 								<li>
-									<a href="./cooperative_enterprise/enterprise_inspection.html" class="subdirectories03">企业考察</a>
+									<a href="./cooperative_enterprise/enterprise_inspection.html"
+									   class="subdirectories03">企业考察</a>
 								</li>
 								<li>
-									<a href="./cooperative_enterprise/investment_advisory.html" class="subdirectories03">投资咨询</a>
+									<a href="./cooperative_enterprise/investment_advisory.html"
+									   class="subdirectories03">投资咨询</a>
 								</li>
 								<li>
-									<a href="./cooperative_enterprise/successful_conversion.html" class="subdirectories03">成果转化</a>
+									<a href="./cooperative_enterprise/successful_conversion.html"
+									   class="subdirectories03">成果转化</a>
 								</li>
 								<li>
 									<a href="./cooperative_enterprise/technical_service.html" class="subdirectories03">技术服务</a>
@@ -127,10 +152,12 @@
 									<a href="./language_center/shangwudeyu.html" class="subdirectories04">商务德语课程</a>
 								</li>
 								<li>
-									<a href="./language_center/qingshaoniandeyu.html" class="subdirectories04">青少年德语课程</a>
+									<a href="./language_center/qingshaoniandeyu.html"
+									   class="subdirectories04">青少年德语课程</a>
 								</li>
 								<li>
-									<a href="./language_center/liudeoubiaokecheng.html" class="subdirectories04">留德欧标课程</a>
+									<a href="./language_center/liudeoubiaokecheng.html"
+									   class="subdirectories04">留德欧标课程</a>
 								</li>
 								<li>
 									<a href="./language_center/translation.html" class="subdirectories04">翻译服务</a>
@@ -176,44 +203,45 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<a href="cooperative_enterprise/enterprise_inspection.html">
-				<img src="../static/imgs/banner/invertment_text6.jpg" alt="" width="100%">
-				<div class="carousel-caption" style="font-size: 1.8em">
-					德国模式--民营中小企业的学习典范
-				</div>
-					</a>
-			</div>
-			<div class="item">
-				<a href="china_education/shuangyuanzhiidaxue.html">
-				<img src="../static/imgs/banner/shuangyuanzhi01.png" alt="" width="100%">
-					<div class="carousel-caption" style="font-size: 1.8em">
-					双元制大学
-				</div>
-					</a>
-			</div>
-			<div class="item">
-				<a href="scientificcooperation/keyanhezuo.html">
-				<img src="../static/imgs/index/kypt.png" alt="" width="100%">
-					<div class="carousel-caption" style="font-size: 1.8em">
-					科研平台
-				</div>
+				<a href="./cooperative_enterprise/enterprise_inspection.html">
+					<img style="float: left;" src="../static/imgs/invertment_text/invertment_text5.jpg" alt="" width="50%">
+					<img src="../static/imgs/invertment_text/invertment_text6.jpg" alt="" width="50%">
+					<div class="carousel-caption">
+						<p>德国模式--民营中小企业的学习典范</p>
+					</div>
 				</a>
 			</div>
 			<div class="item">
-				<a href="cooperative_enterprise/successful_conversion.html">
-				<img src="../static/imgs/banner/product1.jpg" alt="" width="100%">
-					<div class="carousel-caption" style="font-size: 1.8em">
-					成果转换
-				</div>
-					</a>
+				<a href="./china_education/shuangyuanzhiidaxue.html">
+					<img src="../static/imgs/china_education/shuangyuanzhi02.png" alt="" width="100%">
+					<div class="carousel-caption">
+						<p>双元制大学</p>
+					</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="./scientificcooperation/keyanhezuo.html">
+					<img src="../static/imgs/index/kypt.png" alt="" width="100%">
+					<div class="carousel-caption">
+						<p>科研平台</p>
+					</div>
+				</a>
+			</div>
+			<div class="item">
+				<a href="./cooperative_enterprise/successful_conversion.html">
+					<img src="../static/imgs/banner/product1.jpg" alt="" width="100%">
+					<div class="carousel-caption">
+						<p>成果转化</p>
+					</div>
+				</a>
 			</div>
 			<div class="item">
 				<a href="./language_center/weishenme.html">
-				<img src="../static/imgs/banner/yuyan.png" alt="..." width="100%">
-					<div class="carousel-caption" style="font-size: 1.8em">
-					为什么要学德语
-				</div>
-					</a>
+					<img src="../static/imgs/banner/yuyan.png" alt="..." width="100%">
+					<div class="carousel-caption">
+						<p>为什么要学德语</p>
+					</div>
+				</a>
 			</div>
 		</div>
 
@@ -232,7 +260,7 @@
 		<div class="topicnews__base" data-component="topicnews">
 			<div class="topicnews__header">
 				<h2 class="topicnews__headline font--bold">热点新闻</h2>
-				<a href="#" class="topicnews__link">
+				<a href="./scientificcooperation/technology-platform.html" class="topicnews__link">
                     <span class="glyphicon-menu-right glyphicon">
                         <span>更多</span>
                   </span>
@@ -246,7 +274,7 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="../static/imgs/invertment_text/invertment_text6.jpg" alt=""
+											<img src="../static/imgs/invertment_text/invertment_text5.jpg" alt=""
 												 class="newsteaser__image responsiveMedia__img blur-up lazyloaded">
 										</picture>
 									</div>
@@ -286,7 +314,8 @@
 									<div class="newsteaser__textInput">
 										<h3 class="newsteaser__header">双元制大学</h3>
 										<div class="newsteaser__info">
-											在德国，有一种新型的高等教育机构——双元制大学（Duale Hochschule）。 该大学有着自己独树一帜的办学特色，在德国深得学生和就业单位的认可， 其生源质量不仅堪与综合性大学相媲美，就业率也高于应用科学大学。 为什么会有如此完美无缺的大学呢？
+											在德国，有一种新型的高等教育机构——双元制大学（Duale Hochschule）。 该大学有着自己独树一帜的办学特色，在德国深得学生和就业单位的认可，
+											其生源质量不仅堪与综合性大学相媲美，就业率也高于应用科学大学。 为什么会有如此完美无缺的大学呢？
 										</div>
 									</div>
 								</div>
@@ -302,7 +331,7 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img  src="../static/imgs/scientificcooperation/peitu1.png" alt=""
+											<img src="../static/imgs/scientificcooperation/peitu1.png" alt=""
 												 class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
 										</picture>
 									</div>
@@ -314,7 +343,9 @@
 									<div class="newsteaser__textInput">
 										<h3 class="newsteaser__header">科研平台</h3>
 										<div class="newsteaser__info">
-											如今随着科研的不断深入，对单一专业领域的科研也就达到了瓶颈。 随之而来的是，针对跨学科领域的科研逐渐地炙手可热。然而现今的学科高难又复杂， 往往专精一项领域就没有时间和精力去研究另一门领域。而高端的跨领域人才也十分奇缺。 因此，如何去研究跨学科领域成为了当今世上的一大难题。而通过科研合作，即可携手共进，完成跨领域研究。
+											如今随着科研的不断深入，对单一专业领域的科研也就达到了瓶颈。 随之而来的是，针对跨学科领域的科研逐渐地炙手可热。然而现今的学科高难又复杂，
+											往往专精一项领域就没有时间和精力去研究另一门领域。而高端的跨领域人才也十分奇缺。
+											因此，如何去研究跨学科领域成为了当今世上的一大难题。而通过科研合作，即可携手共进，完成跨领域研究。
 										</div>
 									</div>
 								</div>

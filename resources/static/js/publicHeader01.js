@@ -3,7 +3,7 @@ document.writeln("	<!--languageSearch-->");
 document.writeln("	<div class=\'languageSearch\'>");
 document.writeln("		<!--Language-->");
 document.writeln("		<div class=\'language\'>");
-document.writeln("			<a href=\'#\' class=\'chinese\'>中文版</a> |");
+document.writeln("			<a href=\'../index.html\' class=\'chinese\'>中文版</a> |");
 document.writeln("			<a href=\'#\' class=\'deutsch\'>Deutsch</a>");
 document.writeln("		</div>");
 document.writeln("		<!--time-->");

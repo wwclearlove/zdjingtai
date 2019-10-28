@@ -3,11 +3,6 @@
 	padding: 40px 0;
 }
 
-.centerDiv div img {
-	width: 270px;
-	height: 80px;
-}
-
 /*联系我们--地图*/
 #contact_us i {
 	color: #337AB7;
@@ -23,25 +18,29 @@
 }
 
 /*developtargetDiv*/
-.developtargetDiv{
-	padding: 50px;
+.developtargetDiv {
+	padding: 50px 0;
 	text-align: left;
 }
-.developtargetDiv h3{
+
+.developtargetDiv h3 {
 	color: #444444;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-weight: bolder;
 	margin-top: 10%;
 }
-.developtargetDiv img{
+
+.developtargetDivs img {
 	border-radius: 50%;
 }
+
 @media (max-width: 1024px) {
-	.developtargetDiv{
+	.developtargetDiv {
 		padding: 20px;
 		text-align: center;
 	}
-	.developtargetDiv h3{
+
+	.developtargetDiv h3 {
 		margin-top: 5%;
 	}
 }

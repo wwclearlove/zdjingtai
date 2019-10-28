@@ -9,7 +9,7 @@ $(document).ready(function () {
 		moduleUl.eq($(this).val()).show();
 		conts = parseInt($(this).val());
 	});
-	$("#selectChooseTime").change(function () {
+	/*$("#selectChooseTime").change(function () {
 		const liN01 = $('.module_ul1 li').length;
 		const liN02 = $('.module_ul2 li').length;
 		const liN03 = $('.module_ul3 li').length;
@@ -26,6 +26,7 @@ $(document).ready(function () {
 				$('.module_ul1').append('<li>' + $('.module_ul1 li').eq(i - 1).html() + '</li>');
 				$('.module_ul1 li').eq(i - 1).remove();
 			}
+			num = 0;
 		}
 		//module_ul2
 		if ($(this).val() === "2" && conts === 2) {		//升序
@@ -39,6 +40,7 @@ $(document).ready(function () {
 				$('.module_ul2').append('<li>' + $('.module_ul2 li').eq(i - 1).html() + '</li>');
 				$('.module_ul2 li').eq(i - 1).remove();
 			}
+			num = 0;
 		}
 		//module_ul3
 		if ($(this).val() === "2" && conts === 3) {		//升序
@@ -52,6 +54,7 @@ $(document).ready(function () {
 				$('.module_ul3').append('<li>' + $('.module_ul3 li').eq(i - 1).html() + '</li>');
 				$('.module_ul3 li').eq(i - 1).remove();
 			}
+			num = 0;
 		}
 		//module_ul4
 		if ($(this).val() === "2" && conts === 4) {		//升序
@@ -65,15 +68,46 @@ $(document).ready(function () {
 				$('.module_ul4').append('<li>' + $('.module_ul4 li').eq(i - 1).html() + '</li>');
 				$('.module_ul4 li').eq(i - 1).remove();
 			}
+			num = 0;
 		}
-	});
+	});*/
 	$(".news_list_Div").click(function () {
 		for (let i = 1; i < moduleUl.length; i++) {
 			moduleUl.eq(i).hide();
 		}
 		$("#selectChooseType").val('0');
-		$("#selectChooseTime").val('0');
+		//$("#selectChooseTime").val('0');
 		$(".module-tab-box-ma").eq(0).show();
-		num = 0;
-	})
+		//num = 0;
+	});
+
+	/*$('#date-range1').dateRangePicker({
+		minDays: 1,
+		showShortcuts: false
+	});*/
+
+	$('#date-range2').dateRangePicker({
+		singleDate: true,
+		showShortcuts: false
+	});
+
+	$(".apply-btn").click(function () {
+		const times01 = $('.module_ul1 .times');
+		const times02 = $('.module_ul2 .times');
+		const times03 = $('.module_ul3 .times');
+		const times04 = $('.module_ul4 .times');
+		const time = $("#date-range2").val();
+		if (conts === 1 && time !== ""){
+			alert(time === times01.eq(0).text());
+		}
+	});
+
+	var starttime = $('#txtStorageTimeStart').val();
+	var endtime = $('#txtStorageTimeEnd').val();
+	var start = new Date(starttime.replace("-", "/").replace("-", "/"));
+	var end = new Date(endtime.replace("-", "/").replace("-", "/"));
+	if (end < start) {
+		return false;
+	}
+
 });

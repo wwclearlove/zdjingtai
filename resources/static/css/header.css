@@ -146,13 +146,13 @@ html {
 	opacity: 0;
 	width: 100%;
 	z-index: 888;
-	/*min-width: 180px;*/
+	min-width: 200px;
 	position: absolute;
 	background: #1E89DF;
 	visibility: hidden;
-	/*left: 50%;
+	left: 50%;
 	right: 0;
-	transform: translateX(-50%);*/
+	transform: translateX(-50%);
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
@@ -539,6 +539,18 @@ em {
 	}
 }
 
+@media (max-width: 1416px) and (min-width: 1025px) {
+	.header .nav-bar {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1346px) and (min-width: 1025px) {
+	#title {
+		height: 220px;
+	}
+}
+
 /*公共标题字体*/
 /*.commonality_title {
 	letter-spacing: 5px;
@@ -568,33 +580,32 @@ em {
 	-1px 1px 1px hsl(184, 80%, 5%);
 }*/
 
-.commonality_title{
-	font-size: 3.3em;
+.commonality_title {
+	font-size: 4em;
 	text-align: center;
 	letter-spacing: 5px;
 	font-weight: normal;
 	font-family: cursive;
-	color: rgba(40, 80, 120, .9);
-	text-shadow: -1px -1px 1px #0e2550, 0 -1px 1px #0e2550,
+	color: #1A73E8;
+	text-shadow: -1px -1px 1px #1A73E8, 0 -1px 1px #1A73E8,
 	1px -1px 1px #0e2550, 1px 0 1px #0e2550, 1px 1px 1px #0e2550,
 	0 1px 1px #0e2550, -1px 1px 1px #0e2550, -1px 0 1px #0e2550, 0 0 4px #0e2550;
 }
 
 @media (max-width: 768px) {
-	.commonality_title{
+	.commonality_title {
 		font-size: 2.8em;
 	}
 }
 
 @media (max-width: 480px) {
-	.commonality_title{
+	.commonality_title {
 		font-size: 1.6em;
 	}
 }
 
-
 /*公共文字字体*/
-body,section,h1,h2,h3,h4,h5,h6,p,span,b,ul,li,a,table,th,hr,td,div{
+body, section, h1, h2, h3, h4, h5, h6, p, span, b, ul, li, a, table, th, hr, td, div {
 	font-family: Arial, Helvetica, sans-serif, "宋体";
 }
 

@@ -28,15 +28,22 @@
 		}
 
 		.technology-platform_title .sec-title h1 {
-			color: white;
-			font-size: 1.5em;
+			color: #0cb1f6;
+			font-size: 1.8em;
 			letter-spacing: 2px;
 		}
+
 		.technology-platform_title:hover .sec-title h1 {
 			font-weight: bolder;
 		}
-		.technology_platform_info{
+
+		.technology_platform_info {
 			display: none;
+		}
+
+		.sec-title i {
+			transition: all 0.3s;
+			transform-origin: center;
 		}
 	</style>
 	<script>
@@ -45,15 +52,21 @@
 			for (let i = 0; i < qw.length; i++) {
 				qw[i].index = i;
 				qw.eq(i).click(function () {
-					if($(".technology_platform_info").eq(this.index).css("display") === "none"){
+					if ($(".technology_platform_info").eq(this.index).css("display") === "none") {
 						for (let n = 0; n < qw.length; n++) {
 							$(".technology_platform_info").eq(n).hide();
+							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
+							$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#e6e6e6)");
 						}
 						$(".technology_platform_info").eq(this.index).show();
-					}else{
+						$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#333333)");
+						$(".sec-title .fa").eq(this.index).css("transform", "rotate(-180deg)");
+					} else {
 						for (let n = 0; n < qw.length; n++) {
 							$(".technology_platform_info").eq(n).hide();
+							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
 						}
+						$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#e6e6e6)")
 					}
 				})
 			}
@@ -62,7 +75,7 @@
 </head>
 <body>
 
-<section>
+<section style="border-bottom: 1px solid #999999">
 	<!--背景图-->
 	<div class="container-fluid">
 		<div class="row url">
@@ -81,14 +94,14 @@
 		</div>
 	</div>
 	<!--content-->
-	<div id="technology-platform_info" style="padding-bottom: 150px">
+	<div id="technology-platform_info" class="backgrounds" style="padding-bottom: 150px;">
 		<!--中德企业协会-->
-		<div style="background: linear-gradient(#999999,#222222);">
+		<div>
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="sec-title">
-							<h1>中德企业协会</h1>
+							<h1>中德企业协会 <i class="fa fa-angle-down"></i></h1>
 							<div class="border-shape"></div>
 						</div>
 					</div>
@@ -142,7 +155,8 @@
 									<p>
 										德国EVB铁路技术公司是德国数一数二的铁路技术公司。他们每年接待两百万搭乘火车的游客和四百万搭乘公共汽车的乘客；他们还通过铁路物流运输各种货物；另外，他们还拥有235公里长的私人铁路网、公共汽车和火车修理厂以及三家旅行社。总之EVB涉足了六个不同的业务领域，铁路、物流、旅游、制造、基础设施、职业培训。
 									</p>
-									<a target="_blank" href="https://www.evb-elbe-weser.de/startseite/" class="what-we-do-button">
+									<a target="_blank" href="https://www.evb-elbe-weser.de/startseite/"
+									   class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -157,7 +171,8 @@
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-										德国成亚教育培训有限公司（Chengduer und Aachener Consult GmbH，简称CAC德国成亚公司）位于德国亚琛市。该公司聚焦于以下四个方面，管理与技术培训、投资与商务咨询、德国留学咨询、展会与旅游服务。
+										德国成亚教育培训有限公司（Chengduer und Aachener Consult
+										GmbH，简称CAC德国成亚公司）位于德国亚琛市。该公司聚焦于以下四个方面，管理与技术培训、投资与商务咨询、德国留学咨询、展会与旅游服务。
 									</p>
 									<a target="_blank" href="http://www.cacgermany.de/" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
@@ -170,12 +185,12 @@
 			</div>
 		</div>
 		<!--中德院校-->
-		<div style="background: linear-gradient(#999999,#222222);">
+		<div>
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="sec-title">
-							<h1>中德院校</h1>
+							<h1 style="letter-spacing: 5px">中 德 院 校 <i class="fa fa-angle-down"></i></h1>
 							<div class="border-shape"></div>
 						</div>
 					</div>
@@ -210,10 +225,11 @@
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-										奥斯特法利亚应用科学大学（Ostfalia University of applied Sciences）是德国的一所位于下萨克森州的公立应用科学大学。奥斯特法利亚应用科学大学有四个分校区——祖德堡、沃尔芬比特、沃尔夫斯堡（大众总部）和萨尔茨吉特。
+										奥斯特法利亚应用科学大学（Ostfalia University of applied
+										Sciences）是德国的一所位于下萨克森州的公立应用科学大学。奥斯特法利亚应用科学大学有四个分校区——祖德堡、沃尔芬比特、沃尔夫斯堡（大众总部）和萨尔茨吉特。
 										奥斯特法利亚应用科学大学开设很多本科和硕士专业，如机械制造、信息技术、自动化系统、光学等。该校课程特点是实践与理论之间的结合，以及跨学科教学。在汽车、能源、机电一体化等多个领域均有杰出贡献。该校也与上百家工业界企业翘楚保持有密切合作关系，例如德国大众、法国阿尔斯通、德国Man、德国Voith。
 									</p>
-									<a target="_blank" href="" class="what-we-do-button">
+									<a target="_blank" href="https://www.ostfalia.de/cms/de" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -231,7 +247,7 @@
 										比勒费尔德应用科学大学（BIELEFELD）是德国的一所公立大学。其创立于1971年，位于北威斯特法伦州。该校有3个校区：比勒菲尔德、明顿和居斯塔夫。该校开设了多个本科、硕士专业，例如计算机工程、机械工程、电气工程、机电工程、应用数学、生物技术等。
 										该校有系统动力学及机电一体化研究所、智能能源系统研究所等众多研究机构，建有工业4.0、AR、机器人等重要实验室，并保持着与国内外企业界的密切合作，如长期参与德国国家铁路（DB）相关标准制定、从事工业4.0技术研究等。该校在自动医疗技术和生物机电一体等跨专业领域的科研项目取得了丰硕的成果，在应用数学建模与优化领域也取得了突出的成绩。
 									</p>
-									<a target="_blank" href="" class="what-we-do-button">
+									<a target="_blank" href="https://www.fh-bielefeld.de/" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -246,9 +262,10 @@
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-										亚琛应用科学大学（Fachhochschulen Aachen）是德国的一所公立大学，该校成立于1971年。该校设有多个本科和硕士专业，例如建筑学、生物工程、电子技术、汽车驱动技术、机械制造、航空航天工程等等。其机械工程专业与电气工程专业在全德同类大学（应用科学大学）中排名第一位。
+										亚琛应用科学大学（Fachhochschulen
+										Aachen）是德国的一所公立大学，该校成立于1971年。该校设有多个本科和硕士专业，例如建筑学、生物工程、电子技术、汽车驱动技术、机械制造、航空航天工程等等。其机械工程专业与电气工程专业在全德同类大学（应用科学大学）中排名第一位。
 									</p>
-									<a target="_blank" href="" class="what-we-do-button">
+									<a target="_blank" href="https://www.fh-aachen.de/" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -263,10 +280,11 @@
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-										德累斯顿工业大学(TUD，Technische Universität Dresden)成立于1828年，位于萨克森州自由州。该校有四个校区，。德累斯顿工业大学是德国九所理工大学联盟(TU9)成员之一，2012年德累斯顿工业大学入选德国精英大学。
+										德累斯顿工业大学(TUD，Technische Universität
+										Dresden)成立于1828年，位于萨克森州自由州。该校有四个校区，。德累斯顿工业大学是德国九所理工大学联盟(TU9)成员之一，2012年德累斯顿工业大学入选德国精英大学。
 										德累斯顿工业大学的教学与研究涵盖数学与自然科学，人文与社会科学，工程科学，建筑与环境科学，医学五大领域。其中微电子、电气工程、计算机科学、机械工程、经济工程、材料科学、土木工程在德国最为有名。
 									</p>
-									<a target="_blank" href="" class="what-we-do-button">
+									<a target="_blank" href="https://tu-dresden.de" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -281,7 +299,8 @@
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-										莱比锡大学（Universität Leipzig）是德国U15大学联盟成员，欧洲最古老的大学之一，也是现今德国管辖地区内历史第二悠久的大学。其医学、心理学、经济学、社会学等方面的专业久负盛名。
+										莱比锡大学（Universität
+										Leipzig）是德国U15大学联盟成员，欧洲最古老的大学之一，也是现今德国管辖地区内历史第二悠久的大学。其医学、心理学、经济学、社会学等方面的专业久负盛名。
 									</p>
 									<a target="_blank" href="https://www.uni-leipzig.de/" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
@@ -309,40 +328,6 @@
 						<div class="col-md-12 item">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>Aachen应用科学大学 </h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/Aachen.png" alt=""/>
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-
-									</p>
-									<a target="_blank" href="https://www.fh-aachen.de/" class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>Bielefeld应用科学大学 </h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/Bielefeld.png" alt=""/>
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-
-									</p>
-									<a target="_blank" href="https://www.fh-bielefeld.de/" class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 									<h3>Dresden工业大学 </h3>
 									<img class="img-responsive center-block"
 										 src="../../static/imgs/scientificcooperation/Dresden.png" alt=""/>
@@ -362,12 +347,12 @@
 			</div>
 		</div>
 		<!--中德政府机构-->
-		<div style="background: linear-gradient(#999999,#222222);">
+		<div>
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="sec-title">
-							<h1>中德政府机构</h1>
+							<h1>中德政府机构 <i class="fa fa-angle-down"></i></h1>
 							<div class="border-shape"></div>
 						</div>
 					</div>
@@ -406,7 +391,8 @@
 									<p>
 										莱比锡地区工业分布以汽车制造和零配件供应行业、卫生经济和生物科技、能源和环境技术、物流、媒体和创意产业为主，莱比锡地区经济促进中心代表莱比锡政府以及莱比锡地区企业联盟（宝马、保时捷、西门子、DHL等）和研发机构联盟（马克思普朗克研究所、弗朗霍夫研究所、莱布尼兹研究所等）。能源、智能城市、医疗保健、电子卫生等为目前莱比锡地区在世界范围内领先的技术。
 									</p>
-									<a target="_blank" href="https://www.invest-region-leipzig.de/en/" class="what-we-do-button">
+									<a target="_blank" href="https://www.invest-region-leipzig.de/en/"
+									   class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -417,12 +403,12 @@
 			</div>
 		</div>
 		<!--中德研究所-->
-		<div style="background: linear-gradient(#999999,#222222);">
+		<div>
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="sec-title">
-							<h1>中德研究所</h1>
+							<h1 style="letter-spacing: 6px">中德研究所 <i class="fa fa-angle-down"></i></h1>
 							<div class="border-shape"></div>
 						</div>
 					</div>
@@ -476,7 +462,8 @@
 									<p>
 										莱布尼茨协会现有研究所84个，定位于问题导向的研究，同时提供咨询与服务。研究所分为人文与教育、经济、生命科学、数学、自然科学与工程以及环境科学等学科领域。莱布尼茨各研究所进行具有国际水平的、面向实际应用的基础研究。这些研究所的实力体现在研究课题的多样性和研究科目交叉性上。科研的目的是解决教育、科研和技术领域现已提出的未来任务，所以许多莱布尼茨研究所都是为了解决某个具体的社会问题而成立的。
 									</p>
-									<a target="_blank" href="https://www.leibniz-gemeinschaft.de/" class="what-we-do-button">
+									<a target="_blank" href="https://www.leibniz-gemeinschaft.de/"
+									   class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -527,7 +514,8 @@
 									<p>
 
 									</p>
-									<a target="_blank" href="https://www.swjtu.edu.cn/xysz_/yjy.htm" class="what-we-do-button">
+									<a target="_blank" href="https://www.swjtu.edu.cn/xysz_/yjy.htm"
+									   class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>

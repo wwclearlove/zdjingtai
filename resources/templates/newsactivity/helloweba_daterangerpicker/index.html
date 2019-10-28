@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>演示：jQuery日期范围选择器</title>
+	<link rel="stylesheet" href="../../../static/css/bootstrap.css">
+	<link rel="stylesheet" href="css/daterangepicker.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="row main">
+		<div class="col-md-12">
+			<div class="row" style="margin-top: 30px">
+				<div class="col-md-offset-2 col-md-6 col-sm-12 form-horizontal">
+					<div class="form-group">
+						<label for="date-range1" class="col-sm-6 control-label">10. 隐藏底栏快捷操作</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="date-range1" placeholder="">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="date-range2" class="col-sm-6 control-label">12.单个日期模式</label>
+						<div class="col-sm-6">
+							<input type="text" class="form-control" id="date-range2" value="2019-10-28">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../../../static/js/jquery-3.4.1.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/jquery.daterangepicker.js"></script>
+<script>
+	$(function () {
+		$('#date-range1').dateRangePicker({
+			startDate: '2015-01-01',
+			showShortcuts: false
+		});
+
+		$('#date-range2').dateRangePicker({
+			startDate: '2015-01-01',
+			autoClose: true,
+			singleDate: true,
+			showShortcuts: false
+		});
+	});
+</script>
+</body>
+</html>

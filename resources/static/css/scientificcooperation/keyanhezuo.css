@@ -40,7 +40,7 @@
 }
 
 .investment_advisory .border-shape {
-	background: #ddd;
+	background: #bfbfbf;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -48,11 +48,11 @@
 	position: relative;
 	right: 0;
 	top: 0;
-	width: 350px;
+	width: 300px;
 }
 
 .investment_advisory .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #bfbfbf none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -65,7 +65,7 @@
 }
 
 .investment_advisory .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #bfbfbf none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
