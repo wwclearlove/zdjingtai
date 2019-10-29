@@ -1,25 +1,44 @@
-.interestGermany_article{
+.interestGermany_article {
 	letter-spacing: 1px;
 }
+
 .interestGermany_article .interestGermany_article_title {
 	padding: 50px 0;
 	text-align: center;
 }
+
 .interestGermany_article .interestGermany_article_title h3 {
 	font-weight: bold;
 }
+
 .interestGermany_article .interestGermany_article_title p {
 	color: #888888;
 }
-.interestGermany_article .interestGermany_article_info{
+
+.interestGermany_article .interestGermany_article_info {
 	padding-bottom: 50px;
 }
-.interestGermany_article .interestGermany_article_info p{
+
+.interestGermany_article .interestGermany_article_info p {
 	color: #333333;
 	line-height: 2em;
 	font-size: 1.4em;
 	text-indent: 2em;
 }
-.interestGermany_article .interestGermany_article_info img{
+
+.interestGermany_article .interestGermany_article_info img {
 	padding: 20px 0;
+}
+
+.returnDiv {
+	padding: 20px 50px;
+}
+.returnDiv a{
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bolder;
+	color: #333333;
+}
+.returnDiv i{
+	padding-right: 10px;
 }

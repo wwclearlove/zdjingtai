@@ -1,66 +1,125 @@
-.s2{
-    text-indent: 2em;
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #333333;
-    line-height: 2em;
-}
-.our-services-text {
-    padding-right: 10px;
-}
-.our-services-text {
-    overflow: hidden;
-    padding: 28px 0 25px;
-}
-.our-services-text h4 {
-    font-family: "Stencil Std";
-    width: 100%;
-    color: #C4D70D;
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-    padding-bottom: 10px;
-    position: relative;
-    text-transform: uppercase;
-}
-.our-services-text h4 .price{
-    color: #F2AF2D;
-    float: right;
-    padding-right: 10px;
-}
-.our-services-text h4>.price>.unit{
-    color: #333333;
-    font-size: 0.5em;
-}
-.position-image img {
-    position: absolute;
-    top: 16%;
-    left: 0;
-    bottom: 0;
-    width: 20%;
-    z-index: -1;
-}
-.our-services-text h4::before {
-    background: #C4D70D none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    position: absolute;
-    width: 210px;
-}
-.our-services-wrapper:hover .services-inner {
-    background: #fff none repeat scroll 0 0;
-    border: 2px solid transparent;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
-}
-.our-services-text p {
-    margin-bottom: 0;
-}
-.services p {
-    font-size: 1.3em;
-    font-weight: 400;
-    color: #333333;
-    line-height: 2em;
+.s2 {
+	text-indent: 2em;
+	font-size: 2em;
+	font-weight: 400;
+	color: #333333;
+	letter-spacing: 3px;
+	line-height: 2em;
 }
 
+.liudeoubiaokecheng_Div02 {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+h2.heading {
+	letter-spacing: 2px;
+	padding-bottom: 30px;
+}
+
+.mb-60 {
+	margin-bottom: 60px;
+}
+
+.services-inner {
+	border: 2px solid #3369e7;
+	margin-left: 35px;
+	transition: .3s;
+	background: #fff
+}
+
+.our-services-img {
+	float: left;
+	margin-left: -36px;
+	margin-right: 22px;
+	margin-top: 28px;
+}
+
+.our-services-img img {
+	width: 68px;
+}
+
+.our-services-text {
+	padding-right: 10px;
+}
+
+.our-services-text {
+	overflow: hidden;
+	padding: 28px 0 25px;
+}
+
+.our-services-text h4 {
+	font-family: "Stencil Std";
+	width: 100%;
+	color: #C4D70D;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+	padding-bottom: 10px;
+	position: relative;
+	text-transform: uppercase;
+}
+
+.our-services-text h4 .price {
+	color: #F2AF2D;
+	float: right;
+	padding-right: 10px;
+}
+
+.our-services-text h4 > .price > .unit {
+	color: #333333;
+	font-size: 0.5em;
+}
+
+.position-image img {
+	position: absolute;
+	top: 16%;
+	left: 0;
+	bottom: 0;
+	width: 20%;
+	z-index: -1;
+}
+
+.our-services-text h4::before {
+	background: #C4D70D none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	position: absolute;
+	width: 210px;
+}
+
+.our-services-wrapper:hover .services-inner {
+	background: #fff none repeat scroll 0 0;
+	border: 2px solid transparent;
+	box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.our-services-text p {
+	margin-bottom: 0;
+}
+
+.services p {
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #333333;
+	line-height: 2em;
+}
+
+.services {
+	position: relative;
+	z-index: 2;
+}
+
+.tuangoujia {
+	text-align: right;
+	font-size: 0.5em;
+	padding-right: 10px;
+}
+
+.shangwudeyuImg {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}

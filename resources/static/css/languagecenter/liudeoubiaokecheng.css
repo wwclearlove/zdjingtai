@@ -2,7 +2,7 @@
 .liudeoubiaokecheng_Div01 {
 	color: white;
 	letter-spacing: 2px;
-	padding: 50px 15px;
+	padding: 50px;
 	background-color: #7F7F7F;
 }
 
@@ -124,11 +124,17 @@ h2.heading {
 }
 
 .liudeoubiaokecheng_Div04 {
-	padding: 50px 15px;
+	padding: 50px 20px 50px 50px;
 	color: white;
 	letter-spacing: 2px;
 	margin: 100px 0;
-	background-color: #7F7F7F;
+	font-weight: bolder;
+	background-color: #717171;
+}
+
+.liudeoubiaokecheng_Div04 p {
+	font-size: 1.5em;
+	text-indent: 2em;
 }
 
 .tuangoujia {
@@ -142,9 +148,14 @@ h2.heading {
 }
 
 .our-services-text .book {
-	padding: 5px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	width: 22%;
+}
+
+@media (max-width: 760px) {
+	.our-services-text .book {
+		display: none;
+	}
 }

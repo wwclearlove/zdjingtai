@@ -7,10 +7,6 @@
 	overflow: hidden;
 }
 
-.home-features-area {
-
-}
-
 .section-padding {
 	padding-bottom: 50px;
 }
@@ -120,7 +116,7 @@
 }
 
 .techical_service_div .border-shape {
-	background: #ddd;
+	background: #bfbfbf;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -132,7 +128,7 @@
 }
 
 .techical_service_div .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #bfbfbf none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -145,7 +141,7 @@
 }
 
 .techical_service_div .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #bfbfbf none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -162,6 +158,9 @@
 	padding-bottom: 30px;
 	text-align: center;
 	font-size: 1.2em;
+}
+.techical_service_info p{
+	font-size: 1.3em;
 }
 
 .techical_service_content h3 {

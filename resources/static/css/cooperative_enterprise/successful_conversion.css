@@ -8,9 +8,9 @@
 
 .successful_conversion_div_info img {
 	width: 90%;
-	box-shadow: 10px 10px 10px rgba(0,0,0,.5);
-	-moz-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
-	-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
 }
 
 .successful_conversion_div .border-shape {
@@ -58,11 +58,21 @@
 	padding-bottom: 50px;
 }
 
+.successful_conversion_div_info h4 {
+	color: #0cb1f6;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 2em;
+}
+
 .successful_conversion_div_info p {
 	line-height: 2em;
-	font-size: 1.3em;
+	font-size: 1.7em;
 	letter-spacing: 1px;
 	color: #333333;
 	font-weight: bolder;
+}
+.successful_conversion_div_info img {
+	width: 50%;
 }
 
