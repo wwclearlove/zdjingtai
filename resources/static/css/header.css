@@ -586,10 +586,10 @@ em {
 	letter-spacing: 5px;
 	font-weight: normal;
 	font-family: cursive;
-	color: #1A73E8;
-	text-shadow: -1px -1px 1px #1A73E8, 0 -1px 1px #1A73E8,
-	1px -1px 1px #0e2550, 1px 0 1px #0e2550, 1px 1px 1px #0e2550,
-	0 1px 1px #0e2550, -1px 1px 1px #0e2550, -1px 0 1px #0e2550, 0 0 4px #0e2550;
+	color: #1E89DF;
+	text-shadow: -1px -1px 1px #1E89DF, 0 -1px 1px #1E89DF,
+	1px -1px 1px #1E89DF, 1px 0 1px #1E89DF, 1px 1px 1px #1E89DF,
+	0 1px 1px #1E89DF, -1px 1px 1px #1E89DF, -1px 0 1px #1E89DF, 0 0 4px #1E89DF;
 }
 
 @media (max-width: 768px) {

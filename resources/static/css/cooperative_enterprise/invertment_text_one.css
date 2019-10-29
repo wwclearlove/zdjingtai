@@ -10,28 +10,36 @@
 	line-height: 2em;
 	letter-spacing: 2px;
 	text-indent: 2em;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .div_line {
 	border: 2px #2e75b5 solid;
 }
 
-.text-center h3 {
+.liangdian{
+	font-size: 2.2em;
+	font-weight: bolder;
 	color: #2e75b5;
+	padding: 20px 0;
 }
 
 .div_line h4 {
 	margin: 0 30px;
 	color: #2e75b5;
+	font-size: 1.8em;
+	line-height: 2em;
+
 }
+
+.invertment_div h3{}
 
 .div_line p {
 	margin: 0 30px;
 	line-height: 2em;
 	letter-spacing: 2px;
 	text-indent: 2em;
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 .table-bordered tbody {
