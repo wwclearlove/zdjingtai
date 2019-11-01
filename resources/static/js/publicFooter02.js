@@ -14,7 +14,7 @@ document.writeln("				<p>邮箱：lszdkc@163.com</p>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-4 col-md-4 col-sm-6 col-xs-12 myFooter_divs\'>");
 document.writeln("				<h5><i class=\'fa fa-map-marker\'></i>地址</h5>");
-document.writeln("				<p>四川省乐山市高新区高新孵化园A区9楼910</p>");
+document.writeln("				<p>四川省乐山市高新区安港路489号高新孵化园A园9楼910</p>");
 document.writeln("				<p>开放时间：周一至周五 9:00-17:00</p>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div\'>");
