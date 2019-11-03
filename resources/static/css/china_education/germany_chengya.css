@@ -3,12 +3,8 @@
 	text-align: center;
 }
 
-.youxuediv .sec-title h1 {
-	color: #333333;
-}
-
 .youxuediv .border-shape {
-	background: #ddd;
+	background: #cecece;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -20,7 +16,7 @@
 }
 
 .youxuediv .border-shape::before {
-	background: #ddd none repeat scroll 0 0;
+	background: #cecece none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -33,7 +29,7 @@
 }
 
 .youxuediv .border-shape::after {
-	background: #ddd none repeat scroll 0 0;
+	background: #cecece none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;

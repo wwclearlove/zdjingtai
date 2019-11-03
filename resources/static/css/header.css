@@ -581,7 +581,7 @@ em {
 }*/
 
 .commonality_title {
-	font-size: 4em;
+	/*font-size: 4em;
 	text-align: center;
 	letter-spacing: 5px;
 	font-weight: normal;
@@ -589,7 +589,19 @@ em {
 	color: #1E89DF;
 	text-shadow: -1px -1px 1px #1E89DF, 0 -1px 1px #1E89DF,
 	1px -1px 1px #1E89DF, 1px 0 1px #1E89DF, 1px 1px 1px #1E89DF,
-	0 1px 1px #1E89DF, -1px 1px 1px #1E89DF, -1px 0 1px #1E89DF, 0 0 4px #1E89DF;
+	0 1px 1px #1E89DF, -1px 1px 1px #1E89DF, -1px 0 1px #1E89DF, 0 0 4px #1E89DF;*/
+
+	color: #1E89DF;
+	font-size: 4.2em;
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: "ziti", serif;
+}
+
+@font-face {
+
+	font-family: "ziti";
+	src: url("../fonts/庞门正道粗书体-正式版.ttf") format("truetype");
 }
 
 @media (max-width: 768px) {

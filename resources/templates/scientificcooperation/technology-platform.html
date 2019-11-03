@@ -28,8 +28,8 @@
 		}
 
 		.technology-platform_title .sec-title h1 {
-			color: #0cb1f6;
-			font-size: 1.8em;
+			color: white;
+			font-size: 2.2em;
 			letter-spacing: 2px;
 		}
 
@@ -56,17 +56,14 @@
 						for (let n = 0; n < qw.length; n++) {
 							$(".technology_platform_info").eq(n).hide();
 							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
-							$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#e6e6e6)");
 						}
 						$(".technology_platform_info").eq(this.index).show();
-						$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#333333)");
 						$(".sec-title .fa").eq(this.index).css("transform", "rotate(-180deg)");
 					} else {
 						for (let n = 0; n < qw.length; n++) {
 							$(".technology_platform_info").eq(n).hide();
 							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
 						}
-						$(".backgrounds").css("background", "linear-gradient(#e6e6e6,#e6e6e6)")
 					}
 				})
 			}
@@ -78,7 +75,7 @@
 <section style="border-bottom: 1px solid #999999">
 	<!--背景图-->
 	<div class="container-fluid">
-		<div class="row url">
+		<div class="row">
 			<img src="../../static/imgs/index/kypt.jpg" class="img-responsive" width="100%" alt=""/>
 		</div>
 	</div>
@@ -94,9 +91,9 @@
 		</div>
 	</div>
 	<!--content-->
-	<div id="technology-platform_info" class="backgrounds" style="padding-bottom: 150px;">
+	<div id="technology-platform_info" class="backgrounds" style="padding-bottom: 200px;">
 		<!--中德企业协会-->
-		<div>
+		<div style="background: linear-gradient(#bbbbbb,#333333)">
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
@@ -147,24 +144,6 @@
 						<div class="col-md-12 item">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>德国EVB铁路技术公司 </h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/germanyEVB.png" alt=""/>
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-										德国EVB铁路技术公司是德国数一数二的铁路技术公司。他们每年接待两百万搭乘火车的游客和四百万搭乘公共汽车的乘客；他们还通过铁路物流运输各种货物；另外，他们还拥有235公里长的私人铁路网、公共汽车和火车修理厂以及三家旅行社。总之EVB涉足了六个不同的业务领域，铁路、物流、旅游、制造、基础设施、职业培训。
-									</p>
-									<a target="_blank" href="https://www.evb-elbe-weser.de/startseite/"
-									   class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 									<h3>德国成亚管理和科技培训中心 </h3>
 									<img class="img-responsive center-block"
 										 src="../../static/imgs/scientificcooperation/germanycy.png" alt=""/>
@@ -180,12 +159,30 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-12 item">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<h3>德国EVB铁路技术公司 </h3>
+									<img class="img-responsive center-block"
+										 src="../../static/imgs/scientificcooperation/germanyEVB.png" alt=""/>
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<p>
+										德国EVB铁路技术公司是德国数一数二的铁路技术公司。他们每年接待两百万搭乘火车的游客和四百万搭乘公共汽车的乘客；他们还通过铁路物流运输各种货物；另外，他们还拥有235公里长的私人铁路网、公共汽车和火车修理厂以及三家旅行社。总之EVB涉足了六个不同的业务领域，铁路、物流、旅游、制造、基础设施、职业培训。
+									</p>
+									<a target="_blank" href="https://www.evb-elbe-weser.de/startseite/"
+									   class="what-we-do-button">
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--中德院校-->
-		<div>
+		<div style="background: linear-gradient(#999999,#333333)">
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
@@ -199,23 +196,6 @@
 			<div class="what-we-do-crousel-sec technology_platform_info">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>西南交通大学 </h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/xljd.jpg" alt=""/>
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-										西南交通大学是中国教育部直属的重点大学，国家首批世界一流学科建设高校、211工程、985工程优势学科创新平台。西南交通大学在铁路交通上声名远扬，在轨道交通上颇有建树。特色专业有交通运输、土木、机械、电气。
-									</p>
-									<a target="_blank" href="https://www.swjtu.edu.cn/" class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
 						<div class="col-md-12 item">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -313,7 +293,7 @@
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 									<h3>Göttingen大学 </h3>
 									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/Göttingen.svg" alt=""/>
+										 src="http://uni-goettingen.de/img/redesign/siegel.svg" alt=""/>
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
@@ -328,15 +308,15 @@
 						<div class="col-md-12 item">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>Dresden工业大学 </h3>
+									<h3>西南交通大学 </h3>
 									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/Dresden.png" alt=""/>
+										 src="../../static/imgs/scientificcooperation/xljd.jpg" alt=""/>
 								</div>
 								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
 									<p>
-
+										西南交通大学是中国教育部直属的重点大学，国家首批世界一流学科建设高校、211、985工程优势学科创新平台。西南交通大学在铁路交通上声名远扬，在轨道交通上颇有建树。特色专业有交通运输、土木、机械、电气。
 									</p>
-									<a target="_blank" href="https://tu-dresden.de/" class="what-we-do-button">
+									<a target="_blank" href="https://www.swjtu.edu.cn/" class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>
@@ -347,7 +327,7 @@
 			</div>
 		</div>
 		<!--中德政府机构-->
-		<div>
+		<div style="background: linear-gradient(#888888,#333333)">
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
@@ -361,6 +341,79 @@
 			<div class="what-we-do-crousel-sec technology_platform_info">
 				<div class="container">
 					<div class="row">
+						<div class="col-md-12 item">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<h3>莱比锡地区经济促进中心</h3>
+									<img class="img-responsive center-block"
+										 src="../../static/imgs/scientificcooperation/germanydelaipromote.png" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<p>
+										莱比锡地区工业分布以汽车制造和零配件供应行业、卫生经济和生物科技、能源和环境技术、物流、媒体和创意产业为主，莱比锡地区经济促进中心代表莱比锡政府以及莱比锡地区企业联盟（宝马、保时捷、西门子、DHL等）和研发机构联盟（马克思普朗克研究所、弗朗霍夫研究所、莱布尼兹研究所等）。能源、智能城市、医疗保健、电子卫生等为目前莱比锡地区在世界范围内领先的技术。
+									</p>
+									<a target="_blank" href="https://www.invest-region-leipzig.de/en/"
+									   class="what-we-do-button">
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 item">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<h3>德累斯顿地区经济促进中心</h3>
+									<img class="img-responsive center-block"
+										 src="../../static/imgs/scientificcooperation/Germanypromote.png" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<p>
+										德累斯顿经济促进中心正在努力维持和扩大德累斯顿商业，教育和研究的国际竞争和可持续发展的能力。在这种情况下，美国商务发展局和经济促进中心将会在各种问题上为本地公司提供支持。
+									</p>
+									<a target="_blank" href="https://www.dresden.de/index_de.php" class="what-we-do-button">
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 item">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<h3>德国工商联合会IHK</h3>
+									<img class="img-responsive center-block"
+										 src="../../static/imgs/scientificcooperation/germanyunion.jpg" alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<p>
+										德国工商联合会是一个有国家法律依据的公法组织。其涉及的职业资格鉴定领域涵盖范围最广，集中了德国制造业、信息产业、交通产业、商业与服务业、物流、旅游、金融等主流产业。
+
+										根据技术发展水平和经济发展需求，研究开发了一系列针对性很强的职业资格标准，并推出了数百种职业资格证书（称作“IHK职业资格证书”）此证书在所有德国境内和海外的德国企业，
+									</p>
+									<a target="_blank" href="https://www.vdi.de/"
+									   class="what-we-do-button">
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12 item">
+							<div class="row">
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+									<h3>德国学术交流中心DAAD</h3>
+									<img class="img-responsive center-block"
+										 src="../../static/imgs/scientificcooperation/germanycommunicationDAAD.png"
+										 alt="">
+								</div>
+								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+									<p>
+										德意志学术交流中心代表着德国231所高校和128个大学生团体，是目前全球最大的教育交流机构之一，是德国文化和高等教育政策的对外执行机构。通过颁发奖学金资助中国优秀年轻学者和科研人员前往德国高校和科研机构进修或深造；颁发奖学金资助优秀的德国学生、研究生及科研人员到中国进行学术交流；建立并促进德中高校间的合作；
+									</p>
+									<a target="_blank" href="https://www.daad.de/de/" class="what-we-do-button">
+										<i class="fa fa-long-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
 						<div class="col-md-12 item">
 							<div class="row">
 								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -380,30 +433,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>莱比锡地区经济促进中心</h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/Germanypromote.png" alt="">
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-										莱比锡地区工业分布以汽车制造和零配件供应行业、卫生经济和生物科技、能源和环境技术、物流、媒体和创意产业为主，莱比锡地区经济促进中心代表莱比锡政府以及莱比锡地区企业联盟（宝马、保时捷、西门子、DHL等）和研发机构联盟（马克思普朗克研究所、弗朗霍夫研究所、莱布尼兹研究所等）。能源、智能城市、医疗保健、电子卫生等为目前莱比锡地区在世界范围内领先的技术。
-									</p>
-									<a target="_blank" href="https://www.invest-region-leipzig.de/en/"
-									   class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!--中德研究所-->
-		<div>
+		<div style="background: linear-gradient(#777777,#333333)">
 			<div class="container-fluid technology-platform_title">
 				<div class="row">
 					<div class="col-md-12">
@@ -498,24 +533,6 @@
 										实验室依托西南交大，以轨道交通车辆为研究对象，重点开展以高速、重载列车为核心的基础性、前瞻性、战略性创新研究。根据世界轨道交通发展趋势和轨道交通技术特点，围绕轨道车辆及牵引传动的结构设计、动力学和强度分析、检测和试验等相关研究内容，实验室确定了6个研究方向：机车车辆设计理论与结构可靠性；机车车辆耦合系统动力学与控制；悬浮列车技术（含超高速真空管道悬浮交通）；摩擦学理论及应用；牵引供电、传动与控制；检测与试验技术。
 									</p>
 									<a target="_blank" href="http://tpl.swjtu.edu.cn/" class="what-we-do-button">
-										<i class="fa fa-long-arrow-right"></i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 item">
-							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-									<h3>西南交通大学研究所 </h3>
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/xljdxh.jpg" alt="">
-								</div>
-								<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-									<p>
-
-									</p>
-									<a target="_blank" href="https://www.swjtu.edu.cn/xysz_/yjy.htm"
-									   class="what-we-do-button">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>

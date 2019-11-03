@@ -43,6 +43,13 @@
 }
 
 /*liuxue_info*/
+.liuxue_info{
+	padding-left: 0;
+	padding-right: 30px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	background-color: white;
+}
 
 .module-tab-box-ma{
 	width: 100%;
@@ -87,7 +94,7 @@
 	height: 25px;
 	color: #157BBB;
 	display: block;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 1;
@@ -101,13 +108,14 @@
 }
 
 .module-tab-title_DivSon02_info {
-	height: 40px;
+	height: 70px;
 	color: #333333;
 	display: block;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	overflow: hidden;
+	text-indent: 2em;
 	display: -webkit-box;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 3;
 	text-overflow: ellipsis;
 	-webkit-box-orient: vertical;
 }
