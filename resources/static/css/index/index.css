@@ -20,13 +20,11 @@
     }
     .item a  img{
         height: 300px!important;
-
     }
 }
 @media (min-width: 600px) {
     .item a  img{
         height: 700px!important;
-
     }
 }
 

@@ -113,7 +113,6 @@
 	display: block;
 	font-size: 1.3em;
 	overflow: hidden;
-	text-indent: 2em;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	text-overflow: ellipsis;

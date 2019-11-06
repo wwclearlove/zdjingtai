@@ -16,6 +16,26 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<style type="text/css">
+		.carousel-caption {
+			bottom: 10%;
+		}
+
+		.carousel-caption p {
+			color: white;
+			font-size: 2em;
+		}
+
+		@media (max-width: 560px) {
+			.carousel-caption {
+				bottom: 5%;
+			}
+
+			.carousel-caption p {
+				font-size: 1em;
+			}
+		}
+	</style>
 </head>
 <body>
 
@@ -25,30 +45,31 @@
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-
 		</ol>
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img src="../../static/imgs/index/banner1.png" alt="..." width="100%">
-				<div class="carousel-caption">
-
-				</div>
+				<a href="./study_tour_program/germany_chengya.html">
+					<img class="img-responsive center-block"
+						 src="../../static/imgs/index/banner2.png" width="100%" alt="" >
+					<div class="carousel-caption">
+						<p>
+							德国成亚管理和科技培训中心
+						</p>
+					</div>
+				</a>
 			</div>
 			<div class="item">
-				<img src="../../static/imgs/index/banner2.png" alt="..." width="100%">
-				<div class="carousel-caption">
-
-				</div>
+				<a href="./study_tour_program/summer_germany.html">
+					<img class="img-responsive center-block"
+						 src="../../static/imgs/index/banner2.png" width="100%" alt="">
+					<div class="carousel-caption">
+						<p>
+							德国之夏
+						</p>
+					</div>
+				</a>
 			</div>
-			<div class="item">
-				<img src="../../static/imgs/index/banner3.png" alt="..." width="100%">
-				<div class="carousel-caption">
-
-				</div>
-			</div>
-
 		</div>
 
 		<!-- Controls -->

@@ -552,57 +552,31 @@ em {
 }
 
 /*公共标题字体*/
-/*.commonality_title {
-	letter-spacing: 5px;
-	color: hsl(184, 80%, 25%);
-	text-shadow: 0 0 1px currentColor,
-	-1px -1px 1px hsl(184, 80%, 50%),
-	0 -1px 1px hsl(184, 80%, 55%),
-	1px -1px 1px hsl(184, 80%, 50%),
-	1px 1px 1px hsl(184, 80%, 10%),
-	0 1px 1px hsl(184, 80%, 10%),
-	-1px 1px 1px hsl(184, 80%, 10%),
-	-1px -1px 1px hsl(184, 80%, 15%),
-	-1px -1px 1px hsl(184, 80%, 15%),
-	0 -2px 1px hsl(184, 80%, 15%),
-	1px -1px 1px hsl(184, 80%, 15%),
-	1px -1px 1px hsl(184, 80%, 15%),
-	1px -1px 1px hsl(184, 80%, 15%),
-	1px 0 1px hsl(184, 80%, 15%),
-	1px 1px 1px hsl(184, 80%, 15%),
-	-1px 0 1px hsl(184, 80%, 15%),
-	-1px -1px 1px hsl(184, 80%, 15%),
-	-1px 1px 1px hsl(184, 80%, 15%),
-	1px 1px 1px hsl(184, 80%, 5%),
-	1px 1px 1px hsl(184, 80%, 5%),
-	0 1px 1px hsl(184, 80%, 5%),
-	-1px 1px 1px hsl(184, 80%, 5%),
-	-1px 1px 1px hsl(184, 80%, 5%);
-}*/
-
 .commonality_title {
-	/*font-size: 4em;
-	text-align: center;
-	letter-spacing: 5px;
-	font-weight: normal;
-	font-family: cursive;
 	color: #1E89DF;
-	text-shadow: -1px -1px 1px #1E89DF, 0 -1px 1px #1E89DF,
-	1px -1px 1px #1E89DF, 1px 0 1px #1E89DF, 1px 1px 1px #1E89DF,
-	0 1px 1px #1E89DF, -1px 1px 1px #1E89DF, -1px 0 1px #1E89DF, 0 0 4px #1E89DF;*/
-
-	color: #1E89DF;
-	font-size: 4.2em;
 	text-align: center;
 	letter-spacing: 5px;
 	font-family: "ziti", serif;
 }
 
 @font-face {
-
 	font-family: "ziti";
 	src: url("../fonts/庞门正道粗书体-正式版.ttf") format("truetype");
 }
+
+@media (min-width: 1600px) {
+	.commonality_title {
+		font-size: 6em;
+	}
+}
+
+
+@media (min-width: 1024px) {
+	.commonality_title {
+		font-size: 4em;
+	}
+}
+
 
 @media (max-width: 768px) {
 	.commonality_title {
@@ -612,7 +586,7 @@ em {
 
 @media (max-width: 480px) {
 	.commonality_title {
-		font-size: 1.6em;
+		font-size: 2em;
 	}
 }
 
