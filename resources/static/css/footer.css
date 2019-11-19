@@ -1,48 +1,32 @@
 #myFooter {
-	background-color: #222222;
-	padding-top: 20px;
+	background-color: #025483;
+	padding: 40px 0;
+	color: white;
+	font-size: 1.2em;
 }
-
 #myFooter .myFooter_div {
-	margin-top: 30px;
 	text-align: center;
-	color: #ccc;
+	padding-bottom: 10px;
 }
 
 #myFooter .myFooter_div .myFooter_div_logo {
-	width: 180px;
-	height: 50px;
-	margin-top: 20px;
+	width: 240px;
+	height: 70px;
 }
 
-#myFooter .myFooter_divs h5 {
-	font-size: 1.2em;
-	color: #ccc;
-	font-weight: bold;
-	margin-top: 30px;
-	min-width: 100%;
-}
-
-#myFooter .myFooter_divs h5 i {
-	margin-right: 10px;
-}
-
-#myFooter .myFooter_div p,
-#myFooter .myFooter_divs p {
-	color: #ccc;
-	font-size: 1.1em;
-	line-height: 2em;
-}
-
-#myFooter .myFooter_divs p a {
-	color: #ccc;
-	text-decoration: none;
-}
-
-#myFooter .myFooter_divs p:hover,
-#myFooter .myFooter_divs p a:hover {
+#myFooter .myFooter_divs {
 	color: white;
-	cursor: pointer;
+	padding-bottom: 20px;
+}
+
+#myFooter .myFooter_divs p {
+	line-height: 2em;
+	padding-right: 10px;
+	margin: 0;
+}
+
+#myFooter .myFooter_divs p i {
+	padding-right: 5px;
 }
 
 #myFooter .myFooter_div .weixingongzhonghao {
@@ -50,38 +34,73 @@
 	height: 80px;
 }
 
+#myFooter .myFooter_div_more p {
+	/*line-height: 2.5em;*/
+	padding-right: 20px;
+	margin: 0;
+}
+
+#myFooter .myFooter_div_more p a {
+	color: white;
+}
+
 #myFooter .footer-copyright {
-	background-color: #222222;
-	margin-top: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
+	padding-top: 20px;
+}
+
+#myFooter p,
+#myFooter .myFooter_div_more p a{
+	color: #d8d8d8;
+}
+
+#myFooter .myFooter_div_more p{
+	line-height: 1.5em;
+}
+
+#myFooter p:hover,
+#myFooter .myFooter_div_more p a:hover{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#myFooter .myFooter_div_more p a:focus{
+	text-decoration: none;
 }
 
 #myFooter .footer-copyright p {
-	margin: 10px;
-	color: #ccc;
+	letter-spacing: 2px;
+	/*line-height: 2em;*/
+	text-align: center;
 }
-
-.myFooter_divs_more{
-	margin-top: 20px;
+#myFooter .myFooter_div_more{
+	margin-top: -36px;
+	text-align: center;
 }
-
-.myFooter_divs_more p {
-	float: left;
-	padding: 10px 20px;
+@media screen and (min-width: 768px) {
+	#myFooter .myFooter_divs p,
+	#myFooter .myFooter_div_more p{
+		float: left;
+	}
+	#myFooter .weixingongzhonghao_div{
+		text-align: right;
+	}
 }
-.myFooter_divs_more_lianjie{
-	font-weight: bolder;
-	font-size: 1.2em;
-}
-
-@media screen and (max-width: 767px) {
-	#myFooter {
+@media screen and (max-width: 1024px) {
+	#myFooter .myFooter_div_more{
+		margin-top: 0;
+	}
+	#myFooter .weixingongzhonghao_div{
 		text-align: center;
 	}
-
-	#myFooter .myFooter_div .myFooter_div_logo {
-		margin-top: 0;
+}
+@media screen and (max-width: 767px) {
+	#myFooter .myFooter_divs,
+	#myFooter .myFooter_div_more{
+		text-align: center;
+	}
+	#myFooter .myFooter_divs p ,
+	#myFooter .myFooter_div_more p{
+		padding-right: 0;
 	}
 }

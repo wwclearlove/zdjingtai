@@ -10,29 +10,73 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
-	<link rel="stylesheet" href="../../static/css/china_education/liuxue.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 	<style type="text/css">
-		.carousel-caption {
-			bottom: 10%;
+		.sec-title .border-shape {
+			background: #c6c6c6;
+			display: block;
+			height: 1px;
+			left: 0;
+			margin: 20px auto;
+			position: relative;
+			right: 0;
+			top: 0;
+			width: 300px;
 		}
 
-		.carousel-caption p {
+		.sec-title .border-shape::before {
+			background: #c6c6c6 none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			top: 3px;
+			width: 200px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		.sec-title .border-shape::after {
+			background: #c6c6c6 none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			top: 6px;
+			width: 100px;
+			margin: 0 auto;
+		}
+
+		.youxue_info img{
+			border-radius: 5px;
+		}
+
+		.youxue_info_p{
+			padding: 15px;
 			color: white;
-			font-size: 2em;
+			border-radius: 5px;
+			background-color: #1E89DF;
 		}
 
-		@media (max-width: 560px) {
-			.carousel-caption {
-				bottom: 5%;
-			}
+		.youxue_info p {
+			letter-spacing: 2px;
+			line-height: 2em;
+			text-indent: 2em;
+			font-size: 1.4em;
+		}
 
-			.carousel-caption p {
-				font-size: 1em;
+		@media (max-width: 768px) {
+			.youxue_info p {
+				line-height: 1.5em;
+				font-size: 1.2em;
 			}
 		}
 	</style>
@@ -40,113 +84,29 @@
 <body>
 
 <section>
-	<!--banner-->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		</ol>
-
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<a href="./study_tour_program/germany_chengya.html">
-					<img class="img-responsive center-block"
-						 src="../../static/imgs/index/banner2.png" width="100%" alt="" >
-					<div class="carousel-caption">
-						<p>
-							德国成亚管理和科技培训中心
-						</p>
-					</div>
-				</a>
-			</div>
-			<div class="item">
-				<a href="./study_tour_program/summer_germany.html">
-					<img class="img-responsive center-block"
-						 src="../../static/imgs/index/banner2.png" width="100%" alt="">
-					<div class="carousel-caption">
-						<p>
-							德国之夏
-						</p>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<!--content-->
-	<div class="container liuxues">
+	<img class="img-responsive center-block" src="../../static/imgs/index/banner3.png" width="100%" alt="">
+	<div class="container youxue">
 		<div class="row">
-			<div class="col-md-12 liuxue_title">
+			<div class="col-md-10 col-md-offset-1 youxue_info" style="padding: 50px 0;">
 				<div class="sec-title">
-					<h1 class="commonality_title">游学项目</h1>
+					<h1 class="commonality_title">游学服务</h1>
 					<div class="border-shape"></div>
 				</div>
 			</div>
-			<div class="col-md-12 liuxue_info">
-				<ul class="module-tab-box-ma">
-					<div class="module-tab-box-ma_Div"></div>
-					<li>
-						<div class="module-tab-title">
-							<a href="./study_tour_program/germany_chengya.html">
-								<div class="module-tab-title_DivSon01">
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/scientificcooperation/germanycy.png" alt="">
-								</div>
-								<div class="module-tab-title_DivSon02">
-									<h4 class="module-tab-title_DivSon02_title">德国成亚管理和科技培训中心</h4>
-									<p class="module-tab-title_DivSon02_info">
-										随着科技的发展与进步，全世界拉近了距离。在如今快速便利的交通环境下，游学自然而然地兴起。所谓游学，即为游与学，这里的游即是游玩，旅游之意，学则为学习，参学之意。游学游学，即为边游边学， 在游玩中学习，在学习中游玩。游学不仅仅能开阔视野，培养独立自主的能力。
-									</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="module-tab-title">
-							<a href="./study_tour_program/summer_germany.html">
-								<div class="module-tab-title_DivSon01">
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/Language_center/deguozhixia01.png" alt="">
-								</div>
-								<div class="module-tab-title_DivSon02">
-									<h4 class="module-tab-title_DivSon02_title">德国之夏</h4>
-									<p class="module-tab-title_DivSon02_info">
-										纵观德国这个工业高度发达而又充满文化气息的国家发展史，这里曾经出现过伟大的马克思主义创始人马克思、哲学家黑格尔、诗人歌德、音乐家贝多芬以及伟大的科学家爱因斯坦。而“德国制造4.0”也享誉世界，德式教育体制更是久负盛名。这一切的一切，都吸引着人们前往德国一探究竟。
-									</p>
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<div class="module-tab-box-ma_Divs">
-					<nav aria-label="Page navigation">
-						<ul class="pagination pagination-lg">
-							<li>
-								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
-							</li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
+			<div class="col-md-10 col-md-offset-1 youxue_info" style="padding-bottom: 50px;">
+				<p class="youxue_info_p" style="margin-bottom: 50px;">
+					您知道吗？著有闻名全世界的《浮士德》的著名诗人歌德是德国人；建立相对论“大厦”的著名科学家爱因斯坦也是德国人；而闻名于世的天才音乐家莫扎特也是德国人哦！而德国也是全世界公认的音乐天堂，基本上所有的德国人都会一门乐器；德国人也热爱运动，尤其是足球，在酒馆里您都能看到很多德国人在为他们所喜爱的球队呐喊助威。除此之外，德国也是艺术、文学的天堂，在那里可以尽情地徜徉在艺术和文学的海洋里。
+				</p>
+				<img width="100%" class="img-responsive center-block" src="../../static/imgs/china_education/s2_1.jpg" alt="">
+				<p style="text-indent: 0;text-align: center;margin-bottom: 50px;"><br><b>是不是很动心呢？</b></p>
+				<p class="youxue_info_p" style="margin-bottom: 50px;">本中心为深化中德两国之间的教育合作，特地为<b>个人/团队/企业/亲子</b>提供德国特色游学项目。无论您是想游览德国的名胜古迹，还是想侧重语言的学习，亦或者是想参观德国企业，本中心都可以为您特别定制，定制独属于您的游学路线！</p>
+				<img width="100%" class="img-responsive center-block" src="../../static/imgs/china_education/s2_b2youxue.jpeg" alt="">
+				<div align="center" style="margin-top: 50px">
+					<p style="text-indent: 0;">详询请咨询</p>
+					<p style="text-indent: 0;">陆先生：183846515755</p>
+					<p style="text-indent: 0;">办公室：0833-2595989</p>
+					<img class="img-responsive center-block" src="../../static/imgs/weixingongzhonghao.jpg" alt="">
+					<p style="text-indent: 0;">微信公众号</p>
 				</div>
 			</div>
 		</div>

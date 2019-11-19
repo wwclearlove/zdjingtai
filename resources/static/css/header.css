@@ -556,35 +556,31 @@ em {
 	color: #1E89DF;
 	text-align: center;
 	letter-spacing: 5px;
-	font-family: "ziti", serif;
-}
-
-@font-face {
-	font-family: "ziti";
-	src: url("../fonts/庞门正道粗书体-正式版.ttf") format("truetype");
+	font-family: "STSong", 华文宋体,serif;
+	font-weight: bold;
 }
 
 @media (min-width: 1600px) {
 	.commonality_title {
-		font-size: 6em;
+		font-size: 3.5em;
 	}
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1599px){
 	.commonality_title {
-		font-size: 4em;
+		font-size: 3em;
 	}
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 1023px){
 	.commonality_title {
-		font-size: 2.8em;
+		font-size: 2.5em;
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) and (max-width: 767px){
 	.commonality_title {
 		font-size: 2em;
 	}

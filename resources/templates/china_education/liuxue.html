@@ -10,29 +10,93 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
-	<link rel="stylesheet" href="../../static/css/china_education/liuxue.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 	<style type="text/css">
-		.carousel-caption {
-			bottom: 10%;
+		.sec-title .border-shape {
+			background: #c6c6c6;
+			display: block;
+			height: 1px;
+			left: 0;
+			margin: 20px auto;
+			position: relative;
+			right: 0;
+			top: 0;
+			width: 300px;
 		}
 
-		.carousel-caption p {
+		.sec-title .border-shape::before {
+			background: #c6c6c6 none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			top: 3px;
+			width: 200px;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+		}
+
+		.sec-title .border-shape::after {
+			background: #c6c6c6 none repeat scroll 0 0;
+			bottom: 0;
+			content: "";
+			height: 1px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			text-align: center;
+			top: 6px;
+			width: 100px;
+			margin: 0 auto;
+		}
+
+		.liuxue_info img{
+			border-radius: 5px;
+		}
+
+		.liuxue_info_p{
+			padding: 15px;
 			color: white;
-			font-size: 2em;
+			text-align: center;
+			border-radius: 5px;
+			background-color: #1E89DF;
 		}
 
-		@media (max-width: 560px) {
-			.carousel-caption {
-				bottom: 5%;
-			}
+		.liuxue_info p {
+			letter-spacing: 2px;
+			line-height: 2em;
+			font-size: 1.4em;
+		}
 
-			.carousel-caption p {
-				font-size: 1em;
+		.liuxue_info_div{
+			width: 100%;
+			margin: 10px 5px 10px 5px;
+			padding: 20px;
+			border-radius: 10px;
+			background-color: white;
+			border: 2px solid white;
+			box-shadow: 5px 5px #999999;
+		}
+
+		.liuxue_info_div:hover{
+			border: 2px solid #1E89DF;
+		}
+
+		@media (min-width: 769px) {
+			.liuxue_info_div{
+				min-height: 450px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.liuxue_info p {
+				line-height: 1.5em;
+				font-size: 1.2em;
 			}
 		}
 	</style>
@@ -40,114 +104,52 @@
 <body>
 
 <section>
-	<!--banner-->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		</ol>
-
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<a href="./school/ostfalia_school.html">
-					<img src="../../static/imgs/index/banner3.png" alt="..." width="100%">
-					<div class="carousel-caption">
-						<p>
-							奥斯特法利亚应用科学大学留学项目
-						</p>
-					</div>
-				</a>
-			</div>
-			<div class="item">
-				<a href="./school/bielefeld_school.html">
-					<img src="../../static/imgs/index/banner3.png" alt="..." width="100%">
-					<div class="carousel-caption">
-						<p>
-							比勒菲尔德应用科学大学留学项目
-						</p>
-					</div>
-				</a>
-			</div>
-
-		</div>
-
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control"
-		   style="border: 0.1px solid rgba(0, 0, 0, 0);background-color: rgba(0, 0, 0, 0) "
-		   href="#carousel-example-generic" role="button" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<!--content-->
-	<div class="container liuxues">
+	<img class="img-responsive center-block" src="../../static/imgs/index/banner3.png" width="100%" alt="">
+	<div class="container liuxue">
 		<div class="row">
-			<div class="col-md-12 liuxue_title">
+			<div class="col-md-12 liuxue_info" style="padding: 50px 0;">
 				<div class="sec-title">
-					<h1 class="commonality_title">留学项目</h1>
+					<h1 class="commonality_title">留学服务</h1>
 					<div class="border-shape"></div>
 				</div>
 			</div>
-			<div class="col-md-12 liuxue_info">
-				<ul class="module-tab-box-ma">
-					<div class="module-tab-box-ma_Div"></div>
-					<li>
-						<div class="module-tab-title">
-							<a href="./school/ostfalia_school.html">
-								<div class="module-tab-title_DivSon01">
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/china_education/logo2.png" alt="">
-								</div>
-								<div class="module-tab-title_DivSon02">
-									<h4 class="module-tab-title_DivSon02_title">奥斯特法利亚应用科学大学留学项目</h4>
-									<p class="module-tab-title_DivSon02_info">
-										奥斯特法利亚应用科学大学坐落于德国下克森州，拥有11个院系，50多个专业，近-万三千名学生。每年科研经费高达3000W欧元。与Volkswagen(大众) Siemens (西门子)、Lufthansa (汉莎航空)、Man、Voith (福伊特)等上百家工业界翘楚保持着密切合作关系。
-									</p>
-								</div>
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="module-tab-title">
-							<a href="./school/bielefeld_school.html">
-								<div class="module-tab-title_DivSon01">
-									<img class="img-responsive center-block"
-										 src="../../static/imgs/china_education/logo1.png" alt="">
-								</div>
-								<div class="module-tab-title_DivSon02">
-									<h4 class="module-tab-title_DivSon02_title">比勒菲尔德应用科学大学留学项目</h4>
-									<p class="module-tab-title_DivSon02_info">
-										比勒费尔德应用科学大学坐落于北莱菌-北威斯特法伦州，拥有5大学院，37个本科专业，13个研究生专业。 擅长机电-体化、工业4.0. 虚拟样机等学科。与 BOCH (博 世公司。Goldbeck. DB ( 德国国宝铁路)等企业有深度合作。
-									</p>
-								</div>
-							</a>
-						</div>
-					</li>
-				</ul>
-				<div class="module-tab-box-ma_Divs">
-					<nav aria-label="Page navigation">
-						<ul class="pagination pagination-lg">
-							<li>
-								<a href="#" aria-label="Previous">
-									<span aria-hidden="true">&laquo;</span>
-								</a>
-							</li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li>
-								<a href="#" aria-label="Next">
-									<span aria-hidden="true">&raquo;</span>
-								</a>
-							</li>
-						</ul>
-					</nav>
+			<div class="col-md-12 liuxue_info" style="padding-bottom: 50px;">
+				<p class="liuxue_info_p">为深化中德两国，在科技和教育领域上的合作，本中心为广大师生、院校、企业等提供多个合作服务。</p>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 liuxue_info">
+				<div class="liuxue_info_div">
+					<p style="text-align: center;"><b>为个人提供留学个人相关服务</b><br>例如：</p>
+					<p>1、留学咨询与建议</p>
+					<p>2、留学相关程序的协助</p>
+					<p>3、德国大学申请材料的准备</p>
+					<p>4、提供德语培训课程</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6 liuxue_info">
+				<div class="liuxue_info_div">
+					<p style="text-align: center;"><b>为院校提供留学院校相关服务</b><br>例如：</p>
+					<p>1、促成中方院校与德国大学（综合性大学、应用科学大学、双元制大学等）在留学等交换项目上的合作</p>
+					<p>2、促成中方院校与德国企业在学生毕业就业等问题上的合作</p>
+					<p>3、提供德语相关培训课程</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 liuxue_info">
+				<div class="liuxue_info_div">
+					<p style="text-align: center;"><b>为企业提供留学企业相关服务</b><br>例如：</p>
+					<p>1、促成中方企业与德国大学在学生毕业就业问题上的合作</p>
+					<p>2、促成中方企业与德国大学在双元制制度上的合作</p>
+					<p>3、提供德语相关培训课程</p>
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 liuxue_info" style="padding: 50px 20px;">
+				<p class="liuxue_info_p"><i>西南交通大学在本中心的协助下，已与FH Ostfalia、TU Dresden、FH Aachen、FH
+					Bielefeld等多所大学建立了合作关系，并向德国高校输送了大批人才。西南交通大学现已通过“4+2硕士项目”输送40多位学子赴德留学。</i></p>
+				<div align="center" style="padding-top: 50px;">
+					<p>联系方式</p>
+					<p>陆主任：18384651575</p>
+					<p>办公室：0833-2595989</p>
+					<img width="20%" class="img-responsive center-block" src="../../static/imgs/weixingongzhonghao.jpg" alt="">
+					<p>微信公众号</p>
 				</div>
 			</div>
 		</div>

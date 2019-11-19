@@ -8,7 +8,7 @@
 }
 
 .what-we-do-crousel-sec .border-shape {
-	background: #d4d4d4;
+	background: #c6c6c6;
 	display: block;
 	height: 1px;
 	left: 0;
@@ -16,24 +16,24 @@
 	position: relative;
 	right: 0;
 	top: 0;
-	width: 260px;
+	width: 300px;
 }
 
 .what-we-do-crousel-sec .border-shape::before {
-	background: #d4d4d4 none repeat scroll 0 0;
+	background: #c6c6c6 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
 	position: absolute;
 	top: 3px;
-	width: 90px;
+	width: 200px;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
 }
 
 .what-we-do-crousel-sec .border-shape::after {
-	background: #d4d4d4 none repeat scroll 0 0;
+	background: #c6c6c6 none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 1px;
@@ -42,7 +42,7 @@
 	right: 0;
 	text-align: center;
 	top: 6px;
-	width: 70px;
+	width: 100px;
 	margin: 0 auto;
 }
 
@@ -52,7 +52,12 @@
 	color: #333;
 	border-radius: 5px;
 	background-color: white;
-	height: 300px;
+}
+
+@media (min-width: 1024px) {
+	.what-we-do-crousel-sec div .item {
+		height: 300px;
+	}
 }
 
 .what-we-do-crousel-sec div .item img {
@@ -117,5 +122,100 @@
 	.what-we-do-crousel-sec div .item {
 		padding: 10px;
 		margin: 10px;
+	}
+}
+
+.technology-platform_div {
+	padding-top: 50px;
+}
+
+.technology-platform_title {
+	text-align: center;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.technology-platform_title .sec-title h1 {
+	color: white;
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+
+.technology-platform_title:hover .sec-title h1 {
+	font-weight: bolder;
+}
+
+.technology_platform_info {
+	display: none;
+}
+
+.sec-title i {
+	transition: all 0.3s;
+	transform-origin: center;
+}
+
+.sec-title a {
+	text-decoration: none;
+}
+
+.hezuoziyuan .container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.hezuoziyuan .row {
+	margin: 0;
+}
+
+.introduction_to_the {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.introduction_to_the p {
+	line-height: 2em;
+	letter-spacing: 2px;
+	color: #333333;
+	font-size: 1.4em;
+}
+
+@media (max-width: 600px) {
+	.technology-platform_title .sec-title h1 {
+		font-size: 1.4em;
+		letter-spacing: 1px;
+	}
+
+	.introduction_to_the p {
+		line-height: 1.1em;
+	}
+
+	.what-we-do-crousel-sec div .item h3 {
+		font-size: 1.3em;
+		line-height: 1.5em;
+	}
+
+	.what-we-do-crousel-sec div .item p {
+		line-height: 1.5em;
+		font-size: 1.1em;
+	}
+
+	.what-we-do-crousel-sec div .item {
+		max-height: 450px;
+	}
+
+	.what-we-do-crousel-sec div .item img {
+		width: 60%;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 1720px){
+	.what-we-do-crousel-sec div .item img {
+		width: 30%;
+	}
+}
+@media (min-width: 992px){
+	.container {
+		width: 90%;
 	}
 }

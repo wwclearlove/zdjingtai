@@ -10,121 +10,89 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css"/>
 	<link rel="stylesheet" href="../../static/css/header.css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/banner.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/index.css">
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/newsList.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<style type="text/css">
-		.module-banner-tab-list .module-tab-nav li:nth-child(1) {
-			background: #888888;
-		}
-
-		.module-banner-tab-list .module-tab-nav li:nth-child(2) {
-			background: #777777;
-		}
-
-		.module-banner-tab-list .module-tab-nav li:nth-child(3) {
-			background: #666666;
-		}
-
-		.module-banner-tab-list .module-tab-nav li:nth-child(4) {
-			background: #555555;
-		}
-
-		.module-banner-tab-list ul li {
-			color: #fff;
-			height: 70px;
-			cursor: pointer;
-			text-align: center;
-			-webkit-transition: all 0.2s linear;
-			-moz-transition: all 0.2s linear;
-			-ms-transition: all 0.2s linear;
-			-o-transition: all 0.2s linear;
-			transition: all 0.2s linear;
-		}
-
-		.module-banner-tab .module-banner-tab-list .module-tab-nav .on {
-			background-image: -webkit-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
-			background-image: -moz-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
-			background-image: -moz-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-image: -o-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-image: linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-repeat: repeat;
-		}
-
-		.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
-		.module-banner-tab .module-banner-tab-list .module-tab-nav .on span {
-			font-weight: bolder;
-			display: inline-block;
-		}
-
-		.module-banner-tab .module-banner-tab-list .module-tab-nav li:hover {
-			background-image: -webkit-linear-gradient(left, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
-			background-image: -moz-linear-gradient(left, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
-			background-image: -moz-linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
-			background-image: -o-linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
-			background-image: linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
-			background-repeat: repeat;
-		}
-
-		.module-banner-tab .module-banner-tab-list .module-tab-nav .on:hover {
-			background-image: -webkit-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
-			background-image: -moz-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
-			background-image: -moz-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-image: -o-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-image: linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
-			background-repeat: repeat;
-		}
-
-		.module-tab-nav li i {
-			display: none;
-			transform: rotate(45deg);
-		}
-
-		.module-tab-nav li span,
-		.module-tab-nav li i {
-			line-height: 70px;
-			font-size: 1.2em;
-		}
-
-	</style>
+	<script type="text/javascript" src="../../static/js/banner/bdtxk7.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/slider.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/jquery.iosslider.js"></script>
 	<script>
-		$(document).ready(function () {
-			const moduleUl = $(".module-tab-box-ma");
-			const moduleTabNav = $(".module-tab-nav li");
-			for (let i = 0; i < moduleTabNav.length; i++) {
-				moduleTabNav[i].index = i;
-				moduleTabNav.eq(i).click(function () {
-					for (let i = 0; i < moduleTabNav.length; i++) {
-						moduleTabNav.eq(i).removeClass("on");
-					}
-					for (let i = 0; i < moduleUl.length; i++) {
-						moduleUl.eq(i).hide();
-					}
-					$(this).addClass("on");
-					moduleUl.eq(this.index + 1).show();
-				});
-			}
-			$(".news_list_Div").click(function () {
-				for (let i = 1; i < moduleUl.length; i++) {
-					moduleUl.eq(i).hide();
-				}
-				for (let i = 0; i < moduleTabNav.length; i++) {
-					moduleTabNav.eq(i).removeClass("on");
-				}
-				moduleUl.eq(0).show();
-			});
-
+		$(function () {
+			$(".li-cate-1").eq(1).addClass("active");
 		})
 	</script>
 </head>
 <body>
-
+<div id="content"></div>
 <section>
-	<!--banner-->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!--banner1-->
+	<div class="iosSliderDemo banner1" style="overflow: hidden">
+		<div class="fluidHeight">
+			<div class="sliderContainer">
+				<div class="iosSlider"
+					 style="position: relative; top: 0; left: 0; overflow: hidden; z-index: 1; perspective: 1000px;
+					 backface-visibility: hidden; width: 1579px; height: 462px;">
+					<div class="slider" style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;
+					transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
+						<div class="item">
+							<div class="inner">
+								<a class="inner_a" href="javascript:void (0)"
+								   style="background:url(../../static/imgs/invertment_text/invertment_text5.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span class="inner_span">德国模式--民营中小企业的学习典范</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/china_education/shuangyuanzhi02.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>双元制大学</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/index/kypt.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>科研合作</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/banner/product1.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>成果转化</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/banner/yuyan.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>为什么要学德语</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slideSelectors">
+					<div class="prev"></div>
+					<a class="item selected" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<div class="next"></div>
+				</div>
+				<div class="leftbg"></div>
+				<div class="rightbg"></div>
+			</div>
+		</div>
+	</div>
+	<!--banner2-->
+	<div id="carousel-example-generic" class="carousel slide banner2" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -134,48 +102,37 @@
 		</ol>
 
 		<div class="carousel-inner" role="listbox">
-			<div class="item active" align="center">
-				<a href="../cooperative_enterprise/enterprise_inspection.html">
-					<img src="../../static/imgs/newsactivity/technology_articles/technology_articles02/technology_articles0201.png"
-						 alt="" class="img-responsive center-block">
-				</a>
+			<div class="item active">
+				<img class="img-responsive center-block" src="../../static/imgs/invertment_text/invertment_text5.jpg"
+					 alt="">
+				<div class="carousel-caption">
+					<p>德国模式--民营中小企业的学习典范</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./technology_articles/technology_articles01.html">
-					<img src="../../static/imgs/newsactivity/technology_articles/technology_articles01/technology_articles0102.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block"
+					 src="../../static/imgs/china_education/shuangyuanzhi02.png" alt="">
+				<div class="carousel-caption">
+					<p>双元制大学</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles07.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles07/education_articles0702.png"
-						 alt="" class="img-responsive center-block">
-
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/index/kypt.jpg" alt="">
+				<div class="carousel-caption">
+					<p>科研合作</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles06.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles06/education_articles0604.png"
-							alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/banner/product1.jpg" alt="">
+				<div class="carousel-caption">
+					<p>成果转化</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles04.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles04/education_articles0401.png"
-							alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/banner/yuyan.png" alt="">
+				<div class="carousel-caption">
+					<p>为什么要学德语</p>
+				</div>
 			</div>
 		</div>
 
@@ -207,13 +164,17 @@
 							<i class="fa fa-location-arrow"></i>
 							<span>教育合作</span>
 						</li>
-						<li class="">
+						<li>
 							<i class="fa fa-location-arrow"></i>
 							<span>企业合作</span>
 						</li>
-						<li class="">
+						<li>
 							<i class="fa fa-location-arrow"></i>
 							<span>语言中心</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>合作资源</span>
 						</li>
 					</ul>
 				</div>
@@ -444,12 +405,14 @@
 							<div class="module-tab-title">
 								<a href="../cooperative_enterprise/investment_text/invertment_text_one.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/invertment_text/invertment_text6.jpg"
+										<img class="img-responsive"
+											 src="../../static/imgs/invertment_text/invertment_text6.jpg"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式--民营中小企业的学习典范</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											自第二次工业革命以来，德国人在机械、电气、化工等领域逐渐崛起成为世界冠军，但就算是以西门子、大众、蒂森克虏伯、宝马等声名显赫的大企业为贸易基础，德国的经济总量在2018年也不过美国的五分之一，中国的四分之一，可是德国出口额高踞世界第二（1.547万亿美元，仅次于中国），哪些企业对此所作的贡献最大？是在各自所在的细分市场默默耕耘并且成为全球行业领袖的中小企业！
@@ -483,12 +446,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article01.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/tu1.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/tu1.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德国节日简介</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-11-21</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-11-21</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											刚刚过去的11月11日，这一天对中德两国来说都是一个特别的日子，很多中国人在光棍节这一天疯狂购物（购物，einkaufen），而万里之外的德国也在这一天拉开了狂欢节（Karneval）的序幕。众所周知，德国是一个以基督教和天主教为主要信仰的国家，很多节日都与基督教义有关，此外德国也是一个文化包容性很强的地方，来自世界各地的人们都汇聚于，除了很多来自东欧，土耳其甚至越南的已经加入德国国籍的“外乡人”，数据显示现在每13个生活在德国的人中就有一个是外国人；近一半的面孔都不再是日耳曼人，那么我们一起来看看这样的德国到底有哪些有趣的节日吧。
@@ -502,7 +467,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article02.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语等级介绍</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											A1级:能够理解并使用日常用语和非常简单的句子，表达具体要求。
@@ -518,7 +484,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article03.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语时间的表达</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-06-12</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-06-12</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											1.整点报时
@@ -533,7 +500,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article04.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语数字的表达</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-05-28</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-05-28</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											1.学习基础数词,和英语一样从0-12是没有规律的，这需要大家牢记
@@ -547,7 +515,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article05.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语字母表</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月6日下午，四川（乐山）中德科技促进中心交大工作组在校区内顺利开展新学期第一期德语角活动。此次德语角活动邀请到唐阳副教授、方草老师、余芳老师作为嘉宾和活动评委。参加本次活动的同学主要是校区B1班学员、A1班学员及刚入校想要学习德语的大一新生。
@@ -561,7 +530,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article06.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】情态动词框型结构</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											情态动词框型结构是德语句子框型结构中的一种，也是较为简单的一种。顾名思义，情态动词框型结构句子中包含情态动词。
@@ -575,15 +545,18 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article07.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/ww.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/ww.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】中德工程教育的对比</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
-											为响应《国务院关于加快发展现代职业教育的决定》提出的“引导普通本科高等学校转型发展”，“引导一批普通本科高等学校向应用技术类型高等学校转型，重点举办本科职业教育”的号召，从2010 年起，我国学习德国等国家培养工程师的经验，开始实施“卓越工程师培养计划”（简称“卓越计划”）。该计划旨在培养造就一大批创新能力强、适应经济社会发展需要的各类高质量工程技术人才，为走新型工业化发展道路、建设创新型国家和人才强国战略服务。
+											为响应《国务院关于加快发展现代职业教育的决定》提出的“引导普通本科高等学校转型发展”，“引导一批普通本科高等学校向应用技术类型高等学校转型，重点举办本科职业教育”的号召，从2010
+											年起，我国学习德国等国家培养工程师的经验，开始实施“卓越工程师培养计划”（简称“卓越计划”）。该计划旨在培养造就一大批创新能力强、适应经济社会发展需要的各类高质量工程技术人才，为走新型工业化发展道路、建设创新型国家和人才强国战略服务。
 										</p>
 									</div>
 								</a>
@@ -593,12 +566,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article08.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/s81.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/s81.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】英语和德语的关系(一)——近代</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-04</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-12-04</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											近些年来，世界各国人民对学习德语和德国文化的兴趣与日俱增。其中一个突出的表现是人们把德语作为一种“科学语言”来学习，对此最好的说明是越来越多的大学生和科技工作者在学习德语：在中国每年有数万人次的学生参加TestDaF（德福）考试，以获得留学德国的资格；在日本的大学有超过一半的学生学习德语；同时德语作为一种国际贸易语言运用的范围越来越广，德国的一些知名企业，如大众、西门子等在全球范围类的经营扩张，使得德语被越来越多的人认可和需要。与当今世界的通用语言英语相比，英语和德语究竟有怎样的关系呢？
@@ -611,12 +586,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article09.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/xx.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/xx.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】英语和德语的关系(二)——现代</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-10-09</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-10-09</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											20世纪下半叶,美国在科技(尤其是计算机领域),经济领域的强大实力,以及在时尚等领域中的引导潮流更使美国文化成为“主流文化”,代表着进步、时尚、活力,使年轻人更是趋之若鹜。且随着全球化的进一步发展，不断深入的国际政治、经济合作以及通讯、信息系统特别是因特网领域的飞速进步，出于需求母语需要吸纳外来词，比如母语中缺乏与外来文化中产生的新事物、新概念相对应的词。通常情况下,新概念及相应的称呼便一并被原封不动地拿过去，越来越多的有越来越多的英语外来词被引入德语，并对德国社会的各个领域产生诸多影响
@@ -862,12 +839,14 @@
 							<div class="module-tab-title">
 								<a href="../cooperative_enterprise/investment_text/invertment_text_one.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/invertment_text/invertment_text6.jpg"
+										<img class="img-responsive"
+											 src="../../static/imgs/invertment_text/invertment_text6.jpg"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式--民营中小企业的学习典范</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											自第二次工业革命以来，德国人在机械、电气、化工等领域逐渐崛起成为世界冠军，但就算是以西门子、大众、蒂森克虏伯、宝马等声名显赫的大企业为贸易基础，德国的经济总量在2018年也不过美国的五分之一，中国的四分之一，可是德国出口额高踞世界第二（1.547万亿美元，仅次于中国），哪些企业对此所作的贡献最大？是在各自所在的细分市场默默耕耘并且成为全球行业领袖的中小企业！
@@ -904,12 +883,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article01.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/tu1.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/tu1.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德国节日简介</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-11-21</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-11-21</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											刚刚过去的11月11日，这一天对中德两国来说都是一个特别的日子，很多中国人在光棍节这一天疯狂购物（购物，einkaufen），而万里之外的德国也在这一天拉开了狂欢节（Karneval）的序幕。众所周知，德国是一个以基督教和天主教为主要信仰的国家，很多节日都与基督教义有关，此外德国也是一个文化包容性很强的地方，来自世界各地的人们都汇聚于，除了很多来自东欧，土耳其甚至越南的已经加入德国国籍的“外乡人”，数据显示现在每13个生活在德国的人中就有一个是外国人；近一半的面孔都不再是日耳曼人，那么我们一起来看看这样的德国到底有哪些有趣的节日吧。
@@ -923,7 +904,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article02.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语等级介绍</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											A1级:能够理解并使用日常用语和非常简单的句子，表达具体要求。
@@ -939,7 +921,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article03.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语时间的表达</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-06-12</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-06-12</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											1.整点报时
@@ -954,7 +937,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article04.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语数字的表达</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-05-28</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-05-28</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											1.学习基础数词,和英语一样从0-12是没有规律的，这需要大家牢记
@@ -968,7 +952,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article05.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】德语字母表</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											2018年9月6日下午，四川（乐山）中德科技促进中心交大工作组在校区内顺利开展新学期第一期德语角活动。此次德语角活动邀请到唐阳副教授、方草老师、余芳老师作为嘉宾和活动评委。参加本次活动的同学主要是校区B1班学员、A1班学员及刚入校想要学习德语的大一新生。
@@ -982,7 +967,8 @@
 								<a href="../language_center/interestGermany_article/interestGermany_article06.html">
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】情态动词框型结构</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											情态动词框型结构是德语句子框型结构中的一种，也是较为简单的一种。顾名思义，情态动词框型结构句子中包含情态动词。
@@ -996,15 +982,18 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article07.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/ww.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/ww.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】中德工程教育的对比</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
-											为响应《国务院关于加快发展现代职业教育的决定》提出的“引导普通本科高等学校转型发展”，“引导一批普通本科高等学校向应用技术类型高等学校转型，重点举办本科职业教育”的号召，从2010 年起，我国学习德国等国家培养工程师的经验，开始实施“卓越工程师培养计划”（简称“卓越计划”）。该计划旨在培养造就一大批创新能力强、适应经济社会发展需要的各类高质量工程技术人才，为走新型工业化发展道路、建设创新型国家和人才强国战略服务。
+											为响应《国务院关于加快发展现代职业教育的决定》提出的“引导普通本科高等学校转型发展”，“引导一批普通本科高等学校向应用技术类型高等学校转型，重点举办本科职业教育”的号召，从2010
+											年起，我国学习德国等国家培养工程师的经验，开始实施“卓越工程师培养计划”（简称“卓越计划”）。该计划旨在培养造就一大批创新能力强、适应经济社会发展需要的各类高质量工程技术人才，为走新型工业化发展道路、建设创新型国家和人才强国战略服务。
 										</p>
 									</div>
 								</a>
@@ -1014,12 +1003,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article08.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/s81.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/s81.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】英语和德语的关系(一)——近代</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-12-04</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-12-04</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											近些年来，世界各国人民对学习德语和德国文化的兴趣与日俱增。其中一个突出的表现是人们把德语作为一种“科学语言”来学习，对此最好的说明是越来越多的大学生和科技工作者在学习德语：在中国每年有数万人次的学生参加TestDaF（德福）考试，以获得留学德国的资格；在日本的大学有超过一半的学生学习德语；同时德语作为一种国际贸易语言运用的范围越来越广，德国的一些知名企业，如大众、西门子等在全球范围类的经营扩张，使得德语被越来越多的人认可和需要。与当今世界的通用语言英语相比，英语和德语究竟有怎样的关系呢？
@@ -1032,12 +1023,14 @@
 							<div class="module-tab-title">
 								<a href="../language_center/interestGermany_article/interestGermany_article09.html">
 									<div class="module-tab-title_DivSon01">
-										<img class="img-responsive" src="../../static/imgs/newsactivity/technology_articles/technology_articles01/xx.png"
+										<img class="img-responsive"
+											 src="../../static/imgs/newsactivity/technology_articles/technology_articles01/xx.png"
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
 										<h4 class="module-tab-title_DivSon02_title">【语言】英语和德语的关系(二)——现代</h4>
-										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-10-09</span> &nbsp;|&nbsp;
+										<p class="module-tab-title_DivSon02_time">时间：<span
+												class="times">2018-10-09</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
 											20世纪下半叶,美国在科技(尤其是计算机领域),经济领域的强大实力,以及在时尚等领域中的引导潮流更使美国文化成为“主流文化”,代表着进步、时尚、活力,使年轻人更是趋之若鹜。且随着全球化的进一步发展，不断深入的国际政治、经济合作以及通讯、信息系统特别是因特网领域的飞速进步，出于需求母语需要吸纳外来词，比如母语中缺乏与外来文化中产生的新事物、新概念相对应的词。通常情况下,新概念及相应的称呼便一并被原封不动地拿过去，越来越多的有越来越多的英语外来词被引入德语，并对德国社会的各个领域产生诸多影响
@@ -1046,6 +1039,12 @@
 								</a>
 							</div>
 						</li>
+					</ul>
+					<ul class="module-tab-box-ma module_ul3" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">合作资源</h3>
+						</div>
+						<h3>暂无</h3>
 					</ul>
 				</div>
 			</div>

@@ -10,22 +10,105 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css"/>
 	<link rel="stylesheet" href="../../static/css/header.css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/banner.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/index.css">
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
-	<link rel="stylesheet" href="../../static/css/newsactivity/daterangepicker.css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
-	<script type="text/javascript" src="../../static/js/newsList.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<script src="../../static/js/moment.min.js"></script>
-	<script src="../../static/js/jquery.daterangepicker.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/bdtxk7.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/slider.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/jquery.iosslider.js"></script>
+	<script>
+		$(function () {
+			$(".li-cate-1").eq(2).addClass("active");
+		});
+		$(document).ready(function () {
+			const moduleUl = $(".module-tab-box-ma");
+			const moduleTabNav = $(".module-tab-nav li");
+			for (let i = 0; i < moduleTabNav.length; i++) {
+				moduleTabNav[i].index = i;
+				moduleTabNav.eq(i).click(function () {
+					for (let i = 0; i < moduleTabNav.length; i++) {
+						moduleTabNav.eq(i).removeClass("on");
+					}
+					for (let i = 0; i < moduleUl.length; i++) {
+						moduleUl.eq(i).hide();
+					}
+					$(this).addClass("on");
+					moduleUl.eq(this.index).show();
+				});
+			}
+		});
+	</script>
 </head>
 <body>
 
 <section>
-	<!--banner-->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<!--banner1-->
+	<div class="iosSliderDemo banner1" style="overflow: hidden">
+		<div class="fluidHeight">
+			<div class="sliderContainer">
+				<div class="iosSlider"
+					 style="position: relative; top: 0; left: 0; overflow: hidden; z-index: 1; perspective: 1000px;
+					 backface-visibility: hidden; width: 1579px; height: 462px;">
+					<div class="slider" style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;
+					transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
+						<div class="item">
+							<div class="inner">
+								<a class="inner_a" href="javascript:void (0)"
+								   style="background:url(../../static/imgs/invertment_text/invertment_text5.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span class="inner_span">德国模式--民营中小企业的学习典范</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/china_education/shuangyuanzhi02.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>双元制大学</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/index/kypt.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>科研合作</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/banner/product1.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>成果转化</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../../static/imgs/banner/yuyan.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>为什么要学德语</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slideSelectors">
+					<div class="prev"></div>
+					<a class="item selected" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<a class="item" onfocus="undefined"></a>
+					<div class="next"></div>
+				</div>
+				<div class="leftbg"></div>
+				<div class="rightbg"></div>
+			</div>
+		</div>
+	</div>
+	<!--banner2-->
+	<div id="carousel-example-generic" class="carousel slide banner2" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -36,50 +119,37 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<a href="../cooperative_enterprise/enterprise_inspection.html">
-					<img
-						 src="../../static/imgs/newsactivity/technology_articles/technology_articles02/technology_articles0201.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block"
+					 src="../../static/imgs/invertment_text/invertment_text5.jpg"
+					 alt="">
+				<div class="carousel-caption">
+					<p>德国模式--民营中小企业的学习典范</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./technology_articles/technology_articles01.html">
-					<img src="../../static/imgs/newsactivity/technology_articles/technology_articles01/technology_articles0103.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block"
+					 src="../../static/imgs/china_education/shuangyuanzhi02.png" alt="">
+				<div class="carousel-caption">
+					<p>双元制大学</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles07.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles07/education_articles0703.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/index/kypt.jpg" alt="">
+				<div class="carousel-caption">
+					<p>科研合作</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles06.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles06/education_articles0606.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/banner/product1.jpg" alt="">
+				<div class="carousel-caption">
+					<p>成果转化</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./education_articles/education_articles04.html">
-					<img src="../../static/imgs/newsactivity/education_articles/education_articles04/education_articles0402.png"
-						 alt="" class="img-responsive center-block">
-					<div class="carousel-caption">
-
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../../static/imgs/banner/yuyan.png" alt="">
+				<div class="carousel-caption">
+					<p>为什么要学德语</p>
+				</div>
 			</div>
 		</div>
 
@@ -93,8 +163,8 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
-	<!--活动文章列表-->
-	<div class="module-banner">
+	<!--活动计划列表-->
+	<!--<div class="module-banner">
 		<div class="module-banner-box">
 			<div class="module-banner-tab clearfix">
 				<div class="module-banner-tab-list hd">
@@ -113,12 +183,12 @@
 							</select>
 						</label>
 					</div>
-					<!--<div class="form-group" style="width: 100%;">
+					&lt;!&ndash;<div class="form-group" style="width: 100%;">
 						<label style="width: 100%;" for="date-range1" class="control-label">请选择日期范围</label>
 						<div style="width: 100%;">
 							<input style="width: 100%;" type="text" class="form-control" id="date-range1" placeholder="">
 						</div>
-					</div>-->
+					</div>&ndash;&gt;
 					<div style="width: 100%;" class="form-group">
 						<label style="width: 100%;" for="date-range1" class="control-label"></label>
 						<div style="width: 100%;">
@@ -357,7 +427,7 @@
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
-										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式--民营中小企业的学习典范</h4>
+										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式&#45;&#45;民营中小企业的学习典范</h4>
 										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
@@ -775,7 +845,7 @@
 											 alt="">
 									</div>
 									<div class="module-tab-title_DivSon02">
-										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式--民营中小企业的学习典范</h4>
+										<h4 class="module-tab-title_DivSon02_title">【企业】德国模式&#45;&#45;民营中小企业的学习典范</h4>
 										<p class="module-tab-title_DivSon02_time">时间：<span class="times">2018-09-11</span> &nbsp;|&nbsp;
 											来源：本站</p>
 										<p class="module-tab-title_DivSon02_info">
@@ -983,6 +1053,82 @@
 							</li>
 						</ul>
 					</nav>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<div class="module-banner" style="padding-bottom: 100px;">
+		<div class="module-banner-box">
+			<div class="module-banner-tab clearfix">
+				<div class="module-banner-tab-list hd">
+					<div class="news_list_Div">
+						<h3>活动计划</h3>
+					</div>
+					<ul class="module-tab-nav">
+						<li class="on">
+							<i class="fa fa-location-arrow"></i>
+							<span>科技合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>教育合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>企业合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>语言中心</span>
+						</li>
+					</ul>
+				</div>
+				<div class="module-banner-tab-list-box bd" style="min-height: 400px;">
+					<div class="module-tab-box-ma module_ul1" style="display: block;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">科技合作</h3>
+						</div>
+						<div>
+							<table border="1" class="table table-hover table-bordered">
+								<thead>
+								<tr>
+									<th>活动</th>
+									<th>时间</th>
+									<th>地点</th>
+									<th>备注</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>活动的名称</td>
+									<td>活动的时间</td>
+									<td>活动的地点</td>
+									<td>活动的备注</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="module-tab-box-ma module_ul2" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/jiaoyu.png" alt="">教育合作</h3>
+						</div>
+					</div>
+					<div class="module-tab-box-ma module_ul3" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">企业合作</h3>
+						</div>
+					</div>
+					<div class="module-tab-box-ma module_ul4" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/yuyan.png" alt="">语言中心</h3>
+						</div>
+					</div>
+					<div class="module-tab-box-ma module_ul3" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">合作资源</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

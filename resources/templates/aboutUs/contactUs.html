@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
-	<link rel="stylesheet" href="../../static/css/aboutUs/contactUs.css">
+	<link rel="stylesheet" href="../../static/css/aboutUs/aboutUs.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
@@ -21,23 +21,20 @@
 </head>
 <body>
 
-<section>
-	<!-- 背景图 -->
+<section class="aboutUs">
 	<div class="container-fluid">
 		<div class="row">
 			<img class="img-responsive center-block" src="../../static/imgs/aboutUs/contactUs/about.png" width="100%" alt=""/>
 		</div>
 	</div>
-	<!-- 促进中心 -->
-	<div class="container">
+	<div class="container" style="padding-top: 50px;">
 		<div class="row">
-			<div class="col-md-12" align="center" style="padding: 70px 0;">
-				<img src="../../static/imgs/aboutUs/logoxlwm.png" width="30%" alt="">
+			<div class="col-md-12">
+				<img class="img-responsive center-block" src="../../static/imgs/aboutUs/logoxlwm.png" width="30%" alt="">
 			</div>
 		</div>
 	</div>
-
-	<div class="container" style="padding: 50px 0;">
+	<div class="container" style="padding-top: 100px;">
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 developtargetDiv">
 				<br><br>
@@ -49,16 +46,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid" style="padding-bottom: 50px;">
-		<div class="row">
-			<div class="col-md-12">
+	<div class="container" style="padding-top: 100px;">
+		<div class="col-md-12">
+			<div class="sec-title">
 				<h1 class="commonality_title">联系方式</h1>
+				<div class="border-shape"></div>
 			</div>
 		</div>
 	</div>
-
-	<!-- 联系我们 -->
-	<div class="container" style="margin-top: 50px;padding: 0;">
+	<div class="container" style="padding-top: 100px;">
 		<form action="javascript:void(0);" method="get" id="contactForm">
 			<div class="form-row" id="contact_us">
 				<div class="col-md-6" id="message">
@@ -129,29 +125,16 @@
 </section>
 
 <footer id="myFooter">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div">
-				<a href="javascript:void (0)" class="myFooter_logo" title="中德科技">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myFooter_div">
+				<a href="../index.html" class="myFooter_logo" title="中德科技">
 					<img class="myFooter_div_logo" src="../../static/imgs/footer/logo.png" alt="">
 				</a>
 			</div>
-			<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 myFooter_divs">
-				<h5><i class="fa fa-map-marker"></i>地址</h5>
-				<p>四川省乐山市高新区高新孵化园A区9楼910</p>
-				<p>开放时间：周一至周五 9:00-17:00</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div">
-				<img class="center-block weixingongzhonghao" src="../../static/imgs/footer/weixingongzhonghao.jpg" alt="">
-				<p>微信公众号</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 myFooter_divs myFooter_divs_more">
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 myFooter_divs myFooter_div_more" style="margin-top: 20px;">
 				<p>
-					<span class="myFooter_divs_more_lianjie">
-						友情链接<i class="fa fa-paper-plane-o"></i>
-					</span>
+					<i class="fa fa-paper-plane-o"></i>友情链接
 				</p>
 				<p>
 					<a target="_blank" href="https://www.swjtu.edu.cn/">西南交大</a>
@@ -180,9 +163,12 @@
 					<a target="_blank" href="https://www.daad.org.cn/zh/">德意志学术交流中心( DAAD )</a>
 				</p>
 			</div>
-		</div>
-		<div class="row footer-copyright">
-			<div class="col-md-12">
+			<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 myFooter_div weixingongzhonghao_div">
+				<img class="weixingongzhonghao" src="../../static/imgs/footer/weixingongzhonghao.jpg" alt="">
+				<br><br>
+				<p>微信公众号</p>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright" style="margin-top: 0;padding: 0">
 				<p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
 				<p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
 			</div>

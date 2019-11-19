@@ -17,6 +17,26 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<!--<script>
+		$(function () {
+			const url = 'http://192.168.0.108:8888/';
+			$.ajax({
+				type: "POST",
+				url: "http://106.52.3.235:8888/germany/list?page=1&limit=1",
+				dataType: "json",
+				success: function (data) {
+					alert(data.data.list[0].title);
+					console.log(data.data.list);
+					for (let i = 0; i < data.data.list.length; i++) {
+						$("#p").html(data.data.list[i].title);
+					}
+				},
+				error: function () {
+					alert("服务器繁忙，请稍后再试！");
+				}
+			});
+		});
+	</script>-->
 </head>
 <body>
 
@@ -136,7 +156,7 @@
 					</ul>
 					<div class="module-tab-box-ma_Divs">
 						<nav aria-label="Page navigation">
-							<ul class="pagination pagination-lg">
+							<ul class="pagination">
 								<li>
 									<a href="#" aria-label="Previous">
 										<span aria-hidden="true">&laquo;</span>

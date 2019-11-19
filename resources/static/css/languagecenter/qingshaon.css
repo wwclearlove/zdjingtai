@@ -50,7 +50,7 @@ h2.heading {
 .our-services-text h4 {
     font-family: "Stencil Std";
     width: 100%;
-    color: #C4D70D;
+    color: #F2AF2D;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
@@ -81,7 +81,7 @@ h2.heading {
 }
 
 .our-services-text h4::before {
-    background: #C4D70D none repeat scroll 0 0;
+    background: #F2AF2D none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -120,4 +120,43 @@ h2.heading {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
     -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
+
+.border-shape {
+    background: #c0c0c0;
+    display: block;
+    height: 1px;
+    left: 0;
+    margin: 20px auto;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+
+.border-shape::before {
+    background: #c0c0c0 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 3px;
+    width: 200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.border-shape::after {
+    background: #c0c0c0 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 6px;
+    width: 100px;
+    margin: 0 auto;
 }

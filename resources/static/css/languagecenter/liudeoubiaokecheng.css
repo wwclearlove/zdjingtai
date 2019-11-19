@@ -54,7 +54,7 @@ h2.heading {
 .our-services-text h4 {
 	font-family: "Stencil Std";
 	width: 100%;
-	color: #C4D70D;
+	color: #F2AF2D;
 	font-size: 2em;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -85,7 +85,7 @@ h2.heading {
 }
 
 .our-services-text h4::before {
-	background: #C4D70D none repeat scroll 0 0;
+	background: #F2AF2D none repeat scroll 0 0;
 	bottom: 0;
 	content: "";
 	height: 2px;

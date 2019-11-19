@@ -16,7 +16,7 @@
 	position: relative;
 	right: 0;
 	top: 0;
-	width: 260px;
+	width: 300px;
 }
 
 .interesGermany_div .border-shape::before {
@@ -26,7 +26,7 @@
 	height: 1px;
 	position: absolute;
 	top: 3px;
-	width: 90px;
+	width: 200px;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
@@ -42,7 +42,7 @@
 	right: 0;
 	text-align: center;
 	top: 6px;
-	width: 70px;
+	width: 100px;
 	margin: 0 auto;
 }
 

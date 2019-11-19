@@ -101,38 +101,47 @@ $(document).ready(function () {
 			$.cookie('active', this.index, {path: '/', expires: date});
 		});
 	}
-	let subdirectories01 = $(".subdirectories01");
+	/*let subdirectories01 = $(".subdirectories01");
 	for (let s = 0; s < subdirectories01.length; s++) {
 		subdirectories01.eq(s).click(function () {
-			$.cookie('active', "3", {path: '/', expires: date});
+			$.cookie('active', "5", {path: '/', expires: date});
 		})
-	}
+	}*/
 	let subdirectories02 = $(".subdirectories02");
 	for (let s = 0; s < subdirectories02.length; s++) {
 		subdirectories02.eq(s).click(function () {
-			$.cookie('active', "4", {path: '/', expires: date});
+			$.cookie('active', "5", {path: '/', expires: date});
 		})
 	}
 	let subdirectories03 = $(".subdirectories03");
 	for (let s = 0; s < subdirectories03.length; s++) {
 		subdirectories03.eq(s).click(function () {
-			$.cookie('active', "5", {path: '/', expires: date});
+			$.cookie('active', "6", {path: '/', expires: date});
 		})
 	}
 	let subdirectories04 = $(".subdirectories04");
 	for (let s = 0; s < subdirectories04.length; s++) {
 		subdirectories04.eq(s).click(function () {
-			$.cookie('active', "6", {path: '/', expires: date});
+			$.cookie('active', "7", {path: '/', expires: date});
 		})
 	}
 	let subdirectories05 = $(".subdirectories05");
 	for (let s = 0; s < subdirectories05.length; s++) {
 		subdirectories05.eq(s).click(function () {
-			$.cookie('active', "7", {path: '/', expires: date});
+			$.cookie('active', "8", {path: '/', expires: date});
 		})
 	}
 	$(".li-cate-1").eq($.cookie('active')).addClass("active");
 
+	/*图片查看大图*/
+	/*$("section div img").click(function () {
+		$('#myModal').modal('show');
+		$("body").css("padding-right", "0px");
+		$("#largerVersion").attr("src",$(this).attr("src"));
+	});
+	$(".modal-content").click(function () {
+		$('#myModal').modal('hide');
+	});*/
 	/*时间*/
 	setInterval(function () {
 		$("#times").html(new Date().toLocaleString());

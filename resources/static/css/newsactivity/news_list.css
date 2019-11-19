@@ -10,7 +10,7 @@
 
 /* 必要布局样式css */
 .module-banner {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 .module-banner-box {
@@ -174,8 +174,7 @@
 @media (max-width: 1180px) {
 	.module-banner-tab-list {
 		float: left;
-		width: 97%;
-		margin-left: 10px;
+		width: 100%;
 	}
 
 	.module-banner-box {
@@ -209,16 +208,116 @@
 		width: 60%;
 	}
 }
-@media (max-width: 600px) {
 
-	.item a  img{
-		height: 300px!important;
+.module-banner-tab-list .module-tab-nav li:nth-child(1) {
+	background: #888888;
+}
 
+.module-banner-tab-list .module-tab-nav li:nth-child(2) {
+	background: #777777;
+}
+
+.module-banner-tab-list .module-tab-nav li:nth-child(3) {
+	background: #666666;
+}
+
+.module-banner-tab-list .module-tab-nav li:nth-child(4) {
+	background: #555555;
+}
+.module-banner-tab-list .module-tab-nav li:nth-child(5) {
+	background: #444444;
+}
+
+.module-banner-tab-list ul li {
+	color: #fff;
+	height: 70px;
+	cursor: pointer;
+	text-align: center;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.module-banner-tab .module-banner-tab-list .module-tab-nav .on {
+	background-image: -webkit-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
+	background-image: -moz-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
+	background-image: -moz-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-image: -o-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-image: linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-repeat: repeat;
+}
+
+.module-banner-tab .module-banner-tab-list .module-tab-nav .on .fa,
+.module-banner-tab .module-banner-tab-list .module-tab-nav .on span {
+	font-weight: bolder;
+	display: inline-block;
+}
+
+.module-banner-tab .module-banner-tab-list .module-tab-nav li:hover {
+	background-image: -webkit-linear-gradient(left, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
+	background-image: -moz-linear-gradient(left, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
+	background-image: -moz-linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
+	background-image: -o-linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
+	background-image: linear-gradient(to right, rgba(17, 96, 255, 0.4) 0%, rgba(1, 194, 230, 0.4) 100%);
+	background-repeat: repeat;
+}
+
+.module-banner-tab .module-banner-tab-list .module-tab-nav .on:hover {
+	background-image: -webkit-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
+	background-image: -moz-linear-gradient(left, #1160ff 0%, #01c2e6 100%);
+	background-image: -moz-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-image: -o-linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-image: linear-gradient(to right, #1160ff 0%, #01c2e6 100%);
+	background-repeat: repeat;
+}
+
+.module-tab-nav li i {
+	display: none;
+	transform: rotate(45deg);
+}
+
+.module-tab-nav li span,
+.module-tab-nav li i {
+	line-height: 70px;
+	font-size: 1.2em;
+}
+
+@media (max-width: 1024px) and (min-width: 600px){
+	.module-tab-nav{
+		display: flex;
+	}
+	.module-tab-nav li{
+		flex: 1;
 	}
 }
-@media (min-width: 600px) {
-	.item a  img{
-		height: 700px!important;
-
+@media (max-width: 599px) {
+	.module-tab-nav li{
+		width: 50%;
+		float: left;
 	}
+	.module-banner-tab-list .module-tab-nav li:nth-child(5) {
+		width: 100%;
+	}
+}
+
+.module-tab-box-ma table{
+	margin-top: 40px;
+}
+.module-tab-box-ma table th{
+	text-align: center;
+	color: white;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	background-color: #157BBB;
+}
+.module-tab-box-ma table td{
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.table > tbody > tr > td{
+	vertical-align: middle;
 }

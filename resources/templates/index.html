@@ -14,6 +14,7 @@
 	<link type="text/css" rel="stylesheet" href="../static/css/index/index.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/publish.min.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/clientlibs.min.css">
+	<link type="text/css" rel="stylesheet" href="../static/css/banner.css">
 	<script type="text/javascript" src="../static/js/common.min.js"></script>
 	<script type="text/javascript" src="../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
@@ -21,26 +22,21 @@
 	<script type="text/javascript" src="../static/js/header.js"></script>
 	<script type="text/javascript" src="../static/js/publish.min.js"></script>
 	<script type="text/javascript" src="../static/js/clientlibs.min.js"></script>
-	<style type="text/css">
-		.carousel-caption {
-			bottom: 10%;
-		}
-
-		.carousel-caption p {
-			color: white;
-			font-size: 2em;
-		}
-
-		@media (max-width: 560px) {
-			.carousel-caption {
-				bottom: 5%;
-			}
-
-			.carousel-caption p {
-				font-size: 1em;
-			}
-		}
-	</style>
+	<script type="text/javascript" src="../static/js/banner/bdtxk7.js"></script>
+	<script type="text/javascript" src="../static/js/banner/slider.js"></script>
+	<script type="text/javascript" src="../static/js/banner/jquery.iosslider.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".search_a").click(function () {
+				var search = $(".search_input").val();
+				if (search !== "") {
+					location.href = "./search_details_page.html?search=" + search;
+				} else {
+					alert("请输入关键词");
+				}
+			})
+		})
+	</script>
 </head>
 <body>
 
@@ -50,7 +46,7 @@
 		<!--Language-->
 		<div class="language">
 			<a href="./index.html" class="chinese">中文版</a> |
-			<a href="#" class="deutsch">Deutsch</a>
+			<a href="./german.html" class="deutsch">Deutsch</a>
 		</div>
 		<!--time-->
 		<div class="time">
@@ -60,7 +56,7 @@
 		<div class="searchDiv">
 			<form action="">
 				<input type="text" class="search_input" placeholder="请输入关键词">
-				<a href="#" class="search_a">
+				<a href="javascript:;" class="search_a" id="search_a">
 					<i class="fa fa-search"></i>
 				</a>
 			</form>
@@ -92,15 +88,10 @@
 							<a href="./newsactivity/activity_list.html" class="li-cate_a">活动计划</a>
 						</li>
 						<li class="li-cate-1">
+							<a href="./scientificcooperation/technology-platform.html" class="li-cate_a">合作资源</a>
+						</li>
+						<li class="li-cate-1">
 							<a href="./scientificcooperation/scientific-cooperation.html" class="li-cate_a">中德科技合作</a>
-							<ul class="sub-menu">
-								<li>
-									<a href="./scientificcooperation/keyanhezuo.html" class="subdirectories01">科研合作</a>
-								</li>
-								<li>
-									<a href="./scientificcooperation/technology-platform.html" class="subdirectories01">科技支撑平台</a>
-								</li>
-							</ul>
 						</li>
 						<li class="li-cate-1">
 							<a href="./china_education/zhongdejiaoyuhezuo.html" class="li-cate_a">中德教育合作</a>
@@ -112,15 +103,10 @@
 									<a href="./china_education/youxue.html" class="subdirectories02">游学访问</a>
 								</li>
 								<li>
-									<a href="./china_education/zhongdexuexiaohezuo.html"
-									   class="subdirectories02">教育合作资源</a>
+									<a href="./china_education/zhongdexueyuan.html" class="subdirectories02">中德学院建设</a>
 								</li>
 								<li>
-									<a href="./china_education/zhongdexueyuan.html" class="subdirectories02">中德学院</a>
-								</li>
-								<li>
-									<a href="./china_education/shuangyuanzhiidaxue.html"
-									   class="subdirectories02">双元制大学</a>
+									<a href="./china_education/shuangyuanzhiidaxue.html" class="subdirectories02">双元制大学建设</a>
 								</li>
 							</ul>
 						</li>
@@ -190,9 +176,71 @@
 	<div id="mask"></div>
 </div>
 
-<section>
-	<!--banner-->
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<section id="content">
+	<!--banner1-->
+	<div class="iosSliderDemo banner1" style="overflow: hidden">
+		<div class="fluidHeight">
+			<div class="sliderContainer">
+				<div class="iosSlider"
+					 style="position: relative; top: 0; left: 0; overflow: hidden; z-index: 1; perspective: 1000px;
+					 backface-visibility: hidden; width: 1579px; height: 462px;">
+					<div class="slider" style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;
+					transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../static/imgs/invertment_text/invertment_text5.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>德国模式--民营中小企业的学习典范</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../static/imgs/china_education/shuangyuanzhi02.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>双元制大学</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../static/imgs/index/kypt.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>科研合作</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../static/imgs/banner/product1.jpg) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>成果转化</span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background:url(../static/imgs/banner/yuyan.png) no-repeat center;background-size: cover;"></a>
+								<div class="text1" style=""><span>为什么要学德语</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slideSelectors">
+					<div class="prev"></div>
+					<div class="slideSelectorsa">
+						<a class="item selected" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+					</div>
+					<div class="next"></div>
+				</div>
+				<div class="leftbg"></div>
+				<div class="rightbg"></div>
+			</div>
+		</div>
+	</div>
+	<!--banner2-->
+	<div id="carousel-example-generic" class="carousel slide banner2" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -203,46 +251,36 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<a href="./cooperative_enterprise/enterprise_inspection.html">
-					<img  class="img-responsive center-block"
-						  src="../static/imgs/invertment_text/invertment_text5.jpg" alt="">
-					<div class="carousel-caption">
-						<p>德国模式--民营中小企业的学习典范</p>
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../static/imgs/invertment_text/invertment_text5.jpg"
+					 alt="">
+				<div class="carousel-caption">
+					<p>德国模式--民营中小企业的学习典范</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./china_education/shuangyuanzhiidaxue.html">
-					<img  class="img-responsive center-block"
-						  src="../static/imgs/china_education/shuangyuanzhi02.png" alt="">
-					<div class="carousel-caption">
-						<p>双元制大学</p>
-					</div>
-				</a>
+				<img class="img-responsive center-block"
+					 src="../static/imgs/china_education/shuangyuanzhi02.png" alt="">
+				<div class="carousel-caption">
+					<p>双元制大学</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./scientificcooperation/keyanhezuo.html">
-					<img class="img-responsive center-block" src="../static/imgs/index/kypt.jpg" alt="">
-					<div class="carousel-caption">
-						<p>科研合作</p>
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../static/imgs/index/kypt.jpg" alt="">
+				<div class="carousel-caption">
+					<p>科研合作</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./cooperative_enterprise/successful_conversion.html">
-					<img class="img-responsive center-block" src="../static/imgs/banner/product1.jpg" alt="">
-					<div class="carousel-caption">
-						<p>成果转化</p>
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../static/imgs/banner/product1.jpg" alt="">
+				<div class="carousel-caption">
+					<p>成果转化</p>
+				</div>
 			</div>
 			<div class="item">
-				<a href="./language_center/weishenme.html">
-					<img class="img-responsive center-block" src="../static/imgs/banner/yuyan.png" alt="">
-					<div class="carousel-caption">
-						<p>为什么要学德语</p>
-					</div>
-				</a>
+				<img class="img-responsive center-block" src="../static/imgs/banner/yuyan.png" alt="">
+				<div class="carousel-caption">
+					<p>为什么要学德语</p>
+				</div>
 			</div>
 		</div>
 
@@ -315,8 +353,9 @@
 									<div class="newsteaser__textInput">
 										<h3 class="newsteaser__header">双元制大学</h3>
 										<div class="newsteaser__info">
-											在德国，有一种新型的高等教育机构——双元制大学（Duale Hochschule）。 该大学有着自己独树一帜的办学特色，在德国深得学生和就业单位的认可，
-											其生源质量不仅堪与综合性大学相媲美，就业率也高于应用科学大学。 为什么会有如此完美无缺的大学呢？
+											在德国，有一种新型的高等教育机构——双元制大学（Duale
+											Hochschule）。该大学有着自己独树一帜的办学特色，在德国深得学生和就业单位的认可，其生源质量不仅堪与综合性大学相媲美，就业率也高于应用科学大学。
+											为什么会有如此完美无缺的大学呢？
 										</div>
 									</div>
 								</div>
@@ -327,7 +366,7 @@
 				</div>
 				<div class="newsteaser__base newsteaser--small">
 					<div class="newsteaser__wrapper">
-						<a href="scientificcooperation/keyanhezuo.html" class="#">
+						<a href="scientificcooperation/scientific-cooperation.html" class="#">
 							<div class="newsteaser__imageBlock ">
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
@@ -342,11 +381,10 @@
 							<div class="newsteaser__text">
 								<div class="newsteaser__textContent">
 									<div class="newsteaser__textInput">
-										<h3 class="newsteaser__header">科研合作</h3>
+										<h3 class="newsteaser__header">中德科技合作</h3>
 										<div class="newsteaser__info">
-											如今随着科研的不断深入，对单一专业领域的科研也就达到了瓶颈。 随之而来的是，针对跨学科领域的科研逐渐地炙手可热。然而现今的学科高难又复杂，
-											往往专精一项领域就没有时间和精力去研究另一门领域。而高端的跨领域人才也十分奇缺。
-											因此，如何去研究跨学科领域成为了当今世上的一大难题。而通过科研合作，即可携手共进，完成跨领域研究。
+											如今随着科研的不断深入，对单一专业领域的科研也就达到了瓶颈。
+											随之而来的是，针对跨学科领域的科研逐渐地炙手可热。然而现今的学科高难又复杂，往往专精一项领域就没有时间和精力去研究另一门领域。而高端的跨领域人才也十分奇缺。因此，如何去研究跨学科领域成为了当今世上的一大难题。而通过科研合作，即可携手共进，完成跨领域研究。
 										</div>
 									</div>
 								</div>
@@ -402,10 +440,7 @@
 									<div class="newsteaser__textInput">
 										<h3 class="newsteaser__header">为什么学德语</h3>
 										<div class="newsteaser__info">
-											德语是著有《浮士德》的著名诗人歌德的语言。
-											是了不起的音乐家莫扎特、巴赫、贝多芬的语言。
-											是建设相对论“大厦”的科学家爱因斯坦的语言。
-
+											德语是著有《浮士德》的著名诗人歌德的语言。是了不起的音乐家莫扎特、巴赫、贝多芬的语言。是建设相对论“大厦”的科学家爱因斯坦的语言。
 										</div>
 									</div>
 								</div>
@@ -420,35 +455,32 @@
 </section>
 
 <footer id="myFooter">
-	<div class="container-fluid">
-		<div class="row text-center">
-			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div">
-				<a href="javascript:void (0)" class="myFooter_logo" title="中德科技">
-					<img class="myFooter_div_logo" src="../static/imgs/footer/logo.png" alt="">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 myFooter_div">
+				<a href="./index.html" class="myFooter_logo" title="中德科技">
+					<img class="myFooter_div_logo" src="../static/imgs/logoxlwm.png" alt="">
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 myFooter_divs">
-				<h5><i class="fa fa-phone"></i>联系方式</h5>
-				<p>手机：18728871721</p>
-				<p>座机：0833-2595989</p>
-				<p>邮箱：lszdkc@163.com</p>
+			<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 myFooter_divs">
+				<div>
+					<p><i class="fa fa-phone"></i>手机：18728871721</p>
+					<p><i class="fa fa-volume-control-phone"></i>座机：0833-2595989</p>
+					<p><i class="fa fa-envelope-o"></i>邮箱：lszdkc@163.com</p>
+				</div>
+				<div>
+					<p><i class="fa fa-map-marker"></i>地址:四川省乐山市高新区安港路489号高新孵化园A园9楼910</p>
+					<p style="width: 100%;"><i class="fa fa-clock-o"></i>开放时间：周一至周五 9:00-17:00</p>
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 myFooter_divs">
-				<h5><i class="fa fa-map-marker"></i>地址</h5>
-				<p>四川省乐山市高新区安港路489号高新孵化园A园9楼910</p>
-				<p>开放时间：周一至周五 9:00-17:00</p>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div">
-				<img class="center-block weixingongzhonghao" src="../static/imgs/footer/weixingongzhonghao.jpg" alt="">
+			<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div weixingongzhonghao_div">
+				<img class="weixingongzhonghao" src="../static/imgs/footer/weixingongzhonghao.jpg" alt="">
+				<br><br>
 				<p>微信公众号</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 myFooter_divs myFooter_divs_more">
+			<div class="col-lg-12 col-md-12 col-sm-6 col-xs-12 myFooter_div_more">
 				<p>
-					<span class="myFooter_divs_more_lianjie">
-						友情链接<i class="fa fa-paper-plane-o"></i>
-					</span>
+					<i class="fa fa-paper-plane-o"></i>友情链接
 				</p>
 				<p>
 					<a target="_blank" href="https://www.swjtu.edu.cn/">西南交大</a>
@@ -477,15 +509,74 @@
 					<a target="_blank" href="https://www.daad.org.cn/zh/">德意志学术交流中心( DAAD )</a>
 				</p>
 			</div>
-		</div>
-		<div class="row footer-copyright">
-			<div class="col-md-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright">
 				<p>京公网安备 11010802023866 京ICP备12028606号-1 京ICP证B2-20170629</p>
 				<p>Copyright©2017 Gaosiedu.com,All Rights Reserved 中德科技促进中心 版权所有四川乐山文轨科技股份有限公司</p>
 			</div>
 		</div>
 	</div>
 </footer>
+
+<script>
+	/*$(function () {
+		const url = 'http://192.168.0.108:8888/';
+		$.ajax({
+			type: "GET",
+			url: "http://192.168.0.108:8888/admin/banner/list",
+			dataType: "json",
+			success: function (data) {
+				for (let i = 0; i < data.data.length; i++) {
+					/!*$(".slider .inner a").eq(i).css("background", "url(" + url + data.data[i].img + ") no-repeat center");
+					$(".slider .inner span").eq(i).html(data.data[i].descrip);*!/
+					$(".slider").append(
+						"<div class=\"item\">\n" +
+						"\t\t\t\t\t\t\t<div class=\"inner\">\n" +
+						"\t\t\t\t\t\t\t\t<a href=\"./cooperative_enterprise/enterprise_inspection.html\"\n" +
+						"\t\t\t\t\t\t\t\t   style=\"background:url(" + url + data.data[i].img + ") no-repeat center\"></a>\n" +
+						"\t\t\t\t\t\t\t\t<div class=\"text1\" style=\"\"><span>" + data.data[i].descrip + "</span></div>\n" +
+						"\t\t\t\t\t\t\t</div>\n" +
+						"\t\t\t\t\t\t</div>"
+					);
+					if (i === 0) {
+						$(".slideSelectorsa").append(
+							"<a class=\"item selected\" onfocus=\"undefined\"></a>"
+						);
+						$(".carousel-inner").append(
+							"<div class=\"item active\">\n" +
+							"\t\t\t\t<img class=\"img-responsive center-block\" src=\"" + url + data.data[i].img + "\" alt=\"\">\n" +
+							"\t\t\t\t<div class=\"carousel-caption\">\n" +
+							"\t\t\t\t\t<p>" + data.data[i].descrip + "</p>\n" +
+							"\t\t\t\t</div>\n" +
+							"\t\t\t</div>"
+						);
+						$(".carousel-indicators").append(
+							"<li data-target=\"#carousel-example-generic\" data-slide-to=\""+i+"\" class=\"active\"></li>"
+						)
+					} else {
+						$(".slideSelectorsa").append(
+							"<a class=\"item\" onfocus=\"undefined\"></a>"
+						);
+						$(".carousel-inner").append(
+							"<div class=\"item\">\n" +
+							"\t\t\t\t<img class=\"img-responsive center-block\" src=\"" + url + data.data[i].img + "\" alt=\"\">\n" +
+							"\t\t\t\t<div class=\"carousel-caption\">\n" +
+							"\t\t\t\t\t<p>" + data.data[i].descrip + "</p>\n" +
+							"\t\t\t\t</div>\n" +
+							"\t\t\t</div>"
+						);
+						$(".carousel-indicators").append(
+							"<li data-target=\"#carousel-example-generic\" data-slide-to=\""+i+"\"></li>"
+						)
+					}
+				}
+				$.getScript('../static/js/banner/slider.js');
+			},
+			error: function () {
+				alert("服务器繁忙，请稍后再试！");
+			}
+		});
+	});*/
+</script>
 
 </body>
 </html>
