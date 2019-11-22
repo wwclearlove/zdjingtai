@@ -1,0 +1,137 @@
+/*公共样式*/
+.subnav {
+	width: 100%;
+	background: #1E89DF;
+	margin-top: -40px;
+	position: relative;
+}
+
+.subnav h3 {
+	height: 80px;
+	line-height: 80px;
+	font-size: 2em;
+	text-indent: 30px;
+	color: #fff;
+}
+
+.navcon {
+	background: #eee;
+	border-left: #1E89DF 12px solid;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-weight: normal;
+}
+
+.navcon li {
+	list-style: none;
+	min-height: 52px;
+	padding-left: 30px;
+	position: relative;
+	line-height: 52px;
+	font-size: 16px;
+	border-bottom: #d2d2d2 1px solid;
+}
+
+.navcon li i {
+	display: none;
+	width: 6px;
+	height: 52px;
+	position: absolute;
+	left: -6px;
+	top: 0;
+	background: #f7ab00;
+}
+
+.navcon li a {
+	font-size: 1.4em;
+	color: #1E89DF;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.navcon li.cur {
+	background: #fff;
+}
+
+.navcon li.cur i {
+	display: block;
+}
+
+.navcon li:hover {
+	background: #fff;
+}
+
+.navcon li:hover i {
+	display: block;
+}
+
+.article {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.article h3 {
+	padding: 14px 0;
+	font-size: 2.1em;
+	color: #1E89DF;
+	border-bottom: #d2d2d2 1px solid;
+}
+
+.article .art_con {
+	width: 100%;
+	font-size: 14px;
+	overflow: hidden;
+	line-height: 24px;
+	text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+.article .art_con p {
+	padding: 8px 0;
+	font-size: 1.4em;
+	line-height: 2em;
+	text-indent: 2em;
+}
+
+@media (max-width: 767px) {
+	.subnav {
+		margin-top: 30px;
+	}
+}
+
+/*语言中心*/
+.zhongdejiaoyuhezuo {
+	margin-bottom: 100px;
+}
+
+.zhongdejiaoyuhezuo_info {
+	min-height: 500px;
+}
+
+.zhongdejiaoyuhezuo_info a {
+	text-decoration: none;
+}
+
+.zhongdejiaoyuhezuo_info table th {
+	text-align: center;
+	color: white;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	background-color: #157BBB;
+}
+
+.zhongdejiaoyuhezuo_info table td {
+	font-size: 1.3em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+	border: 1px solid #b2b2b2;
+}

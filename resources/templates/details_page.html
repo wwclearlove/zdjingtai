@@ -24,6 +24,15 @@
 				urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
 			}
 			alert(urlResult[0] + "==" + urlResult[1]+ "==" + urlResult[2]);
+			//Search
+			$(".search_a").click(function () {
+				var search = $(".search_input").val();
+				if (search !== "") {
+					location.href = "./search_details_page.html?search=" + search;
+				} else {
+					alert("请输入关键词");
+				}
+			});
 		})
 	</script>
 </head>

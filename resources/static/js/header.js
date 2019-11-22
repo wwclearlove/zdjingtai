@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	/*时间*/
+	setInterval(function () {
+		$("#times").html(new Date().toLocaleString());
+	}, 1000);
 	/*导航*/
 	$(function () {
 		$(".header").after(
@@ -142,10 +146,7 @@ $(document).ready(function () {
 	$(".modal-content").click(function () {
 		$('#myModal').modal('hide');
 	});*/
-	/*时间*/
-	setInterval(function () {
-		$("#times").html(new Date().toLocaleString());
-	}, 1000);
+
 });
 
 

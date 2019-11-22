@@ -17,6 +17,7 @@
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/newsList.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 	<script type="text/javascript" src="../../static/js/banner/bdtxk7.js"></script>
 	<script type="text/javascript" src="../../static/js/banner/slider.js"></script>
@@ -25,7 +26,7 @@
 		$(function () {
 			$(".li-cate-1").eq(2).addClass("active");
 		});
-		$(document).ready(function () {
+		/*$(document).ready(function () {
 			const moduleUl = $(".module-tab-box-ma");
 			const moduleTabNav = $(".module-tab-nav li");
 			for (let i = 0; i < moduleTabNav.length; i++) {
@@ -41,7 +42,7 @@
 					moduleUl.eq(this.index).show();
 				});
 			}
-		});
+		});*/
 	</script>
 </head>
 <body>
@@ -73,7 +74,7 @@
 						<div class="item">
 							<div class="inner">
 								<a href="javascript:void (0)"
-								   style="background:url(../../static/imgs/index/kypt.jpg) no-repeat center;background-size: cover;"></a>
+								   style="background:url(../../static/imgs/background_img.jpg) no-repeat center;background-size: cover;"></a>
 								<div class="text1" style=""><span>科研合作</span></div>
 							</div>
 						</div>
@@ -134,7 +135,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img class="img-responsive center-block" src="../../static/imgs/index/kypt.jpg" alt="">
+				<img class="img-responsive center-block" src="../../static/imgs/background_img.jpg" alt="">
 				<div class="carousel-caption">
 					<p>科研合作</p>
 				</div>
@@ -1065,7 +1066,7 @@
 						<h3>活动计划</h3>
 					</div>
 					<ul class="module-tab-nav">
-						<li class="on">
+						<li>
 							<i class="fa fa-location-arrow"></i>
 							<span>科技合作</span>
 						</li>
@@ -1086,12 +1087,13 @@
 				<div class="module-banner-tab-list-box bd" style="min-height: 400px;">
 					<div class="module-tab-box-ma module_ul1" style="display: block;">
 						<div class="module-tab-box-ma_Div">
-							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">科技合作</h3>
+							<h3>活动计划</h3>
 						</div>
 						<div>
 							<table border="1" class="table table-hover table-bordered">
 								<thead>
 								<tr>
+									<th>活动类型</th>
 									<th>活动</th>
 									<th>时间</th>
 									<th>地点</th>
@@ -1100,33 +1102,87 @@
 								</thead>
 								<tbody>
 								<tr>
-									<td>活动的名称</td>
-									<td>活动的时间</td>
-									<td>活动的地点</td>
-									<td>活动的备注</td>
+									<td>中德教育合作</td>
+									<td>第二期沙龙</td>
+									<td>12月下旬</td>
+									<td>乐山高新区孵化园俱乐部</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>中德教育合作</td>
+									<td>第一期冬令营</td>
+									<td>1月中旬</td>
+									<td>德国</td>
+									<td></td>
 								</tr>
 								</tbody>
 							</table>
+						</div>
+					</div>
+					<div class="module-tab-box-ma module_ul1" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">科技合作</h3>
+						</div>
+						<div>
+							<h3 style="text-align: center;">暂无活动</h3>
 						</div>
 					</div>
 					<div class="module-tab-box-ma module_ul2" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/jiaoyu.png" alt="">教育合作</h3>
 						</div>
+						<div>
+							<table border="1" class="table table-hover table-bordered">
+								<thead>
+								<tr>
+									<th>活动类型</th>
+									<th>活动</th>
+									<th>时间</th>
+									<th>地点</th>
+									<th>备注</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>中德教育合作</td>
+									<td>第二期沙龙</td>
+									<td>12月下旬</td>
+									<td>乐山高新区孵化园俱乐部</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>中德教育合作</td>
+									<td>第一期冬令营</td>
+									<td>1月中旬</td>
+									<td>德国</td>
+									<td></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 					<div class="module-tab-box-ma module_ul3" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">企业合作</h3>
+						</div>
+						<div>
+							<h3 style="text-align: center;">暂无活动</h3>
 						</div>
 					</div>
 					<div class="module-tab-box-ma module_ul4" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/yuyan.png" alt="">语言中心</h3>
 						</div>
+						<div>
+							<h3 style="text-align: center;">暂无活动</h3>
+						</div>
 					</div>
 					<div class="module-tab-box-ma module_ul3" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">合作资源</h3>
+						</div>
+						<div>
+							<h3 style="text-align: center;">暂无活动</h3>
 						</div>
 					</div>
 				</div>

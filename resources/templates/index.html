@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>首页</title>
+	<title>中德科技</title>
 	<link rel="shortcut icon" type="images/x-icon" href="../static/imgs/logoIcon.png">
 	<link rel="stylesheet" href="../static/css/bootstrap.css">
 	<link rel="stylesheet" href="../static/css/font-awesome.css"/>
@@ -25,18 +25,6 @@
 	<script type="text/javascript" src="../static/js/banner/bdtxk7.js"></script>
 	<script type="text/javascript" src="../static/js/banner/slider.js"></script>
 	<script type="text/javascript" src="../static/js/banner/jquery.iosslider.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".search_a").click(function () {
-				var search = $(".search_input").val();
-				if (search !== "") {
-					location.href = "./search_details_page.html?search=" + search;
-				} else {
-					alert("请输入关键词");
-				}
-			})
-		})
-	</script>
 </head>
 <body>
 
@@ -189,7 +177,7 @@
 						<div class="item">
 							<div class="inner">
 								<a href="javascript:void (0)"
-								   style="background:url(../static/imgs/invertment_text/invertment_text5.jpg) no-repeat center;background-size: cover;"></a>
+								   style="background:url(./banner01.jpg) no-repeat center;background-size: cover;"></a>
 								<div class="text1" style=""><span>德国模式--民营中小企业的学习典范</span></div>
 							</div>
 						</div>
@@ -203,7 +191,7 @@
 						<div class="item">
 							<div class="inner">
 								<a href="javascript:void (0)"
-								   style="background:url(../static/imgs/index/kypt.jpg) no-repeat center;background-size: cover;"></a>
+								   style="background:url(../static/imgs/background_img.jpg) no-repeat center;background-size: cover;"></a>
 								<div class="text1" style=""><span>科研合作</span></div>
 							</div>
 						</div>
@@ -265,7 +253,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img class="img-responsive center-block" src="../static/imgs/index/kypt.jpg" alt="">
+				<img class="img-responsive center-block" src="../static/imgs/background_img.jpg" alt="">
 				<div class="carousel-caption">
 					<p>科研合作</p>
 				</div>
@@ -299,7 +287,7 @@
 		<div class="topicnews__base" data-component="topicnews">
 			<div class="topicnews__header">
 				<h2 class="topicnews__headline font--bold">热点新闻</h2>
-				<a href="#" class="topicnews__link">
+				<a href="./newsactivity/news_list.html" class="topicnews__link">
                     <span class="glyphicon-menu-right glyphicon">
                         <span>更多</span>
                   </span>
@@ -308,7 +296,7 @@
 			<div class="slider topicnews__slider">
 				<div class="newsteaser__base newsteaser--large">
 					<div class="newsteaser__wrapper">
-						<a href="cooperative_enterprise/enterprise_inspection.html">
+						<a href="./cooperative_enterprise/enterprise_inspection.html">
 							<div class="newsteaser__imageBlock newsteaser__imageBlock--large">
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
@@ -464,7 +452,7 @@
 			</div>
 			<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12 myFooter_divs">
 				<div>
-					<p><i class="fa fa-phone"></i>手机：18728871721</p>
+					<p><i class="fa fa-phone"></i>手机：18384651575</p>
 					<p><i class="fa fa-volume-control-phone"></i>座机：0833-2595989</p>
 					<p><i class="fa fa-envelope-o"></i>邮箱：lszdkc@163.com</p>
 				</div>
@@ -517,66 +505,59 @@
 	</div>
 </footer>
 
-<script>
-	/*$(function () {
-		const url = 'http://192.168.0.108:8888/';
+<!--<script>
+	$(function () {
+		//Search
+		$(".search_a").click(function () {
+			var search = $(".search_input").val();
+			if (search !== "") {
+				location.href = "./search_details_page.html?search=" + search;
+			} else {
+				alert("请输入关键词");
+			}
+		});
+		//Banner
+		const url = 'http://106.52.3.235:8888/';
 		$.ajax({
 			type: "GET",
-			url: "http://192.168.0.108:8888/admin/banner/list",
+			url: url + "banner/list",
 			dataType: "json",
 			success: function (data) {
 				for (let i = 0; i < data.data.length; i++) {
-					/!*$(".slider .inner a").eq(i).css("background", "url(" + url + data.data[i].img + ") no-repeat center");
-					$(".slider .inner span").eq(i).html(data.data[i].descrip);*!/
-					$(".slider").append(
-						"<div class=\"item\">\n" +
-						"\t\t\t\t\t\t\t<div class=\"inner\">\n" +
-						"\t\t\t\t\t\t\t\t<a href=\"./cooperative_enterprise/enterprise_inspection.html\"\n" +
-						"\t\t\t\t\t\t\t\t   style=\"background:url(" + url + data.data[i].img + ") no-repeat center\"></a>\n" +
-						"\t\t\t\t\t\t\t\t<div class=\"text1\" style=\"\"><span>" + data.data[i].descrip + "</span></div>\n" +
-						"\t\t\t\t\t\t\t</div>\n" +
-						"\t\t\t\t\t\t</div>"
-					);
-					if (i === 0) {
-						$(".slideSelectorsa").append(
-							"<a class=\"item selected\" onfocus=\"undefined\"></a>"
-						);
-						$(".carousel-inner").append(
-							"<div class=\"item active\">\n" +
-							"\t\t\t\t<img class=\"img-responsive center-block\" src=\"" + url + data.data[i].img + "\" alt=\"\">\n" +
-							"\t\t\t\t<div class=\"carousel-caption\">\n" +
-							"\t\t\t\t\t<p>" + data.data[i].descrip + "</p>\n" +
-							"\t\t\t\t</div>\n" +
-							"\t\t\t</div>"
-						);
-						$(".carousel-indicators").append(
-							"<li data-target=\"#carousel-example-generic\" data-slide-to=\""+i+"\" class=\"active\"></li>"
-						)
-					} else {
-						$(".slideSelectorsa").append(
-							"<a class=\"item\" onfocus=\"undefined\"></a>"
-						);
-						$(".carousel-inner").append(
-							"<div class=\"item\">\n" +
-							"\t\t\t\t<img class=\"img-responsive center-block\" src=\"" + url + data.data[i].img + "\" alt=\"\">\n" +
-							"\t\t\t\t<div class=\"carousel-caption\">\n" +
-							"\t\t\t\t\t<p>" + data.data[i].descrip + "</p>\n" +
-							"\t\t\t\t</div>\n" +
-							"\t\t\t</div>"
-						);
-						$(".carousel-indicators").append(
-							"<li data-target=\"#carousel-example-generic\" data-slide-to=\""+i+"\"></li>"
-						)
-					}
+					//banner1
+					$(".slider .inner a").eq(i).css("background", "url(" + url + data.data[i].img + ") no-repeat center");
+					$(".slider .inner span").eq(i).html(data.data[i].descrip);
+					//banner2
+					$(".carousel-inner .item img").eq(i).attr("src", data.data[i].img);
+					$(".carousel-inner .item .carousel-caption p").eq(i).html(data.data[i].descrip);
 				}
-				$.getScript('../static/js/banner/slider.js');
 			},
 			error: function () {
 				alert("服务器繁忙，请稍后再试！");
 			}
 		});
-	});*/
-</script>
+		//News
+		$.ajax({
+			type: "GET",
+			url: url + "news/topic",
+			dataType: "json",
+			success: function (data) {
+				for (let i = 0; i < data.data.length; i++) {
+
+				}
+			},
+			error: function () {
+				alert("服务器繁忙，请稍后再试！");
+			}
+		});
+		//新闻跳转
+		for (let i = 0; i < $(".newsteaser__wrapper a").length; i++) {
+			$(".newsteaser__wrapper a").click(function () {
+				$(".newsteaser__wrapper a").attr("href","./cooperative_enterprise/enterprise_inspection.html");
+			})
+		}
+	});
+</script>-->
 
 </body>
 </html>

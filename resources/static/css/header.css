@@ -142,7 +142,6 @@ html {
 /*二级高亮*/
 .header .nav-bar ul li > ul {
 	top: 120%;
-	left: 0;
 	opacity: 0;
 	width: 100%;
 	z-index: 888;
@@ -353,7 +352,7 @@ em {
 	height: 40px;
 	position: fixed;
 	z-index: 1025;
-	background-color: #1E89DF;
+	background-image: linear-gradient(to right,#1E89DF, #8eb7df);
 }
 
 .languageSearch .language {

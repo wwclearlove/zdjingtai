@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>搜索页面展示</title>
+	<title>中德科技</title>
 	<link rel="shortcut icon" type="images/x-icon" href="../static/imgs/logoIcon.png">
 	<link rel="stylesheet" href="../static/css/bootstrap.css">
 	<link rel="stylesheet" href="../static/css/font-awesome.css"/>
@@ -23,15 +23,15 @@
 			for (var j = 0; j < arrUrl.length; j++) {
 				urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
 			}
-			/*$.ajax({
+			alert(urlResult[0]);
+			$.ajax({
 				type: 'GET',
-				url: 'http://192.168.0.100:8888/search/list?search='+urlResult[0],
-				dataType: 'text',
+				url: 'http://106.52.3.235:8888/search/list?search=2019',
+				dataType: 'json',
 				success: function (data) {
-					//alert(JSON.stringify(data));
-					$("#p").html(data);
+					console.log(data.data)
 				}
-			});*/
+			});
 		})
 	</script>
 </head>

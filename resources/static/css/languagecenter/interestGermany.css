@@ -97,8 +97,8 @@
 	line-height: 60px;
 	margin: 0;
 	float: left;
-	font-size: 1.4em;
-	letter-spacing: 1px;
+	overflow: hidden;
+	font-size: 1.2em;
 }
 
 .module-tab-title_DivSon_time {
@@ -111,6 +111,12 @@
 .module-tab-box-ma_Divs {
 	float: right;
 	padding: 40px;
+}
+
+@media (max-width: 991px) {
+	.module-tab-box-ma_Divs {
+		padding-top: 100px;
+	}
 }
 
 @media (max-width: 600px) {
@@ -137,7 +143,8 @@
 	.module-tab-title_DivSon_time {
 		font-size: 0.6em;
 	}
-	.module-tab-box-ma_Divs {
-		padding-top: 80px;
+	.interesGermany_list {
+		margin: 0 10px;
 	}
+
 }

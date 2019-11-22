@@ -122,6 +122,12 @@ h2.heading {
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
 }
 
+@media (max-width: 1920px) {
+   /* .shangwudeyuImg{
+        width: 20%;
+    }*/
+}
+
 .border-shape {
     background: #c0c0c0;
     display: block;
