@@ -3,7 +3,7 @@ document.writeln("	<div class=\'container\'>");
 document.writeln("		<div class=\'row\'>");
 document.writeln("			<div class=\'col-lg-3 col-md-3 col-sm-6 col-xs-12 myFooter_div\'>");
 document.writeln("				<a href=\'../index.html\' class=\'myFooter_logo\' title=\'中德科技\'>");
-document.writeln("					<img class=\'myFooter_div_logo\' src=\'../../static/imgs/logoxlwm.png\' alt=\'\'>");
+document.writeln("					<img class=\'myFooter_div_logo\' src=\'../../static/imgs/logoFooter.png\' alt=\'\'>");
 document.writeln("				</a>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-7 col-md-7 col-sm-6 col-xs-12 myFooter_divs\'>");

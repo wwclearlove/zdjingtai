@@ -18,13 +18,42 @@
 	<script type="text/javascript" src="../../static/js/createMaps.js"></script>
 	<script type="text/javascript" src="../../static/js/maps.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<!--<script>
+		$(document).ready(function () {
+			$("#submitInfo").click(function () {
+				const name = $("#from_name").val();
+				const email = $("#from_email").val();
+				const phone = $("#from_phone").val();
+				let comments = $("#comments").val();
+				if (name !== "" && email !== "" && phone !== "") {
+					if (comments === ""){
+						comments = "无评论";
+					}
+					alert(name + '==' + email + "==" + phone + "==" + comments);
+					$.ajax({
+						type: "POST",
+						url: "?name=" + name + "&email=" + email + "&phone=" + phone + "comments=" + comments,
+						dataType: "json",
+						success: function (data) {
+							alert("信息发送成功，请耐心等待我们的回复。");
+							window.location.reload();
+						},
+						error: function () {
+							alert("服务器繁忙，请稍后再试！");
+						}
+					});
+				}
+			})
+		})
+	</script>-->
 </head>
 <body>
 
 <section class="aboutUs">
 	<div class="container-fluid">
 		<div class="row">
-			<img class="img-responsive center-block" src="../../static/imgs/aboutUs/contactUs/about.png" width="100%" alt=""/>
+			<img class="img-responsive center-block" src="../../static/imgs/aboutUs/contactUs/about.png" width="100%"
+				 alt=""/>
 		</div>
 	</div>
 	<div class="container" style="padding-bottom: 50px;">
@@ -55,7 +84,8 @@
 							</p>
 						</div>
 						<div class="col-md-10 col-md-offset-1">
-							<img style="border-radius: 50%;" class="img-responsive center-block" src="../../static/imgs/aboutUs/contactUs/mubiao.png" alt="目标">
+							<img style="border-radius: 50%;" class="img-responsive center-block"
+								 src="../../static/imgs/aboutUs/contactUs/mubiao.png" alt="目标">
 						</div>
 					</div>
 					<h2 class="commonality_title">
@@ -71,25 +101,30 @@
 									</fieldset>
 									<div class="form-group has-feedback">
 										<label for="from_name">姓名</label>
-										<input class="form-control" type="text" name="from_name" required="" placeholder="请输入姓名"
+										<input class="form-control" type="text" name="from_name" required=""
+											   placeholder="请输入姓名"
 											   id="from_name" tabindex="-1">
 									</div>
 									<div class="form-group has-feedback">
 										<label for="from_email">邮箱</label>
-										<input class="form-control" type="email" name="from_email" required="" placeholder="请输入邮箱"
+										<input class="form-control" type="email" name="from_email" required=""
+											   placeholder="请输入邮箱"
 											   id="from_email">
 									</div>
 									<div class="form-group has-feedback">
 										<label for="from_phone">电话</label>
-										<input class="form-control" type="text" name="from_phone" placeholder="请输入电话号码" id="from_phone">
+										<input class="form-control" type="text" name="from_name" required=""
+											   placeholder="请输入电话号码"
+											   id="from_phone" tabindex="-1">
 									</div>
 									<div class="form-group">
 										<label for="comments">评论</label>
 										<textarea class="form-control" rows="5" name="Comments" placeholder="在这里输入评论"
 												  id="comments"></textarea></div>
 									<div class="form-group">
-										<button class="btn btn-primary btn-block" type="submit">
-											发送&nbsp;&nbsp;<i class="fa fa-chevron-circle-right" style="color: white;"></i>
+										<button class="btn btn-primary btn-block" id="submitInfo" type="submit">
+											发送&nbsp;&nbsp;<i class="fa fa-chevron-circle-right"
+															 style="color: white;"></i>
 										</button>
 									</div>
 									<hr>
@@ -100,7 +135,8 @@
 											<fieldset>
 												<legend><i class="fa fa-phone"></i> 联系我们</legend>
 											</fieldset>
-											<div><span><strong>手机：</strong>总负责人: 陆主任--18384651575 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 语言中心负责人: 余主任--18383359630</span></div>
+											<div><span><strong>手机：</strong>总负责人: 陆主任--18384651575 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 语言中心负责人: 余主任--18383359630</span>
+											</div>
 											<div><span><strong>座机：</strong>0833-2595989</span></div>
 											<div><span><strong>邮箱：</strong>lszdkc@163.com</span></div>
 											<hr>
@@ -134,101 +170,6 @@
 			</div>
 		</div>
 	</div>
-	<!--<div class="container" style="padding-top: 50px;">
-		<div class="row">
-			<div class="col-md-12">
-				<img class="img-responsive center-block" src="../../static/imgs/aboutUs/logoxlwm.png" width="30%" alt="">
-			</div>
-		</div>
-	</div>
-	<div class="container" style="padding-top: 100px;">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 developtargetDiv">
-				<br><br>
-				<h3>以中德科技合作助力中国企业对标德国4.0</h3>
-				<h3>以中德教育合作批量培养国际化人才</h3>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 developtargetDivs">
-				<img src="../../static/imgs/aboutUs/contactUs/mubiao.png" class="img-responsive" alt="目标">
-			</div>
-		</div>
-	</div>
-	<div class="container" style="padding-top: 100px;">
-		<div class="col-md-12">
-			<div class="sec-title">
-				<h1 class="commonality_title">联系方式</h1>
-				<div class="border-shape"></div>
-			</div>
-		</div>
-	</div>
-	<div class="container" style="padding-top: 100px;">
-		<form action="javascript:void(0);" method="get" id="contactForm">
-			<div class="form-row" id="contact_us">
-				<div class="col-md-6" id="message">
-					<fieldset>
-						<legend><i class="fa fa-envelope"></i> 联系我们</legend>
-					</fieldset>
-					<div class="form-group has-feedback">
-						<label for="from_name">姓名</label>
-						<input class="form-control" type="text" name="from_name" required="" placeholder="请输入姓名"
-							   id="from_name" tabindex="-1">
-					</div>
-					<div class="form-group has-feedback">
-						<label for="from_email">邮箱</label>
-						<input class="form-control" type="email" name="from_email" required="" placeholder="请输入邮箱"
-							   id="from_email">
-					</div>
-					<div class="form-group has-feedback">
-						<label for="from_phone">电话</label>
-						<input class="form-control" type="text" name="from_phone" placeholder="请输入电话号码" id="from_phone">
-					</div>
-					<div class="form-group">
-						<label for="comments">评论</label>
-						<textarea class="form-control" rows="5" name="Comments" placeholder="在这里输入评论"
-								  id="comments"></textarea></div>
-					<div class="form-group">
-						<button class="btn btn-primary btn-block" type="submit">
-							发送&nbsp;&nbsp;<i class="fa fa-chevron-circle-right" style="color: white;"></i>
-						</button>
-					</div>
-					<hr>
-				</div>
-				<div class="col-md-6 lxwm_content">
-					<div class="form-row">
-						<div class="col-md-12 col-sm-12">
-							<fieldset>
-								<legend><i class="fa fa-phone"></i> 联系我们</legend>
-							</fieldset>
-							<div><span><strong>手机：</strong>总负责人: 陆主任&#45;&#45;18384651575 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 语言中心负责人: 余主任&#45;&#45;18383359630</span></div>
-							<div><span><strong>座机：</strong>0833-2595989</span></div>
-							<div><span><strong>邮箱：</strong>lszdkc@163.com</span></div>
-							<hr>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<fieldset>
-								<legend><i class="fa fa-map-marker"></i> 联系地址</legend>
-							</fieldset>
-							<div><span><strong>办公室</strong></span></div>
-							<div><span>四川省乐山市高新区安港路489号高新孵化园A园9楼910</span></div>
-							<div><span><strong>开放时间</strong></span></div>
-							<div><span>周一至周五 9:00-17:00</span></div>
-							<hr>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-xs-12">
-					<fieldset>
-						<legend><i class="fa fa-location-arrow"></i> 找到我们</legend>
-					</fieldset>
-					<div class="row">
-						<div class="col-md-12" id="maps">
-							<div id="container"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
-	</div>-->
 </section>
 
 <footer id="myFooter">
@@ -236,10 +177,11 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 myFooter_div">
 				<a href="../index.html" class="myFooter_logo" title="中德科技">
-					<img class="myFooter_div_logo" src="../../static/imgs/logoxlwm.png" alt="">
+					<img class="myFooter_div_logo" src="../../static/imgs/logoFooter.png" alt="">
 				</a>
 			</div>
-			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 myFooter_divs myFooter_div_more" style="margin-top: 20px;">
+			<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 myFooter_divs myFooter_div_more"
+				 style="margin-top: 20px;">
 				<p>
 					<i class="fa fa-paper-plane-o"></i>友情链接
 				</p>
