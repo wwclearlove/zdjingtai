@@ -18,7 +18,7 @@ document.writeln("					<p style=\'width: 100%;\'><i class=\'fa fa-clock-o\'></i>
 document.writeln("				</div>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-2 col-md-2 col-sm-6 col-xs-12 myFooter_div weixingongzhonghao_div\'>");
-document.writeln("				<img class=\'weixingongzhonghao\' src=\'../../../static/imgs/footer/weixingongzhonghao.jpg\' alt=\'\'>");
+document.writeln("				<img class=\'weixingongzhonghao\' src=\'../../../static/imgs/weixingongzhonghao.jpg\' alt=\'\'>");
 document.writeln("				<br><br>");
 document.writeln("				<p>微信公众号</p>");
 document.writeln("			</div>");

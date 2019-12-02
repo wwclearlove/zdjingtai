@@ -12,6 +12,7 @@ $(document).ready(function () {
 			}
 			$(this).addClass("on");
 			moduleUl.eq(this.index + 1).show();
+			$(".paging").show();
 		});
 	}
 	$(".news_list_Div").click(function () {
@@ -22,5 +23,6 @@ $(document).ready(function () {
 			moduleTabNav.eq(i).removeClass("on");
 		}
 		moduleUl.eq(0).show();
+		$(".paging").show();
 	});
 });

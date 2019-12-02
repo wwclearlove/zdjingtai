@@ -76,7 +76,7 @@ $(document).ready(function () {
 			$("body").removeClass("open");
 		});
 	});
-	/*导航*/
+	/*导航透明*/
 	const opacity = 0.9;
 	const opacitys = 1;
 	const clientWidth = document.body.clientWidth;
@@ -95,47 +95,10 @@ $(document).ready(function () {
 	$(".li-cate_a").eq(6).css("width", "146px");
 	/*公共背景色*/
 	$("body").css("background-color", "#e6e6e6");
-	/*页面头部高亮*/
-	var date = new Date();
-	date.setTime(date.getTime() + 60 * 1000);
-	let liCateA = $(".li-cate_a");
-	for (let i = 0; i < liCateA.length; i++) {
-		liCateA[i].index = i;
-		liCateA.eq(i).click(function () {
-			$.cookie('active', this.index, {path: '/', expires: date});
-		});
-	}
-	/*let subdirectories01 = $(".subdirectories01");
-	for (let s = 0; s < subdirectories01.length; s++) {
-		subdirectories01.eq(s).click(function () {
-			$.cookie('active', "5", {path: '/', expires: date});
-		})
-	}*/
-	let subdirectories02 = $(".subdirectories02");
-	for (let s = 0; s < subdirectories02.length; s++) {
-		subdirectories02.eq(s).click(function () {
-			$.cookie('active', "5", {path: '/', expires: date});
-		})
-	}
-	let subdirectories03 = $(".subdirectories03");
-	for (let s = 0; s < subdirectories03.length; s++) {
-		subdirectories03.eq(s).click(function () {
-			$.cookie('active', "6", {path: '/', expires: date});
-		})
-	}
-	let subdirectories04 = $(".subdirectories04");
-	for (let s = 0; s < subdirectories04.length; s++) {
-		subdirectories04.eq(s).click(function () {
-			$.cookie('active', "7", {path: '/', expires: date});
-		})
-	}
-	let subdirectories05 = $(".subdirectories05");
-	for (let s = 0; s < subdirectories05.length; s++) {
-		subdirectories05.eq(s).click(function () {
-			$.cookie('active', "8", {path: '/', expires: date});
-		})
-	}
-	$(".li-cate-1").eq($.cookie('active')).addClass("active");
+	/*添加网页头部Icon*/
+	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../static/imgs/logoIcon.png\">");
+	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../../static/imgs/logoIcon.png\">");
+	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../../../static/imgs/logoIcon.png\">");
 
 	/*图片查看大图*/
 	/*$("section div img").click(function () {
@@ -146,7 +109,4 @@ $(document).ready(function () {
 	$(".modal-content").click(function () {
 		$('#myModal').modal('hide');
 	});*/
-
 });
-
-

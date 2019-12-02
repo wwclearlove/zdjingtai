@@ -68,20 +68,51 @@
 	text-align: center;
 }
 
-.what-we-do-crousel-sec div .item p {
-	color: #333333;
-	line-height: 2em;
-	letter-spacing: 1px;
-	text-indent: 2em;
-	font-size: 1.4em;
-	display: block;
-	max-height: 200px;
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 5;
-	text-overflow: ellipsis;
-	-webkit-box-orient: vertical;
+@media (min-width: 1301px) {
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		letter-spacing: 1px;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		max-height: 230px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 7;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+	}
 }
+
+@media (min-width: 768px) and (max-width: 1300px){
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		letter-spacing: 1px;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		max-height: 220px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media (max-width: 767px) {
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		margin-bottom: 50px;
+	}
+}
+
 
 .what-we-do-crousel-sec .what-we-do-button {
 	color: #0cb1f6;
@@ -89,6 +120,11 @@
 	width: 50px;
 	height: 50px;
 	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	transition: all 0.3s;
 	display: inline-block;
 	background: #f8f8f8;
@@ -133,6 +169,11 @@
 	text-align: center;
 	padding: 20px 0;
 	cursor: pointer;
+}
+
+a:hover, a:focus {
+	color: #23527c;
+	text-decoration: none;
 }
 
 .technology-platform_title .sec-title h1 {
@@ -197,10 +238,6 @@
 	.what-we-do-crousel-sec div .item p {
 		line-height: 1.5em;
 		font-size: 1.1em;
-	}
-
-	.what-we-do-crousel-sec div .item {
-		max-height: 450px;
 	}
 
 	.what-we-do-crousel-sec div .item img {

@@ -97,3 +97,7 @@
 	width: 200px;
 	margin: 0 auto;
 }
+
+.module-tab-box-ma table td {
+	text-align: left;
+}

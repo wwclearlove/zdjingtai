@@ -544,9 +544,21 @@ em {
 	}
 }
 
-@media (max-width: 1346px) and (min-width: 1025px) {
+@media (max-width: 1496px) and (min-width: 1025px) {
 	#title {
 		height: 220px;
+	}
+	.header .nav-bar {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 1140px) and (min-width: 1025px) {
+	.header .nav-bar li a {
+		padding: 0 10px;
+	}
+	.header .nav-bar {
+		margin-left: -50px;
 	}
 }
 
@@ -556,7 +568,7 @@ em {
 	text-align: center;
 	letter-spacing: 5px;
 	font-family: "STSong", 华文宋体,serif;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 @media (min-width: 1600px) {

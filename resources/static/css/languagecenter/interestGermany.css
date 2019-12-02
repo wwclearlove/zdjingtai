@@ -98,14 +98,16 @@
 	margin: 0;
 	float: left;
 	overflow: hidden;
-	font-size: 1.2em;
+	font-size: 1.4em;
 }
 
 .module-tab-title_DivSon_time {
 	color: #999999;
 	font-size: 1em;
 	line-height: 60px;
-	float: right;
+	right: 0;
+	margin-right: 30px;
+	position: absolute;
 }
 
 .module-tab-box-ma_Divs {

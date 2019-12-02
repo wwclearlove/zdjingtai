@@ -10,141 +10,83 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/header.css" type="text/css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css" type="text/css"/>
+	<link rel="stylesheet" href="../../static/css/china_education/china_education.css" type="text/css"/>
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<style type="text/css">
-		.sec-title .border-shape {
-			background: #c6c6c6;
-			display: block;
-			height: 1px;
-			left: 0;
-			margin: 20px auto;
-			position: relative;
-			right: 0;
-			top: 0;
-			width: 300px;
-		}
-
-		.sec-title .border-shape::before {
-			background: #c6c6c6 none repeat scroll 0 0;
-			bottom: 0;
-			content: "";
-			height: 1px;
-			position: absolute;
-			top: 3px;
-			width: 200px;
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-		}
-
-		.sec-title .border-shape::after {
-			background: #c6c6c6 none repeat scroll 0 0;
-			bottom: 0;
-			content: "";
-			height: 1px;
-			position: absolute;
-			left: 0;
-			right: 0;
-			text-align: center;
-			top: 6px;
-			width: 100px;
-			margin: 0 auto;
-		}
-
-		.liuxue_info img{
-			border-radius: 5px;
-		}
-
-		.liuxue_info_p{
-			padding: 15px;
-			color: #333333;
-			text-align: center;
-			border-radius: 5px;
-		}
-
-		.liuxue_info p {
-			letter-spacing: 2px;
-			line-height: 2em;
-			font-size: 1.4em;
-		}
-
-		.liuxue_info_div{
-			width: 100%;
-			margin: 10px 5px 10px 5px;
-			padding: 20px;
-			border-radius: 10px;
-			background-color: white;
-			border: 2px solid white;
-			box-shadow: 5px 5px #999999;
-		}
-
-		.liuxue_info_div:hover{
-			border: 2px solid #1E89DF;
-		}
-
-		@media (min-width: 769px) {
-			.liuxue_info_div{
-				min-height: 450px;
-			}
-		}
-
-		@media (max-width: 768px) {
-			.liuxue_info p {
-				line-height: 1.5em;
-				font-size: 1.2em;
-			}
-		}
-	</style>
+	<script>
+		$(function () {$(".li-cate-1").eq(5).addClass("active");})
+	</script>
 </head>
 <body>
 
 <section>
-	<img class="img-responsive center-block" src="../../static/imgs/index/banner3.png" width="100%" alt="">
-	<div class="container liuxue">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 liuxue_info" style="padding: 50px 0;">
-				<div class="sec-title">
-					<h1 class="commonality_title">留学服务</h1>
-					<div class="border-shape"></div>
+			<img class="img-responsive center-block" src="../../static/imgs/background_img.jpg" width="100%" alt="">
+		</div>
+	</div>
+	<div class="container zhongdejiaoyuhezuo">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 zhongdejiaoyuhezuo_title">
+				<div class="subnav">
+					<a href="./zhongdejiaoyuhezuo.html" style="text-decoration: none;">
+						<h3 style="margin: 0;">中德教育合作</h3>
+					</a>
+					<ul class="navcon">
+						<li><i></i><a href="./zhongdejiaoyuhezuo.html">简介</a></li>
+						<li class="cur"><i></i><a href="./liuxue.html">留学服务</a></li>
+						<li><i></i><a href="./youxue.html">游学访问</a></li>
+						<li><i></i><a href="./zhongdexueyuan.html">中德学院建设</a></li>
+						<li><i></i><a href="./shuangyuanzhiidaxue.html">双元制大学建设</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-md-12 liuxue_info" style="padding-bottom: 50px;">
-				<p class="liuxue_info_p">为深化中德两国，在科技和教育领域上的合作，本中心为广大师生、院校、企业等提供多个合作服务。</p>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 liuxue_info">
-				<div class="liuxue_info_div">
-					<p style="text-align: center;"><b>为个人提供留学个人相关服务</b><br>例如：</p>
-					<p>1、留学咨询与建议</p>
-					<p>2、留学相关程序的协助</p>
-					<p>3、德国大学申请材料的准备</p>
-					<p>4、提供德语培训课程</p>
+			<div class="col-lg-9 col-md-9 col-sm-9 zhongdejiaoyuhezuo_info">
+				<div class="article">
+					<h3>留学服务</h3>
+					<div class="art_con">
+						<p>为深化中德两国，在科技和教育领域上的合作，本中心为广大师生、院校、企业等提供多个合作服务。</p>
+						<br>
+						<div class="row" style="padding-right: 10px">
+							<div class="col-lg-12 col-md-6 col-sm-6 liuxue_info">
+								<div class="liuxue_info_div">
+									<p style="text-align: center;"><b>留学个人相关服务</b></p>
+									<p>1、留学咨询与建议</p>
+									<p>2、留学相关程序的协助</p>
+									<p>3、德国大学申请材料的准备</p>
+									<p>4、提供德语培训课程</p>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-sm-6 liuxue_info">
+								<div class="liuxue_info_div">
+									<p style="text-align: center;"><b>留学院校相关服务</b></p>
+									<p>1、促成中方院校与德国大学（综合性大学、应用科学大学、双元制大学等）在留学等交换项目上的合作</p>
+									<p>2、促成中方院校与德国企业在学生毕业就业等问题上的合作</p>
+									<p>3、提供德语相关培训课程</p>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-6 col-sm-12 liuxue_info">
+								<div class="liuxue_info_div">
+									<p style="text-align: center;"><b>留学企业相关服务</b><br></p>
+									<p>1、促成中方企业与德国大学在学生毕业就业问题上的合作</p>
+									<p>2、促成中方企业与德国大学在双元制制度上的合作</p>
+									<p>3、提供德语相关培训课程</p>
+								</div>
+							</div>
+						</div>
+						<br><br>
+						<p>
+							西南交通大学在本中心的协助下，已与FH Ostfalia、TU Dresden、FH Aachen、FHBielefeld等多所大学建立了合作关系，并向德国高校输送了大批人才。西南交通大学现已通过“4+2硕士项目”输送40多位学子赴德留学。
+						</p>
+						<p style="text-indent: 0;font-size: 1.2em;">
+							<a style="color: #333333;font-weight: bold;border-bottom: 1px solid #333333;"
+							   href="../aboutUs/contactUs.html">更多详细内容请联系我们</a>
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 liuxue_info">
-				<div class="liuxue_info_div">
-					<p style="text-align: center;"><b>为院校提供留学院校相关服务</b><br>例如：</p>
-					<p>1、促成中方院校与德国大学（综合性大学、应用科学大学、双元制大学等）在留学等交换项目上的合作</p>
-					<p>2、促成中方院校与德国企业在学生毕业就业等问题上的合作</p>
-					<p>3、提供德语相关培训课程</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 liuxue_info">
-				<div class="liuxue_info_div">
-					<p style="text-align: center;"><b>为企业提供留学企业相关服务</b><br>例如：</p>
-					<p>1、促成中方企业与德国大学在学生毕业就业问题上的合作</p>
-					<p>2、促成中方企业与德国大学在双元制制度上的合作</p>
-					<p>3、提供德语相关培训课程</p>
-				</div>
-			</div>
-			<div class="col-lg-12 col-md-12 col-sm-12 liuxue_info" style="padding: 50px 20px;">
-				<p class="liuxue_info_p">
-					西南交通大学在本中心的协助下，已与FH Ostfalia、TU Dresden、FH Aachen、FHBielefeld等多所大学建立了合作关系，并向德国高校输送了大批人才。西南交通大学现已通过“4+2硕士项目”输送40多位学子赴德留学。
-				</p>
-				<p style="text-align: center;font-weight: bold;font-size: 1.2em;"><a style="color: #333333;" href="../aboutUs/contactUs.html">更多详细内容请联系我们</a></p>
 			</div>
 		</div>
 	</div>

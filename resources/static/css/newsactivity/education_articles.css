@@ -1,3 +1,11 @@
+section{
+	padding-bottom: 50px;
+}
+
+.paging{
+	display: none;
+}
+
 .education_articles{
 	letter-spacing: 1px;
 }
