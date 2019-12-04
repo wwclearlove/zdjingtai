@@ -48,7 +48,9 @@
 }
 
 #myFooter p,
+#myFooter .footer-copyright p a,
 #myFooter .myFooter_div_more p a {
+	text-decoration: none;
 	color: #d8d8d8;
 }
 
@@ -57,6 +59,7 @@
 }
 
 #myFooter p:hover,
+#myFooter .footer-copyright p a:hover,
 #myFooter .myFooter_div_more p a:hover {
 	color: white;
 	cursor: pointer;

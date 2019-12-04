@@ -42,3 +42,12 @@
 .returnDiv i{
 	padding-right: 10px;
 }
+
+.table-bordered > tbody > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+	border: 1px solid #959595;
+	font-size: 1.2em;
+	text-align: center;
+}

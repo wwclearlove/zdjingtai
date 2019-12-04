@@ -98,7 +98,7 @@
 	position: absolute;
 	top: -250px;
 	left: 20px;
-	background: url(https://www.swjtu.edu.cn/dfiles/13091/themes/12163/default494/images/ico_arrow.png) no-repeat 0 0;
+	background: url(../imgs/index/ico_arrow.png) no-repeat 0 0;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
@@ -115,7 +115,7 @@
 	position: absolute;
 	top: -250px;
 	right: 20px;
-	background: url(https://www.swjtu.edu.cn/dfiles/13091/themes/12163/default494/images/ico_arrow.png) no-repeat -54px 0;
+	background: url(../imgs/index/ico_arrow.png) no-repeat -54px 0;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
