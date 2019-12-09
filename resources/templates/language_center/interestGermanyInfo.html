@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>趣味德国</title>
+	<link rel="stylesheet" href="../../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../../static/css/font-awesome.css">
+	<link rel="stylesheet" href="../../static/css/header.css"/>
+	<link rel="stylesheet" href="../../static/css/footer.css"/>
+	<link rel="stylesheet" href="../../static/css/languagecenter/interestGermany.css"/>
+	<link rel="stylesheet" href="../../static/css/languagecenter/language_center.css"/>
+	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../static/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+</head>
+<body>
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<img class="img-responsive" src="../../static/imgs/background_img.jpg" width="100%" alt="">
+		</div>
+	</div>
+	<div class="container" style="padding-bottom: 50px;">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-4">
+				<div class="subnav">
+					<a href="./language_center.html" style="text-decoration: none;">
+						<h3 style="margin: 0;">语言中心</h3>
+					</a>
+					<ul class="navcon">
+						<li><i></i><a href="./language_center.html">简介</a></li>
+						<li><i></i><a href="./shangwudeyu.html">商务德语课程</a></li>
+						<li><i></i><a href="./qingshaoniandeyu.html">青少年德语课程</a></li>
+						<li><i></i><a href="./liudeoubiaokecheng.html">留德欧标课程</a></li>
+						<li><i></i><a href="./translation.html">翻译服务</a></li>
+						<li class="cur"><i></i><a href="./interestGermany.html">趣味德国</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-8">
+				<div id="info_content" style="width: 100%;background-color: white;min-height: 500px;padding: 30px 15px;"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
+
+<script>
+	$(function () {
+		$(".li-cate-1").eq(7).addClass("active");
+		var url = window.location.search;
+		var urlResult = [];
+		var arrUrl = url.substr(1).split("&");
+		for (let j = 0; j < arrUrl.length; j++) {
+			urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
+		}
+		$.ajax({
+			type: "POST",
+			url: globalUrl("interestGermanyID") + "?germanyId="+ urlResult[0],
+			dataType: "json",
+			success: function (data) {
+				if (data.resultCode === 200){
+					$("title").text(data.data.title);
+					$("#info_content").html(data.data.content);
+				}else {
+					$("#info_content").html("<h3 style='text-align: center;'>文章参数错误！请刷新再试</h3>");
+				}
+			},
+			error: function () {
+				$("#info_content").html("<h3 style='text-align: center;'>服务器繁忙，请稍后再试！</h3>");
+			}
+		});
+	});
+</script>
+
+</body>
+</html>

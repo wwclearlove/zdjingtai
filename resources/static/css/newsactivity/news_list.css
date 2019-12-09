@@ -26,7 +26,7 @@
 .module-banner-tab-list-box {
 	float: right;
 	width: 76%;
-	min-height: 490px;
+	min-height: 516px;
 	background: #fff;
 	padding: 0 40px 40px 40px;
 }
@@ -40,6 +40,10 @@
 	-ms-transition: opacity 0.5s;
 	-o-transition: opacity 0.5s;
 	transition: opacity 0.5s;
+}
+
+.module-tab-box-ma li {
+	list-style: none;
 }
 
 .news_list_Div {
@@ -96,6 +100,7 @@
 .module-tab-title_DivSon01 img {
 	width: 180px;
 	max-height: 120px;
+	margin-top: 7px;
 }
 
 .module-tab-title_DivSon02 {
@@ -105,7 +110,7 @@
 }
 
 .module-tab-title_DivSon02_title {
-	height: 20px;
+	height: 18px;
 	color: #157BBB;
 	display: block;
 	overflow: hidden;
@@ -142,7 +147,7 @@
 	background-color: #f6f6f6;
 }
 
-#date-range1{
+#date-range1 {
 	height: 50px;
 	font-size: 1.3em;
 	padding-left: 25px;
@@ -208,31 +213,18 @@
 
 	.module-tab-title_DivSon02 {
 		width: 60%;
+		padding-left: 10px;
+
+	}
+
+	.module-tab-title_DivSon01 img {
+		margin-top: 14px;
 	}
 }
 
-.module-tab-nav li{
+.module-tab-nav li {
 	background: linear-gradient(#29b3f7, #157BBB);
 }
-
-/*.module-banner-tab-list .module-tab-nav li:nth-child(1) {
-	background: #42a5bb;
-}
-
-.module-banner-tab-list .module-tab-nav li:nth-child(2) {
-	background: #777777;
-}
-
-.module-banner-tab-list .module-tab-nav li:nth-child(3) {
-	background: #666666;
-}
-
-.module-banner-tab-list .module-tab-nav li:nth-child(4) {
-	background: #555555;
-}
-.module-banner-tab-list .module-tab-nav li:nth-child(5) {
-	background: #444444;
-}*/
 
 .module-banner-tab-list ul li {
 	color: #fff;
@@ -291,28 +283,32 @@
 	font-weight: bold;
 }
 
-@media (max-width: 1024px) and (min-width: 600px){
-	.module-tab-nav{
+@media (max-width: 1180px) and (min-width: 600px) {
+	.module-tab-nav {
 		display: flex;
 	}
-	.module-tab-nav li{
+
+	.module-tab-nav li {
 		flex: 1;
 	}
 }
+
 @media (max-width: 599px) {
-	.module-tab-nav li{
+	.module-tab-nav li {
 		width: 50%;
 		float: left;
 	}
+
 	.module-banner-tab-list .module-tab-nav li:nth-child(5) {
 		width: 100%;
 	}
 }
 
-.module-tab-box-ma table{
+.module-tab-box-ma table {
 	margin-top: 40px;
 }
-.module-tab-box-ma table th{
+
+.module-tab-box-ma table th {
 	text-align: center;
 	color: white;
 	font-size: 1.4em;
@@ -320,11 +316,13 @@
 	font-weight: bolder;
 	background-color: #157BBB;
 }
-.module-tab-box-ma table td{
+
+.module-tab-box-ma table td {
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	text-align: center;
 }
-.table > tbody > tr > td{
+
+.table > tbody > tr > td {
 	vertical-align: middle;
 }

@@ -1,0 +1,386 @@
+/*搜索结果*/
+#results {
+	padding-left: 15px;
+	padding-top: 50px;
+	letter-spacing: 2px;
+}
+#results strong {
+	color: red;
+}
+
+/*新闻动态*/
+.module-tab-box-ma {
+	width: 100%;
+	padding-left: 0;
+}
+
+.module-tab-box-ma li {
+	list-style: none;
+}
+
+.module-tab-box-ma_Div {
+	width: 100%;
+	margin-top: 80px;
+	border-bottom: 3px solid #157BBB;
+}
+
+.module-tab-title {
+	width: 100%;
+	height: 135px;
+	padding: 10px 0;
+	border-bottom: 1px dashed #d6d6d6;
+}
+
+.module-tab-title_DivSon01 {
+	width: 16%;
+	float: left;
+}
+
+.module-tab-title_DivSon01 img {
+	width: 180px;
+	margin-top: 7px;
+	max-height: 120px;
+}
+
+.module-tab-title_DivSon02 {
+	width: 84%;
+	float: left;
+	padding-left: 20px;
+}
+
+.module-tab-title_DivSon02_title {
+	height: 18px;
+	color: #157BBB;
+	display: block;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.module-tab-title_DivSon02_time {
+	color: #999999;
+	font-size: 0.8em;
+}
+
+.module-tab-title_DivSon02_info {
+	height: 38px;
+	color: #333333;
+	display: block;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+}
+
+.module-tab-box-ma li:hover {
+	background-color: #f6f6f6;
+}
+
+@media (max-width: 991px) and (min-width: 561px) {
+	.module-tab-title_DivSon01 {
+		width: 25%;
+	}
+
+	.module-tab-title_DivSon02 {
+		width: 75%;
+	}
+}
+
+@media (max-width: 560px) {
+	.module-tab-title_DivSon01 {
+		width: 40%;
+	}
+
+	.module-tab-title_DivSon02 {
+		width: 60%;
+		padding-left: 10px;
+	}
+
+	.module-tab-title_DivSon01 img {
+		margin-top: 14px;
+	}
+}
+
+/*趣味德国*/
+.interesGermany_list ul {
+	padding-left: 0;
+}
+
+.interesGermany_list ul li {
+	width: 100%;
+	height: 60px;
+	list-style: none;
+}
+
+.interesGermany_list ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.interesGermany_list ul li:hover {
+	background-color: #ededed;
+}
+
+.interesGermany_list ul li a:focus {
+	text-decoration: none;
+}
+
+.interesGermany_list .module-tab-title_DivSon_title {
+	color: #157BBB;
+	display: block;
+	font-weight: bolder;
+	line-height: 60px;
+	margin: 0;
+	padding-left: 10px;
+	float: left;
+	overflow: hidden;
+	font-size: 1.4em;
+}
+
+.interesGermany_list .module-tab-title_DivSon_time {
+	color: #999999;
+	font-size: 1em;
+	line-height: 60px;
+	right: 0;
+	margin-right: 30px;
+	position: absolute;
+}
+
+@media (max-width: 600px) {
+	.interesGermany_list .module-tab-title_DivSon_title {
+		float: left;
+		font-size: 1em;
+	}
+
+	.interesGermany_list .module-tab-title_DivSon_time {
+		font-size: 0.8em;
+		float: right;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.interesGermany_list .module-tab-title_DivSon_title {
+		font-size: 0.8em;
+	}
+
+	.interesGermany_list .module-tab-title_DivSon_time {
+		font-size: 0.7em;
+	}
+}
+
+/*合作资源*/
+.what-we-do-crousel-sec div .item {
+	padding: 20px;
+	margin-top: 50px;
+	color: #333;
+	border: 5px solid #bebebe;
+	background-color: white;
+	transition: all 0.3s;
+}
+
+@media (min-width: 1024px) {
+	.what-we-do-crousel-sec div .item {
+		height: 350px;
+	}
+}
+
+.what-we-do-crousel-sec div .item img {
+	width: 50%;
+}
+
+.what-we-do-crousel-sec div .item h3 {
+	text-align: center;
+}
+
+@media (min-width: 1301px) {
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		letter-spacing: 1px;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		max-height: 270px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 7;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		letter-spacing: 1px;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		max-height: 220px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+	}
+}
+
+@media (max-width: 767px) {
+	.what-we-do-crousel-sec div .item p {
+		color: #333333;
+		line-height: 2em;
+		text-indent: 2em;
+		font-size: 1.4em;
+		display: block;
+		margin-bottom: 50px;
+	}
+}
+
+.what-we-do-crousel-sec .what-we-do-button {
+	color: #0cb1f6;
+	font-size: 14px;
+	width: 50px;
+	height: 50px;
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	transition: all 0.3s;
+	display: inline-block;
+	background: #f8f8f8;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 58px;
+}
+
+.what-we-do-crousel-sec .what-we-do-button i {
+	font-size: 26px;
+}
+
+.what-we-do-crousel-sec div .item:hover {
+	cursor: pointer;
+	border-radius: 10px;
+	border: 5px solid #0cb1f6;
+}
+
+.what-we-do-crousel-sec div .item:hover h3 {
+	font-weight: bolder;
+}
+
+.what-we-do-crousel-sec div .item:hover .what-we-do-button {
+	background: #0cb1f6;
+	color: white;
+}
+
+@media (min-width: 768px) {
+	.hezuoziyuan_content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.what-we-do-crousel-sec {
+		padding: 30px 0;
+	}
+
+	.what-we-do-crousel-sec div .item {
+		padding: 10px;
+		margin: 15px;
+	}
+}
+
+a:hover, a:focus {
+	color: #23527c;
+	text-decoration: none;
+}
+
+.technology-platform_title .sec-title h1 {
+	color: white;
+	font-size: 2em;
+	letter-spacing: 2px;
+}
+
+.technology-platform_title:hover .sec-title h1 {
+	font-weight: bolder;
+}
+
+.sec-title i {
+	transition: all 0.3s;
+	transform-origin: center;
+}
+
+.sec-title a {
+	text-decoration: none;
+}
+
+.introduction_to_the p {
+	line-height: 2em;
+	letter-spacing: 2px;
+	color: #333333;
+	font-size: 1.4em;
+}
+
+@media (max-width: 600px) {
+	.technology-platform_title .sec-title h1 {
+		font-size: 1.4em;
+		letter-spacing: 1px;
+	}
+
+	.introduction_to_the p {
+		line-height: 1.1em;
+	}
+
+	.what-we-do-crousel-sec div .item h3 {
+		font-size: 1.3em;
+		line-height: 1.5em;
+	}
+
+	.what-we-do-crousel-sec div .item p {
+		line-height: 1.5em;
+		font-size: 1.1em;
+	}
+
+	.what-we-do-crousel-sec div .item img {
+		width: 60%;
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 1720px) {
+	.what-we-do-crousel-sec div .item img {
+		width: 30%;
+	}
+}
+
+/*活动计划*/
+.module-tab-box-ma table {
+	margin-top: 40px;
+}
+
+.module-tab-box-ma table th {
+	text-align: center;
+	color: white;
+	font-size: 1.4em;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	background-color: #157BBB;
+}
+
+.module-tab-box-ma table td {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.table > tbody > tr > td {
+	vertical-align: middle;
+}

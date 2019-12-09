@@ -16,30 +16,6 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".li-cate-1").eq(3).addClass("active");
-			const qw = $(".technology-platform_title");
-			for (let i = 0; i < qw.length; i++) {
-				qw[i].index = i;
-				qw.eq(i).click(function () {
-					if ($(".technology_platform_info").eq(this.index).css("display") === "none") {
-						for (let n = 0; n < qw.length; n++) {
-							$(".technology_platform_info").eq(n).hide();
-							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
-						}
-						$(".technology_platform_info").eq(this.index).show();
-						$(".sec-title .fa").eq(this.index).css("transform", "rotate(-180deg)");
-					} else {
-						for (let n = 0; n < qw.length; n++) {
-							$(".technology_platform_info").eq(n).hide();
-							$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
-						}
-					}
-				})
-			}
-		})
-	</script>
 </head>
 <body>
 
@@ -78,7 +54,7 @@
 					</div>
 					<div class="what-we-do-crousel-sec technology_platform_info">
 						<div class="container">
-							<div class="row">
+							<div class="row" id="qiyexiehuiInfo">
 								<div class="col-md-12 item">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -172,7 +148,7 @@
 					</div>
 					<div class="what-we-do-crousel-sec technology_platform_info">
 						<div class="container">
-							<div class="row">
+							<div class="row" id="zhongdeyuanxiaoInfo">
 								<div class="col-md-12 item">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -324,7 +300,7 @@
 					</div>
 					<div class="what-we-do-crousel-sec technology_platform_info">
 						<div class="container">
-							<div class="row">
+							<div class="row" id="zhongdezhengfuInfo">
 								<div class="col-md-12 item">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -438,7 +414,7 @@
 					</div>
 					<div class="what-we-do-crousel-sec technology_platform_info">
 						<div class="container">
-							<div class="row">
+							<div class="row" id="zhongdeyanjiusuo">
 								<div class="col-md-12 item">
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -538,6 +514,76 @@
 </section>
 
 <script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
+
+<script>
+	$(function () {
+		$(".li-cate-1").eq(3).addClass("active");
+		const qw = $(".technology-platform_title");
+		for (let i = 0; i < qw.length; i++) {
+			qw[i].index = i;
+			qw.eq(i).click(function () {
+				if ($(".technology_platform_info").eq(this.index).css("display") === "none") {
+					for (let n = 0; n < qw.length; n++) {
+						$(".technology_platform_info").eq(n).hide();
+						$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
+					}
+					$(".technology_platform_info").eq(this.index).show();
+					$(".sec-title .fa").eq(this.index).css("transform", "rotate(-180deg)");
+				} else {
+					for (let n = 0; n < qw.length; n++) {
+						$(".technology_platform_info").eq(n).hide();
+						$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
+					}
+				}
+			})
+		}
+		/*$.ajax({
+			type: "POST",
+			url: globalUrl("cooperativeResources") + "?page=1&limit=10",
+			dataType: "json",
+			success: function (data) {
+				if (data.resultCode === 200) {
+					for (let i = 0; i < data.data.list.length; i++) {
+						if (data.data.list[i].kind === "中德企业协会") {
+							cooperativeResources("qiyexiehuiInfo",i);
+						}else if (data.data.list[i].kind === "中德院校") {
+							cooperativeResources("zhongdeyuanxiaoInfo",i);
+						}else if (data.data.list[i].kind === "中德政府机构") {
+							cooperativeResources("zhongdezhengfuInfo",i);
+						}else {
+							cooperativeResources("zhongdeyanjiusuo",i);
+						}
+					}
+				} else {
+					alert("合作资源参数错误！请刷新再试");
+				}
+
+				function cooperativeResources(category,i) {
+					$("#"+ category +"").append("<div class=\"col-md-12 item\">\n" +
+						"\t\t\t\t\t\t\t\t\t<div class=\"row\">\n" +
+						"\t\t\t\t\t\t\t\t\t\t<div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-12\">\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t<h3>" + data.data.list[i].title + "</h3>\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive center-block\"\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t\t src=\"" + domainNameUrl() + data.data.list[i].logo + "\" alt=\"\">\n" +
+						"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+						"\t\t\t\t\t\t\t\t\t\t<div class=\"col-lg-8 col-md-8 col-sm-8 col-xs-12\">\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t<p>\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t\t"+ data.data.list[i].description +"\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t</p>\n" +
+						"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+						"\t\t\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\""+ data.data.list[i].url +"\" class=\"what-we-do-button\">\n" +
+						"\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-long-arrow-right\"></i>\n" +
+						"\t\t\t\t\t\t\t\t\t\t</a>\n" +
+						"\t\t\t\t\t\t\t\t\t</div>\n" +
+						"\t\t\t\t\t\t\t\t</div>");
+				}
+			},
+			error: function () {
+				alert("服务器繁忙，请稍后再试！");
+			}
+		});*/
+	})
+</script>
 
 </body>
 </html>

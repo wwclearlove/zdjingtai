@@ -130,15 +130,15 @@ document.writeln("	<div id=\'mask\'></div>");
 document.writeln("</div>");
 
 /*全局搜索*/
-/*document.writeln("<script>");
+document.writeln("<script>");
 document.writeln("		$(document).ready(function () {");
 document.writeln("			$(\'.search_a\').click(function () {");
 document.writeln("				var search = $(\'.search_input\').val();");
 document.writeln("				if (search !== \'\') {");
-document.writeln("					location.href = \'../../search_details_page.html?search=\' + search;");
+document.writeln("					location.href = \'../../search/search.html?search=\' + search;");
 document.writeln("				} else {");
 document.writeln("					alert(\'请输入关键词\');");
 document.writeln("				}");
 document.writeln("			})");
 document.writeln("		})");
-document.writeln("	</script>");*/
+document.writeln("	</script>");

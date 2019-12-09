@@ -352,7 +352,7 @@ em {
 	height: 40px;
 	position: fixed;
 	z-index: 1025;
-	background-image: linear-gradient(to right,#1E89DF, #8eb7df);
+	background-image: linear-gradient(to right, #1E89DF, #8eb7df);
 }
 
 .languageSearch .language {
@@ -548,6 +548,7 @@ em {
 	#title {
 		height: 220px;
 	}
+
 	.header .nav-bar {
 		margin-left: 0;
 	}
@@ -557,9 +558,17 @@ em {
 	.header .nav-bar li a {
 		padding: 0 10px;
 	}
+
 	.header .nav-bar {
 		margin-left: -50px;
 	}
+}
+
+/*导航透明*/
+.opacity {
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
 }
 
 /*公共标题字体*/
@@ -567,7 +576,7 @@ em {
 	color: #1E89DF;
 	text-align: center;
 	letter-spacing: 5px;
-	font-family: "STSong", 华文宋体,serif;
+	font-family: "STSong", 华文宋体, serif;
 	font-weight: bolder;
 }
 
@@ -577,21 +586,19 @@ em {
 	}
 }
 
-
-@media (min-width: 1024px) and (max-width: 1599px){
+@media (min-width: 1024px) and (max-width: 1599px) {
 	.commonality_title {
 		font-size: 3em;
 	}
 }
 
-
-@media (max-width: 768px) and (max-width: 1023px){
+@media (max-width: 768px) and (max-width: 1023px) {
 	.commonality_title {
 		font-size: 2.5em;
 	}
 }
 
-@media (max-width: 480px) and (max-width: 767px){
+@media (max-width: 480px) and (max-width: 767px) {
 	.commonality_title {
 		font-size: 2em;
 	}
@@ -602,4 +609,7 @@ body, section, h1, h2, h3, h4, h5, h6, p, span, b, ul, li, a, table, th, hr, td,
 	font-family: Arial, Helvetica, sans-serif, "宋体";
 }
 
-
+/*分页*/
+#page li {
+	cursor: pointer;
+}

@@ -19,27 +19,34 @@
 	<script type="text/javascript" src="../../static/js/maps.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 	<script>
-		$(function () {$(".li-cate-1").eq(8).addClass("active");})
-	</script>
-	<!--<script>
 		$(document).ready(function () {
+			$(".li-cate-1").eq(8).addClass("active");
 			$("#submitInfo").click(function () {
 				const name = $("#from_name").val();
 				const email = $("#from_email").val();
 				const phone = $("#from_phone").val();
 				let comments = $("#comments").val();
 				if (name !== "" && email !== "" && phone !== "") {
-					if (comments === ""){
+					if (comments === "") {
 						comments = "无评论";
 					}
-					alert(name + '==' + email + "==" + phone + "==" + comments);
 					$.ajax({
 						type: "POST",
-						url: "?name=" + name + "&email=" + email + "&phone=" + phone + "comments=" + comments,
+						url: globalUrl("contactUs"),
+						data: {
+							"name": name,
+							"coment": comments,
+							"email": email,
+							"phone": phone
+						},
 						dataType: "json",
 						success: function (data) {
-							alert("信息发送成功，请耐心等待我们的回复。");
-							window.location.reload();
+							if (data.resultCode === 200) {
+								alert("信息发送成功，请耐心等待我们的回复。");
+								window.location.reload();
+							} else {
+								alert(data.message);
+							}
 						},
 						error: function () {
 							alert("服务器繁忙，请稍后再试！");
@@ -48,7 +55,7 @@
 				}
 			})
 		})
-	</script>-->
+	</script>
 </head>
 <body>
 
@@ -222,7 +229,8 @@
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright">
 				<p>版权所有四川中德科技促进中心 <a target="_blank" href="http://www.beian.miit.gov.cn">蜀ICP备19034889号</a></p>
-				<p style="margin-top: 8px;">Copyright© 2019 China-germany science and technology promotion center.All Rights Reserved.</p>
+				<p style="margin-top: 8px;">Copyright© 2019 China-germany science and technology promotion center.All
+					Rights Reserved.</p>
 			</div>
 		</div>
 	</div>

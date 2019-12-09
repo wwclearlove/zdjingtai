@@ -179,8 +179,8 @@
 				<div class="iosSlider"
 					 style="position: relative; top: 0; left: 0; overflow: hidden; z-index: 1; perspective: 1000px;
 					 backface-visibility: hidden; width: 1579px; height: 462px;">
-					<div class="slider" style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;
-					transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
+					<div class="slider"
+						 style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
 						<div class="item">
 							<div class="inner">
 								<a href="javascript:void (0)"
@@ -511,59 +511,42 @@
 	</div>
 </footer>
 
-<!--<script>
+<!--<script type="text/javascript" src="../static/js/banner/banner.js"></script>-->
+
+<script>
 	$(function () {
-		//Search
+		// Search
 		$(".search_a").click(function () {
 			var search = $(".search_input").val();
 			if (search !== "") {
-				location.href = "./search_details_page.html?search=" + search;
+				location.href = "./search/search.html?search=" + search;
 			} else {
 				alert("请输入关键词");
 			}
 		});
-		//Banner
-		const url = 'http://106.52.3.235:8888/';
-		$.ajax({
+		// News
+		/*$.ajax({
 			type: "GET",
-			url: url + "banner/list",
+			url: globalUrl("indexNews"),
 			dataType: "json",
 			success: function (data) {
-				for (let i = 0; i < data.data.length; i++) {
-					//banner1
-					$(".slider .inner a").eq(i).css("background", "url(" + url + data.data[i].img + ") no-repeat center");
-					$(".slider .inner span").eq(i).html(data.data[i].descrip);
-					//banner2
-					$(".carousel-inner .item img").eq(i).attr("src", data.data[i].img);
-					$(".carousel-inner .item .carousel-caption p").eq(i).html(data.data[i].descrip);
+				if (data.resultCode === 200){
+					for (let i = 0; i < data.data.length; i++) {
+						$(".newsteaser__base a").eq(i).attr("href", "./newsDetails/details_page.html?id=" + data.data[i].id);
+						$(".newsteaser__base .responsiveMedia__wrapper img").eq(i).attr("src", domainNameUrl() + data.data[i].img);
+						$(".newsteaser__base .newsteaser__textInput .newsteaser__header").eq(i).text(data.data[i].title);
+						$(".newsteaser__base .newsteaser__textInput .newsteaser__info").eq(i).text(data.data[i].description);
+					}
+				}else {
+					alert("热点新闻参数错误！请刷新再试");
 				}
 			},
 			error: function () {
 				alert("服务器繁忙，请稍后再试！");
 			}
-		});
-		//News
-		$.ajax({
-			type: "GET",
-			url: url + "news/topic",
-			dataType: "json",
-			success: function (data) {
-				for (let i = 0; i < data.data.length; i++) {
-
-				}
-			},
-			error: function () {
-				alert("服务器繁忙，请稍后再试！");
-			}
-		});
-		//新闻跳转
-		for (let i = 0; i < $(".newsteaser__wrapper a").length; i++) {
-			$(".newsteaser__wrapper a").click(function () {
-				$(".newsteaser__wrapper a").attr("href","./cooperative_enterprise/enterprise_inspection.html");
-			})
-		}
+		});*/
 	});
-</script>-->
+</script>
 
 </body>
 </html>
