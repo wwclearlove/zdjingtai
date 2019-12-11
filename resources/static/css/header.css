@@ -66,7 +66,7 @@ html {
 
 .header .nav-bar {
 	float: left;
-	margin-left: 5%;
+	margin-left: 4%;
 }
 
 .header .nav-bar li {
@@ -423,7 +423,7 @@ em {
 }
 
 /*----------- Responsive -----------*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
 	body {
 		position: relative;
 		left: 0;
@@ -515,15 +515,9 @@ em {
 	}
 }
 
-@media (min-width: 1620px) {
+@media (min-width: 1201px){
 	.containers {
-		width: 1600px;
-	}
-}
-
-@media (min-width: 1025px) {
-	.containers {
-		width: 92%;
+		width: 98%;
 	}
 
 	.li-cate-1 > ul > li:hover {
@@ -538,31 +532,16 @@ em {
 	}
 }
 
-@media (max-width: 1416px) and (min-width: 1025px) {
-	.header .nav-bar {
-		margin-left: 0;
-	}
-}
-
-@media (max-width: 1496px) and (min-width: 1025px) {
-	#title {
-		height: 220px;
-	}
-
-	.header .nav-bar {
-		margin-left: 0;
-	}
-}
-
-@media (max-width: 1140px) and (min-width: 1025px) {
+@media (max-width: 1414px) and (min-width: 1201px){
 	.header .nav-bar li a {
-		padding: 0 10px;
+		font-size: 16px;
+		padding: 0 14px;
 	}
-
-	.header .nav-bar {
-		margin-left: -50px;
+	.header .logo a {
+		min-width: 160px;
 	}
 }
+
 
 /*导航透明*/
 .opacity {

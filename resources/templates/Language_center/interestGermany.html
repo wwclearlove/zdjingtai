@@ -27,7 +27,7 @@
 			<img class="img-responsive" src="../../static/imgs/background_img.jpg" width="100%" alt="">
 		</div>
 	</div>
-	<div class="container" style="padding-bottom: 50px;">
+	<div class="container" id="news" style="padding-bottom: 50px;">
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-4">
 				<div class="subnav">
@@ -193,7 +193,7 @@
 								"\t\t\t\t\t\t\t\t\t\t<a href=\"./interestGermanyInfo.html?germanyId=" + data.data.list[i].id + "\" id=\"" + data.data.list[i].id + "\">\n" +
 								"\t\t\t\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon\">\n" +
 								"\t\t\t\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon_title\">" + data.data.list[i].title + "</h4>\n" +
-								"\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon_time\">时间：" + data.data.list[i].createTime + "</p>\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon_time\">时间：" + data.data.list[i].createTime.substring(0,10) + "</p>\n" +
 								"\t\t\t\t\t\t\t\t\t\t\t</div>\n" +
 								"\t\t\t\t\t\t\t\t\t\t</a>\n" +
 								"\t\t\t\t\t\t\t\t\t</div>\n" +
@@ -212,6 +212,7 @@
 						useBootstrapTooltip: true,
 						//点击事件
 						onPageClicked: function (event, originalEvent, type, page) {
+							$("html,body").animate({scrollTop:$("#news").offset().top});
 							interestGermany(event | originalEvent | type | page);
 						}
 					});

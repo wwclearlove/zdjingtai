@@ -55,15 +55,9 @@
 <script>
 	$(function () {
 		$(".li-cate-1").eq(7).addClass("active");
-		var url = window.location.search;
-		var urlResult = [];
-		var arrUrl = url.substr(1).split("&");
-		for (let j = 0; j < arrUrl.length; j++) {
-			urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
-		}
 		$.ajax({
 			type: "POST",
-			url: globalUrl("interestGermanyID") + "?germanyId="+ urlResult[0],
+			url: globalUrl("interestGermanyID") + "?germanyId="+ getParameters()[0],
 			dataType: "json",
 			success: function (data) {
 				if (data.resultCode === 200){

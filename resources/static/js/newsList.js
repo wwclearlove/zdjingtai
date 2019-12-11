@@ -10,10 +10,11 @@ for (let i = 0; i < moduleTabNav.length; i++) {
 		}
 		$(this).addClass("on");
 		$(".module-tab-box-ma li").remove();
+		$("#loading").show();
 		dynamicNews(this.index, 1);
 		$(".module-tab-box-ma").show();
 		$(".newsContent").hide();
-
+		$("#page").show();
 	});
 }
 // category
@@ -22,6 +23,7 @@ $(".news_list_Div").click(function () {
 		moduleTabNav.eq(i).removeClass("on");
 	}
 	$(".module-tab-box-ma li").remove();
+	$("#loading").show();
 	dynamicNews(-1, 1);
 	$(".module-tab-box-ma").show();
 	$(".newsContent").hide();
@@ -45,6 +47,7 @@ function dynamicNews(number, page) {
 		dataType: "json",
 		success: function (data) {
 			if (data.resultCode === 200) {
+				$("#loading").hide();
 				for (let i = 0; i < data.data.list.length; i++) {
 					$(".module-tab-box-ma").append("<li>\n" +
 						"\t\t\t\t\t\t\t<div class=\"module-tab-title\">\n" +
@@ -54,7 +57,7 @@ function dynamicNews(number, page) {
 						"\t\t\t\t\t\t\t\t\t</div>\n" +
 						"\t\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon02\">\n" +
 						"\t\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon02_title\">" + "【" + data.data.list[i].kind.substring(0, 2) + "】" + data.data.list[i].title + "</h4>\n" +
-						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.list[i].createTime + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
+						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.list[i].createTime.substring(0,10) + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
 						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_info\">" + data.data.list[i].description + "</p>\n" +
 						"\t\t\t\t\t\t\t\t\t</div>\n" +
 						"\t\t\t\t\t\t\t\t</a>\n" +
@@ -64,6 +67,7 @@ function dynamicNews(number, page) {
 			} else {
 				$(".module-tab-box-ma li").remove();
 				alert("新闻参数错误！请刷新再试");
+				$("#loading").hide();
 			}
 
 			// 分页
@@ -71,12 +75,14 @@ function dynamicNews(number, page) {
 				bootstrapMajorVersion: 3, //对应的bootstrap版本
 				currentPage: 1, //当前页数
 				numberOfPages: 1, //每次显示页数
-				totalPages: data.data.totalPage + 1, //总页数
+				totalPages: Math.ceil(parseInt(data.data.totalPage) / 10), //总页数Math.ceil(parseInt(data.data.totalPage) / 10)
 				useBootstrapTooltip: true,
 				//点击事件
 				onPageClicked: function (event, originalEvent, type, page) {
+					//$("html,body").animate({scrollTop:$("#news").offset().top-100});
 					$(".module-tab-box-ma li").remove();
 					let categorys = $(".module-tab-box-ma_Div h3").text();
+					$("#loading").show();
 					if (categorys === "新闻动态") {
 						dynamicNews(-1, event | originalEvent | type | page);
 					} else if (categorys === "科技合作") {
@@ -96,6 +102,7 @@ function dynamicNews(number, page) {
 		error: function () {
 			$(".module-tab-box-ma li").remove();
 			alert("服务器繁忙，请稍后再试！");
+			$("#loading").hide();
 		}
 	});
 }

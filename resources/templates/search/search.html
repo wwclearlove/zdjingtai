@@ -20,72 +20,75 @@
 <body>
 
 <section style="min-height: 600px;background-color: white;padding-bottom: 100px;">
-	<!--搜索结果-->
-	<div class="container" style="padding-top: 50px;">
-		<div class="row">
-			<h4 id="results"></h4>
+	<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+	<div id="contents">
+		<!--搜索结果-->
+		<div class="container" style="padding-top: 50px;">
+			<div class="row">
+				<h4 id="results"></h4>
+			</div>
 		</div>
-	</div>
-	<!--新闻动态-->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="module-tab-box-ma" id="content01">
+		<!--新闻动态-->
+		<div class="container info01">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="module-tab-box-ma" id="content01">
+						<div class="module-tab-box-ma_Div">
+							<h3>新闻动态</h3>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--趣味德国-->
+		<div class="container info02">
+			<div class="row">
+				<div class="col-md-12">
 					<div class="module-tab-box-ma_Div">
-						<h3>新闻动态</h3>
+						<h3>趣味德国</h3>
 					</div>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!--趣味德国-->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="module-tab-box-ma_Div">
-					<h3>趣味德国</h3>
 				</div>
-			</div>
-			<div class="col-md-12 interesGermany_list">
-				<ul id="content02">
+				<div class="col-md-12 interesGermany_list">
+					<ul id="content02">
 
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!--活动计划-->
-	<div class="container">
-		<div class="row tables">
-			<div class="col-md-12" style="padding-bottom: 20px;">
-				<div class="module-tab-box-ma_Div">
-					<h3>活动计划</h3>
+					</ul>
 				</div>
 			</div>
-			<div class="col-md-12 module-tab-box-ma table_content" style="padding-left: 15px;">
-				<table border="1" class="table table-hover table-bordered">
-					<thead>
-					<tr>
-						<th>活动类型</th>
-						<th>活动</th>
-						<th>时间</th>
-						<th>地点</th>
-						<th>备注</th>
-					</tr>
-					</thead>
-					<tbody id="content03"></tbody>
-				</table>
-			</div>
 		</div>
-	</div>
-	<!--合作资源-->
-	<div class="container">
-		<div class="row what-we-do-crousel-sec">
-			<div class="col-md-12" style="padding-bottom: 20px;">
-				<div class="module-tab-box-ma_Div">
-					<h3>合作资源</h3>
+		<!--活动计划-->
+		<div class="container info03">
+			<div class="row tables">
+				<div class="col-md-12" style="padding-bottom: 20px;">
+					<div class="module-tab-box-ma_Div">
+						<h3>活动计划</h3>
+					</div>
+				</div>
+				<div class="col-md-12 module-tab-box-ma" style="padding-left: 15px;">
+					<table border="1" class="table table-hover table-bordered">
+						<thead>
+						<tr>
+							<th>活动类型</th>
+							<th>活动</th>
+							<th>时间</th>
+							<th>地点</th>
+							<th>备注</th>
+						</tr>
+						</thead>
+						<tbody id="content03"></tbody>
+					</table>
 				</div>
 			</div>
-			<div class="hezuoziyuan_content" id="content04"></div>
+		</div>
+		<!--合作资源-->
+		<div class="container info04">
+			<div class="row what-we-do-crousel-sec">
+				<div class="col-md-12" style="padding-bottom: 20px;">
+					<div class="module-tab-box-ma_Div">
+						<h3>合作资源</h3>
+					</div>
+				</div>
+				<div class="hezuoziyuan_content" id="content04"></div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -94,6 +97,8 @@
 
 <script>
 	$(function () {
+		$("#loading").show();
+		$("#contents").hide();
 		var url = window.location.search;
 		var urlResult = [];
 		var arrUrl = url.substr(1).split("&");
@@ -107,6 +112,9 @@
 			dataType: 'json',
 			success: function (data) {
 				if (data.resultCode === 200) {
+					$("#loading").hide();
+					$("#contents").show();
+
 					//搜索结果
 					$("#results").html("搜索到关于<strong>" + urlResult[0] + "</strong>的结果共<strong>"
 						+ parseInt(data.data.germanyNews.list.length + data.data.activity.list.length + data.data.resources.list.length
@@ -131,7 +139,7 @@
 								"\t\t\t\t\t</li>");
 						}
 					} else {
-						$("#content01").append("<h3 style=\"text-align: center\">搜索结果为0项</h3>")
+						$(".info01").hide();
 					}
 
 					//趣味德国
@@ -145,7 +153,7 @@
 								"\t\t\t\t\t</li>");
 						}
 					} else {
-						$("#content02").append("<h3 style=\"text-align: center\">搜索结果为0项</h3>")
+						$(".info02").hide();
 					}
 
 					//活动计划
@@ -160,8 +168,7 @@
 								"\t\t\t\t\t\t\t\t</tr>");
 						}
 					} else {
-						$(".table_content").hide();
-						$(".tables").append("<h3 style=\"text-align: center\">搜索结果为0项</h3>")
+						$(".info03").hide();
 					}
 
 					//合作资源
@@ -186,14 +193,16 @@
 								"\t\t\t\t\t\t\t\t</div>");
 						}
 					} else {
-						$("#content04").append("<h3 style=\"text-align: center\">搜索结果为0项</h3>")
+						$(".info04").hide();
 					}
 				} else {
 					alert("搜索失败！请重新搜索");
+					$("#loading").hide();
 				}
 			},
 			error: function () {
 				alert("搜索失败！请重新搜索");
+				$("#loading").hide();
 			}
 		});
 	})

@@ -18,44 +18,6 @@
 	<script type="text/javascript" src="../../static/js/createMaps.js"></script>
 	<script type="text/javascript" src="../../static/js/maps.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<script>
-		$(document).ready(function () {
-			$(".li-cate-1").eq(8).addClass("active");
-			$("#submitInfo").click(function () {
-				const name = $("#from_name").val();
-				const email = $("#from_email").val();
-				const phone = $("#from_phone").val();
-				let comments = $("#comments").val();
-				if (name !== "" && email !== "" && phone !== "") {
-					if (comments === "") {
-						comments = "无评论";
-					}
-					$.ajax({
-						type: "POST",
-						url: globalUrl("contactUs"),
-						data: {
-							"name": name,
-							"coment": comments,
-							"email": email,
-							"phone": phone
-						},
-						dataType: "json",
-						success: function (data) {
-							if (data.resultCode === 200) {
-								alert("信息发送成功，请耐心等待我们的回复。");
-								window.location.reload();
-							} else {
-								alert(data.message);
-							}
-						},
-						error: function () {
-							alert("服务器繁忙，请稍后再试！");
-						}
-					});
-				}
-			})
-		})
-	</script>
 </head>
 <body>
 
@@ -235,6 +197,45 @@
 		</div>
 	</div>
 </footer>
+
+<script>
+	$(document).ready(function () {
+		$(".li-cate-1").eq(8).addClass("active");
+		$("#submitInfo").click(function () {
+			const name = $("#from_name").val();
+			const email = $("#from_email").val();
+			const phone = $("#from_phone").val();
+			let comments = $("#comments").val();
+			if (name !== "" && email !== "" && phone !== "") {
+				if (comments === "") {
+					comments = "无评论";
+				}
+				$.ajax({
+					type: "POST",
+					url: globalUrl("contactUs"),
+					data: {
+						"name": name,
+						"coment": comments,
+						"email": email,
+						"phone": phone
+					},
+					dataType: "json",
+					success: function (data) {
+						if (data.resultCode === 200) {
+							alert("信息发送成功，请耐心等待我们的回复。");
+							window.location.reload();
+						} else {
+							alert(data.message);
+						}
+					},
+					error: function () {
+						alert("服务器繁忙，请稍后再试！");
+					}
+				});
+			}
+		})
+	})
+</script>
 
 </body>
 </html>

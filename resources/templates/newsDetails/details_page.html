@@ -59,7 +59,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="module-banner-tab-list-box bd">
+				<div class="module-banner-tab-list-box bd" style="position: relative;">
 					<ul class="module-tab-box-ma" style="display: none;">
 						<div class="module-tab-box-ma_Div">
 							<h3>新闻动态</h3>
@@ -68,6 +68,7 @@
 					<div class="newsContent" style="display: block;">
 
 					</div>
+					<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
 				</div>
 			</div>
 		</div>
@@ -87,28 +88,26 @@
 
 <script>
 	$(function () {
-		const url = window.location.search;
-		let urlResult = [];
-		const arrUrl = url.substr(1).split("&");
-		for (let j = 0; j < arrUrl.length; j++) {
-			urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
-		}
-
+		$(".li-cate-1").eq(1).addClass("active");
+		$("#loading").show();
 		//News Details
 		$.ajax({
 			type: "POST",
-			url: globalUrl("dynamicNewsID") + "?id=1194216009993580544",
+			url: globalUrl("dynamicNewsID") + "?id=" + getParameters()[0],
 			dataType: "json",
 			success: function (data) {
 				if (data.resultCode === 200) {
+					$("#loading").hide();
 					$("title").text(data.data.title);
 					$(".newsContent").html(data.data.content);
 				} else {
 					alert("新闻详情参数错误！请刷新再试");
+					$("#loading").hide();
 				}
 			},
 			error: function () {
 				alert("服务器繁忙，请稍后再试！");
+				$("#loading").hide();
 			}
 		})
 	})

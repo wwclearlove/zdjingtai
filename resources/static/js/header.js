@@ -109,7 +109,7 @@ $(document).ready(function () {
 
 });
 
-/*配置全站URL*/
+/*配置全站请求URL*/
 function globalUrl(theModule) {
 	const url = "http://106.52.3.235:8888/";
 	const banner = "banner"; // 轮播图
@@ -157,6 +157,19 @@ function globalUrl(theModule) {
 		return "";
 	}
 }
+
+/*配置全站URL*/
 function domainNameUrl() {
 	return "http://106.52.3.235:8888/";
+}
+
+/*参数配置*/
+function getParameters() {
+	let url = window.location.search;
+	let urlResult = [];
+	let arrUrl = url.substr(1).split("&");
+	for (let i = 0; i < arrUrl.length; i++) {
+		urlResult[i] = decodeURI(arrUrl[i].split("=")[1]);
+	}
+	return urlResult;
 }

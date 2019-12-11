@@ -518,19 +518,19 @@
 <script>
 	$(function () {
 		$(".li-cate-1").eq(3).addClass("active");
-		const qw = $(".technology-platform_title");
-		for (let i = 0; i < qw.length; i++) {
-			qw[i].index = i;
-			qw.eq(i).click(function () {
+		const technology = $(".technology-platform_title");
+		for (let i = 0; i < technology.length; i++) {
+			technology[i].index = i;
+			technology.eq(i).click(function () {
 				if ($(".technology_platform_info").eq(this.index).css("display") === "none") {
-					for (let n = 0; n < qw.length; n++) {
+					for (let n = 0; n < technology.length; n++) {
 						$(".technology_platform_info").eq(n).hide();
 						$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
 					}
 					$(".technology_platform_info").eq(this.index).show();
 					$(".sec-title .fa").eq(this.index).css("transform", "rotate(-180deg)");
 				} else {
-					for (let n = 0; n < qw.length; n++) {
+					for (let n = 0; n < technology.length; n++) {
 						$(".technology_platform_info").eq(n).hide();
 						$(".sec-title .fa").eq(n).css("transform", "rotate(0deg)");
 					}
