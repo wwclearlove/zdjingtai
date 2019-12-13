@@ -84,7 +84,6 @@ function dynamicNews(number, page) {
 				useBootstrapTooltip: true,
 				//点击事件
 				onPageClicked: function (event, originalEvent, type, page) {
-					//alert("1=="+event+"2=="+originalEvent+"3=="+type+"4=="+page);
 					$("html,body").animate({scrollTop:$("#news").offset().top-100},300);
 					$(".module-tab-box-ma li").remove();
 					$(".module-tab-box-ma h2").remove();

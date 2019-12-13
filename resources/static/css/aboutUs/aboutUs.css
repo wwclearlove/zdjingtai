@@ -476,6 +476,13 @@
 	font-size: 1.1em;
 }
 
+.contactUsp {
+	line-height: 2em;
+	font-size: 1.6em;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
 @media (max-width: 1024px) {
 	.developtargetDiv {
 		padding: 20px;
@@ -484,5 +491,12 @@
 
 	.developtargetDiv h3 {
 		margin-top: 5%;
+	}
+}
+
+@media (max-width: 768px) {
+	.contactUsp {
+		line-height: 2em;
+		font-size: 1.2em;
 	}
 }

@@ -96,11 +96,12 @@
 .module-tab-title_DivSon01 {
 	width: 20%;
 	float: left;
+	overflow: hidden;
 }
 
 .module-tab-title_DivSon01 img {
 	width: 180px;
-	max-height: 120px;
+	max-height: 110px;
 	margin-top: 7px;
 }
 

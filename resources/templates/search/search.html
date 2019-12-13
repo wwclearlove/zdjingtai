@@ -20,10 +20,16 @@
 <body>
 
 <section style="min-height: 600px;background-color: white;padding-bottom: 100px;">
-	<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
-	<div id="contents">
+	<div class="container-fluid">
+		<div class="row">
+			<img class="img-responsive center-block" src="../../static/imgs/search.png" width="100%" alt="">
+		</div>
+	</div>
+
+	<div id="contents" style="position: relative;">
+		<img id="loading" style="position: absolute;top: 2%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
 		<!--搜索结果-->
-		<div class="container" style="padding-top: 50px;">
+		<div class="container" style="">
 			<div class="row">
 				<h4 id="results"></h4>
 			</div>
@@ -127,7 +133,7 @@
 								"\t\t\t\t\t\t<div class=\"module-tab-title\">\n" +
 								"\t\t\t\t\t\t\t<a href=\"../newsDetails/details_page.html?id=" + data.data.indexNews.list[i].id + "\">\n" +
 								"\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon01\">\n" +
-								"\t\t\t\t\t\t\t\t\t<img class=\"" + domainNameUrl() + data.data.indexNews.list[i].firstPicture + "\" src=\"imgurl\" alt=\"\">\n" +
+								"\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\""+ domainNameUrl() + data.data.indexNews.list[i].firstPicture + "\" alt=\"\">\n" +
 								"\t\t\t\t\t\t\t\t</div>\n" +
 								"\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon02\">\n" +
 								"\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon02_title\">" + "【" + data.data.indexNews.list[i].kind.substring(0, 2) + "】" + data.data.indexNews.list[i].title + "</h4>\n" +
@@ -161,8 +167,8 @@
 						for (let i = 0; i < data.data.activity.list.length; i++) {
 							$("#content03").append("<tr>\n" +
 								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].kind + "</td>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].title + "</td>\n" +
 								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].content + "</td>\n" +
-								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].createTime + "</td>\n" +
 								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].addr + "</td>\n" +
 								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].remark + "</td>\n" +
 								"\t\t\t\t\t\t\t\t</tr>");
