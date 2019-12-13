@@ -48,9 +48,9 @@
 
 /*interesGermany_list*/
 .interesGermany_list {
-	padding: 50px 0;
-	margin-bottom: 100px;
+	padding: 20px 0;
 	border-radius: 10px;
+	min-height: 500px;
 	background-color: white;
 }
 
@@ -63,7 +63,7 @@
 .interesGermany_list .module-tab-title {
 	width: 100%;
 	height: 60px;
-	padding: 0 40px;
+	padding: 0 30px;
 	border-bottom: 1px dashed #d6d6d6;
 }
 
@@ -112,13 +112,6 @@
 
 .module-tab-box-ma_Divs {
 	float: right;
-	padding: 40px;
-}
-
-@media (max-width: 991px) {
-	.module-tab-box-ma_Divs {
-		padding-top: 100px;
-	}
 }
 
 @media (max-width: 600px) {

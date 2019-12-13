@@ -515,11 +515,19 @@ em {
 	}
 }
 
-@media (min-width: 1201px){
+@media (min-width: 1501px) and (max-width: 1800px) {
+	.containers {
+		width: 95%;
+	}
+}
+
+@media (min-width: 1201px) and (max-width: 1500px){
 	.containers {
 		width: 98%;
 	}
+}
 
+@media (min-width: 1201px) {
 	.li-cate-1 > ul > li:hover {
 		font-weight: bolder;
 		background-color: #1c6ddf;
@@ -532,16 +540,16 @@ em {
 	}
 }
 
-@media (max-width: 1414px) and (min-width: 1201px){
+@media (max-width: 1414px) and (min-width: 1201px) {
 	.header .nav-bar li a {
 		font-size: 16px;
 		padding: 0 14px;
 	}
+
 	.header .logo a {
 		min-width: 160px;
 	}
 }
-
 
 /*导航透明*/
 .opacity {

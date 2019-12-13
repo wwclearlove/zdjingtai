@@ -105,8 +105,6 @@ $(document).ready(function () {
 	$(".modal-content").click(function () {
 		$('#myModal').modal('hide');
 	});*/
-
-
 });
 
 /*配置全站请求URL*/

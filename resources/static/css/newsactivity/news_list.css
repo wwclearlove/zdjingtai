@@ -28,7 +28,8 @@
 	width: 76%;
 	min-height: 516px;
 	background: #fff;
-	padding: 0 40px 40px 40px;
+	/*padding: 0 40px 40px 40px;*/
+	padding: 30px;
 }
 
 .module-tab-box-ma {

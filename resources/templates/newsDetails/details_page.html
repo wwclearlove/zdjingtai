@@ -76,7 +76,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="module-tab-box-ma_Divs">
-				<ul id="page" style="display: none;"></ul>
+				<ul id="page" style="display: none;">
+
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -100,6 +102,9 @@
 					$("#loading").hide();
 					$("title").text(data.data.title);
 					$(".newsContent").html(data.data.content);
+					for (let i = 0; i < $(".newsContent img").length; i++) {
+						$(".newsContent img").eq(i).attr("src", domainNameUrl() + $(".newsContent img").eq(i).attr("src"));
+					}
 				} else {
 					alert("新闻详情参数错误！请刷新再试");
 					$("#loading").hide();

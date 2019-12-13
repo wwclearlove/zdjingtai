@@ -10,6 +10,7 @@ for (let i = 0; i < moduleTabNav.length; i++) {
 		}
 		$(this).addClass("on");
 		$(".module-tab-box-ma li").remove();
+		$(".module-tab-box-ma h2").remove();
 		$("#loading").show();
 		dynamicNews(this.index, 1);
 		$(".module-tab-box-ma").show();
@@ -23,6 +24,7 @@ $(".news_list_Div").click(function () {
 		moduleTabNav.eq(i).removeClass("on");
 	}
 	$(".module-tab-box-ma li").remove();
+	$(".module-tab-box-ma h2").remove();
 	$("#loading").show();
 	dynamicNews(-1, 1);
 	$(".module-tab-box-ma").show();
@@ -33,6 +35,7 @@ $(".news_list_Div").click(function () {
 // News
 function dynamicNews(number, page) {
 	let url = "";
+	let currentPages = 1;
 	if (number === -1) {
 		$(".module-tab-box-ma_Div h3").text($(".news_list_Div h2").text());
 		url = globalUrl("dynamicNews") + "?page=" + page + "&limit=10";
@@ -48,6 +51,7 @@ function dynamicNews(number, page) {
 		success: function (data) {
 			if (data.resultCode === 200) {
 				$("#loading").hide();
+				currentPages = data.data.currPage;
 				for (let i = 0; i < data.data.list.length; i++) {
 					$(".module-tab-box-ma").append("<li>\n" +
 						"\t\t\t\t\t\t\t<div class=\"module-tab-title\">\n" +
@@ -57,7 +61,7 @@ function dynamicNews(number, page) {
 						"\t\t\t\t\t\t\t\t\t</div>\n" +
 						"\t\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon02\">\n" +
 						"\t\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon02_title\">" + "【" + data.data.list[i].kind.substring(0, 2) + "】" + data.data.list[i].title + "</h4>\n" +
-						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.list[i].createTime.substring(0,10) + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
+						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.list[i].createTime.substring(0, 10) + "</span>&nbsp;&nbsp;|&nbsp;&nbsp;来源：本站</p>\n" +
 						"\t\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_info\">" + data.data.list[i].description + "</p>\n" +
 						"\t\t\t\t\t\t\t\t\t</div>\n" +
 						"\t\t\t\t\t\t\t\t</a>\n" +
@@ -66,35 +70,38 @@ function dynamicNews(number, page) {
 				}
 			} else {
 				$(".module-tab-box-ma li").remove();
-				alert("新闻参数错误！请刷新再试");
+				$(".module-tab-box-ma h2").remove();
+				$(".module-tab-box-ma").append("<h2 style=\"text-align: center;\">暂无新闻</h2>");
 				$("#loading").hide();
 			}
 
 			// 分页
 			$("#page").bootstrapPaginator({
 				bootstrapMajorVersion: 3, //对应的bootstrap版本
-				currentPage: 1, //当前页数
+				currentPage: currentPages, //当前页数
 				numberOfPages: 1, //每次显示页数
-				totalPages: Math.ceil(parseInt(data.data.totalPage) / 10), //总页数Math.ceil(parseInt(data.data.totalPage) / 10)
+				totalPages: Math.ceil(parseInt(data.data.totalCount) / 10), //总页数
 				useBootstrapTooltip: true,
 				//点击事件
 				onPageClicked: function (event, originalEvent, type, page) {
-					//$("html,body").animate({scrollTop:$("#news").offset().top-100});
+					//alert("1=="+event+"2=="+originalEvent+"3=="+type+"4=="+page);
+					$("html,body").animate({scrollTop:$("#news").offset().top-100},300);
 					$(".module-tab-box-ma li").remove();
+					$(".module-tab-box-ma h2").remove();
 					let categorys = $(".module-tab-box-ma_Div h3").text();
 					$("#loading").show();
 					if (categorys === "新闻动态") {
-						dynamicNews(-1, event | originalEvent | type | page);
+						dynamicNews(-1,page);
 					} else if (categorys === "科技合作") {
-						dynamicNews(0, event | originalEvent | type | page);
+						dynamicNews(0,page);
 					} else if (categorys === "教育合作") {
-						dynamicNews(1, event | originalEvent | type | page);
+						dynamicNews(1,page);
 					} else if (categorys === "企业合作") {
-						dynamicNews(2, event | originalEvent | type | page);
+						dynamicNews(2,page);
 					} else if (categorys === "语言中心") {
-						dynamicNews(3, event | originalEvent | type | page);
+						dynamicNews(3,page);
 					} else {
-						dynamicNews(4, event | originalEvent | type | page);
+						dynamicNews(4,page);
 					}
 				}
 			});

@@ -398,7 +398,7 @@
 		// News
 		$.ajax({
 			type: "POST",
-			url: globalUrl("activityNews") + "?page=1&limit=1000",
+			url: globalUrl("activityNews") + "?page=1&limit=10000",
 			dataType: "json",
 			success: function (data) {
 				if (data.resultCode === 200) {
