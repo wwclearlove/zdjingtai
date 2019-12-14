@@ -91,10 +91,6 @@ $(document).ready(function () {
 	});
 	// 公共背景色
 	$("body").css("background-color", "#e6e6e6");
-	// 添加网页头部Icon
-	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../static/imgs/logoIcon.png\">");
-	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../../static/imgs/logoIcon.png\">");
-	$("head").append("<link rel=\"shortcut icon\" type=\"images/x-icon\" href=\"../../../static/imgs/logoIcon.png\">");
 
 	// 图片查看大图
 	/*$("section div img").click(function () {

@@ -13,6 +13,7 @@
 	<meta name="author" content="四川中德科技促进中心,lszdkc@163.com">
 	<meta name="copyright" content="四川中德科技促进中心">
 	<title>中德科技</title>
+	<link rel="shortcut icon" type="images/x-icon" href="../static/imgs/logoIcon.png">
 	<link rel="stylesheet" href="../static/css/bootstrap.css">
 	<link rel="stylesheet" href="../static/css/font-awesome.css"/>
 	<link type="text/css" rel="stylesheet" href="../static/css/header.css"/>
@@ -24,12 +25,22 @@
 	<script type="text/javascript" src="../static/js/common.min.js"></script>
 	<script type="text/javascript" src="../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../static/js/bootstrap.js"></script>
-	<script type="text/javascript" src="../static/js/header.js"></script>
 	<script type="text/javascript" src="../static/js/publish.min.js"></script>
-	<script type="text/javascript" src="../static/js/clientlibs.min.js"></script>
 	<script type="text/javascript" src="../static/js/banner/bdtxk7.js"></script>
 	<script type="text/javascript" src="../static/js/banner/slider.js"></script>
 	<script type="text/javascript" src="../static/js/banner/jquery.iosslider.js"></script>
+	<script type="text/javascript" src="../static/js/header.js"></script>
+	<script>
+		$(function () {
+			//1025
+			if ($(window).width() >= 1025) {
+				const script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = '../static/js/clientlibs.min.js';
+				$("head").append(script);
+			}
+		})
+	</script>
 </head>
 <body>
 
@@ -48,7 +59,8 @@
 		<!--Search-->
 		<div class="searchDiv">
 			<form action="./search/search.html?search" method="get">
-				<input autocomplete="off" type="text" class="search_input" name="search" required="" placeholder="请输入关键词" tabindex="-1">
+				<input autocomplete="off" type="text" class="search_input" name="search" required=""
+					   placeholder="请输入关键词" tabindex="-1">
 				<a href="javascript:;" class="search_a" id="search_a">
 					<i class="fa fa-search"></i>
 				</a>
@@ -305,7 +317,8 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyloaded">
+											<img src="" alt=""
+												 class="newsteaser__image responsiveMedia__img blur-up lazyloaded">
 										</picture>
 									</div>
 									<div class="newsteaser__image--overlay"></div>
@@ -330,7 +343,8 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+											<img src="" alt=""
+												 class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
 										</picture>
 									</div>
 									<div class="newsteaser__image--overlay"></div>
@@ -355,7 +369,8 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+											<img src="" alt=""
+												 class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
 										</picture>
 									</div>
 									<div class="newsteaser__image--overlay"></div>
@@ -380,7 +395,8 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+											<img src="" alt=""
+												 class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
 										</picture>
 									</div>
 									<div class="newsteaser__image--overlay"></div>
@@ -405,7 +421,8 @@
 								<div class="image-wrapper">
 									<div class="responsiveMedia__wrapper">
 										<picture>
-											<img src="" alt="" class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
+											<img src="" alt=""
+												 class="newsteaser__image responsiveMedia__img blur-up lazyautosizes lazyloaded">
 										</picture>
 									</div>
 									<div class="newsteaser__image--overlay"></div>
@@ -511,18 +528,26 @@
 			url: globalUrl("indexNews"),
 			dataType: "json",
 			success: function (data) {
+				let descriptionLength = "";
 				if (data.resultCode === 200) {
+					let num = 0;
 					for (let i = 0; i < $(".newsteaser__base").length; i++) {
 						if (data.data[i].level === 1) {
 							$(".newsteaser--large a").eq(0).attr("href", "./newsDetails/details_page.html?id=" + data.data[i].id);
 							$(".newsteaser--large .responsiveMedia__wrapper img").eq(0).attr("src", domainNameUrl() + data.data[i].firstPicture);
 							$(".newsteaser--large .newsteaser__textInput .newsteaser__header").eq(0).text(data.data[i].title);
 							$(".newsteaser--large .newsteaser__textInput .newsteaser__info").eq(0).text(data.data[i].description);
-						}else {
-							$(".newsteaser--small a").eq(i).attr("href", "./newsDetails/details_page.html?id=" + data.data[i].id);
-							$(".newsteaser--small .responsiveMedia__wrapper img").eq(i).attr("src", domainNameUrl() + data.data[i].firstPicture);
-							$(".newsteaser--small .newsteaser__textInput .newsteaser__header").eq(i).text(data.data[i].title);
-							$(".newsteaser--small .newsteaser__textInput .newsteaser__info").eq(i).text(data.data[i].description);
+						} else {
+							if (data.data[i].description.length > 90) {
+								descriptionLength = data.data[i].description.substring(0, 90) + "...";
+							} else {
+								descriptionLength = data.data[i].description;
+							}
+							$(".newsteaser--small a").eq(num).attr("href", "./newsDetails/details_page.html?id=" + data.data[i].id);
+							$(".newsteaser--small .responsiveMedia__wrapper img").eq(num).attr("src", domainNameUrl() + data.data[i].firstPicture);
+							$(".newsteaser--small .newsteaser__textInput .newsteaser__header").eq(num).text(data.data[i].title);
+							$(".newsteaser--small .newsteaser__textInput .newsteaser__info").eq(num).text(descriptionLength);
+							num += 1;
 						}
 					}
 				} else {

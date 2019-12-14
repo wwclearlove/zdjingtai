@@ -113,6 +113,7 @@
 	width: 100%;
 	height: 60px;
 	list-style: none;
+	border-bottom: 1px dashed #d6d6d6;
 }
 
 .interesGermany_list ul li a {
@@ -150,26 +151,33 @@
 	position: absolute;
 }
 
-@media (max-width: 600px) {
-	.interesGermany_list .module-tab-title_DivSon_title {
-		float: left;
+@media (max-width: 991px) and (min-width: 601px){
+	.module-tab-title_DivSon_title {
 		font-size: 1em;
 	}
 
-	.interesGermany_list .module-tab-title_DivSon_time {
-		font-size: 0.8em;
-		float: right;
+	.module-tab-title_DivSon_time {
+		font-size: 0.9em;
 	}
 }
 
 @media (max-width: 480px) {
 
 	.interesGermany_list .module-tab-title_DivSon_title {
-		font-size: 0.8em;
+		font-size: 1em;
+		max-width: 210px;
+		max-height: 50px;
+		display: block;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
 	}
 
 	.interesGermany_list .module-tab-title_DivSon_time {
-		font-size: 0.7em;
+		font-size: 0.9em;
+		margin-right: 10px;
 	}
 }
 

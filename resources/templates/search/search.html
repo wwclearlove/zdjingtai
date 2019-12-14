@@ -27,75 +27,78 @@
 	</div>
 
 	<div id="contents" style="position: relative;">
-		<img id="loading" style="position: absolute;top: 2%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
-		<!--搜索结果-->
-		<div class="container" style="">
-			<div class="row">
-				<h4 id="results"></h4>
+		<img id="loading" style="position: absolute;top: 20px;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+		<div id="content_info">
+			<!--搜索结果-->
+			<div class="container" style="">
+				<div class="row">
+					<h4 id="results"></h4>
+				</div>
 			</div>
-		</div>
-		<!--新闻动态-->
-		<div class="container info01">
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="module-tab-box-ma" id="content01">
+			<!--新闻动态-->
+			<div class="container info01">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="module-tab-box-ma" id="content01">
+							<div class="module-tab-box-ma_Div">
+								<h3>新闻动态</h3>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--趣味德国-->
+			<div class="container info02">
+				<div class="row">
+					<div class="col-md-12">
 						<div class="module-tab-box-ma_Div">
-							<h3>新闻动态</h3>
+							<h3>趣味德国</h3>
 						</div>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!--趣味德国-->
-		<div class="container info02">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="module-tab-box-ma_Div">
-						<h3>趣味德国</h3>
 					</div>
-				</div>
-				<div class="col-md-12 interesGermany_list">
-					<ul id="content02">
+					<div class="col-md-12 interesGermany_list">
+						<ul id="content02">
 
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!--活动计划-->
-		<div class="container info03">
-			<div class="row tables">
-				<div class="col-md-12" style="padding-bottom: 20px;">
-					<div class="module-tab-box-ma_Div">
-						<h3>活动计划</h3>
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-12 module-tab-box-ma" style="padding-left: 15px;">
-					<table border="1" class="table table-hover table-bordered">
-						<thead>
-						<tr>
-							<th>活动类型</th>
-							<th>活动</th>
-							<th>时间</th>
-							<th>地点</th>
-							<th>备注</th>
-						</tr>
-						</thead>
-						<tbody id="content03"></tbody>
-					</table>
-				</div>
 			</div>
-		</div>
-		<!--合作资源-->
-		<div class="container info04">
-			<div class="row what-we-do-crousel-sec">
-				<div class="col-md-12" style="padding-bottom: 20px;">
-					<div class="module-tab-box-ma_Div">
-						<h3>合作资源</h3>
+			<!--活动计划-->
+			<div class="container info03">
+				<div class="row tables">
+					<div class="col-md-12" style="padding-bottom: 20px;">
+						<div class="module-tab-box-ma_Div">
+							<h3>活动计划</h3>
+						</div>
+					</div>
+					<div class="col-md-12 module-tab-box-ma" style="padding-left: 15px;">
+						<table border="1" class="table table-hover table-bordered">
+							<thead>
+							<tr>
+								<th>活动类型</th>
+								<th>活动</th>
+								<th>时间</th>
+								<th>地点</th>
+								<th>备注</th>
+							</tr>
+							</thead>
+							<tbody id="content03"></tbody>
+						</table>
 					</div>
 				</div>
-				<div class="hezuoziyuan_content" id="content04"></div>
+			</div>
+			<!--合作资源-->
+			<div class="container info04">
+				<div class="row what-we-do-crousel-sec">
+					<div class="col-md-12" style="padding-bottom: 20px;">
+						<div class="module-tab-box-ma_Div">
+							<h3>合作资源</h3>
+						</div>
+					</div>
+					<div class="hezuoziyuan_content" id="content04"></div>
+				</div>
 			</div>
 		</div>
+
 	</div>
 </section>
 
@@ -104,7 +107,7 @@
 <script>
 	$(function () {
 		$("#loading").show();
-		$("#contents").hide();
+		$("#content_info").hide();
 		var url = window.location.search;
 		var urlResult = [];
 		var arrUrl = url.substr(1).split("&");
@@ -119,7 +122,7 @@
 			success: function (data) {
 				if (data.resultCode === 200) {
 					$("#loading").hide();
-					$("#contents").show();
+					$("#content_info").show();
 
 					//搜索结果
 					$("#results").html("搜索到关于<strong>" + urlResult[0] + "</strong>的结果共<strong>"
@@ -137,7 +140,7 @@
 								"\t\t\t\t\t\t\t\t</div>\n" +
 								"\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon02\">\n" +
 								"\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon02_title\">" + "【" + data.data.indexNews.list[i].kind.substring(0, 2) + "】" + data.data.indexNews.list[i].title + "</h4>\n" +
-								"\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.indexNews.list[i].createTime + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
+								"\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.indexNews.list[i].createTime.substring(0, 10) + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
 								"\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_info\">" + data.data.indexNews.list[i].description + "</p>\n" +
 								"\t\t\t\t\t\t\t\t</div>\n" +
 								"\t\t\t\t\t\t\t</a>\n" +
@@ -154,7 +157,7 @@
 							$("#content02").append("<li>\n" +
 								"\t\t\t\t\t\t<a href=\"../language_center/interestGermanyInfo.html?germanyId=" + data.data.germanyNews.list[i].id + "\">\n" +
 								"\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon_title\">" + data.data.germanyNews.list[i].title + "</h4>\n" +
-								"\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon_time\">时间：" + data.data.germanyNews.list[i].createTime + "</p>\n" +
+								"\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon_time\">时间：" + data.data.germanyNews.list[i].createTime.substring(0, 10) + "</p>\n" +
 								"\t\t\t\t\t\t</a>\n" +
 								"\t\t\t\t\t</li>");
 						}
