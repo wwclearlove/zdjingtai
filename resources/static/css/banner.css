@@ -98,7 +98,7 @@
 	position: absolute;
 	top: -250px;
 	left: 20px;
-	background: url(../imgs/index/ico_arrow.png) no-repeat 0 0;
+	background: url(../imgs/banner/ico_arrow.png) no-repeat 0 0;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
@@ -115,7 +115,7 @@
 	position: absolute;
 	top: -250px;
 	right: 20px;
-	background: url(../imgs/index/ico_arrow.png) no-repeat -54px 0;
+	background: url(../imgs/banner/ico_arrow.png) no-repeat -54px 0;
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 }
