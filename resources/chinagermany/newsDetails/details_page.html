@@ -70,10 +70,11 @@
 							<h3>新闻动态</h3>
 						</div>
 					</ul>
-					<div class="newsContent" style="display: block;">
+					<div class="newsContent" id="reviewimages" style="display: block;">
 
 					</div>
-					<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+					<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif"
+						 alt="">
 				</div>
 			</div>
 		</div>
@@ -110,6 +111,11 @@
 					for (let i = 0; i < $(".newsContent img").length; i++) {
 						$(".newsContent img").eq(i).attr("src", domainNameUrl() + $(".newsContent img").eq(i).attr("src"));
 					}
+					for (let i = 0; i < $("#reviewimages img").length; i++) {
+						$("#reviewimages img").eq(i).click(function () {
+							window.open($(this).attr("src"));
+						})
+					}
 				} else {
 					alert("新闻详情参数错误！请刷新再试");
 					$("#loading").hide();
@@ -119,7 +125,7 @@
 				alert("服务器繁忙，请稍后再试！");
 				$("#loading").hide();
 			}
-		})
+		});
 	})
 </script>
 

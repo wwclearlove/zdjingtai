@@ -74,6 +74,11 @@
 					for (let i = 0; i < $("#info_content img").length; i++) {
 						$("#info_content img").eq(i).attr("src", domainNameUrl() + $("#info_content img").eq(i).attr("src"));
 					}
+					for (let i = 0; i < $("#info_content img").length; i++) {
+						$("#info_content img").eq(i).click(function () {
+							window.open($(this).attr("src"));
+						})
+					}
 				}else {
 					$("#loading").hide();
 					$("#info_content").html("<h3 style='text-align: center;'>文章参数错误！请刷新再试</h3>");

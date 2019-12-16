@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<section style="min-height: 600px;background-color: white;padding-bottom: 100px;">
+<section style="min-height: 1000px;background-color: white;padding-bottom: 100px;">
 	<div class="container-fluid">
 		<div class="row">
 			<img class="img-responsive center-block" src="../../static/imgs/background_img.jpg" width="100%" alt="">
@@ -113,16 +113,10 @@
 	$(function () {
 		$("#loading").show();
 		$("#content_info").hide();
-		var url = window.location.search;
-		var urlResult = [];
-		var arrUrl = url.substr(1).split("&");
-		for (var j = 0; j < arrUrl.length; j++) {
-			urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
-		}
 		//Search
 		$.ajax({
 			type: 'GET',
-			url: globalUrl("search") + "?search=" + urlResult[0],
+			url: globalUrl("search") + "?search=" + getParameters()[0],
 			dataType: 'json',
 			success: function (data) {
 				if (data.resultCode === 200) {
@@ -130,7 +124,7 @@
 					$("#content_info").show();
 
 					//搜索结果
-					$("#results").html("搜索到关于<strong>" + urlResult[0] + "</strong>的结果共<strong>"
+					$("#results").html("搜索到关于<strong>" + getParameters()[0] + "</strong>的结果共<strong>"
 						+ parseInt(data.data.germanyNews.list.length + data.data.activity.list.length + data.data.resources.list.length
 							+ data.data.indexNews.list.length) + "</strong>项");
 
@@ -209,10 +203,16 @@
 					} else {
 						$(".info04").hide();
 					}
+					for (let i = 0; i < $("#content04 img").length; i++) {
+						$("#content04 img").eq(i).click(function () {
+							window.open($(this).attr("src"));
+						})
+					}
 				} else {
 					alert("搜索失败！请重新搜索");
 					$("#loading").hide();
 				}
+
 			},
 			error: function () {
 				alert("搜索失败！请重新搜索");

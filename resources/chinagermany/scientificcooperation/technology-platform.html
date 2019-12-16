@@ -179,6 +179,11 @@
 							cooperativeResources("zhongdeyanjiusuo",i);
 						}
 					}
+					for (let i = 0; i < $("#technology-platform_info img").length; i++) {
+						$("#technology-platform_info img").eq(i).click(function () {
+							window.open($(this).attr("src"));
+						})
+					}
 				} else {
 					alert("合作资源参数错误！请刷新再试");
 				}

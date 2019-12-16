@@ -91,17 +91,16 @@ $(document).ready(function () {
 	});
 	// 公共背景色
 	$("body").css("background-color", "#e6e6e6");
-
 	// 图片查看大图
-	/*$("section div img").click(function () {
-		$('#myModal').modal('show');
-		$("body").css("padding-right", "0px");
-		$("#largerVersion").attr("src",$(this).attr("src"));
-	});
-	$(".modal-content").click(function () {
-		$('#myModal').modal('hide');
-	});*/
-});
+	for (let i = 0; i < $("section img").length; i++) {
+		$("section img").eq(i).click(function () {
+			if ( $(this).attr("src").substring(0, 4) !== "http") {
+				//domainNameUrl()
+				window.open("http://localhost:63342/zd/resources/" + $(this).attr("src").substring(6, $(this).attr("src").length));
+			}
+		})
+	}
+})
 
 /*配置全站请求URL*/
 function globalUrl(theModule) {
@@ -126,7 +125,7 @@ function globalUrl(theModule) {
 	} else if (dynamicNews === theModule) {
 		// 新闻动态 POST
 		return url + "news/list";
-	}else if (dynamicNewsID === theModule) {
+	} else if (dynamicNewsID === theModule) {
 		// 新闻动态详情文章 POST
 		return url + "news/newsByid";
 	} else if (activityNews === theModule) {
@@ -157,11 +156,11 @@ function domainNameUrl() {
 	return "http://106.52.3.235:8888/";
 }
 
-/*参数配置*/
+/*页面传参配置*/
 function getParameters() {
-	let url = window.location.search;
+	const url = window.location.search;
 	let urlResult = [];
-	let arrUrl = url.substr(1).split("&");
+	const arrUrl = url.substr(1).split("&");
 	for (let i = 0; i < arrUrl.length; i++) {
 		urlResult[i] = decodeURI(arrUrl[i].split("=")[1]);
 	}
