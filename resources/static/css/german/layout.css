@@ -1,26 +1,3 @@
-/*------------------------------------------------------------------
-[Table of contents]
-This file include css code for layout structure.
-Press Ctrl + F to find component. Ex: "#Header";
-更多精品模板请访问：http://www.bootstrapmb.com
-. #General
-. #Header
- - #Header Top
- - #Header Main
- - #Main Navigation
- - #Header Fixed
- - #Header Transparent
-. #Page Heading
-. #Footer
-. #Blog Detail
- - #Comment Area
-. #Page
--------------------------------------------------------------------*/
-
-/* ==========================================================================
-  1. #General
-========================================================================== */
-
 html {
 	overflow-x: hidden;
 	font-size: 14px;

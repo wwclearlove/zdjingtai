@@ -1,3 +1,4 @@
+/*全局尾部*/
 document.writeln("<footer id=\'myFooter\'>");
 document.writeln("	<div class=\'container\'>");
 document.writeln("		<div class=\'row\'>");

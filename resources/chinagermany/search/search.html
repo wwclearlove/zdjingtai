@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="乐山中德科技促进中心,中德科技,中德科技促进中心,中德平台,中德合作,科技合作,教育合作,企业合作,语言中心,合作资源,德语"/>
+	<meta name="description"
+		  content="四川乐山中德科技促进中心成立于2016年，是由乐山高新区与西南交大峨眉校区及德国奥斯特法利亚(Ostfalia) 应用科学大学三方共同打造的科技教育文化交流平台。我们有德国平台、高校平台，语言中心，科技中心及文化交流中心五个部门,旨在以德国“工业4.0” 对接“中国制造2025”为主统，利用三方各自拥有及协同的优势资源，开展相关技术研发、科技和德语（语言）培训、成果转化和咨询服务等科技教育合作活动，为乐山市和德国经济转型升级和社会发展提供技术和人才支撑，促进中德科技、教育、文化、经济合作。">
+	<meta name="robots" content="index"/>
+	<meta name="author" content="四川中德科技促进中心,lszdkc@163.com">
+	<meta name="copyright" content="四川中德科技促进中心">
+	<title>乐山中德科技促进中心</title>
+	<link rel="stylesheet" href="../../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../../static/css/font-awesome.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/header.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/footer.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/search.css"/>
+	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+</head>
+<body>
+
+<section style="min-height: 600px;background-color: white;padding-bottom: 100px;">
+	<div class="container-fluid">
+		<div class="row">
+			<img class="img-responsive center-block" src="../../static/imgs/background_img.jpg" width="100%" alt="">
+		</div>
+	</div>
+
+	<div id="contents" style="position: relative;">
+		<img id="loading" style="position: absolute;top: 20px;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+		<div id="content_info">
+			<!--搜索结果-->
+			<div class="container" style="">
+				<div class="row">
+					<h4 id="results"></h4>
+				</div>
+			</div>
+			<!--新闻动态-->
+			<div class="container info01">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="module-tab-box-ma" id="content01">
+							<div class="module-tab-box-ma_Div">
+								<h3>新闻动态</h3>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--趣味德国-->
+			<div class="container info02">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="module-tab-box-ma_Div">
+							<h3>趣味德国</h3>
+						</div>
+					</div>
+					<div class="col-md-12 interesGermany_list">
+						<ul id="content02">
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--活动计划-->
+			<div class="container info03">
+				<div class="row tables">
+					<div class="col-md-12" style="padding-bottom: 20px;">
+						<div class="module-tab-box-ma_Div">
+							<h3>活动计划</h3>
+						</div>
+					</div>
+					<div class="col-md-12 module-tab-box-ma" style="padding-left: 15px;">
+						<table border="1" class="table table-hover table-bordered">
+							<thead>
+							<tr>
+								<th>活动类型</th>
+								<th>活动</th>
+								<th>时间</th>
+								<th>地点</th>
+								<th>备注</th>
+							</tr>
+							</thead>
+							<tbody id="content03"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!--合作资源-->
+			<div class="container info04">
+				<div class="row what-we-do-crousel-sec">
+					<div class="col-md-12" style="padding-bottom: 20px;">
+						<div class="module-tab-box-ma_Div">
+							<h3>合作资源</h3>
+						</div>
+					</div>
+					<div class="hezuoziyuan_content" id="content04"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
+
+<script>
+	$(function () {
+		$("#loading").show();
+		$("#content_info").hide();
+		var url = window.location.search;
+		var urlResult = [];
+		var arrUrl = url.substr(1).split("&");
+		for (var j = 0; j < arrUrl.length; j++) {
+			urlResult[j] = decodeURI(arrUrl[j].split("=")[1]);
+		}
+		//Search
+		$.ajax({
+			type: 'GET',
+			url: globalUrl("search") + "?search=" + urlResult[0],
+			dataType: 'json',
+			success: function (data) {
+				if (data.resultCode === 200) {
+					$("#loading").hide();
+					$("#content_info").show();
+
+					//搜索结果
+					$("#results").html("搜索到关于<strong>" + urlResult[0] + "</strong>的结果共<strong>"
+						+ parseInt(data.data.germanyNews.list.length + data.data.activity.list.length + data.data.resources.list.length
+							+ data.data.indexNews.list.length) + "</strong>项");
+
+					//新闻动态
+					if (data.data.indexNews.list.length > 0) {
+						for (let i = 0; i < data.data.indexNews.list.length; i++) {
+							$("#content01").append("<li>\n" +
+								"\t\t\t\t\t\t<div class=\"module-tab-title\">\n" +
+								"\t\t\t\t\t\t\t<a href=\"../newsDetails/details_page.html?id=" + data.data.indexNews.list[i].id + "\">\n" +
+								"\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon01\">\n" +
+								"\t\t\t\t\t\t\t\t\t<img class=\"img-responsive\" src=\""+ domainNameUrl() + data.data.indexNews.list[i].firstPicture + "\" alt=\"\">\n" +
+								"\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon02\">\n" +
+								"\t\t\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon02_title\">" + "【" + data.data.indexNews.list[i].kind.substring(0, 2) + "】" + data.data.indexNews.list[i].title + "</h4>\n" +
+								"\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_time\">时间：<span class=\"times\">" + data.data.indexNews.list[i].createTime.substring(0, 10) + "</span> &nbsp;|&nbsp;来源：本站</p>\n" +
+								"\t\t\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon02_info\">" + data.data.indexNews.list[i].description + "</p>\n" +
+								"\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t</a>\n" +
+								"\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t</li>");
+						}
+					} else {
+						$(".info01").hide();
+					}
+
+					//趣味德国
+					if (data.data.germanyNews.list.length > 0) {
+						for (let i = 0; i < data.data.germanyNews.list.length; i++) {
+							$("#content02").append("<li>\n" +
+								"\t\t\t\t\t\t<a href=\"../language_center/interestGermanyInfo.html?germanyId=" + data.data.germanyNews.list[i].id + "\">\n" +
+								"\t\t\t\t\t\t\t<h4 class=\"module-tab-title_DivSon_title\">" + data.data.germanyNews.list[i].title + "</h4>\n" +
+								"\t\t\t\t\t\t\t<p class=\"module-tab-title_DivSon_time\">时间：" + data.data.germanyNews.list[i].createTime.substring(0, 10) + "</p>\n" +
+								"\t\t\t\t\t\t</a>\n" +
+								"\t\t\t\t\t</li>");
+						}
+					} else {
+						$(".info02").hide();
+					}
+
+					//活动计划
+					if (data.data.activity.list.length > 0) {
+						for (let i = 0; i < data.data.activity.list.length; i++) {
+							$("#content03").append("<tr>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].kind + "</td>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].title + "</td>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].content + "</td>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].addr + "</td>\n" +
+								"\t\t\t\t\t\t\t\t\t<td>" + data.data.activity.list[i].remark + "</td>\n" +
+								"\t\t\t\t\t\t\t\t</tr>");
+						}
+					} else {
+						$(".info03").hide();
+					}
+
+					//合作资源
+					if (data.data.resources.list.length > 0) {
+						for (let i = 0; i < data.data.resources.list.length; i++) {
+							$("#content04").append("<div class=\"col-md-12 item\">\n" +
+								"\t\t\t\t\t\t\t\t\t<div class=\"row\">\n" +
+								"\t\t\t\t\t\t\t\t\t\t<div class=\"col-lg-4 col-md-4 col-sm-4 col-xs-12\">\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t<h3>" + data.data.resources.list[i].title + "</h3>\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t<img class=\"img-responsive center-block\"\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t\t src=\"" + domainNameUrl() + data.data.resources.list[i].logo + "\" alt=\"\">\n" +
+								"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t\t\t\t<div class=\"col-lg-8 col-md-8 col-sm-8 col-xs-12\">\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t<p>\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t\t" + data.data.resources.list[i].description + "\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t</p>\n" +
+								"\t\t\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t\t\t\t<a target=\"_blank\" href=\"" + data.data.resources.list[i].url + "\" class=\"what-we-do-button\">\n" +
+								"\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-long-arrow-right\"></i>\n" +
+								"\t\t\t\t\t\t\t\t\t\t</a>\n" +
+								"\t\t\t\t\t\t\t\t\t</div>\n" +
+								"\t\t\t\t\t\t\t\t</div>");
+						}
+					} else {
+						$(".info04").hide();
+					}
+				} else {
+					alert("搜索失败！请重新搜索");
+					$("#loading").hide();
+				}
+			},
+			error: function () {
+				alert("搜索失败！请重新搜索");
+				$("#loading").hide();
+			}
+		});
+	})
+</script>
+
+</body>
+</html>

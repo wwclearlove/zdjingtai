@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="乐山中德科技促进中心,中德科技,中德科技促进中心,中德平台,中德合作,科技合作,教育合作,企业合作,语言中心,合作资源,德语"/>
+	<meta name="description"
+		  content="四川乐山中德科技促进中心成立于2016年，是由乐山高新区与西南交大峨眉校区及德国奥斯特法利亚(Ostfalia) 应用科学大学三方共同打造的科技教育文化交流平台。我们有德国平台、高校平台，语言中心，科技中心及文化交流中心五个部门,旨在以德国“工业4.0” 对接“中国制造2025”为主统，利用三方各自拥有及协同的优势资源，开展相关技术研发、科技和德语（语言）培训、成果转化和咨询服务等科技教育合作活动，为乐山市和德国经济转型升级和社会发展提供技术和人才支撑，促进中德科技、教育、文化、经济合作。">
+	<meta name="robots" content="index"/>
+	<meta name="author" content="四川中德科技促进中心,lszdkc@163.com">
+	<meta name="copyright" content="四川中德科技促进中心">
+	<title>乐山中德科技促进中心</title>
+	<link rel="shortcut icon" type="images/x-icon" href="../../static/imgs/logoIcon.png">
+	<link rel="stylesheet" href="../../static/css/bootstrap.css">
+	<link rel="stylesheet" href="../../static/css/font-awesome.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/header.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/footer.css"/>
+	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
+	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/bootstrap-paginator.js"></script>
+	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+</head>
+<body>
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<img class="img-responsive" src="../../static/imgs/newsactivity/news_dynamic.png" width="100%" alt="">
+		</div>
+	</div>
+	<!--News-->
+	<div class="module-banner">
+		<div class="module-banner-box">
+			<div class="module-banner-tab clearfix">
+				<div class="module-banner-tab-list hd">
+					<div class="news_list_Div">
+						<h2>新闻动态</h2>
+						<span>News</span>
+					</div>
+					<ul class="module-tab-nav">
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>科技合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>教育合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>企业合作</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>语言中心</span>
+						</li>
+						<li>
+							<i class="fa fa-location-arrow"></i>
+							<span>合作资源</span>
+						</li>
+					</ul>
+				</div>
+				<div class="module-banner-tab-list-box bd" id="news" style="position: relative;">
+					<ul class="module-tab-box-ma" style="display: none;">
+						<div class="module-tab-box-ma_Div">
+							<h3>新闻动态</h3>
+						</div>
+					</ul>
+					<div class="newsContent" style="display: block;">
+
+					</div>
+					<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="module-tab-box-ma_Divs">
+				<ul id="page" style="display: none;">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
+
+<script type="text/javascript" src="../../static/js/newsList.js"></script>
+
+<script>
+	$(function () {
+		$(".li-cate-1").eq(1).addClass("active");
+		$("#loading").show();
+		//News Details
+		$.ajax({
+			type: "POST",
+			url: globalUrl("dynamicNewsID") + "?id=" + getParameters()[0],
+			dataType: "json",
+			success: function (data) {
+				if (data.resultCode === 200) {
+					$("#loading").hide();
+					$("title").text(data.data.title);
+					$(".newsContent").html(data.data.content);
+					for (let i = 0; i < $(".newsContent img").length; i++) {
+						$(".newsContent img").eq(i).attr("src", domainNameUrl() + $(".newsContent img").eq(i).attr("src"));
+					}
+				} else {
+					alert("新闻详情参数错误！请刷新再试");
+					$("#loading").hide();
+				}
+			},
+			error: function () {
+				alert("服务器繁忙，请稍后再试！");
+				$("#loading").hide();
+			}
+		})
+	})
+</script>
+
+</body>
+</html>
