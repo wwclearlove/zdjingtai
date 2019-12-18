@@ -18,19 +18,134 @@
 	<link type="text/css" rel="stylesheet" href="../../static/css/header.css"/>
 	<link type="text/css" rel="stylesheet" href="../../static/css/footer.css"/>
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/css/banner.css">
+	<link type="text/css" rel="stylesheet" href="../../static/css/index/index.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/bdtxk7.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/slider.js"></script>
+	<script type="text/javascript" src="../../static/js/banner/jquery.iosslider.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap-paginator.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
 </head>
 <body>
 
 <section>
-	<div class="container-fluid">
-		<div class="row">
-			<img class="img-responsive" src="../../static/imgs/newsactivity/news_dynamic.png" width="100%" alt="">
+	<!--banner1-->
+	<div class="iosSliderDemo banner1" style="overflow: hidden">
+		<div class="fluidHeight">
+			<div class="sliderContainer">
+				<div class="iosSlider"
+					 style="position: relative; top: 0; left: 0; overflow: hidden; z-index: 1; perspective: 1000px;
+					 backface-visibility: hidden; width: 1579px; height: 462px;">
+					<div class="slider"
+						 style="position: relative; cursor: -webkit-grab; backface-visibility: hidden;transform: matrix(1, 0, 0, 1, -16560, 0); width: 8280px;">
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background-size: cover;"></a>
+								<div class="text1" style=""><span></span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background-size: cover;"></a>
+								<div class="text1" style=""><span></span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background-size: cover;"></a>
+								<div class="text1" style=""><span></span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background-size: cover;"></a>
+								<div class="text1" style=""><span></span></div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="inner">
+								<a href="javascript:void (0)"
+								   style="background-size: cover;"></a>
+								<div class="text1" style=""><span></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slideSelectors">
+					<div class="prev"></div>
+					<div class="slideSelectorsa">
+						<a class="item selected" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+						<a class="item" onfocus="undefined"></a>
+					</div>
+					<div class="next"></div>
+				</div>
+				<div class="leftbg"></div>
+				<div class="rightbg"></div>
+			</div>
 		</div>
+	</div>
+	<!--banner2-->
+	<div id="carousel-example-generic" class="carousel slide banner2" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		</ol>
+
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img class="img-responsive center-block" src="" alt="">
+				<div class="carousel-caption">
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-responsive center-block" src="" alt="">
+				<div class="carousel-caption">
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-responsive center-block" src="" alt="">
+				<div class="carousel-caption">
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-responsive center-block" src="" alt="">
+				<div class="carousel-caption">
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img class="img-responsive center-block" src="" alt="">
+				<div class="carousel-caption">
+					<p></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>
 	<!--News-->
 	<div class="module-banner">
@@ -70,6 +185,9 @@
 							<h3>新闻动态</h3>
 						</div>
 					</ul>
+					<div class="getback">
+						<p>您所在的位置：<a href="../index.html">首页</a> > <a href="../newsactivity/news.html">新闻动态</a></p>
+					</div>
 					<div class="newsContent" id="reviewimages" style="display: block;">
 
 					</div>
@@ -92,6 +210,7 @@
 
 <script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
 
+<script type="text/javascript" src="../../static/js/banner/banner.js"></script>
 <script type="text/javascript" src="../../static/js/newsList.js"></script>
 
 <script>

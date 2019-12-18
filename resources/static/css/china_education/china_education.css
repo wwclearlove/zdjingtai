@@ -113,7 +113,7 @@
 	min-height: 500px;
 }
 
-.zhongdejiaoyuhezuo_info p a {
+.zhongdejiaoyuhezuo_info .art_con p a {
 	color: #333333;
 	border-bottom: 1px solid #333333;
 	text-decoration: none;
@@ -162,7 +162,7 @@
 	border-radius: 5px;
 }
 
-.youxue_info p {
+.youxue_info .art_con p {
 	letter-spacing: 2px;
 	line-height: 2em;
 	text-indent: 2em;

@@ -94,17 +94,16 @@ $(document).ready(function () {
 	// 图片查看大图
 	for (let i = 0; i < $("section img").length; i++) {
 		$("section img").eq(i).click(function () {
-			if ( $(this).attr("src").substring(0, 4) !== "http") {
-				//domainNameUrl()
-				window.open("http://localhost:63342/zd/resources/" + $(this).attr("src").substring(6, $(this).attr("src").length));
+			if ($(this).attr("src").substring(0, 4) !== "http") {
+				window.open(imgPath() + $(this).attr("src").substring(6, $(this).attr("src").length));
 			}
 		})
 	}
-})
+});
 
-/*配置全站请求URL*/
+/*配置全站请求接口URL*/
 function globalUrl(theModule) {
-	const url = "http://106.52.3.235:8888/";
+	const url = "http://www.sczdkc.cn:8888/"
 	const banner = "banner"; // 轮播图
 	const indexNews = "indexNews"; // 首页热点新闻
 	const dynamicNews = "dynamicNews"; // 新闻动态
@@ -151,12 +150,17 @@ function globalUrl(theModule) {
 	}
 }
 
-/*配置全站URL*/
+/*配置全站请求URL*/
 function domainNameUrl() {
-	return "http://106.52.3.235:8888/";
+	return "http://www.sczdkc.cn:8888/";
 }
 
-/*页面传参配置*/
+/*配置全站静态IMG URL*/
+function imgPath() {
+	return "http://www.sczdkc.cn:80/";
+}
+
+/*配置页面传参*/
 function getParameters() {
 	const url = window.location.search;
 	let urlResult = [];

@@ -600,3 +600,12 @@ body, section, h1, h2, h3, h4, h5, h6, p, span, b, ul, li, a, table, th, hr, td,
 #page li {
 	cursor: pointer;
 }
+
+/*位置导航*/
+.getback{
+	width: 100%;
+	height: 30px;
+}
+.getback p{
+	line-height: 40px;
+}
