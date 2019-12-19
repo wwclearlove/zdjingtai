@@ -19,6 +19,7 @@
 	<link type="text/css" rel="stylesheet" href="../../static/css/banner.css">
 	<link type="text/css" rel="stylesheet" href="../../static/css/index/index.css">
 	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
+	<link rel="stylesheet" href="../../static/css/languagecenter/language_center.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
@@ -147,55 +148,40 @@
 		</a>
 	</div>
 	<!--News-->
-	<div class="module-banner">
-		<div class="module-banner-box">
-			<div class="module-banner-tab clearfix">
-				<div class="module-banner-tab-list hd">
-					<div class="news_list_Div">
-						<h2>新闻动态</h2>
-						<span>News</span>
-					</div>
-					<ul class="module-tab-nav">
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>科技合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>教育合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>企业合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>语言中心</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>合作资源</span>
-						</li>
+	<div class="container zhongdejiaoyuhezuo" id="news" style="margin-top: -20px;">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-4 zhongdejiaoyuhezuo_title">
+				<div class="subnav" style="z-index: 2;">
+					<a href="./news.html" style="text-decoration: none;"><h3 style="margin: 0;">新闻动态</h3></a>
+					<ul class="navcon">
+						<li><i></i><a href="javascript:void (0)">科技合作</a></li>
+						<li><i></i><a href="javascript:void (0)">教育合作</a></li>
+						<li><i></i><a href="javascript:void (0)">企业合作</a></li>
+						<li><i></i><a href="javascript:void (0)">语言中心</a></li>
+						<li><i></i><a href="javascript:void (0)">合作资源</a></li>
 					</ul>
-				</div>
-				<div class="module-banner-tab-list-box bd" id="news" style="position: relative;">
-					<div class="getback">
-						<p>您所在的位置：<a href="../index.html">首页</a> > <a href="../newsactivity/news.html">新闻动态</a></p>
-					</div>
-					<ul class="module-tab-box-ma">
-						<div class="module-tab-box-ma_Div">
-							<h3>新闻动态</h3>
-						</div>
-					</ul>
-					<img id="loading" style="position: absolute;top: 49%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="module-tab-box-ma_Divs">
-				<ul id="page"></ul>
+			<div class="col-lg-9 col-md-9 col-sm-8 zhongdejiaoyuhezuo_info" style="background-color: white;">
+				<div class="article">
+					<div class="getback" id="getback">
+						<p>您所在的位置：<a href="../index.html">首页</a> > <a href="./news.html">新闻动态</a></p>
+					</div>
+					<div class="info01">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="module-tab-box-ma_Div">
+									<h3 style="font-size: 1.7em;border-bottom: 0;">新闻动态</h3>
+								</div>
+								<img id="loading" style="position: absolute;top: 100px;left: 46%;" src="../../static/imgs/loading.gif" alt="">
+								<ul class="module-tab-box-ma" id="content01" style="min-height: 400px"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="module-tab-box-ma_Divs" style="text-align: right;">
+					<ul id="page"></ul>
+				</div>
 			</div>
 		</div>
 	</div>

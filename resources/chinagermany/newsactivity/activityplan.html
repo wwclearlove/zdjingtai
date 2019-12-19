@@ -16,11 +16,32 @@
 	<link rel="stylesheet" href="../../static/css/font-awesome.css"/>
 	<link rel="stylesheet" href="../../static/css/header.css"/>
 	<link rel="stylesheet" href="../../static/css/footer.css"/>
-	<link rel="stylesheet" href="../../static/css/newsactivity/news_list.css"/>
+	<link rel="stylesheet" href="../../static/css/languagecenter/language_center.css">
 	<script type="text/javascript" src="../../static/js/jquery-3.4.1.js"></script>
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<style type="text/css">
+		.module-tab-box-ma table th {
+			text-align: center;
+			color: white;
+			font-size: 1.4em;
+			letter-spacing: 2px;
+			font-weight: bolder;
+			background-color: #157BBB;
+		}
+
+		.module-tab-box-ma table td {
+			font-size: 1.2em;
+			letter-spacing: 1px;
+			text-align: center;
+		}
+
+		.table > tbody > tr > td {
+			vertical-align: middle;
+		}
+
+	</style>
 </head>
 <body>
 
@@ -30,130 +51,102 @@
 			<img class="img-responsive center-block" src="../../static/imgs/background_img.jpg" width="100%" alt="">
 		</div>
 	</div>
-	<!--news-->
-	<div class="module-banner" style="padding-bottom: 100px;">
-		<div class="module-banner-box">
-			<div class="module-banner-tab clearfix">
-				<div class="module-banner-tab-list hd">
-					<div class="news_list_Div">
-						<h3>活动计划</h3>
-					</div>
-					<ul class="module-tab-nav">
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>科技合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>教育合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>企业合作</span>
-						</li>
-						<li>
-							<i class="fa fa-location-arrow"></i>
-							<span>语言中心</span>
-						</li>
+	<!--News-->
+	<div class="container zhongdejiaoyuhezuo" id="news">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-4 zhongdejiaoyuhezuo_title">
+				<div class="subnav" style="z-index: 2;">
+					<a href="./activityplan.html" style="text-decoration: none;"><h3 style="margin: 0;">活动计划</h3></a>
+					<ul class="navcon">
+						<li><i></i><a href="javascript:void (0)">科技合作</a></li>
+						<li><i></i><a href="javascript:void (0)">教育合作</a></li>
+						<li><i></i><a href="javascript:void (0)">企业合作</a></li>
+						<li><i></i><a href="javascript:void (0)">语言中心</a></li>
 					</ul>
 				</div>
-				<div class="module-banner-tab-list-box bd" style="min-height: 400px;">
-					<div class="getback">
-						<p>您所在的位置：<a href="../index.html">首页</a> > <a href="../newsactivity/activityplan.html">活动计划</a></p>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-8 zhongdejiaoyuhezuo_info">
+				<div>
+					<div class="getback" id="getback">
+						<p>您所在的位置：<a href="../index.html">首页</a> > <a href="./activityplan.html">活动计划</a></p>
 					</div>
-					<div class="module-tab-box-ma module_ul1" style="display: block;">
-						<div class="module-tab-box-ma_Div">
-							<h3>活动计划</h3>
-						</div>
-						<div>
-							<table border="1" class="table table-hover table-bordered">
-								<thead>
-								<tr>
-									<th>活动类型</th>
-									<th>活动</th>
-									<th>时间</th>
-									<th>地点</th>
-									<th>备注</th>
-								</tr>
-								</thead>
-								<tbody id="activity_list"></tbody>
-							</table>
-						</div>
-					</div>
-					<div class="module-tab-box-ma module_ul1" style="display: none;">
-						<div class="module-tab-box-ma_Div">
-							<h3><img src="../../static/imgs/newsactivity/keji.png" alt="">科技合作</h3>
-						</div>
-						<div>
-							<table border="1" class="table table-hover table-bordered">
-								<thead>
-								<tr>
-									<th>活动类型</th>
-									<th>活动</th>
-									<th>时间</th>
-									<th>地点</th>
-									<th>备注</th>
-								</tr>
-								</thead>
-								<tbody id="activity_list01"></tbody>
-							</table>
-						</div>
-					</div>
-					<div class="module-tab-box-ma module_ul2" style="display: none;">
-						<div class="module-tab-box-ma_Div">
-							<h3><img src="../../static/imgs/newsactivity/jiaoyu.png" alt="">教育合作</h3>
-						</div>
-						<div>
-							<table border="1" class="table table-hover table-bordered">
-								<thead>
-								<tr>
-									<th>活动类型</th>
-									<th>活动</th>
-									<th>时间</th>
-									<th>地点</th>
-									<th>备注</th>
-								</tr>
-								</thead>
-								<tbody id="activity_list02"></tbody>
-							</table>
-						</div>
-					</div>
-					<div class="module-tab-box-ma module_ul3" style="display: none;">
-						<div class="module-tab-box-ma_Div">
-							<h3><img src="../../static/imgs/newsactivity/qiye.png" alt="">企业合作</h3>
-						</div>
-						<div>
-							<table border="1" class="table table-hover table-bordered">
-								<thead>
-								<tr>
-									<th>活动类型</th>
-									<th>活动</th>
-									<th>时间</th>
-									<th>地点</th>
-									<th>备注</th>
-								</tr>
-								</thead>
-								<tbody id="activity_list03"></tbody>
-							</table>
-						</div>
-					</div>
-					<div class="module-tab-box-ma module_ul4" style="display: none;">
-						<div class="module-tab-box-ma_Div">
-							<h3><img src="../../static/imgs/newsactivity/yuyan.png" alt="">语言中心</h3>
-						</div>
-						<div>
-							<table border="1" class="table table-hover table-bordered">
-								<thead>
-								<tr>
-									<th>活动类型</th>
-									<th>活动</th>
-									<th>时间</th>
-									<th>地点</th>
-									<th>备注</th>
-								</tr>
-								</thead>
-								<tbody id="activity_list04"></tbody>
-							</table>
+					<div class="info03">
+						<div class="row tables">
+							<div class="col-md-12" style="padding-bottom: 20px;">
+								<div class="module-tab-box-ma_Div" style="border-bottom: 3px solid #157BBB;">
+									<h3>活动计划</h3>
+								</div>
+							</div>
+							<div class="col-md-12 module-tab-box-ma" style="display: block;">
+								<table border="1" class="table table-hover table-bordered">
+									<thead>
+									<tr>
+										<th>活动类型</th>
+										<th>活动</th>
+										<th>时间</th>
+										<th>地点</th>
+										<th>备注</th>
+									</tr>
+									</thead>
+									<tbody class="activity_list"></tbody>
+								</table>
+							</div>
+							<div class="col-md-12 module-tab-box-ma content_table" style="display: none;">
+								<table border="1" class="table table-hover table-bordered">
+									<thead>
+									<tr>
+										<th>活动类型</th>
+										<th>活动</th>
+										<th>时间</th>
+										<th>地点</th>
+										<th>备注</th>
+									</tr>
+									</thead>
+									<tbody class="activity_list01"></tbody>
+								</table>
+							</div>
+							<div class="col-md-12 module-tab-box-ma content_table" style="display: none;">
+								<table border="1" class="table table-hover table-bordered">
+									<thead>
+									<tr>
+										<th>活动类型</th>
+										<th>活动</th>
+										<th>时间</th>
+										<th>地点</th>
+										<th>备注</th>
+									</tr>
+									</thead>
+									<tbody class="activity_list02"></tbody>
+								</table>
+							</div>
+							<div class="col-md-12 module-tab-box-ma content_table" style="display: none;">
+								<table border="1" class="table table-hover table-bordered">
+									<thead>
+									<tr>
+										<th>活动类型</th>
+										<th>活动</th>
+										<th>时间</th>
+										<th>地点</th>
+										<th>备注</th>
+									</tr>
+									</thead>
+									<tbody class="activity_list03"></tbody>
+								</table>
+							</div>
+							<div class="col-md-12 module-tab-box-ma content_table" style="display: none;">
+								<table border="1" class="table table-hover table-bordered">
+									<thead>
+									<tr>
+										<th>活动类型</th>
+										<th>活动</th>
+										<th>时间</th>
+										<th>地点</th>
+										<th>备注</th>
+									</tr>
+									</thead>
+									<tbody class="activity_list04"></tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -168,30 +161,21 @@
 	$(function () {
 		$(".li-cate-1").eq(2).addClass("active");
 		// category
-		const moduleUl = $(".module-tab-box-ma");
-		const moduleTabNav = $(".module-tab-nav li");
-		for (let i = 0; i < moduleTabNav.length; i++) {
-			moduleTabNav[i].index = i;
-			moduleTabNav.eq(i).click(function () {
-				for (let i = 0; i < moduleTabNav.length; i++) {
-					moduleTabNav.eq(i).removeClass("on");
+		const navcon = $(".navcon li");
+		for (let i = 0; i < navcon.length; i++) {
+			navcon[i].index = i;
+			navcon.eq(i).click(function () {
+				for (let n = 0; n < navcon.length; n++) {
+					navcon.eq(n).removeClass("cur");
+					$(".module-tab-box-ma").eq(n).hide();
+					$(".content_table").eq(n).hide();
 				}
-				for (let i = 0; i < moduleUl.length; i++) {
-					moduleUl.eq(i).hide();
-				}
-				$(this).addClass("on");
-				moduleUl.eq(this.index + 1).show();
-			});
+				navcon.eq(this.index).addClass("cur");
+				$(".module-tab-box-ma_Div h3").text(navcon.eq(this.index).text());
+				$("#getback").html("<p>您所在的位置：<a href=\"../index.html\">首页</a> > <a href=\"./activityplan.html\">活动计划</a> > <a href=\"javascript:void (0)\">" + navcon.eq(this.index).text() + "</a></p>");
+				$(".content_table").eq(this.index).show();
+			})
 		}
-		$(".news_list_Div").click(function () {
-			for (let i = 1; i < moduleUl.length; i++) {
-				moduleUl.eq(i).hide();
-			}
-			for (let i = 0; i < moduleTabNav.length; i++) {
-				moduleTabNav.eq(i).removeClass("on");
-			}
-			moduleUl.eq(0).show();
-		});
 		// News
 		$.ajax({
 			type: "POST",
@@ -211,12 +195,17 @@
 							activityNews("activity_list04", i);
 						}
 					}
+					for (let i = 0; i < 5; i++) {
+						if ($("tbody").eq(i).html() === "") {
+							$(".module-tab-box-ma").eq(i).append("<h3 style=\"text-align: center;\">暂无活动</h3>");
+						}
+					}
 				} else {
 					alert("活动计划参数错误！请刷新再试");
 				}
 
 				function activityNews(category, i) {
-					$("#" + category + "").append("<tr>\n" +
+					$("." + category + "").append("<tr>\n" +
 						"\t\t\t\t\t\t\t\t\t<td>" + data.data.list[i].kind + "</td>\n" +
 						"\t\t\t\t\t\t\t\t\t<td>" + data.data.list[i].title + "</td>\n" +
 						"\t\t\t\t\t\t\t\t\t<td>" + data.data.list[i].content + "</td>\n" +

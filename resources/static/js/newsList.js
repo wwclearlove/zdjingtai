@@ -1,47 +1,32 @@
 //初始化调用
 //dynamicNews(-1, 1);
-// category
-const moduleTabNav = $(".module-tab-nav li");
-for (let i = 0; i < moduleTabNav.length; i++) {
-	moduleTabNav[i].index = i;
-	moduleTabNav.eq(i).click(function () {
-		for (let i = 0; i < moduleTabNav.length; i++) {
-			moduleTabNav.eq(i).removeClass("on");
+//category
+const navcon = $(".navcon li");
+for (let i = 0; i < navcon.length; i++) {
+	navcon[i].index = i;
+	navcon.eq(i).click(function () {
+		for (let n = 0; n < navcon.length; n++) {
+			navcon.eq(n).removeClass("cur");
 		}
-		$(this).addClass("on");
-		$(".module-tab-box-ma li").remove();
-		$(".module-tab-box-ma h2").remove();
+		navcon.eq(this.index).addClass("cur");
+		$(".module-tab-box-ma_Div h3").text(navcon.eq(this.index).text());
+		$("#getback").html("<p>您所在的位置：<a href=\"../index.html\">首页</a> > <a href=\"./news.html\">新闻动态</a> > <a href=\"javascript:void (0)\">" + navcon.eq(this.index).text() + "</a></p>");
+		$("#content01 li").remove();
+		$("#content01 h2").remove();
 		$("#loading").show();
-		dynamicNews(this.index, 1);
-		$(".module-tab-box-ma").show();
+		$(".info01").show();
 		$(".newsContent").hide();
-		$("#page").show();
-	});
+		dynamicNews(this.index, 1);
+	})
 }
-// category
-$(".news_list_Div").click(function () {
-	for (let i = 0; i < moduleTabNav.length; i++) {
-		moduleTabNav.eq(i).removeClass("on");
-	}
-	$(".module-tab-box-ma li").remove();
-	$(".module-tab-box-ma h2").remove();
-	$("#loading").show();
-	dynamicNews(-1, 1);
-	$(".module-tab-box-ma").show();
-	$(".newsContent").hide();
-	$("#page").show();
-});
-
 // News
 function dynamicNews(number, page) {
 	let url = "";
 	let currentPages = 1;
 	if (number === -1) {
-		$(".module-tab-box-ma_Div h3").text($(".news_list_Div h2").text());
 		url = globalUrl("dynamicNews") + "?page=" + page + "&limit=10";
 	} else {
-		$(".module-tab-box-ma_Div h3").text($(".module-tab-nav li span").eq(number).text());
-		url = globalUrl("dynamicNews") + "?page=" + page + "&limit=10&keyword=" + $(".module-tab-nav li span").eq(number).text();
+		url = globalUrl("dynamicNews") + "?page=" + page + "&limit=10&keyword=" + $(".navcon a").eq(number).text();
 	}
 
 	$.ajax({
@@ -53,7 +38,7 @@ function dynamicNews(number, page) {
 				$("#loading").hide();
 				currentPages = data.data.currPage;
 				for (let i = 0; i < data.data.list.length; i++) {
-					$(".module-tab-box-ma").append("<li>\n" +
+					$("#content01").append("<li>\n" +
 						"\t\t\t\t\t\t\t<div class=\"module-tab-title\">\n" +
 						"\t\t\t\t\t\t\t\t<a href=\"../newsDetails/details_page.html?id=" + data.data.list[i].id + "\">\n" +
 						"\t\t\t\t\t\t\t\t\t<div class=\"module-tab-title_DivSon01\">\n" +
@@ -69,10 +54,8 @@ function dynamicNews(number, page) {
 						"\t\t\t\t\t\t</li>");
 				}
 			} else {
-				$(".module-tab-box-ma li").remove();
-				$(".module-tab-box-ma h2").remove();
-				$(".module-tab-box-ma").append("<h2 style=\"text-align: center;\">暂无新闻</h2>");
 				$("#loading").hide();
+				$("#content01").append("<h2 style=\"text-align: center;\">暂无新闻</h2>");
 			}
 
 			// 分页
@@ -84,29 +67,28 @@ function dynamicNews(number, page) {
 				useBootstrapTooltip: true,
 				//点击事件
 				onPageClicked: function (event, originalEvent, type, page) {
-					$("html,body").animate({scrollTop:$("#news").offset().top-100},300);
-					$(".module-tab-box-ma li").remove();
-					$(".module-tab-box-ma h2").remove();
-					let categorys = $(".module-tab-box-ma_Div h3").text();
+					$("html,body").animate({scrollTop: $("#news").offset().top - 100}, 300);
+					$("#content01 li").remove();
+					$("#content01 h2").remove();
 					$("#loading").show();
+					let categorys = $(".module-tab-box-ma_Div h3").text();
 					if (categorys === "新闻动态") {
-						dynamicNews(-1,page);
+						dynamicNews(-1, page);
 					} else if (categorys === "科技合作") {
-						dynamicNews(0,page);
+						dynamicNews(0, page);
 					} else if (categorys === "教育合作") {
-						dynamicNews(1,page);
+						dynamicNews(1, page);
 					} else if (categorys === "企业合作") {
-						dynamicNews(2,page);
+						dynamicNews(2, page);
 					} else if (categorys === "语言中心") {
-						dynamicNews(3,page);
+						dynamicNews(3, page);
 					} else {
-						dynamicNews(4,page);
+						dynamicNews(4, page);
 					}
 				}
 			});
 		},
 		error: function () {
-			$(".module-tab-box-ma li").remove();
 			alert("服务器繁忙，请稍后再试！");
 			$("#loading").hide();
 		}

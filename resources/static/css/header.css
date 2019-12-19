@@ -607,5 +607,13 @@ body, section, h1, h2, h3, h4, h5, h6, p, span, b, ul, li, a, table, th, hr, td,
 	height: 30px;
 }
 .getback p{
+	font-size: 1.2em;
 	line-height: 40px;
+	margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+	.zhongdejiaoyuhezuo_info {
+		margin-top: 30px;
+	}
 }

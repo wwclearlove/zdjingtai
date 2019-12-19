@@ -103,7 +103,7 @@ $(document).ready(function () {
 
 /*配置全站请求接口URL*/
 function globalUrl(theModule) {
-	const url = "http://www.sczdkc.cn:8888/"
+	const url = "http://www.sczdkc.cn:8888/";
 	const banner = "banner"; // 轮播图
 	const indexNews = "indexNews"; // 首页热点新闻
 	const dynamicNews = "dynamicNews"; // 新闻动态
