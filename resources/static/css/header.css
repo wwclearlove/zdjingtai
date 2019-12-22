@@ -617,3 +617,13 @@ body, section, h1, h2, h3, h4, h5, h6, p, span, b, ul, li, a, table, th, hr, td,
 		margin-top: 30px;
 	}
 }
+
+@media (max-width: 991px) and (min-width: 768px){
+	.subnav h3 {
+		font-size: 1.4em;
+		text-indent: 20px;
+	}
+	.navcon li a{
+		font-size: 1em;
+	}
+}

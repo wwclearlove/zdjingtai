@@ -141,3 +141,5 @@ document.writeln("	</header>");
 document.writeln("	<!--Mask-->");
 document.writeln("	<div id=\'mask\'></div>");
 document.writeln("</div>");
+
+document.writeln("<style type=\'text/css\'>@media (max-width: 991px) and (min-width: 768px){.subnav h3 {font-size: 1.4em;text-indent: 20px;}.navcon li a{font-size: 1em;}}</style>");
