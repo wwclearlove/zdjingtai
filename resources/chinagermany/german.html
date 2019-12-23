@@ -22,8 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/german/responsive.css">
 	<script src="../static/js/jquery-3.4.1.js"></script>
 	<script src="../static/js/bootstrap.js"></script>
-	<script src="../static/js/german/skrollr.min.js"></script>
-	<script src="../static/js/german/main.js"></script>
 	<style type="text/css">
 		* {
 			margin: 0 auto;
@@ -105,6 +103,30 @@
 			color: white;
 		}
 
+		#totop {
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+			position: fixed;
+			bottom: 40px;
+			right: 1.5%;
+			display: none;
+			z-index: 9999;
+			background: #157BBB;
+			border: 3px solid #ffffff;
+			height: 40px;
+			width: 40px;
+			text-align: center;
+			transition: all 0.2s linear;
+		}
+		#totop i {
+			color: #ffffff;
+			line-height: 34px;
+			font-size: 20px;
+			transition: all 0.2s linear;
+		}
+
+		#totop:hover i {
+			line-height: 30px;
+		}
 	</style>
 </head>
 <body class="sticky-enable home-1">
@@ -371,13 +393,34 @@
 				<p>Bei Interesse nehmen Sie bitte Kontakt mit uns auf</p>
 				<p>Tel-Nr：01748295026</p>
 				<p>Email：wang.zhaolin324@gmail.com</p>
-				<p>Copyright© 2019 China-germany science and technology promotion center.All Rights Reserved.</p>
+				<p>Copyright© 2019 Leshan China-Germany science and technology promotion center.All Rights Reserved.</p>
 			</div>
 		</div>
 	</div>
 </footer>
 
-<a id="totop" href="#" class="animated zoomIn"><i class="fa fa-angle-up"></i></a>
+<a id="totop" href="javascript:void (0);" class="animated zoomIn"><i class="fa fa-angle-up"></i></a>
+
+<script>
+	$(document).ready(function () {
+		$(document).scroll(function() {
+			const scrollTop = parseInt($(document).scrollTop());
+			if (scrollTop >= 100){
+				$("#totop").show();
+			} else {
+				$("#totop").hide();
+			}
+		});
+		$("#totop").click(function () {
+			$("html,body").animate({scrollTop: 0}, 300);
+		});
+		for (let i = 0; i < $("#pagewrap img").length; i++) {
+			$("#pagewrap img").eq(i).click(function () {
+				window.open("http://www.sczdkc.cn:80/" + $(this).attr("src").substring(3, $(this).attr("src").length));
+			})
+		}
+	})
+</script>
 
 </body>
 </html>

@@ -21,9 +21,6 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
-	<script>
-		$(function () {$(".li-cate-1").eq(8).addClass("active");})
-	</script>
 </head>
 <body>
 
@@ -62,7 +59,7 @@
 					</h2>
 					<div class="row" style="padding-top: 30px;">
 						<div class="col-md-12">
-							<div class="main-timeline">
+							<div class="main-timeline" id="content">
 								<div class="timeline">
 									<div class="timeline-content">
 										<span class="date"></span>
@@ -77,7 +74,6 @@
 										</p>
 									</div>
 								</div>
-
 								<div class="timeline">
 									<div class="timeline-content">
 										<span class="date"></span>
@@ -106,7 +102,6 @@
 										</p>
 									</div>
 								</div>
-
 								<div class="timeline">
 									<div class="timeline-content">
 										<span class="date"></span>
@@ -171,6 +166,25 @@
 										</p>
 									</div>
 								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<span class="date"></span>
+										<h2 class="title">2010</h2>
+										<p class="description">
+											1.与德国奥斯特法利亚应用科学大学签订“4+2”培养研究生项目； <br/>
+											2.成立中德合作小组。
+										</p>
+									</div>
+								</div>
+
+								<div class="timeline">
+									<div class="timeline-content">
+										<span class="date"></span>
+										<h2 class="title">2018</h2>
+										<p class="description"></p>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -182,5 +196,36 @@
 
 <script type="text/javascript" src="../../static/js/publicFooter01.js"></script>
 
+<script>
+	$(function () {
+		$(".li-cate-1").eq(8).addClass("active");
+		/*$.ajax({
+			type: "GET",
+			url: globalUrl("developmentCourse"),
+			dataType: "json",
+			success: function (data) {
+				if (data.resultCode === 200) {
+					for (let i = 0; i < data.data.length; i++) {
+						$("#content").append("<div class=\"timeline\">\n" +
+							"\t\t\t\t\t\t\t\t\t<div class=\"timeline-content\">\n" +
+							"\t\t\t\t\t\t\t\t\t\t<span class=\"date\"></span>\n" +
+							"\t\t\t\t\t\t\t\t\t\t<h2 class=\"title\">2018"+ data.data.title +"</h2>\n" +
+							"\t\t\t\t\t\t\t\t\t\t<p class=\"description\">内容"+ data.data.content +"</p>\n" +
+							"\t\t\t\t\t\t\t\t\t</div>\n" +
+							"\t\t\t\t\t\t\t\t</div>");
+					}
+				} else {
+					alert("发展历程参数错误！请刷新再试");
+				}
+			},
+			error: function () {
+				alert("服务器繁忙，请稍后再试！");
+			}
+		});*/
+		const lengths = $(".date");
+		const height = parseInt(lengths.eq(lengths.length-1).offset().top - lengths.eq(0).offset().top);
+		$(".main-timeline").append("<style>.main-timeline:before{height: " + height + "px;</style>");
+	})
+</script>
 </body>
 </html>

@@ -55,8 +55,8 @@ document.writeln("					<a target=\'_blank\' href=\'https://www.daad.org.cn/zh/\'
 document.writeln("				</p>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright\'>");
-document.writeln("				<p>版权所有四川中德科技促进中心 <a target=\"_blank\" href=\"http://www.beian.miit.gov.cn\">蜀ICP备19034889号</a></p>");
-document.writeln("				<p style=\"margin-top: 8px;\">Copyright© 2019 China-germany science and technology promotion center.All Rights Reserved.</p>");
+document.writeln("				<p>版权所有乐山中德科技促进中心&nbsp;&nbsp;<a target=\"_blank\" href=\"http://www.beian.miit.gov.cn\">蜀ICP备19034889号</a></p>");
+document.writeln("				<p style=\"margin-top: 8px;\">Copyright© 2019 Leshan China-Germany science and technology promotion center.All Rights Reserved.</p>");
 document.writeln("			</div>");
 document.writeln("		</div>");
 document.writeln("	</div>");

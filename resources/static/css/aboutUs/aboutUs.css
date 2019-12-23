@@ -217,7 +217,7 @@
 
 /*发展历程*/
 .main-timeline {
-	width: 80%;
+	width: 100%;
 	margin: 20px auto;
 	position: relative;
 }
@@ -227,7 +227,7 @@
 		content: "";
 		display: block;
 		width: 2px;
-		height: 94%;
+		height: 100%;
 		background: rgba(17, 24, 255, 0.64);
 		margin: 0 0 0 -1px;
 		position: absolute;
@@ -236,12 +236,12 @@
 	}
 }
 
-@media (min-width: 750px) {
+@media (min-width: 751px) {
 	.main-timeline:before {
 		content: "";
 		display: block;
 		width: 2px;
-		height: 93%;
+		height: 100%;
 		background: rgba(17, 24, 255, 0.64);
 		margin: 0 0 0 -13px;
 		position: absolute;
@@ -267,6 +267,7 @@
 	float: left;
 	margin: 5px 0 0 0;
 	border-radius: 6px;
+	margin-right: 20px;
 }
 
 .main-timeline .date {
@@ -383,6 +384,51 @@
 
 .main-timeline .timeline:nth-child(9) .title,
 .main-timeline .timeline:nth-child(9) .title:after {
+	background: #eab715;
+}
+
+.main-timeline .timeline:nth-child(10) .title,
+.main-timeline .timeline:nth-child(10) .title:after {
+	background: #9f84c4;
+}
+
+.main-timeline .timeline:nth-child(11) .title,
+.main-timeline .timeline:nth-child(11) .title:after {
+	background: #02a2dd;
+}
+
+.main-timeline .timeline:nth-child(12) .title,
+.main-timeline .timeline:nth-child(12) .title:after {
+	background: #58b25e;
+}
+
+.main-timeline .timeline:nth-child(13) .title,
+.main-timeline .timeline:nth-child(13) .title:after {
+	background: #eab715;
+}
+
+.main-timeline .timeline:nth-child(14) .title,
+.main-timeline .timeline:nth-child(14) .title:after {
+	background: #9f84c4;
+}
+
+.main-timeline .timeline:nth-child(15) .title,
+.main-timeline .timeline:nth-child(15) .title:after {
+	background: #02a2dd;
+}
+
+.main-timeline .timeline:nth-child(16) .title,
+.main-timeline .timeline:nth-child(16) .title:after {
+	background: #58b25e;
+}
+
+.main-timeline .timeline:nth-child(17) .title,
+.main-timeline .timeline:nth-child(17) .title:after {
+	background: #9f84c4;
+}
+
+.main-timeline .timeline:nth-child(18) .title,
+.main-timeline .timeline:nth-child(18) .title:after {
 	background: #eab715;
 }
 

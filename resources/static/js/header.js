@@ -99,6 +99,19 @@ $(document).ready(function () {
 			}
 		})
 	}
+	// 返回顶部
+	$("section").append("<a id=\"totop\" href=\"javascript:void (0);\"><i class=\"fa fa-angle-up\"></i></a>");
+	$(document).scroll(function() {
+		const scrollTop = parseInt($(document).scrollTop());
+		if (scrollTop >= 100){
+			$("#totop").show();
+		} else {
+			$("#totop").hide();
+		}
+	});
+	$("#totop").click(function () {
+		$("html,body").animate({scrollTop: 0}, 300);
+	});
 });
 
 /*配置全站请求接口URL*/
@@ -114,6 +127,7 @@ function globalUrl(theModule) {
 	const interestGermanyID = "interestGermanyID"; // 趣味德国详情文章
 	const contactUs = "contactUs"; // 联系我们
 	const search = "search"; // 全局搜索
+	const developmentCourse = "developmentCourse"; // 发展历程
 
 	if (banner === theModule) {
 		// 轮播图 GET
@@ -145,7 +159,11 @@ function globalUrl(theModule) {
 	} else if (search === theModule) {
 		// 全局搜索 GET
 		return url + "search/list";
-	} else {
+	} else if (developmentCourse === theModule) {
+		// 发展历程 GET
+		return url + "";
+	}
+	else {
 		return "";
 	}
 }
