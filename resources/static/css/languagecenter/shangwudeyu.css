@@ -52,7 +52,7 @@ h2.heading {
 	font-family: "Stencil Std";
 	width: 100%;
 	color: #F2AF2D;
-	font-size: 2em;
+	font-size: 2.1em;
 	font-weight: 700;
 	letter-spacing: 1px;
 	margin-bottom: 8px;
@@ -87,7 +87,7 @@ h2.heading {
 	content: "";
 	height: 2px;
 	position: absolute;
-	width: 210px;
+	width: 180px;
 }
 
 .our-services-wrapper:hover .services-inner {
@@ -101,7 +101,7 @@ h2.heading {
 }
 
 .services p {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: 400;
 	color: #333333;
 	line-height: 2em;
@@ -161,4 +161,13 @@ h2.heading {
 	top: 6px;
 	width: 100px;
 	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.our-services-text h4 {
+		font-size: 1.6em;
+	}
+	.services p {
+		font-size: 1em;
+	}
 }

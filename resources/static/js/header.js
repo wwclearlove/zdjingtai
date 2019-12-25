@@ -161,7 +161,7 @@ function globalUrl(theModule) {
 		return url + "search/list";
 	} else if (developmentCourse === theModule) {
 		// 发展历程 GET
-		return url + "";
+		return url + "develop/list";
 	}
 	else {
 		return "";

@@ -344,12 +344,12 @@
 
 .main-timeline .timeline:nth-child(1) .title,
 .main-timeline .timeline:nth-child(1) .title:after {
-	background: #9f84c4;
+	background: #02a2dd;
 }
 
 .main-timeline .timeline:nth-child(2) .title,
 .main-timeline .timeline:nth-child(2) .title:after {
-	background: #02a2dd;
+	background: #9f84c4;
 }
 
 .main-timeline .timeline:nth-child(3) .title,
@@ -413,9 +413,9 @@
 }
 
 .main-timeline .timeline:nth-child(15) .title,
-.main-timeline .timeline:nth-child(15) .title:after {
-	background: #02a2dd;
-}
+ .main-timeline .timeline:nth-child(15) .title:after {
+	 background: #02a2dd;
+ }
 
 .main-timeline .timeline:nth-child(16) .title,
 .main-timeline .timeline:nth-child(16) .title:after {
@@ -429,6 +429,26 @@
 
 .main-timeline .timeline:nth-child(18) .title,
 .main-timeline .timeline:nth-child(18) .title:after {
+	background: #eab715;
+}
+
+.main-timeline .timeline:nth-child(19) .title,
+.main-timeline .timeline:nth-child(19) .title:after {
+	background: #02a2dd;
+}
+
+.main-timeline .timeline:nth-child(20) .title,
+.main-timeline .timeline:nth-child(20) .title:after {
+	background: #58b25e;
+}
+
+.main-timeline .timeline:nth-child(21) .title,
+.main-timeline .timeline:nth-child(21) .title:after {
+	background: #9f84c4;
+}
+
+.main-timeline .timeline:nth-child(22) .title,
+.main-timeline .timeline:nth-child(22) .title:after {
 	background: #eab715;
 }
 
