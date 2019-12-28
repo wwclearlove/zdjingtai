@@ -1,73 +1,92 @@
-.banner1 {
-	display: block;
-}
-
-.banner2 {
-	display: none;
-}
-
-.carousel-caption p {
-	color: white;
-}
-
-@media (max-width: 1386px) {
-	.banner1 {
-		display: none;
+@media (min-width: 768px) {
+	.topicnews__base {
+		max-width: 900px;
 	}
 
-	.banner2 {
+	.topicnews__slider h3 {
+		font-size: 1.2rem;
+		height: 46px;
 		display: block;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
 	}
 
-	.carousel-indicators .active {
-		width: 40px;
-		height: 10px;
-		background-color: white;
+	.topicnews__base .newsteaser__info {
+		font-size: 1rem;
 	}
 
-	.carousel-indicators li {
-		border: 0;
-		margin: 0;
-		height: 10px;
-		width: 10px;
-		background-color: #b2b2b2;
+	.topicnews__base .newsteaser__info p {
+		font-size: 1rem;
+		height: 50px;
+		display: block;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
 	}
 
-	.carousel-caption {
-		bottom: 40px;
-		text-align: center;
+	.topicnews__slider .newsteaser__base {
+		margin-bottom: 20px;
 	}
 
-	.carousel-caption p {
-		display: initial;
-		padding: 10px;
-		opacity: 0.7;
-		font-size: 1em;
-		background-color: #000000;
+	.topicnews__base .newsteaser__arrow {
+		right: 10px;
+	}
+	#newsteaser__header_title {
+		height: 20px;
 	}
 }
 
-@media (max-width: 560px) {
-	.carousel-indicators {
-		bottom: -40px;
+@media (max-width: 1024px) and (min-width: 768px) {
+	.topicnews__slider .newsteaser__base {
+		width: 50%;
 	}
+}
 
-	.carousel-caption {
-		bottom: 0;
+@media (min-width: 768px) {
+	.topicnews__slider .newsteaser__base {
+		padding-right: 10px;
+		padding-left: 10px;
 	}
+}
 
-	.carousel-indicators .active {
-		width: 30px;
-		height: 8px;
-		background-color: #228BDF;
+@media (max-width: 600px) {
+	h3 {
+		font-size: 1.4rem;
 	}
-
-	.carousel-indicators li {
-		height: 8px;
-		width: 8px;
+	.topicnews__headline {
+		font-size: 1.6rem;
 	}
+}
 
-	.carousel-caption p {
-		line-height: 2em;
+.topicnews__title{
+	display: flex;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 20px;
+}
+.topicnews__titles01{
+	flex: 1;
+	text-align: left;
+}
+.topicnews__titles02{
+	flex: 1;
+	text-align: right;
+}
+.topicnews__titles02 a{
+	margin-top: 10px;
+	display: block;
+	text-decoration: none;
+}
+@media (max-width: 767px) {
+	.topicnews__title{
+		padding: 0;
+	}
+	.topicnews__titles01 h2{
+		font-size: 2em;
 	}
 }

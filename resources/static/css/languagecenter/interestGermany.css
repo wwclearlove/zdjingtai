@@ -1,51 +1,3 @@
-/*interesGermany_div*/
-.interesGermany_div {
-	padding: 50px 15px;
-}
-
-.interesGermany_div .sec-title {
-	text-align: center;
-}
-
-.interesGermany_div .border-shape {
-	background: #c8c8c8;
-	display: block;
-	height: 1px;
-	left: 0;
-	margin: 20px auto;
-	position: relative;
-	right: 0;
-	top: 0;
-	width: 300px;
-}
-
-.interesGermany_div .border-shape::before {
-	background: #c8c8c8 none repeat scroll 0 0;
-	bottom: 0;
-	content: "";
-	height: 1px;
-	position: absolute;
-	top: 3px;
-	width: 200px;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-}
-
-.interesGermany_div .border-shape::after {
-	background: #c8c8c8 none repeat scroll 0 0;
-	bottom: 0;
-	content: "";
-	height: 1px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-	top: 6px;
-	width: 100px;
-	margin: 0 auto;
-}
-
 /*interesGermany_list*/
 .interesGermany_list {
 	padding: 20px 0;
@@ -163,4 +115,3 @@
 		margin: 0 10px;
 	}
 }
-

@@ -1,22 +1,3 @@
-.s2 {
-	text-indent: 2em;
-	font-size: 2em;
-	font-weight: 400;
-	color: #333333;
-	letter-spacing: 3px;
-	line-height: 2em;
-}
-
-.liudeoubiaokecheng_Div02 {
-	padding-top: 100px;
-	padding-bottom: 50px;
-}
-
-h2.heading {
-	letter-spacing: 2px;
-	padding-bottom: 30px;
-}
-
 .mb-60 {
 	margin-bottom: 60px;
 }
@@ -61,17 +42,6 @@ h2.heading {
 	text-transform: uppercase;
 }
 
-.our-services-text h4 .price {
-	color: #F2AF2D;
-	float: right;
-	padding-right: 10px;
-}
-
-.our-services-text h4 > .price > .unit {
-	color: #333333;
-	font-size: 0.5em;
-}
-
 .position-image img {
 	position: absolute;
 	top: 16%;
@@ -110,57 +80,6 @@ h2.heading {
 .services {
 	position: relative;
 	z-index: 2;
-}
-
-.tuangoujia {
-	text-align: right;
-	font-size: 0.5em;
-	padding-right: 10px;
-}
-
-.shangwudeyuImg {
-	box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-	-moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-	-webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-}
-
-.border-shape {
-	background: #c0c0c0;
-	display: block;
-	height: 1px;
-	left: 0;
-	margin: 20px auto;
-	position: relative;
-	right: 0;
-	top: 0;
-	width: 300px;
-}
-
-.border-shape::before {
-	background: #c0c0c0 none repeat scroll 0 0;
-	bottom: 0;
-	content: "";
-	height: 1px;
-	position: absolute;
-	top: 3px;
-	width: 200px;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-}
-
-.border-shape::after {
-	background: #c0c0c0 none repeat scroll 0 0;
-	bottom: 0;
-	content: "";
-	height: 1px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	text-align: center;
-	top: 6px;
-	width: 100px;
-	margin: 0 auto;
 }
 
 @media (max-width: 768px) {

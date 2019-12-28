@@ -22,6 +22,12 @@
 	<script type="text/javascript" src="../../static/js/bootstrap.js"></script>
 	<script type="text/javascript" src="../../static/js/header.js"></script>
 	<script type="text/javascript" src="../../static/js/publicHeader01.js"></script>
+	<style type="text/css">
+		#info_content img{
+			max-width: 100%;
+			display: block;
+		}
+	</style>
 </head>
 <body>
 
@@ -50,10 +56,13 @@
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-8">
 				<div class="getback">
-					<p>您所在的位置：<a href="../index.html">首页</a> >  <a href="../language_center/language_center.html">语言中心</a> > <a href="../language_center/interestGermany.html">趣味德国</a></p>
+					<p>您所在的位置：<a href="../index.html">首页</a> > <a
+							href="../language_center/language_center.html">语言中心</a> > <a
+							href="../language_center/interestGermany.html">趣味德国</a></p>
 				</div>
 				<div id="info_content" style="width: 100%;min-height: 500px;padding: 30px 0;"></div>
-				<img id="loading" style="position: absolute;top: 20%;left: 49%;" src="../../static/imgs/loading.gif" alt="">
+				<img id="loading" style="position: absolute;top: 20%;left: 49%;" src="../../static/imgs/loading.gif"
+					 alt="">
 			</div>
 		</div>
 	</div>
@@ -67,22 +76,27 @@
 		$("#loading").show();
 		$.ajax({
 			type: "POST",
-			url: globalUrl("interestGermanyID") + "?germanyId="+ getParameters()[0],
+			url: globalUrl("interestGermanyID") + "?germanyId=" + getParameters()[0],
 			dataType: "json",
 			success: function (data) {
-				if (data.resultCode === 200){
+				if (data.resultCode === 200) {
 					$("#loading").hide();
 					$("title").text(data.data.title);
 					$("#info_content").html(data.data.content);
 					for (let i = 0; i < $("#info_content img").length; i++) {
-						$("#info_content img").eq(i).attr("src", domainNameUrl() + $("#info_content img").eq(i).attr("src"));
+						if ($("#info_content img").eq(i).attr("src").substring(0, 4) !== "http") {
+							$("#info_content img").eq(i).attr("src", domainNameUrl() + $("#info_content img").eq(i).attr("src"));
+						}
 					}
 					for (let i = 0; i < $("#info_content img").length; i++) {
 						$("#info_content img").eq(i).click(function () {
 							window.open($(this).attr("src"));
 						})
 					}
-				}else {
+					for (let i = 0; i < $("#info_content table").length; i++) {
+						$("#info_content table").eq(i).attr("border",1);
+					}
+				} else {
 					$("#loading").hide();
 					$("#info_content").html("<h3 style='text-align: center;'>文章参数错误！请刷新再试</h3>");
 				}

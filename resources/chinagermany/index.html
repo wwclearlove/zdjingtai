@@ -17,73 +17,9 @@
 	<link rel="stylesheet" href="../static/css/font-awesome.css"/>
 	<link type="text/css" rel="stylesheet" href="../static/css/header.css"/>
 	<link type="text/css" rel="stylesheet" href="../static/css/footer.css"/>
-	<link type="text/css" rel="stylesheet" href="../static/css/index/index.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/publish.min.css">
 	<link type="text/css" rel="stylesheet" href="../static/css/index/clientlibs.min.css">
-	<link type="text/css" rel="stylesheet" href="../static/css/banner.css">
-	<style type="text/css">
-		@media (min-width: 768px) {
-			.topicnews__base {
-				max-width: 900px;
-			}
-
-			.topicnews__base .newsteaser__text {
-				padding: 15px 30px 15px 15px;
-			}
-
-			.topicnews__slider h3 {
-				font-size: 1.2rem;
-				height: 46px;
-				display: block;
-				overflow: hidden;
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				text-overflow: ellipsis;
-				-webkit-box-orient: vertical;
-			}
-
-			.topicnews__base .newsteaser__info {
-				font-size: 1rem;
-			}
-
-			.topicnews__base .newsteaser__info p {
-				font-size: 1rem;
-				height: 50px;
-				display: block;
-				overflow: hidden;
-				display: -webkit-box;
-				-webkit-line-clamp: 2;
-				text-overflow: ellipsis;
-				-webkit-box-orient: vertical;
-			}
-
-			.topicnews__slider .newsteaser__base {
-				margin-bottom: 20px;
-			}
-
-			.topicnews__base .newsteaser__arrow {
-				right: 10px;
-			}
-		}
-
-		@media (max-width: 1024px) and (min-height: 768px) {
-			.topicnews__slider .newsteaser__base.newsteaser--large {
-				width: 99%;
-			}
-
-			.topicnews__slider .newsteaser__base {
-				width: 50%;
-			}
-		}
-
-		@media (min-width: 768px) {
-			.topicnews__slider .newsteaser__base {
-				padding-right: 10px;
-				padding-left: 10px;
-			}
-		}
-
-	</style>
+	<link rel="stylesheet" href="../static/css/index/index.css">
 </head>
 <body>
 
@@ -229,14 +165,13 @@
 	<!--News-->
 	<div class="container-fluid" style="padding: 30px 0;">
 		<div class="topicnews__base" data-component="topicnews">
-			<div class="topicnews__header">
-				<h2 class="topicnews__headline font--bold">热点新闻</h2>
-				<a href="./newsactivity/news.html" class="topicnews__link">
-                    <span class="glyphicon-menu-right glyphicon">
-                        <span>更多</span>
-                  </span>
-				</a>
-				<div style="clear:both;"></div>
+			<div class="topicnews__title">
+				<div class="topicnews__titles01">
+					<h2 style="margin-top: 2px;">热点新闻</h2>
+				</div>
+				<div class="topicnews__titles02">
+					<a href="./newsactivity/news.html">更多&nbsp;&nbsp;<i class="fa fa-angle-right fa-lg"></i></a>
+				</div>
 			</div>
 			<div class="slider topicnews__slider">
 				<div class="newsteaser__base newsteaser--large">
@@ -256,7 +191,7 @@
 							<div class="newsteaser__text">
 								<div class="newsteaser__textContent">
 									<div class="newsteaser__textInput">
-										<h3 class="newsteaser__header" style="height: 20px;"></h3>
+										<h3 class="newsteaser__header" id="newsteaser__header_title"></h3>
 										<div class="newsteaser__info"><p></p></div>
 									</div>
 								</div>

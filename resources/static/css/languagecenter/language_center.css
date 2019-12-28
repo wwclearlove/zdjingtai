@@ -137,3 +137,19 @@
 .table-bordered > tfoot > tr > td {
 	border: 1px solid #b2b2b2;
 }
+
+@media (max-width: 600px) {
+	.services-inner {
+		margin-left: 0;
+	}
+	.our-services-img {
+		margin-right: 5px;
+	}
+	.our-services-img img {
+		width: 40px;
+		margin-left: 20px;
+	}
+	.our-services-text {
+		padding-right: 15px;
+	}
+}

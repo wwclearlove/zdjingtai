@@ -1,23 +1,5 @@
-/*liudeoubiaokecheng_Div01*/
-.liudeoubiaokecheng_Div01 {
-	color: white;
-	letter-spacing: 2px;
-	padding: 50px;
-	background-color: #7F7F7F;
-}
-
 .liudeoubiaokecheng_Div01 p {
 	font-size: 1.5em;
-}
-
-/*liudeoubiaokecheng_Div02*/
-.liudeoubiaokecheng_Div02 {
-	padding: 50px 0;
-}
-
-h2.heading {
-	letter-spacing: 2px;
-	padding-bottom: 30px;
 }
 
 .mb-60 {
@@ -64,17 +46,6 @@ h2.heading {
 	text-transform: uppercase;
 }
 
-.our-services-text h4 .price {
-	color: #F2AF2D;
-	float: right;
-	padding-right: 10px;
-}
-
-.our-services-text h4 > .price > .unit {
-	color: #333333;
-	font-size: 0.5em;
-}
-
 .position-image img {
 	position: absolute;
 	top: 16%;
@@ -115,47 +86,11 @@ h2.heading {
 	z-index: 2;
 }
 
-/*liudeoubiaokecheng_Div03*/
-.liudeoubiaokecheng_Div03 {
-	padding: 50px 15px;
-	color: white;
-	letter-spacing: 2px;
-	background-color: #3369e7;
-}
-
-.liudeoubiaokecheng_Div04 {
-	padding: 50px 20px 50px 50px;
-	color: white;
-	letter-spacing: 2px;
-	margin: 100px 0;
-	font-weight: bolder;
-	background-color: #717171;
-}
-
 .liudeoubiaokecheng_Div04 p {
 	font-size: 1.5em;
 	text-indent: 2em;
 }
 
-.tuangoujia {
-	text-align: right;
-	font-size: 1.3em;
-	padding-right: 10px;
-}
-
 .our-services-text {
 	position: relative;
-}
-
-.our-services-text .book {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 22%;
-}
-
-@media (max-width: 760px) {
-	.our-services-text .book {
-		display: none;
-	}
 }

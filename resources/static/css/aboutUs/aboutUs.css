@@ -229,7 +229,7 @@
 		width: 2px;
 		height: 100%;
 		background: rgba(17, 24, 255, 0.64);
-		margin: 0 0 0 -1px;
+		margin: 0 0 0 -2px;
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -564,5 +564,16 @@
 	.contactUsp {
 		line-height: 2em;
 		font-size: 1.2em;
+	}
+}
+
+
+@media (max-width: 500px) {
+	.main-timeline {
+		margin-left: -15px;
+	}
+	.main-timeline .timeline-content {
+		width: 86%;
+		margin-right: -20px;
 	}
 }
