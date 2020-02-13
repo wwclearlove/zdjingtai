@@ -20,20 +20,6 @@ window.onload = function() {
     radius: 50,
     fillOpacity: 0.2,
     strokeWeight: 1
-  }); 
+  });
   circle.setMap(map);
-  //创建中心定位信息显示 
-  /* var infowindow;
-  var infoWindowContent =
-    '<div class="infowindow-content"><h3>您好！欢迎进入斗帝地图！</h3><span style="color:red;font-size:12px;">(点击左上角的小圆点可快速定位)</span></div>';
-  map.plugin("AMap.AdvancedInfoWindow", function() {
-    infowindow = new AMap.AdvancedInfoWindow({
-      panel: "panel",
-      placeSearch: true,
-      asOrigin: true,
-      asDestination: true,
-      content: infoWindowContent
-    });
-    infowindow.open(map, [103.7199819088, 29.5266459849]);
-  }); */
 };

@@ -58,7 +58,6 @@
 	line-height: 1.5em;
 }
 
-#myFooter p:hover,
 #myFooter .footer-copyright p a:hover,
 #myFooter .myFooter_div_more p a:hover {
 	color: white;
@@ -80,6 +79,10 @@
 	text-align: center;
 }
 
+#myFooter .copyright{
+
+}
+
 @media screen and (min-width: 768px) {
 	#myFooter .myFooter_divs p,
 	#myFooter .myFooter_div_more p {
@@ -98,6 +101,9 @@
 
 	#myFooter .weixingongzhonghao_div {
 		text-align: center;
+	}
+	#myFooter .copyright{
+		display: block;
 	}
 }
 

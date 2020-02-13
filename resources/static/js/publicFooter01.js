@@ -1,4 +1,3 @@
-/*全局尾部*/
 document.writeln("<footer id=\'myFooter\'>");
 document.writeln("	<div class=\'container\'>");
 document.writeln("		<div class=\'row\'>");
@@ -55,9 +54,25 @@ document.writeln("					<a target=\'_blank\' href=\'https://www.daad.org.cn/zh/\'
 document.writeln("				</p>");
 document.writeln("			</div>");
 document.writeln("			<div class=\'col-lg-12 col-md-12 col-sm-12 col-xs-12 footer-copyright\'>");
-document.writeln("				<p>版权所有乐山中德科技促进中心&nbsp;&nbsp;<a target=\"_blank\" href=\"http://www.beian.miit.gov.cn\">蜀ICP备19034889号</a></p>");
-document.writeln("				<p style=\"margin-top: 8px;\">Copyright© 2019 Leshan China-Germany science and technology promotion center.All Rights Reserved.</p>");
+document.writeln("				<p>");
+document.writeln("					<span class=\'copyright\'>版权所有乐山中德科技促进中心</span>");
+document.writeln("					<a class=\'copyright\' target=\'_blank\' style=\'margin-left: 12px;\' href=\'http://www.beian.miit.gov.cn\'>蜀ICP备 19034889号</a>");
+document.writeln("					<a class=\'copyright\' target=\'_blank\' style=\'margin-left: 12px;\'");
+document.writeln("					   href=\'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51110202000290\'>");
+document.writeln("						<img src=\'../../static/imgs/beian_icon.png\' alt=\'\'>");
+document.writeln("						<span>川公网安备 51110202000290号</span>");
+document.writeln("					</a>");
+document.writeln("				</p>");
+document.writeln("				<p style=\'margin-top: 8px;\'>");
+document.writeln("					Copyright© 2019 Leshan China-Germany science and technology promotion center.All Rights Reserved.");
+document.writeln("				</p>");
 document.writeln("			</div>");
 document.writeln("		</div>");
 document.writeln("	</div>");
 document.writeln("</footer>");
+
+$(function () {
+	$(".weixingongzhonghao").click(function () {
+		window.open(imgPath() + $(this).attr("src").substring(6, $(this).attr("src").length));
+	})
+});

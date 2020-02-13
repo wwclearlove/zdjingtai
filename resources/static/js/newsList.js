@@ -11,7 +11,7 @@ for (let i = 0; i < navcon.length; i++) {
 		navcon.eq(this.index).addClass("cur");
 		$(".module-tab-box-ma_Div h3").text(navcon.eq(this.index).text());
 		$("#getback").html("<p>您所在的位置：<a href=\"../index.html\">首页</a> > <a href=\"./news.html\">新闻动态</a> > <a href=\"javascript:void (0)\">" + navcon.eq(this.index).text() + "</a></p>");
-		$("#content01 li").remove();
+		//$("#content01 li").remove();
 		$("#content01 h2").remove();
 		$("#loading").show();
 		$(".info01").show();
@@ -36,6 +36,7 @@ function dynamicNews(number, page) {
 		success: function (data) {
 			if (data.resultCode === 200) {
 				$("#loading").hide();
+				$("#content01 li").remove();
 				currentPages = data.data.currPage;
 				for (let i = 0; i < data.data.list.length; i++) {
 					$("#content01").append("<li>\n" +
@@ -55,6 +56,7 @@ function dynamicNews(number, page) {
 				}
 			} else {
 				$("#loading").hide();
+				$("#content01 li").remove();
 				$("#content01").append("<h2 style=\"text-align: center;\">暂无新闻</h2>");
 			}
 
@@ -68,7 +70,7 @@ function dynamicNews(number, page) {
 				//点击事件
 				onPageClicked: function (event, originalEvent, type, page) {
 					$("html,body").animate({scrollTop: $("#news").offset().top - 100}, 300);
-					$("#content01 li").remove();
+					//$("#content01 li").remove();
 					$("#content01 h2").remove();
 					$("#loading").show();
 					let categorys = $(".module-tab-box-ma_Div h3").text();
